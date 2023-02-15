@@ -2,8 +2,8 @@ extends KinematicBody2D
 
 const UP = Vector2(0,-1)
 const GRAVITY = 40 # dobrou o valor antes era 20
-var SPEED = 200
-var JUMP_HEIGHT = -700 # antes era 550
+var SPEED = 250
+var JUMP_HEIGHT = -800 # antes era 550
 
 var motion = Vector2() # vai passar duas variaveis x e y.
 
