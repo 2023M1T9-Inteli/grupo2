@@ -18,3 +18,7 @@ func _ready():
 
 func _on_KinematicBody2D_input_event(viewport, event, shape_idx):
 	pass # Replace with function body.
+
+
+func _on_KinematicBody2D2_input_event(viewport, event, shape_idx):
+	pass # Replace with function body.
