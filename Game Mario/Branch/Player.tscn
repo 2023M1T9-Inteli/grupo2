@@ -1,0 +1,54 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Script/Player.gd" type="Script" id=1]
+[ext_resource path="res://imagens/animacaoDemo-Recovered3.png" type="Texture" id=2]
+[ext_resource path="res://imagens/animacaoDemo-Recovered1.png" type="Texture" id=3]
+[ext_resource path="res://imagens/animacaoDemo-Recovered5.png" type="Texture" id=4]
+[ext_resource path="res://imagens/animacaoDemo-Recovered6.png" type="Texture" id=5]
+[ext_resource path="res://imagens/animacaoDemo-Recovered7.png" type="Texture" id=6]
+[ext_resource path="res://imagens/animacaoDemo-Recovered2.png" type="Texture" id=7]
+[ext_resource path="res://imagens/animacaoDemo-Recovered4.png" type="Texture" id=8]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 8 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "Run",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 29.625, 54.5 )
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( -930, 327 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( -18, 22 )
+scale = Vector2( 5.28125, 4.59239 )
+frames = SubResource( 2 )
+animation = "Idle"
+
+[node name="shape" type="CollisionShape2D" parent="."]
+position = Vector2( -18, 22 )
+shape = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_top = 0
+limit_bottom = 645
+drag_margin_h_enabled = true
+drag_margin_left = 0.3
+drag_margin_top = 0.3
+drag_margin_bottom = 0.3
+editor_draw_limits = true
+editor_draw_drag_margin = true
