@@ -23,3 +23,8 @@ func _process(delta):
 		$Sprite.flip_h = true
 		if($".".position.x <= posicao_inicial):
 			flip = true
+
+
+func dano():
+	$".".queue_free()
+

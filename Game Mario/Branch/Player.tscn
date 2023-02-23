@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Script/Player.gd" type="Script" id=1]
 [ext_resource path="res://imagens/animacaoDemo-Recovered3.png" type="Texture" id=2]
@@ -23,7 +23,10 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 20, 42 )
+extents = Vector2( 17, 40 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 12, 1 )
 
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( -930, 327 )
@@ -36,7 +39,7 @@ frames = SubResource( 2 )
 animation = "Idle"
 
 [node name="shape" type="CollisionShape2D" parent="."]
-position = Vector2( -15, 16 )
+position = Vector2( -15, 18 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -49,3 +52,17 @@ drag_margin_top = 0.3
 drag_margin_bottom = 0.3
 editor_draw_limits = true
 editor_draw_drag_margin = true
+
+[node name="pes" type="Area2D" parent="."]
+position = Vector2( -2, -2 )
+collision_layer = 4
+collision_mask = 4
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="shape" type="CollisionShape2D" parent="pes"]
+position = Vector2( -11, 61 )
+shape = SubResource( 3 )
+
+[connection signal="body_entered" from="pes" to="." method="_on_pes_body_entered"]
