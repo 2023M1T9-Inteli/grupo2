@@ -21,6 +21,7 @@ height = 0.0
 
 [node name="Monstro" type="StaticBody2D"]
 position = Vector2( -1, -2 )
+collision_layer = 4
 script = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true
