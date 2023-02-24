@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Script/primeira_tela.gd" type="Script" id=2]
-[ext_resource path="res://imagens/fundo futurista.jpeg" type="Texture" id=3]
+[ext_resource path="res://imagens/BackgroundTelaInicial.jpeg" type="Texture" id=3]
 
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
@@ -31,62 +31,72 @@ Button/styles/normal = SubResource( 5 )
 Button/styles/pressed = SubResource( 6 )
 
 [sub_resource type="DynamicFont" id=1]
-size = 20
+size = 30
 font_data = ExtResource( 1 )
 
 [node name="startScreen" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_bottom = 81.0
 script = ExtResource( 2 )
 
 [node name="FundoFuturista" type="Sprite" parent="."]
-position = Vector2( 483, 378 )
-scale = Vector2( 0.765625, 0.736398 )
+visible = false
+position = Vector2( 491, 329 )
+scale = Vector2( 0.97103, 0.933962 )
 texture = ExtResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -77.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 1
 
 [node name="controls" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -70.0
-margin_top = -34.0
-margin_right = 70.0
-margin_bottom = 34.0
+margin_left = -105.0
+margin_top = -19.5
+margin_right = 105.0
+margin_bottom = 78.5
 
 [node name="startBtn" type="Button" parent="controls"]
-margin_right = 140.0
-margin_bottom = 20.0
+margin_right = 210.0
+margin_bottom = 30.0
 focus_neighbour_top = NodePath("../quitBtn")
 theme = SubResource( 2 )
-custom_colors/font_color_focus = Color( 0.741176, 0.976471, 0, 1 )
+custom_colors/font_color_focus = Color( 0.827451, 0.231373, 0.203922, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 0.741176, 0.976471, 0, 1 )
+custom_colors/font_color_hover = Color( 0.827451, 0.231373, 0.203922, 1 )
 custom_colors/font_color_pressed = Color( 0.905882, 0.494118, 0.0431373, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Start"
 
 [node name="controlBtn" type="Button" parent="controls"]
-margin_top = 24.0
-margin_right = 140.0
-margin_bottom = 44.0
+margin_top = 34.0
+margin_right = 210.0
+margin_bottom = 64.0
 theme = SubResource( 2 )
-custom_colors/font_color_focus = Color( 0.741176, 0.976471, 0, 1 )
+custom_colors/font_color_focus = Color( 0.827451, 0.231373, 0.203922, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 0.741176, 0.976471, 0, 1 )
+custom_colors/font_color_hover = Color( 0.827451, 0.231373, 0.203922, 1 )
 custom_colors/font_color_pressed = Color( 0.905882, 0.494118, 0.0431373, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Control"
 
 [node name="quitBtn" type="Button" parent="controls"]
-margin_top = 48.0
-margin_right = 140.0
-margin_bottom = 68.0
+margin_top = 68.0
+margin_right = 210.0
+margin_bottom = 98.0
 focus_neighbour_bottom = NodePath("../startBtn")
 theme = SubResource( 2 )
-custom_colors/font_color_focus = Color( 0.741176, 0.976471, 0, 1 )
+custom_colors/font_color_focus = Color( 0.827451, 0.231373, 0.203922, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 0.741176, 0.976471, 0, 1 )
+custom_colors/font_color_hover = Color( 0.827451, 0.231373, 0.203922, 1 )
 custom_colors/font_color_pressed = Color( 0.905882, 0.494118, 0.0431373, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Quit"

@@ -26,6 +26,8 @@ func _physics_process(delta):
 			motion.y = JUMP_HEIGHT	
 			
 	motion = move_and_slide(motion, UP)
+	
+
 
 func handle_rewind_function():
 	var ani_number = ani.get_index()
@@ -75,3 +77,6 @@ func player_movement():
 	else:
 		motion.x = 0
 		$Sprite.play("Idle")
+
+func _on_pes_body_entered(body):
+	body.dano()
