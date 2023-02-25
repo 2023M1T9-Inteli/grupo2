@@ -6,7 +6,7 @@ var SPEED = 250
 var JUMP_HEIGHT = -800 # antes era 550
 
 var motion = Vector2() # vai passar duas variaveis x e y.
-
+#aciona os processos físico do personagem, ou seja, a movimentação de andar para os lados e pular. Além de conter a gravdidade para queda da personagem
 func _physics_process(delta):
 	
 	motion.y += GRAVITY
