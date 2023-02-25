@@ -19,7 +19,7 @@ func _start_tween():
 		move_direction = Vector2.UP * distance 
 	else:
 		Vector2.DOWN * distance
-	duration = move_direction.length() / float(speed*16)	
+	duration = move_direction.length() / float(speed * 16)	
 	tween.interpolate_property(
 		platform,"position", Vector2.ZERO,move_direction,duration,
 		Tween.TRANS_LINEAR,Tween.EASE_IN_OUT,WAIT_DURATION
@@ -27,7 +27,7 @@ func _start_tween():
 	
 	tween.interpolate_property(
 		platform,"position", move_direction,Vector2.ZERO,duration, 
-		Tween.TRANS_LINEAR,Tween.EASE_IN_OUT,duration + WAIT_DURATION *2
+		Tween.TRANS_LINEAR,Tween.EASE_IN_OUT, duration + WAIT_DURATION * 2
 	)
 	 
 	tween.start()
