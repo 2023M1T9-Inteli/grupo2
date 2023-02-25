@@ -5,7 +5,7 @@ const GRAVIDADE = 40
 var VELOCIDADE = 250
 var JUMP_HEIGHT = -800 
 
-var motion = Vector2() # vai passar duas variaveis x e y.
+var motion = Vector2()
 
 onready var ani = $Sprite
 
@@ -20,8 +20,7 @@ func _physics_process(delta):
 	motion.y += GRAVIDADE
 	player_movement()
 	
-	if is_on_floor(): # AVISO do que falta: colcoar imagme do pulo quando tiver pronta
-#		print("esta no chao")
+	if is_on_floor(): 
 		if Input.is_action_pressed("ui_up"):
 			motion.y = JUMP_HEIGHT	
 			
