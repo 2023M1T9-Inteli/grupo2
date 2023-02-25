@@ -1,5 +1,5 @@
 extends Node2D
-
+#SCRIPT NÃO UTILIZADO 
 
 # Declare member variables here. Examples:
 # var a = 2
