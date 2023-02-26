@@ -16,7 +16,9 @@ var rewind_ghost = load("res://Cenas/rewind_ghost.tscn")  #direcionar ao sprite 
 
 #aciona os processos físico do personagem, ou seja, a movimentação de andar para os lados e pular. Além de conter a gravdidade para queda da personagem
 func _physics_process(delta):
-	handle_rewind_function() #funcão de rebobinar
+	
+	#funcão de rebobinar
+	handle_rewind_function() 
 	motion.y += GRAVIDADE
 	player_movement()
 	
@@ -32,7 +34,8 @@ func handle_rewind_function():
 	var ani_number = ani.get_index()
 	var dir_number = 0
 
-	if(Input.is_action_pressed("ui_space")): #se a tecla "espaço for apertada, a ação do personagem é rebobinada
+	#se a tecla "espaço for apertada, a ação do personagem é rebobinada
+	if(Input.is_action_pressed("ui_space")): 
 		is_rewinding = true
 		if(recorded_data.size() > 0):
 			var current_frame = recorded_data[0]
@@ -53,7 +56,8 @@ func handle_rewind_function():
 			#remove o frame atual para não repetir
 			recorded_data.pop_front()
 			
-	else: #salvar os dados da posição do personagem
+	#salvar os dados da posição do personagem		
+	else: 
 		is_rewinding = false
 		
 		if(ani.flip_h):

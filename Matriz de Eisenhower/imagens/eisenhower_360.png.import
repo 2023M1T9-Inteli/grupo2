@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pixil-frame-0 (5).png-6f158f690247b5872255cf2d0ec437a7.stex"
+path="res://.import/eisenhower_360.png-e6e08e41dac0c11c71132313da4ec335.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pixil-frame-0 (5).png"
-dest_files=[ "res://.import/pixil-frame-0 (5).png-6f158f690247b5872255cf2d0ec437a7.stex" ]
+source_file="res://imagens/eisenhower_360.png"
+dest_files=[ "res://.import/eisenhower_360.png-e6e08e41dac0c11c71132313da4ec335.stex" ]
 
 [params]
 

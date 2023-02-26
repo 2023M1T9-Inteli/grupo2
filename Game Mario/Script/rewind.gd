@@ -41,14 +41,18 @@ func handle_rewind_objects():
 				data.pop_front()
 				count += 1
 		count = 0
-	else:#grava os dados para o rebobinamento
+	
+	#grava os dados para o rebobinamento
+	else:
 		is_rewinding = false
 		for mem in rewind_objects:
 			var data = DATA[count]
 			var ani = mem.get_node("Sprite")
 			data.push_front([ani.animation,mem.global_position,ani.flip_h])
 			count += 1
-			if(data.size() > rewind_length): #se o registro tiver mais de 3 segundos, remova o último quadro
+			
+			#se o registro tiver mais de 3 segundos, remova o último quadro
+			if(data.size() > rewind_length): 
 				data.pop_back()
 		count = 0
 		pass

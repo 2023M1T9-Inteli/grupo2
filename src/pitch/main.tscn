@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Script/Colissao.gd" type="Script" id=1]
+[ext_resource path="res://Script/Colisao.gd" type="Script" id=1]
 [ext_resource path="res://images/cyborg_reduzida 50.jpg" type="Texture" id=2]
 [ext_resource path="res://images/netflix.png" type="Texture" id=3]
 [ext_resource path="res://images/isntagram.png" type="Texture" id=4]

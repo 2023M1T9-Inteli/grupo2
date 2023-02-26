@@ -17,8 +17,8 @@ func _ready():
 
 #define as propriedades de moviemento da plataforma
 func _start_tween():
-	
-	if vertical: #move a plataforma para cima
+	 #move a plataforma para cima
+	if vertical:
 		move_direction = Vector2.UP * distancia
 	
 	#faz a plataforma se movimentar. Realiza a interpolação dos frames na animação do movimento da plataforma, nos seguintes parâmetros:
