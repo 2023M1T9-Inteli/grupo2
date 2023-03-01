@@ -12,7 +12,7 @@ func _ready():
 	posicao_final = posicao_inicial +  100
 
 #está fazendo com que o a personagem relógio(TicTac) seja processada várias vezes para sua locomoção e mudança de imagem dela
-func _process(delta):
+func _process(_delta):
 	
 	if (posicao_inicial <= posicao_final and flip):
 		$".".position.x += velocidade

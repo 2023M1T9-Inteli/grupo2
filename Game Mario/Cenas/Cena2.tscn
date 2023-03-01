@@ -30,7 +30,6 @@ func _ready():
 script = SubResource( 1 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -1031, 391 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -49,6 +48,7 @@ position = Vector2( -744, 562 )
 [node name="plataforma_movel2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1097, 517 )
 script = ExtResource( 5 )
+horizontal = true
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = ExtResource( 6 )
