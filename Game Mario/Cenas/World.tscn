@@ -12,7 +12,6 @@ radius = 41.0
 height = 62.0
 
 [node name="World" type="Node2D"]
-position = Vector2( 88, 16 )
 
 [node name="ParallaxBackground" parent="." instance=ExtResource( 2 )]
 
