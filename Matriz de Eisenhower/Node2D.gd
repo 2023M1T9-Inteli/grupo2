@@ -1,35 +1,25 @@
 extends Node2D
 
 
-
-
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$HSlider/Label.text = "Tempo: 0h"
+	$HSlider2/Label2.text = "Tempo: 0h"
+	$HSlider3/Label3.text = "Tempo: 0h"
+	$HSlider4/Label4.text = "Tempo: 0h"
 	
+	get_node("HSlider").set_max(24)
+	get_node("HSlider2").set_max(24)
+	get_node("HSlider3").set_max(24)
+	get_node("HSlider4").set_max(24)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _on_HSlider_value_changed(value):
+	$HSlider/Label.text = "Tempo:" + str($HSlider.value) + "h"
 
+func _on_HSlider2_value_changed(value):
+	$HSlider2/Label2.text = "Tempo:" + str($HSlider2.value) + "h"
 
-func _on_KinematicBody2D_input_event(viewport, event, shape_idx):
-	pass # Replace with function body.
+func _on_HSlider3_value_changed(value):
+	$HSlider3/Label3.text = "Tempo:" + str($HSlider3.value) + "h"
 
-
-func _on_KinematicBody2D2_input_event(viewport, event, shape_idx):
-	pass # Replace with function body.
-
-
-func _on_Area2D_area_entered(area):
-	pass
-
-
-func _on_Area2D_area_exited(area):
-	pass
+func _on_HSlider4_value_changed(value):
+	$HSlider4/Label4.text = "Tempo:" + str($HSlider4.value) + "h"

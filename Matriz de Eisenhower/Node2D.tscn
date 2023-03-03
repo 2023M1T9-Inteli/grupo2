@@ -1,28 +1,8 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
-[ext_resource path="res://pixil-frame-0.png" type="Texture" id=2]
-[ext_resource path="res://Drag and drop script.gd" type="Script" id=3]
+[ext_resource path="res://Sliders.gd" type="Script" id=2]
 [ext_resource path="res://eisenhower_360.png" type="Texture" id=4]
-[ext_resource path="res://pixil-frame-0 (1).png" type="Texture" id=5]
-[ext_resource path="res://pixil-frame-0 (4).png" type="Texture" id=6]
-[ext_resource path="res://pixil-frame-0 (3).png" type="Texture" id=7]
-[ext_resource path="res://pixil-frame-0 (5).png" type="Texture" id=8]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 37.5, 11 )
-
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 30, 12.5 )
-
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 37.5, 12.5 )
-
-[sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 39, 13 )
-
-[sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 41, 11.5 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -31,81 +11,86 @@ script = ExtResource( 1 )
 position = Vector2( 481, 180 )
 texture = ExtResource( 4 )
 
-[node name="Reunião de Trabalho" type="Sprite" parent="."]
-position = Vector2( 82, 174 )
-texture = ExtResource( 2 )
-script = ExtResource( 3 )
+[node name="HSlider" type="HSlider" parent="." groups=["sliders"]]
+margin_left = 327.0
+margin_top = 79.0
+margin_right = 449.0
+margin_bottom = 95.0
+script = ExtResource( 2 )
 
-[node name="Area2D" type="Area2D" parent="Reunião de Trabalho"]
+[node name="Label" type="Label" parent="HSlider"]
+margin_left = -2.0
+margin_top = 21.0
+margin_right = 124.0
+margin_bottom = 70.0
+text = "aaa"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Reunião de Trabalho/Area2D"]
-position = Vector2( -0.5, -1 )
-shape = SubResource( 1 )
+[node name="HSlider2" type="HSlider" parent="." groups=["sliders"]]
+margin_left = 504.0
+margin_top = 79.0
+margin_right = 638.0
+margin_bottom = 95.0
+script = ExtResource( 2 )
 
-[node name="Netflix" type="Sprite" parent="."]
-position = Vector2( 82, 138 )
-texture = ExtResource( 5 )
-script = ExtResource( 3 )
+[node name="Label2" type="Label" parent="HSlider2"]
+margin_left = -2.0
+margin_top = 23.0
+margin_right = 136.0
+margin_bottom = 72.0
+text = "aaa"
 
-[node name="Area2D" type="Area2D" parent="Netflix"]
-position = Vector2( -3, -12 )
+[node name="HSlider3" type="HSlider" parent="." groups=["sliders"]]
+margin_left = 328.0
+margin_top = 258.0
+margin_right = 448.0
+margin_bottom = 274.0
+script = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Netflix/Area2D"]
-position = Vector2( 2, -0.5 )
-shape = SubResource( 2 )
+[node name="Label3" type="Label" parent="HSlider3"]
+margin_left = -3.0
+margin_top = 21.0
+margin_right = 122.0
+margin_bottom = 70.0
+text = "aaa"
 
-[node name="Ligação Inesperada" type="Sprite" parent="."]
-position = Vector2( 79, 215 )
-texture = ExtResource( 7 )
-script = ExtResource( 3 )
+[node name="HSlider4" type="HSlider" parent="." groups=["sliders"]]
+margin_left = 505.0
+margin_top = 257.0
+margin_right = 641.0
+margin_bottom = 273.0
+script = ExtResource( 2 )
 
-[node name="Area2D" type="Area2D" parent="Ligação Inesperada"]
+[node name="Label4" type="Label" parent="HSlider4"]
+margin_left = -3.0
+margin_top = 21.0
+margin_right = 137.0
+margin_bottom = 70.0
+text = "aaa"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ligação Inesperada/Area2D"]
-position = Vector2( 1.5, -0.5 )
-shape = SubResource( 3 )
+[node name="Label" type="Label" parent="."]
+margin_left = 183.0
+margin_top = 90.0
+margin_right = 297.0
+margin_bottom = 181.0
+text = "aaa"
 
-[node name="Sair com os amigos" type="Sprite" parent="."]
-position = Vector2( 68, 262 )
-texture = ExtResource( 6 )
-script = ExtResource( 3 )
-
-[node name="Area2D" type="Area2D" parent="Sair com os amigos"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sair com os amigos/Area2D"]
-position = Vector2( -2, -6 )
-shape = SubResource( 4 )
-
-[node name="Estudar" type="Sprite" parent="."]
-position = Vector2( 64, 296 )
-texture = ExtResource( 8 )
-script = ExtResource( 3 )
-
-[node name="Area2D" type="Area2D" parent="Estudar"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Estudar/Area2D"]
-position = Vector2( 0, -5.5 )
-shape = SubResource( 5 )
-
-[connection signal="area_entered" from="Reunião de Trabalho/Area2D" to="." method="_on_Area2D_area_entered"]
-[connection signal="area_entered" from="Reunião de Trabalho/Area2D" to="Reunião de Trabalho" method="_on_Area2D_area_entered"]
-[connection signal="area_exited" from="Reunião de Trabalho/Area2D" to="." method="_on_Area2D_area_exited"]
-[connection signal="area_exited" from="Reunião de Trabalho/Area2D" to="Reunião de Trabalho" method="_on_Area2D_area_exited"]
-[connection signal="mouse_entered" from="Reunião de Trabalho/Area2D" to="Reunião de Trabalho" method="_on_Area2D_mouse_entered"]
-[connection signal="mouse_exited" from="Reunião de Trabalho/Area2D" to="Reunião de Trabalho" method="_on_Area2D_mouse_exited"]
-[connection signal="area_entered" from="Netflix/Area2D" to="Netflix" method="_on_Area2D_area_entered"]
-[connection signal="area_exited" from="Netflix/Area2D" to="Netflix" method="_on_Area2D_area_exited"]
-[connection signal="mouse_entered" from="Netflix/Area2D" to="Netflix" method="_on_Area2D_mouse_entered"]
-[connection signal="mouse_exited" from="Netflix/Area2D" to="Netflix" method="_on_Area2D_mouse_exited"]
-[connection signal="area_entered" from="Ligação Inesperada/Area2D" to="Ligação Inesperada" method="_on_Area2D_area_entered"]
-[connection signal="area_exited" from="Ligação Inesperada/Area2D" to="Ligação Inesperada" method="_on_Area2D_area_exited"]
-[connection signal="mouse_entered" from="Ligação Inesperada/Area2D" to="Ligação Inesperada" method="_on_Area2D_mouse_entered"]
-[connection signal="mouse_exited" from="Ligação Inesperada/Area2D" to="Ligação Inesperada" method="_on_Area2D_mouse_exited"]
-[connection signal="area_entered" from="Sair com os amigos/Area2D" to="Sair com os amigos" method="_on_Area2D_area_entered"]
-[connection signal="area_exited" from="Sair com os amigos/Area2D" to="Sair com os amigos" method="_on_Area2D_area_exited"]
-[connection signal="mouse_entered" from="Sair com os amigos/Area2D" to="Sair com os amigos" method="_on_Area2D_mouse_entered"]
-[connection signal="mouse_exited" from="Sair com os amigos/Area2D" to="Sair com os amigos" method="_on_Area2D_mouse_exited"]
-[connection signal="area_entered" from="Estudar/Area2D" to="Estudar" method="_on_Area2D_area_entered"]
-[connection signal="area_exited" from="Estudar/Area2D" to="Estudar" method="_on_Area2D_area_exited"]
-[connection signal="mouse_entered" from="Estudar/Area2D" to="Estudar" method="_on_Area2D_mouse_entered"]
-[connection signal="mouse_exited" from="Estudar/Area2D" to="Estudar" method="_on_Area2D_mouse_exited"]
+[connection signal="value_changed" from="HSlider" to="." method="_on_HSlider_value_changed"]
+[connection signal="value_changed" from="HSlider" to="HSlider" method="_on_HSlider_value_changed"]
+[connection signal="value_changed" from="HSlider" to="HSlider2" method="_on_HSlider_value_changed"]
+[connection signal="value_changed" from="HSlider" to="HSlider3" method="_on_HSlider_value_changed"]
+[connection signal="value_changed" from="HSlider" to="HSlider4" method="_on_HSlider_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="." method="_on_HSlider2_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="HSlider" method="_on_HSlider2_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="HSlider2" method="_on_HSlider2_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="HSlider3" method="_on_HSlider2_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="HSlider4" method="_on_HSlider2_value_changed"]
+[connection signal="value_changed" from="HSlider3" to="." method="_on_HSlider3_value_changed"]
+[connection signal="value_changed" from="HSlider3" to="HSlider" method="_on_HSlider3_value_changed"]
+[connection signal="value_changed" from="HSlider3" to="HSlider2" method="_on_HSlider3_value_changed"]
+[connection signal="value_changed" from="HSlider3" to="HSlider3" method="_on_HSlider3_value_changed"]
+[connection signal="value_changed" from="HSlider3" to="HSlider4" method="_on_HSlider3_value_changed"]
+[connection signal="value_changed" from="HSlider4" to="." method="_on_HSlider4_value_changed"]
+[connection signal="value_changed" from="HSlider4" to="HSlider" method="_on_HSlider4_value_changed"]
+[connection signal="value_changed" from="HSlider4" to="HSlider2" method="_on_HSlider4_value_changed"]
+[connection signal="value_changed" from="HSlider4" to="HSlider3" method="_on_HSlider4_value_changed"]
+[connection signal="value_changed" from="HSlider4" to="HSlider4" method="_on_HSlider4_value_changed"]
