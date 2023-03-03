@@ -53,7 +53,6 @@ func handle_rewind_function():
 				ani.animation = current_frame[0]
 				global_position = current_frame[1]
 				ani.flip_h = current_frame[2]
-				$Sprite.play("rewind")
 				#definir as propriedades do efeito fantasma do personagem
 				var ghost : Sprite = rewind_ghost.instance()
 				ghost.texture = ani.frames.get_frame(ani.animation,ani.frame)
