@@ -57,7 +57,8 @@ func handle_rewind_function():
 				
 			#remove o frame atual para não repetir
 			recorded_data.pop_front()
-			
+		else:
+			$Sprite.show()	
 	#salvar os dados da posição do personagem		
 	else: 
 		$Sprite.show()
