@@ -76,8 +76,17 @@ func handle_rewind_function():
 		recorded_data.push_front([ani.animation,global_position,ani.flip_h])
 		if(recorded_data.size() > rewind_length): #eliminar dados com mais de 3 segundos
 			recorded_data.pop_back()
-
-#quando o persagem principal pular em cima do relógio(TicTac) ele irá morrer(desaparecer da tela)
+		
+		
+#inimigo fica vermelho
 func dano():
+	get_node("anim").play("die")
+	
+#faz o inimigo desaparecer da tela
+func die():
 	$".".queue_free()
 
+#vai fazer o inimigo morrer/desaparecer da tela quando a animação acabar
+func _on_anim_animation_finished(anim_name):
+	if anim_name == "die":
+		die()

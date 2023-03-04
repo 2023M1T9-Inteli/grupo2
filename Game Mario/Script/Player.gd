@@ -4,7 +4,7 @@ const CIMA = Vector2(0,-1)
 const GRAVIDADE = 40
 var VELOCIDADE = 250
 var JUMP_HEIGHT = -800 
-
+var life = 3
 var motion = Vector2()
 
 onready var ani = $Sprite
@@ -86,5 +86,14 @@ func player_movement():
 		motion.x = 0
 		$Sprite.play("Idle")
 
+#player mata inimigo
 func _on_pes_body_entered(body):
 	body.dano()
+	motion.y = JUMP_HEIGHT
+	
+
+#player toma dano
+func _on_dano_body_entered(body):
+	life -= 1 
+	if life == 0:
+		$".".queue_free()

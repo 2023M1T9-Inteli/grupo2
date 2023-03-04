@@ -20,4 +20,7 @@ func _on_controlBtn_pressed():
 func _on_quitBtn_pressed():
 	get_tree().quit() 
 
+func die():
+	$".".queue_free()
+
 

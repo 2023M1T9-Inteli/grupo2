@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://male/walking_03.png" type="Texture" id=1]
 [ext_resource path="res://male/walking_01.png" type="Texture" id=2]
@@ -19,6 +19,58 @@ animations = [ {
 radius = 33.0
 height = 0.0
 
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"values": [  ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "die"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.67451, 0.133333, 0.133333, 1 ), Color( 0.67451, 0.133333, 0.133333, 0 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"values": [  ]
+}
+
 [node name="Monstro" type="StaticBody2D"]
 position = Vector2( -1, -2 )
 collision_layer = 4
@@ -31,8 +83,13 @@ __meta__ = {
 frames = SubResource( 1 )
 animation = "walk"
 frame = 1
-playing = true
 
 [node name="Shape" type="CollisionShape2D" parent="."]
 position = Vector2( 1, 1 )
 shape = SubResource( 2 )
+
+[node name="anim" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 3 )
+anims/die = SubResource( 4 )
+
+[connection signal="animation_finished" from="anim" to="." method="_on_anim_animation_finished"]
