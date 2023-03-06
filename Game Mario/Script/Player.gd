@@ -4,7 +4,7 @@ const CIMA = Vector2(0,-1)
 const GRAVIDADE = 40
 var VELOCIDADE = 250
 var JUMP_HEIGHT = -800 
-var life = 3
+var life = 1
 var motion = Vector2()
 
 onready var ani = $Sprite
