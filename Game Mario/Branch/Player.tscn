@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Script/Player.gd" type="Script" id=1]
 [ext_resource path="res://personagem principal/run_menor3.png" type="Texture" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://personagem principal/dash_rewind3.png" type="Texture" id=22]
 [ext_resource path="res://personagem principal/dash_rewind5.png" type="Texture" id=23]
 [ext_resource path="res://personagem principal/dash_rewind.6png.png" type="Texture" id=24]
+[ext_resource path="res://efeitos sonoros/DLMKRJN-ninja-jump (mp3cut.net).mp3" type="AudioStream" id=25]
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 3 )
@@ -89,7 +90,7 @@ position = Vector2( -30, -40 )
 scale = Vector2( 1.1236, 0.977045 )
 frames = SubResource( 2 )
 animation = "Idle"
-frame = 1
+frame = 3
 playing = true
 centered = false
 
@@ -118,5 +119,9 @@ __meta__ = {
 
 [node name="shape" type="CollisionShape2D" parent="pes"]
 shape = SubResource( 3 )
+
+[node name="JumpFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 25 )
+volume_db = 0.5
 
 [connection signal="body_entered" from="pes" to="." method="_on_pes_body_entered"]

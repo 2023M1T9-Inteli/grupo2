@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/theWeeknd.ogg-3527599f0641c432fbc81bb394f27d19.oggstr"
+
+[deps]
+
+source_file="res://efeitos sonoros/theWeeknd.ogg"
+dest_files=[ "res://.import/theWeeknd.ogg-3527599f0641c432fbc81bb394f27d19.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/DLMKRJN-ninja-jump (mp3cut.net).mp3-6d0fd046a4b1fcbfc1988afc490a47e3.mp3str"
+
+[deps]
+
+source_file="res://efeitos sonoros/DLMKRJN-ninja-jump (mp3cut.net).mp3"
+dest_files=[ "res://.import/DLMKRJN-ninja-jump (mp3cut.net).mp3-6d0fd046a4b1fcbfc1988afc490a47e3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

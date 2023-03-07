@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Game Button Sounds Pack - Free Sounds [TubeRipper (mp3cut.net).mp3-2770c5f3526de5a3f48d896e0a7e0622.mp3str"
+
+[deps]
+
+source_file="res://efeitos sonoros/Game Button Sounds Pack - Free Sounds [TubeRipper (mp3cut.net).mp3"
+dest_files=[ "res://.import/Game Button Sounds Pack - Free Sounds [TubeRipper (mp3cut.net).mp3-2770c5f3526de5a3f48d896e0a7e0622.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
