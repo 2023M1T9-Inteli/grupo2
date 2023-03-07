@@ -47,10 +47,34 @@ func fazerSomaTotal():
 
 
 func _on_Button_pressed():
-	$HSlider.hide()
-	$HSlider2.hide()
-	$HSlider3.hide()
-	$HSlider4.hide()
+
+	if impUrg > 6:
+		$HSlider/Label.text ="Bombeiro"
+	elif impUrg < 4:
+		$HSlider/Label.text = "Faltam atividades"
+	else:
+		$HSlider/Label.text = "Carai meno ta perfeito viado"
+	
+	if impNurg > 15:
+		$HSlider2/Label2.text = "Ta organizado ate demais paizao"
+	elif impNurg < 13:
+		$HSlider2/Label2.text = "Se organiza melhor ai"
+	else:
+		$HSlider2/Label2.text = "Carai meno ta perfeito viado"
+	
+	if nImpUrg > 5:
+		$HSlider3/Label3.text = "Ta organizado ate demais paizao"
+	elif nImpUrg < 3:
+		$HSlider3/Label3.text = "Se organiza melhor ai"
+	else:
+		$HSlider3/Label3.text = "Carai meno ta perfeito viado"
+	
+	if nImpNurg > 2:
+		$HSlider4/Label4.text = "Ta organizado ate demais paizao"
+	elif nImpNurg < 1:
+		$HSlider4/Label4.text = "Se organiza melhor ai"
+	else:
+		$HSlider4/Label4.text = "Carai meno ta perfeito viado"
 	
 #	verificaUrgImp()
 #	verificaNurgImp()

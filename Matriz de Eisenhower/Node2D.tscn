@@ -22,6 +22,7 @@ margin_top = 21.0
 margin_right = 124.0
 margin_bottom = 70.0
 text = "Tempo: 0h"
+autowrap = true
 
 [node name="HSlider2" type="HSlider" parent="." groups=["sliders"]]
 margin_left = 504.0
@@ -35,6 +36,7 @@ margin_top = 23.0
 margin_right = 136.0
 margin_bottom = 72.0
 text = "Tempo: 0h"
+autowrap = true
 
 [node name="HSlider3" type="HSlider" parent="." groups=["sliders"]]
 margin_left = 328.0
@@ -48,6 +50,7 @@ margin_top = 21.0
 margin_right = 122.0
 margin_bottom = 70.0
 text = "Tempo: 0h"
+autowrap = true
 
 [node name="HSlider4" type="HSlider" parent="." groups=["sliders"]]
 margin_left = 505.0
@@ -61,6 +64,7 @@ margin_top = 21.0
 margin_right = 137.0
 margin_bottom = 70.0
 text = "Tempo: 0h"
+autowrap = true
 
 [node name="Label" type="Label" parent="."]
 margin_left = 183.0
