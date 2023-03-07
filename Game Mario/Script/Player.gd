@@ -30,6 +30,9 @@ func _physics_process(_delta):
 			
 	motion = move_and_slide(motion, CIMA)
 	
+	if !is_on_floor():
+		$Sprite.play("jump")
+	
 
 #função para fazer o personagem voltar no tempo (rebobinar)
 func handle_rewind_function():
