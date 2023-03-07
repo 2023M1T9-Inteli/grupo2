@@ -26,6 +26,7 @@ func _physics_process(_delta):
 		if Input.is_action_pressed("ui_up"):
 			motion.y = JUMP_HEIGHT	
 			$Sprite.play("jump")
+			$JumpFx.play()
 			
 	motion = move_and_slide(motion, CIMA)
 	
