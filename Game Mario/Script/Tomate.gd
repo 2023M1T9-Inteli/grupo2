@@ -1,6 +1,7 @@
 extends RigidBody2D
 
 var tempo = 0
+var desaparecerTomate = false
 
 func _ready():
 	$".".set_bounce(0.8) #.6
@@ -11,4 +12,13 @@ func _ready():
 func _process(delta):
 	tempo += delta
 	if tempo > 2:
+		queue_free()
+
+
+func _on_Area2D_body_entered(body):
+	if body.is_in_group("monster"):
+		body.dano()
+		desaparecerTomate = true
+	
+	if desaparecerTomate:
 		queue_free()

@@ -5,6 +5,7 @@ var jogador = preload("res://Branch/Player.tscn").instance()
 var gravidadeDoTomate = 40
 var velocidadeDoTomate = Vector2(0.0, 0.0)
 var atirando = false
+var b = 0
 
 func _ready():
 	add_child(jogador)
@@ -14,6 +15,7 @@ func _ready():
 
 func _process(_delta):
 	atirar_tomate()
+	
 	
 
 func atirar_tomate():

@@ -16,7 +16,7 @@ var rewind_ghost = load("res://Cenas/rewind_ghost.tscn")  #direcionar ao sprite 
 
 #aciona os processos físico do personagem, ou seja, a movimentação de andar para os lados e pular. Além de conter a gravdidade para queda da personagem
 func _physics_process(_delta):
-	
+	print(_delta)
 	#funcão de rebobinar
 	handle_rewind_function()
 	motion.y += GRAVIDADE

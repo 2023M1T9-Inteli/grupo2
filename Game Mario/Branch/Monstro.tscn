@@ -71,7 +71,7 @@ tracks/1/keys = {
 "values": [  ]
 }
 
-[node name="Monstro" type="StaticBody2D"]
+[node name="Monstro" type="StaticBody2D" groups=["monster"]]
 position = Vector2( -1, -2 )
 collision_layer = 4
 script = ExtResource( 6 )
