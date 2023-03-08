@@ -5,6 +5,7 @@ extends Control
 #coloca o foco de uma cor em um botão para saber onde é o inicio
 func _ready():
 	$controls/startBtn.grab_focus()
+	ControleMusica.play_musica()
 
 
 #vai para a proxima tela
