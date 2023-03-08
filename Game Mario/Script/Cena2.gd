@@ -10,6 +10,7 @@ var b = 0
 func _ready():
 	add_child(jogador)
 	$Bloco_Tomate/AnimatedSprite.play("default")
+	$Node2D.hide()
 
 
 
@@ -36,3 +37,4 @@ func atirar_tomate():
 func _on_Area2D_body_entered(body):
 	get_node("Bloco_Tomate").get_node("AnimatedSprite").play("new_default")
 	atirando = true
+	$Node2D.show()
