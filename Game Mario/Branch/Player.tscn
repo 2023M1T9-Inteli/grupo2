@@ -82,7 +82,7 @@ extents = Vector2( 24.6938, 38.25 )
 extents = Vector2( 18, 0.5 )
 
 [sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 26, 38 )
+extents = Vector2( 26.5, 38 )
 
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( -930, 327 )
@@ -93,7 +93,7 @@ position = Vector2( -30, -40 )
 scale = Vector2( 1.1236, 0.977045 )
 frames = SubResource( 2 )
 animation = "Idle"
-frame = 2
+frame = 1
 playing = true
 centered = false
 
@@ -129,7 +129,7 @@ collision_layer = 4
 collision_mask = 4
 
 [node name="shape" type="CollisionShape2D" parent="dano"]
-position = Vector2( 2, -2 )
+position = Vector2( 3.5, -2 )
 shape = SubResource( 8 )
 
 [node name="JumpFx" type="AudioStreamPlayer" parent="."]
