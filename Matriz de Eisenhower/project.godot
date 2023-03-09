@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="Matriz de Eisenhower"
-run/main_scene="res://Node2D.tscn"
+run/main_scene="res://cenas/Node2D.tscn"
 config/icon="res://icon.png"
 
 [gui]
