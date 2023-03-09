@@ -4,7 +4,7 @@ extends Control
 
 #coloca o foco de uma cor em um botão para saber onde é o inicio
 func _ready():
-	$controls/startBtn.grab_focus()
+	pass
 
 
 #vai para a proxima tela
