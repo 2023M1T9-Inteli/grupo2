@@ -11,7 +11,7 @@ var duration = 3#duração do movimento
 
 const WAIT_DURATION = 1 #duração do delay da plataforma
 
-onready var ani = $Sprite
+#onready var ani = $Sprite
 
 var recorded_data = []  #array que atualiza quando personagem se move
 var is_rewinding = false #bool para indicar se função de rebobinar está ativa ou inativa
