@@ -83,30 +83,29 @@ func _on_BtnNImpNUrgMais_pressed():
 
 func _on_Button_pressed():
 	if impUrg > 6:
-		$LblImportanteUrgente.text ="Bombeiro"
+		$LblImportanteUrgente.text ="Você tem muitas tarefas urgentes e importantes! Tente rever as suas prioridades e repensar na importância de cada uma."
 	elif impUrg < 4:
-		$LblImportanteUrgente.text = "Faltam atividades"
+		$LblImportanteUrgente.text = "Você não tem muitas tarefas urgentes e importantes em sua lista! Considere adicionar tarefas que possam melhorar sua produtividade no futuro."
 	else:
-		$LblImportanteUrgente.text = "Carai meno ta perfeito viado"
+		$LblImportanteUrgente.text = "Você tem um bom equilíbrio de tarefas urgentes e importantes! Continue a priorizar essas tarefas e mantenha o bom trabalho."
 	
 	if impNurg > 15:
-		$LblImportanteNUrgente.text = "Ta organizado ate demais paizao"
+		$LblImportanteNUrgente.text = "Você tem muitas tarefas importantes que não são urgentes! Isso dificulta a sua organização, o que pode tornar essas tarefas urgentes no futuro."
 	elif impNurg < 13:
-		$LblImportanteNUrgente.text = "Se organiza melhor ai"
+		$LblImportanteNUrgente.text = "Você não tem muitas tarefas importantes que não são urgentes! Considere adicionar tarefas que você considera importante, mas que não tem a necessidade de serem completadas imediatamente."
 	else:
-		$LblImportanteNUrgente.text = "Carai meno ta perfeito viado"
+		$LblImportanteNUrgente.text = "Você tem um bom número de tarefas importantes que não são urgentes! Certifique-se de continuar a trabalhar nessas tarefas e mantenha o bom trabalho."
 	
 	if nImpUrg > 5:
-		$LblNImportanteUrgente.text = "Ta organizado ate demais paizao"
+		$LblNImportanteUrgente.text = "Você tem muitas tarefas não importantes que são urgentes! Tente delegar ou eliminar essas tarefas da sua lista para ter um melhor aproveitamento do seu tempo."
 	elif nImpUrg < 3:
-		$LblNImportanteUrgente.text = "Se organiza melhor ai"
+		$LblNImportanteUrgente.text = "Você não tem muitas tarefas não importantes que são urgentes! Certifique-se de priorizar as tarefas que são realmente importantes para você."
 	else:
-		$LblNImportanteUrgente.text = "Carai meno ta perfeito viado"
+		$LblNImportanteUrgente.text = "Você tem um bom número de tarefas não importantes que são urgentes! Continue a se organizar dessa maneira e mantenha o bom trabalho."
 	
 	if nImpNurg > 2:
-		$LblNImportanteNUrgente.text = "Ta organizado ate demais paizao"
+		$LblNImportanteNUrgente.text = "Você tem muitas tarefas não importantes não urgentes! Tente rever suas prioridades e reavaliar a importância das suas tarefas."
 	elif nImpNurg < 1:
-		$LblNImportanteNUrgente.text = "Se organiza melhor ai"
+		$LblNImportanteNUrgente.text = "Você não tem muitas tarefas não importantes não urgentes! Considere adicionar tarefas que possam melhorar sua vida pessoal ou profissional no futuro."
 	else:
-		$LblNImportanteNUrgente.text = "Carai meno ta perfeito viado"
-
+		$LblNImportanteNUrgente.text = "Você tem um bom número de tarefas não importantes não urgentes! Continue a priorizar as tarefas certas e mantenha o bom trabalho."

@@ -44,5 +44,4 @@ rect_pivot_offset = Vector2( -528, 685 )
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 4 )
 
-[connection signal="finished" from="Popup/VideoPlayer" to="." method="_on_VideoPlayer_finished"]
 [connection signal="pressed" from="Popup/TextureButton" to="." method="_on_TextureButton_pressed"]
