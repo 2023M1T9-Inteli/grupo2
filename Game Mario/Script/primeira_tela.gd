@@ -2,9 +2,9 @@ extends Control
 
 
 
-#coloca o foco de uma cor em um botão para saber onde é o inicio
+#chama a função de tocar musica, para assim tocar a musica principal logo na tela de início
 func _ready():
-	pass
+	ControleMusica.play_musica()
 
 
 #vai para a proxima tela

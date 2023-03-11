@@ -2,7 +2,6 @@ extends Node2D
 var video = true
 
 func _ready():
-	ControleMusica.play_musica()
 	$"popUpRelogio".hide()
 
 func _process(delta):
