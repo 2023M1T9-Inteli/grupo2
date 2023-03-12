@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://pop ups/relógio/gif.ogv" type="VideoStream" id=1]
+[ext_resource path="res://Script/Node2D.gd" type="Script" id=2]
+[ext_resource path="res://Script/popUpRelogio.gd" type="Script" id=3]
+[ext_resource path="res://pop ups/relógio/x escuro.png" type="Texture" id=4]
+[ext_resource path="res://pop ups/relógio/x.png" type="Texture" id=5]
+[ext_resource path="res://Script/VideoPlayer.gd" type="Script" id=6]
+
+[node name="popUpRelogio" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Popup" type="Popup" parent="."]
+visible = true
+margin_right = 20.0
+margin_bottom = 20.0
+script = ExtResource( 3 )
+
+[node name="VideoPlayer" type="VideoPlayer" parent="Popup"]
+margin_left = -204.0
+margin_top = -125.0
+margin_right = 228.0
+margin_bottom = 115.0
+stream = ExtResource( 1 )
+autoplay = true
+expand = false
+script = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="Popup"]
+margin_left = -152.0
+margin_top = -106.0
+margin_right = 157.004
+margin_bottom = -92.0
+text = "Pule em cima do inimigo Tic Tac para derrotá-lo!"
+
+[node name="TextureButton" type="TextureButton" parent="Popup"]
+anchor_left = -0.135
+anchor_right = -0.135
+margin_left = -241.3
+margin_top = -125.0
+margin_right = -190.3
+margin_bottom = -74.0
+rect_pivot_offset = Vector2( -528, 685 )
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 4 )
+
+[connection signal="pressed" from="Popup/TextureButton" to="." method="_on_TextureButton_pressed"]

@@ -1,0 +1,59 @@
+[gd_scene format=2]
+
+[node name="popUpControl" type="Node2D"]
+
+[node name="quadro" type="Sprite" parent="."]
+position = Vector2( 473.055, 296.875 )
+scale = Vector2( 0.529286, 0.529286 )
+
+[node name="ColorRect" type="ColorRect" parent="quadro"]
+margin_left = -0.103882
+margin_top = -147.132
+margin_right = 132.896
+margin_bottom = -40.1322
+rect_scale = Vector2( 2.64286, 1.7109 )
+color = Color( 0.0588235, 0.0980392, 0.301961, 1 )
+
+[node name="Label" type="Label" parent="quadro"]
+anchor_left = -0.168
+anchor_top = -0.034
+anchor_right = -0.168
+anchor_bottom = -0.034
+margin_left = -132.069
+margin_top = -173.78
+margin_right = 70.9313
+margin_bottom = -159.78
+rect_scale = Vector2( 2.20918, 2.20918 )
+text = "Use as setas para se locomover"
+
+[node name="Label2" type="Label" parent="quadro"]
+anchor_left = -0.168
+anchor_top = -0.04
+anchor_right = -0.168
+anchor_bottom = -0.04
+margin_left = -167.966
+margin_top = 131.035
+margin_right = 35.0339
+margin_bottom = 145.035
+rect_scale = Vector2( 2.81376, 2.81376 )
+text = "Use o botão Z para utilizar os poderes"
+
+[node name="Label3" type="Label" parent="quadro"]
+anchor_left = -0.168
+anchor_top = -0.04
+anchor_right = -0.168
+anchor_bottom = -0.04
+margin_left = -171.745
+margin_top = 287.85
+margin_right = 70.2552
+margin_bottom = 301.85
+rect_scale = Vector2( 2.81376, 2.81376 )
+text = "Segure o botão X para \"voltar no tempo\""
+
+[node name="TextureButton" type="TextureButton" parent="quadro"]
+margin_left = -604.692
+margin_top = -392.746
+margin_right = -553.692
+margin_bottom = -341.746
+
+[connection signal="pressed" from="quadro/TextureButton" to="." method="_on_TextureButton_pressed"]
