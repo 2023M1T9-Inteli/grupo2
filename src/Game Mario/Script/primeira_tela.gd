@@ -20,6 +20,7 @@ func _on_controlBtn_pressed():
 func _on_quitBtn_pressed():
 	get_tree().quit() 
 
+#função para quando inimigo morrer sumir
 func die():
 	$".".queue_free()
 
