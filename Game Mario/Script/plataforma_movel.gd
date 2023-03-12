@@ -24,7 +24,7 @@ var rewind_ghost = load("res://Cenas/rewind_ghost.tscn")  #direcionar ao sprite 
 func _ready():
 	_start_tween()
 
-#define as propriedades de moviemento da plataforma
+#define as propriedades de movimento da plataforma
 func _start_tween():
 	 #move a plataforma para cima
 	if vertical:

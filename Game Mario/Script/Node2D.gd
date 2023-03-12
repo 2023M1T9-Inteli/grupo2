@@ -1,14 +1,8 @@
 extends Node2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	pass 
-	
+
+#esconde o pop up quando o botão de x é pressionado:	
 func _on_TextureButton_pressed():
 	$Sprite.hide()
