@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/All Tomato Sounds (Fortnite) - Sound Effect for editing (mp3cut.net).mp3-d88cc1e9c71582dc54a75aab7788a6c0.mp3str"
+
+[deps]
+
+source_file="res://efeito sonoros/All Tomato Sounds (Fortnite) - Sound Effect for editing (mp3cut.net).mp3"
+dest_files=[ "res://.import/All Tomato Sounds (Fortnite) - Sound Effect for editing (mp3cut.net).mp3-d88cc1e9c71582dc54a75aab7788a6c0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

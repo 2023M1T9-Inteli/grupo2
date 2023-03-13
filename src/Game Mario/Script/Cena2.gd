@@ -34,7 +34,7 @@ func _process(_delta):
 func atirar_tomate():
 	#a função só retorna algo se o botão ui_atirar for pressionado e se a variável 'podeAtirar' for verdadeira
 	if Input.is_action_just_pressed("ui_atirar") and podeAtirar:
-		
+
 		#intancia a cena Tomate e joga dentro da variável tomate
 		var tomate = Tomate.instance()
 		
@@ -57,7 +57,7 @@ func atirar_tomate():
 func _on_Area2D_body_entered(body):
 	#muda a animação do Bloco
 	get_node("Bloco_Tomate").get_node("AnimatedSprite").play("new_default")
-	
+	$blocoFx.play()
 	#muda a variável 'podeAtirar' para true, permitindo a função atirar_tomate retornar algo
 	podeAtirar = true
 	
