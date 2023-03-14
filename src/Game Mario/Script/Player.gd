@@ -4,7 +4,7 @@ const CIMA = Vector2(0,-1)
 const GRAVIDADE = 40
 var velocidade = 250
 var jump_height = -800 
-var life = 1
+var vida = 1
 var motion = Vector2()
 
 onready var ani = $Sprite
@@ -12,7 +12,7 @@ onready var ani = $Sprite
 var recorded_data = []  #array que atualiza quando personagem se move
 var is_rewinding = false #bool para indicar se função de rebobinar está ativa ou inativa
 var rewind_length = (60 * 3) #3 segundos
-var rewind_ghost = load("res://Cenas/rewind_ghost.tscn")  #direcionar ao sprite que está rebobinando para mostrar seu rastro na tela
+var rewind_ghost = load("res://Cenas/rewindGhost.tscn")  #direcionar ao sprite que está rebobinando para mostrar seu rastro na tela
 
 #aciona os processos físico do personagem, ou seja, a movimentação de andar para os lados e pular. Além de conter a gravdidade para queda da personagem
 func _physics_process(_delta):
@@ -98,7 +98,7 @@ func _on_pes_body_entered(body):
 
 #player toma dano
 func _on_dano_body_entered(body):
-	life -= 1 
-	if life == 0:
+	vida -= 1 
+	if vida == 0:
 		$".".queue_free()
 		get_tree().change_scene("res://Cenas/GameOver.tscn")

@@ -16,7 +16,7 @@ scale = Vector2( 0.800229, 0.786517 )
 texture = ExtResource( 1 )
 offset = Vector2( -159.944, 211.082 )
 
-[node name="btnAnalise" type="Button" parent="."]
+[node name="Analise" type="Button" parent="."]
 margin_left = 215.0
 margin_top = 480.0
 margin_right = 398.0
@@ -24,7 +24,7 @@ margin_bottom = 515.0
 rect_pivot_offset = Vector2( -705, -559 )
 text = "Enviar matriz para análise"
 
-[node name="BtnImpUrgMenos" type="Button" parent="."]
+[node name="IU_menos" type="Button" parent="."]
 margin_left = 130.0
 margin_top = 95.0
 margin_right = 150.0
@@ -32,7 +32,7 @@ margin_bottom = 115.0
 rect_pivot_offset = Vector2( 175, 22 )
 text = "-"
 
-[node name="BtnImpUrgMais" type="Button" parent="."]
+[node name="IU_mais" type="Button" parent="."]
 margin_left = 255.0
 margin_top = 95.0
 margin_right = 275.0
@@ -40,7 +40,7 @@ margin_bottom = 115.0
 rect_pivot_offset = Vector2( 51, 22 )
 text = "+"
 
-[node name="BtnImpNurgMenos" type="Button" parent="."]
+[node name="INU_menos" type="Button" parent="."]
 margin_left = 375.0
 margin_top = 95.0
 margin_right = 395.0
@@ -48,7 +48,7 @@ margin_bottom = 115.0
 rect_pivot_offset = Vector2( -127, 20 )
 text = "-"
 
-[node name="BtnImpNurgMais" type="Button" parent="."]
+[node name="INU_mais" type="Button" parent="."]
 margin_left = 500.0
 margin_top = 95.0
 margin_right = 520.0
@@ -56,7 +56,7 @@ margin_bottom = 115.0
 rect_pivot_offset = Vector2( -251, 20 )
 text = "+"
 
-[node name="BtnNImpUrgMenos" type="Button" parent="."]
+[node name="NIU_menos" type="Button" parent="."]
 margin_left = 130.0
 margin_top = 320.0
 margin_right = 150.0
@@ -64,7 +64,7 @@ margin_bottom = 340.0
 rect_pivot_offset = Vector2( 197, -41 )
 text = "-"
 
-[node name="BtnNImpUrgMais" type="Button" parent="."]
+[node name="NIU_mais" type="Button" parent="."]
 margin_left = 255.0
 margin_top = 320.0
 margin_right = 275.0
@@ -72,14 +72,14 @@ margin_bottom = 340.0
 rect_pivot_offset = Vector2( 73, -41 )
 text = "+"
 
-[node name="BtnNImpNUrgMenos" type="Button" parent="."]
+[node name="NINU_menos" type="Button" parent="."]
 margin_left = 375.0
 margin_top = 320.0
 margin_right = 395.0
 margin_bottom = 340.0
 text = "-"
 
-[node name="BtnNImpNUrgMais" type="Button" parent="."]
+[node name="NINU_mais" type="Button" parent="."]
 margin_left = 500.0
 margin_top = 320.0
 margin_right = 520.0
@@ -165,7 +165,7 @@ text = "Atividades importantes têm a ver com o resultado, contribui para nossa 
 "
 autowrap = true
 
-[node name="btnJogar" type="Button" parent="."]
+[node name="Jogar" type="Button" parent="."]
 margin_left = 216.0
 margin_top = 477.0
 margin_right = 399.0
@@ -173,13 +173,13 @@ margin_bottom = 512.0
 rect_pivot_offset = Vector2( -705, -559 )
 text = "Jogar!"
 
-[connection signal="pressed" from="btnAnalise" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="BtnImpUrgMenos" to="." method="_on_BtnImpUrgMenos_pressed"]
-[connection signal="pressed" from="BtnImpUrgMais" to="." method="_on_BtnImpUrgMais_pressed"]
-[connection signal="pressed" from="BtnImpNurgMenos" to="." method="_on_BtnImpNurgMenos_pressed"]
-[connection signal="pressed" from="BtnImpNurgMais" to="." method="_on_BtnImpNurgMais_pressed"]
-[connection signal="pressed" from="BtnNImpUrgMenos" to="." method="_on_BtnNImpUrgMenos_pressed"]
-[connection signal="pressed" from="BtnNImpUrgMais" to="." method="_on_BtnNImpUrgMais_pressed"]
-[connection signal="pressed" from="BtnNImpNUrgMenos" to="." method="_on_BtnNImpNUrgMenos_pressed"]
-[connection signal="pressed" from="BtnNImpNUrgMais" to="." method="_on_BtnNImpNUrgMais_pressed"]
-[connection signal="pressed" from="btnJogar" to="." method="_on_btnJogar_pressed"]
+[connection signal="pressed" from="Analise" to="." method="_on_Analise_pressed"]
+[connection signal="pressed" from="IU_menos" to="." method="_on_IU_menos_pressed"]
+[connection signal="pressed" from="IU_mais" to="." method="_on_IU_mais_pressed"]
+[connection signal="pressed" from="INU_menos" to="." method="_on_NIU_menos_pressed"]
+[connection signal="pressed" from="INU_mais" to="." method="_on_INU_mais_pressed"]
+[connection signal="pressed" from="NIU_menos" to="." method="_on_NIU_menos_pressed"]
+[connection signal="pressed" from="NIU_mais" to="." method="_on_NIU_mais_pressed"]
+[connection signal="pressed" from="NINU_menos" to="." method="_on_NINU_menos_pressed"]
+[connection signal="pressed" from="NINU_mais" to="." method="_on_NINU_mais_pressed"]
+[connection signal="pressed" from="Jogar" to="." method="_on_Jogar_pressed"]
