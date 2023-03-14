@@ -32,7 +32,7 @@ func aumentar_Valor(categoria,Label,ProgressBar):
 	if(fazer_Soma_Total()+1 <= 24):
 		#Altera tanto o label quanto a progress bar para a nova quantidade de horas
 		Label.text = "Tempo: " + str(categoria+1) + "h"
-		ProgressBar.value = categoria + 1
+		ProgressBar.value = int(categoria) + 1
 		#Retorna verdadeiro para permitir que seja aumentado 1 da variável global
 		return true
 	#Retorna falso para impedir que seja aumentado 1 da variável global
@@ -40,13 +40,13 @@ func aumentar_Valor(categoria,Label,ProgressBar):
 
 func _on_IU_menos_pressed():
 	#Chama a função para a verificar se é possível diminuir a variável imp_urg
-	if diminuir_Valor(imp_urg,$LblImportanteUrgente,$ProgressBarimp_urg):
+	if diminuir_Valor(imp_urg,$LblImportanteUrgente,$ProgressBarImpUrg):
 		imp_urg -= 1
 
 func _on_IU_mais_pressed():
 	#Chama a função para a verificar se é possível aumentar a variável imp_urg
-	if aumentar_Valor(imp_urg,$LblImportanteUrgente,$ProgressBarimp_urg):
-		imp_urg +=1	
+	if aumentar_Valor(imp_urg,$LblImportanteUrgente,$ProgressBarImpUrg):
+		imp_urg +=1
 
 func _on_INU_menos_pressed():
 	#Chama a função para a verificar se é possível diminuir a variável ImpNurg
@@ -60,12 +60,12 @@ func _on_INU_mais_pressed():
 
 func _on_NIU_menos_pressed():
 	#Chama a função para a verificar se é possível diminuir a variável Nimp_urg
-	if diminuir_Valor(n_imp_urg,$LblNImportanteUrgente,$ProgressBarNimp_urg):
+	if diminuir_Valor(n_imp_urg,$LblNImportanteUrgente,$ProgressBarNImpUrg):
 		n_imp_urg -= 1
 
 func _on_NIU_mais_pressed():
 	#Chama a função para a verificar se é possível aumentar a variável Nimp_urg
-	if aumentar_Valor(n_imp_urg,$LblNImportanteUrgente,$ProgressBarNimp_urg):
+	if aumentar_Valor(n_imp_urg,$LblNImportanteUrgente,$ProgressBarNImpUrg):
 		n_imp_urg +=1
 		
 func _on_NINU_menos_pressed():

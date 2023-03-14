@@ -176,7 +176,7 @@ text = "Jogar!"
 [connection signal="pressed" from="Analise" to="." method="_on_Analise_pressed"]
 [connection signal="pressed" from="IU_menos" to="." method="_on_IU_menos_pressed"]
 [connection signal="pressed" from="IU_mais" to="." method="_on_IU_mais_pressed"]
-[connection signal="pressed" from="INU_menos" to="." method="_on_NIU_menos_pressed"]
+[connection signal="pressed" from="INU_menos" to="." method="_on_INU_menos_pressed"]
 [connection signal="pressed" from="INU_mais" to="." method="_on_INU_mais_pressed"]
 [connection signal="pressed" from="NIU_menos" to="." method="_on_NIU_menos_pressed"]
 [connection signal="pressed" from="NIU_mais" to="." method="_on_NIU_mais_pressed"]
