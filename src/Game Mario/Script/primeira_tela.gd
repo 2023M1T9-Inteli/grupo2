@@ -9,7 +9,7 @@ func _ready():
 
 #vai para a proxima tela
 func _on_startBtn_pressed():
-	get_tree().change_scene("res://Cenas/World.tscn")
+	get_tree().change_scene("res://Cenas/Matriz.tscn")
 
 #aparecer menu de controle e voltar para tela de início se for requerido
 func _on_controlBtn_pressed():
