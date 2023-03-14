@@ -82,6 +82,14 @@ func _on_NINU_mais_pressed():
 #organização de suas tarefas
 func _on_Analise_pressed():
 	$Jogar.show()	
+	$IU_mais.disabled = true
+	$IU_menos.disabled = true
+	$INU_mais.disabled = true
+	$INU_menos.disabled = true
+	$NIU_mais.disabled = true
+	$NIU_menos.disabled = true
+	$NINU_mais.disabled = true
+	$NINU_menos.disabled = true
 	#Análise da categoria Importante e Urgente, dando seu feedback dependendo da quantidade de horas	
 	if imp_urg > 6:
 		$LblImportanteUrgente.text ="Você tem muitas tarefas urgentes e importantes! Tente rever as suas prioridades e repensar na importância de cada uma."
