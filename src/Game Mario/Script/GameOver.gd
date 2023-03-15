@@ -6,4 +6,4 @@ func _ready():
 
 func _on_startBtn_pressed():
 	#Abre a primeira cena para que o usuário reinicie o jogo	
-	get_tree().change_scene("res://Cenas/primeiraTela.tscn")
+	get_tree().change_scene("res://Cenas/primeira_tela.tscn")
