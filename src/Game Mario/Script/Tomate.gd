@@ -4,7 +4,7 @@ extends RigidBody2D
 var tempo = 0
 
 #variável que auxilia no desaparecimento do tomate assim que ele entra em contato com a personagem inimiga
-var desaparecer_tomate = false
+var desaparecerTomate = false
 
 func _ready():
 	#o quanto o tomate quica
@@ -32,8 +32,8 @@ func _on_Area2D_body_entered(body):
 	#se entra em contato com um body pertencente ao grupo monster, faz o body desaparecer e põe a variável desaparecerTomate como verdadeira
 	if body.is_in_group("monster"):
 		body.dano()
-		desaparecer_tomate = true
+		desaparecerTomate = true
 	
 	#se a variável desaparecerTomate for verdadeira, o tomate desaparece
-	if desaparecer_tomate:
+	if desaparecerTomate:
 		queue_free()
