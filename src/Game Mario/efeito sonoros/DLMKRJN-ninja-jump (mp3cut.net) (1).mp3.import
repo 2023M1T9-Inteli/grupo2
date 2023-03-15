@@ -11,5 +11,5 @@ dest_files=[ "res://.import/DLMKRJN-ninja-jump (mp3cut.net) (1).mp3-91bbb7ea4683
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
