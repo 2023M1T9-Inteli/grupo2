@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://imagens/BackgroundTelaInicial.jpeg" type="Texture" id=2]
-[ext_resource path="res://Script/primeira_tela.gd" type="Script" id=3]
+[ext_resource path="res://Script/primeiraTela.gd" type="Script" id=3]
 
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
@@ -77,10 +77,24 @@ custom_fonts/font = SubResource( 1 )
 text = "Iniciar"
 expand_icon = true
 
-[node name="controlBtn" type="Button" parent="controls"]
+[node name="objetivoBtn" type="Button" parent="controls"]
 margin_top = 34.0
 margin_right = 270.0
 margin_bottom = 64.0
+focus_neighbour_top = NodePath("../quitBtn")
+theme = SubResource( 2 )
+custom_colors/font_color_focus = Color( 0.827451, 0.231373, 0.203922, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.827451, 0.231373, 0.203922, 1 )
+custom_colors/font_color_pressed = Color( 0.905882, 0.494118, 0.0431373, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Objetivo"
+expand_icon = true
+
+[node name="controlBtn" type="Button" parent="controls"]
+margin_top = 68.0
+margin_right = 270.0
+margin_bottom = 98.0
 theme = SubResource( 2 )
 custom_colors/font_color_focus = Color( 0.827451, 0.231373, 0.203922, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
@@ -91,9 +105,9 @@ text = "Controles"
 expand_icon = true
 
 [node name="quitBtn" type="Button" parent="controls"]
-margin_top = 68.0
+margin_top = 102.0
 margin_right = 270.0
-margin_bottom = 98.0
+margin_bottom = 132.0
 focus_neighbour_bottom = NodePath("../startBtn")
 theme = SubResource( 2 )
 custom_colors/font_color_focus = Color( 0.827451, 0.231373, 0.203922, 1 )
@@ -105,5 +119,6 @@ text = "Sair"
 expand_icon = true
 
 [connection signal="pressed" from="controls/startBtn" to="." method="_on_startBtn_pressed"]
+[connection signal="pressed" from="controls/objetivoBtn" to="." method="_on_objetivoBtn_pressed"]
 [connection signal="pressed" from="controls/controlBtn" to="." method="_on_controlBtn_pressed"]
 [connection signal="pressed" from="controls/quitBtn" to="." method="_on_quitBtn_pressed"]
