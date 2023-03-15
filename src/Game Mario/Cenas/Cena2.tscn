@@ -107,7 +107,7 @@ scale = Vector2( 0.6, 0.6 )
 stream = ExtResource( 11 )
 volume_db = 0.619
 
-[node name="timer" parent="blocoFx" instance=ExtResource( 12 )]
+[node name="HUD" parent="blocoFx" instance=ExtResource( 12 )]
 position = Vector2( -978, 432 )
 
 [connection signal="body_entered" from="Bloco_Tomate/Area2D" to="." method="_on_Area2D_body_entered"]

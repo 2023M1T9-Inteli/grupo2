@@ -20,7 +20,7 @@ font_data = ExtResource( 2 )
 size = 33
 font_data = ExtResource( 2 )
 
-[node name="timer" type="Node2D"]
+[node name="HUD" type="Node2D"]
 position = Vector2( 146, 41 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
