@@ -6,5 +6,5 @@ func _ready():
 
 
 #Função para ativar o popUp na tela
-func ativa_pop_up():
+func ativaPopUp():
 	popup_centered()
