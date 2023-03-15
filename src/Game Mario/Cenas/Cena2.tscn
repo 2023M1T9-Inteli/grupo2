@@ -1,17 +1,17 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://imagens/pomodoro-bloco_resample.png" type="Texture" id=1]
 [ext_resource path="res://tileset/chao.tres" type="TileSet" id=2]
 [ext_resource path="res://Branch/ParallaxBackground.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Cenas/plataforma_movel.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Script/plataforma_movel2.gd" type="Script" id=5]
+[ext_resource path="res://Cenas/plataformaMovel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Script/plataformaMovel2.gd" type="Script" id=5]
 [ext_resource path="res://tileset/floor.tres" type="TileSet" id=6]
 [ext_resource path="res://imagens/pomodoro-bloco_resample02.png" type="Texture" id=7]
 [ext_resource path="res://tileset/industrial.tres" type="TileSet" id=8]
 [ext_resource path="res://Branch/Monstro.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Cenas/popup pomodoro.tscn" type="PackedScene" id=10]
-[ext_resource path="res://imagens/newPortal cópia.png" type="Texture" id=11]
-[ext_resource path="res://Script/Passagem.gd" type="Script" id=12]
+[ext_resource path="res://Cenas/popUpPomodoro.tscn" type="PackedScene" id=10]
+[ext_resource path="res://efeito sonoros/Game Button Sounds Pack - Free Sounds [TubeRipper (mp3cut.net) (1).mp3" type="AudioStream" id=11]
+[ext_resource path="res://Cenas/timer.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Script/Cena2.gd" type="Script" id=15]
 
 [sub_resource type="SpriteFrames" id=2]
@@ -32,10 +32,6 @@ extents = Vector2( 26, 0.5 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 41, 37 )
-
-[sub_resource type="CapsuleShape2D" id=5]
-radius = 41.0
-height = 62.0
 
 [node name="Cena2" type="Node"]
 script = ExtResource( 15 )
@@ -104,26 +100,14 @@ position = Vector2( 975, 479 )
 position = Vector2( 1654, 481 )
 
 [node name="Node2D" parent="." instance=ExtResource( 10 )]
-position = Vector2( -884, 30 )
+position = Vector2( -887, 31 )
 scale = Vector2( 0.6, 0.6 )
 
-[node name="Passagem2" type="Area2D" parent="."]
-position = Vector2( 2066, 429 )
-z_index = -1
-script = ExtResource( 12 )
-__meta__ = {
-"_edit_group_": true
-}
+[node name="blocoFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = 0.619
 
-[node name="HUD" parent="blocoFx" instance=ExtResource( 12 )]
+[node name="timer" parent="blocoFx" instance=ExtResource( 12 )]
 position = Vector2( -978, 432 )
-[node name="Sprite" type="Sprite" parent="Passagem2"]
-scale = Vector2( 0.8, 0.8 )
-texture = ExtResource( 11 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Passagem2"]
-position = Vector2( -2, 1 )
-shape = SubResource( 5 )
 
 [connection signal="body_entered" from="Bloco_Tomate/Area2D" to="." method="_on_Area2D_body_entered"]
-[connection signal="body_entered" from="Passagem2" to="Passagem2" method="_on_Passagem_body_entered"]
