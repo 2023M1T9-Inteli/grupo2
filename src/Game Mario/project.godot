@@ -11,12 +11,12 @@ config_version=4
 [application]
 
 config/name="Game Mario"
-run/main_scene="res://Cenas/primeiraTela.tscn"
+run/main_scene="res://Cenas/primeira_tela.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-ControleMusica="*res://autoload/controleMusica.tscn"
+ControleMusica="*res://autoload/controle_musica.tscn"
 
 [gui]
 
