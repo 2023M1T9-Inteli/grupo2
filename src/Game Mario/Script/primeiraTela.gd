@@ -25,3 +25,9 @@ func die():
 	$".".queue_free()
 
 
+
+#botao de objetivo do jogo
+func _on_objetivoBtn_pressed():
+	var objetivoScreen = load("res://Cenas/PopUpObjetivo.tscn").instance()
+	get_tree().current_scene.add_child(objetivoScreen)
+	print("body")
