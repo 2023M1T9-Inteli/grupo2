@@ -36,6 +36,9 @@ extents = Vector2( 41, 37 )
 [node name="Cena2" type="Node"]
 script = ExtResource( 15 )
 
+[node name="timer" parent="." instance=ExtResource( 12 )]
+position = Vector2( -978, 432 )
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 32, 32 )
@@ -106,8 +109,5 @@ scale = Vector2( 0.6, 0.6 )
 [node name="blocoFx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
 volume_db = 0.619
-
-[node name="timer" parent="blocoFx" instance=ExtResource( 12 )]
-position = Vector2( -978, 432 )
 
 [connection signal="body_entered" from="Bloco_Tomate/Area2D" to="." method="_on_Area2D_body_entered"]
