@@ -5,7 +5,7 @@
 [ext_resource path="res://Branch/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Cenas/plataforma_movel.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Script/plataforma_movel2.gd" type="Script" id=5]
-[ext_resource path="res://Branch/Monstro.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Branch/TimeTrap.tscn" type="PackedScene" id=6]
 
 [node name="Node2D" type="Node2D"]
 
@@ -30,16 +30,16 @@ position = Vector2( 428, 509 )
 script = ExtResource( 5 )
 
 [node name="Monstro" parent="." instance=ExtResource( 6 )]
-position = Vector2( -1380, 256 )
-
-[node name="Monstro3" parent="." instance=ExtResource( 6 )]
-position = Vector2( -406, 480 )
-
-[node name="Monstro4" parent="." instance=ExtResource( 6 )]
-position = Vector2( 836, 479 )
-
-[node name="Monstro5" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1141, 287 )
+position = Vector2( -1425, 256 )
 
 [node name="Monstro2" parent="." instance=ExtResource( 6 )]
-position = Vector2( -640, 482 )
+position = Vector2( -728, 482 )
+
+[node name="Monstro3" parent="." instance=ExtResource( 6 )]
+position = Vector2( -394, 482 )
+
+[node name="Monstro4" parent="." instance=ExtResource( 6 )]
+position = Vector2( 842, 482 )
+
+[node name="Monstro5" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1149, 291 )
