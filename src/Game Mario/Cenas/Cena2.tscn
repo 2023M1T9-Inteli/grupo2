@@ -34,9 +34,6 @@ extents = Vector2( 41, 37 )
 [node name="Cena2" type="Node"]
 script = ExtResource( 15 )
 
-[node name="timer" parent="." instance=ExtResource( 12 )]
-position = Vector2( -978, 432 )
-
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 32, 32 )
