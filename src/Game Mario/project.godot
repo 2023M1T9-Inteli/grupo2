@@ -17,6 +17,7 @@ config/icon="res://icon.png"
 [autoload]
 
 ControleMusica="*res://autoload/controleMusica.tscn"
+GlobalTimer="*res://Cenas/timer.tscn"
 
 [gui]
 

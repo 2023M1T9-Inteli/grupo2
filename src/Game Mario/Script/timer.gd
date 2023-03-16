@@ -1,11 +1,17 @@
 extends Control
-export (int) var minutes = 2
-export (int) var seconds = 0
+export (int) var minutes = 0
+export (int) var seconds = 30
 var ms = 0
+
+
+
+func _ready():
+	$Timer.stop()
 
 
 func _process(delta):
 	
+
 	if seconds > 0 and ms <= 0:
 		seconds	-= 1
 		ms = 10
@@ -34,7 +40,8 @@ func _process(delta):
 func _on_Timer_timeout():
 	ms -= 1
 
+func _alterSeconds(i):
+	seconds -= i
 
-
-
-
+func start_timer():
+	$timer.start()
