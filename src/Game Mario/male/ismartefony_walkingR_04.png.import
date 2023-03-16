@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/walking_02.png-aa6f698b3c871ecca23f23e5b3a9da7a.stex"
+path="res://.import/ismartefony_walkingR_04.png-f9ca10c6781c02eee9a3252c86d7c143.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://male/walking_02.png"
-dest_files=[ "res://.import/walking_02.png-aa6f698b3c871ecca23f23e5b3a9da7a.stex" ]
+source_file="res://male/ismartefony_walkingR_04.png"
+dest_files=[ "res://.import/ismartefony_walkingR_04.png-f9ca10c6781c02eee9a3252c86d7c143.stex" ]
 
 [params]
 
