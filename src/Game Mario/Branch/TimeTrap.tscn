@@ -79,7 +79,6 @@ __meta__ = {
 }
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
-scale = Vector2( 0.13, 0.13 )
 frames = SubResource( 1 )
 animation = "walk"
 
