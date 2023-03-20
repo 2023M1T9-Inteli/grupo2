@@ -102,3 +102,5 @@ func _on_dano_body_entered(body):
 	if vida == 0:
 		$".".queue_free()
 		get_tree().change_scene("res://Cenas/GameOver.tscn")
+
+
