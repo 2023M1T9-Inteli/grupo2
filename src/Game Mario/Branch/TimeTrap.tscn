@@ -5,7 +5,7 @@
 [ext_resource path="res://male/ismartefony_walkingR_01.png" type="Texture" id=3]
 [ext_resource path="res://male/ismartefony_walkingR_02.png" type="Texture" id=4]
 [ext_resource path="res://male/ismartefony_walkingR_04.png" type="Texture" id=5]
-[ext_resource path="res://Script/Monstro.gd" type="Script" id=6]
+[ext_resource path="res://Script/TimeTrap.gd" type="Script" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -79,6 +79,7 @@ __meta__ = {
 }
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.13, 0.13 )
 frames = SubResource( 1 )
 animation = "walk"
 

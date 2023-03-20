@@ -81,13 +81,17 @@ func handle_rewind_function():
 		
 #inimigo fica vermelho
 func dano():
-	
-	get_node("anim").play("die")
+	cont = cont + 1
+	if cont == 2:
+		get_node("anim").play("die")
+		cont = 0
 	
 #faz o inimigo desaparecer da tela
 func die():
-	$".".queue_free()
-	
+	cont = cont + 1
+	if cont == 2:
+		$".".queue_free()
+		cont = 0
 
 #vai fazer o inimigo morrer/desaparecer da tela quando a animação acabar
 func _on_anim_animation_finished(anim_name):
