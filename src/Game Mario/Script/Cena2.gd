@@ -58,3 +58,4 @@ func _on_Area2D_body_entered(body):
 	#muda a variável 'podeAtirar' para true, permitindo a função atirar_tomate retornar algo
 	pode_atirar = true
 	add_child(popup)
+	
