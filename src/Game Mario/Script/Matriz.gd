@@ -90,9 +90,29 @@ func _on_Analise_pressed():
 	$NIU_menos.disabled = true
 	$NINU_mais.disabled = true
 	$NINU_menos.disabled = true
+	#Percentuais de discrepância entre o ideal e o apresentado pelo player 	
+	var perc_iu = imp_urg/5.0
+	var perc_i_nu = imp_n_urg/14.0
+	var perc_ni_u = n_imp_urg/4.0
+	var perc_ni_nu = n_imp_n_urg/1.5
+	
+	#Lista com os percentuais
+	var lista = [perc_iu,perc_i_nu,perc_ni_u,perc_ni_nu]
+	#Variaveis para guardar index do valor máximo da lista	
+	var index
+	#variável auxiliar para indicar em qual índice da lista ele está	
+	var counter = 0
+	
+	for i in lista:
+		if i == lista.max():
+			index = counter
+		counter += 1 
+		
+	print(index)
+	
 	#Análise da categoria Importante e Urgente, dando seu feedback dependendo da quantidade de horas	
 	if imp_urg > 6:
-		$LblImportanteUrgente.text ="Você tem muitas tarefas urgentes e importantes! Tente rever as suas prioridades e repensar na importância de cada uma."
+		$LblImportanteUrgente.text ="Você tem muitas tarefas urgentes e importantes! Atividades importantes têm a ver com o resultado, contribui para nossa missão, nossos valores e metas prioritárias.  As tarefas que estão nesse quadrante atendem a isso?"
 	elif imp_urg < 4:
 		$LblImportanteUrgente.text = "Você não tem muitas tarefas urgentes e importantes em sua lista! Considere adicionar tarefas que possam melhorar sua produtividade no futuro."
 	else:
