@@ -4,6 +4,9 @@ var video = true
 
 var relogio = preload("res://Cenas/popUpRelogio.tscn").instance()
 
+func _ready():
+	$timer/CanvasLayer/Control.start_timer()
+
 func _process(_delta):
 	#Verifica se deve mostrar o vídeo
 	if(video):

@@ -1,6 +1,6 @@
 extends Control
 export (int) var minutes = 0
-export (int) var seconds = 30
+export (int) var seconds = 120
 var ms = 0
 
 
@@ -11,6 +11,9 @@ func _ready():
 
 func _process(delta):
 	
+	if seconds > 60:
+		minutes += seconds/60
+		seconds = (seconds%60) * 60
 
 	if seconds > 0 and ms <= 0:
 		seconds	-= 1
@@ -44,4 +47,4 @@ func _alterSeconds(i):
 	seconds -= i
 
 func start_timer():
-	$timer.start()
+	$Timer.start()

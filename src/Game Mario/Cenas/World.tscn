@@ -1,14 +1,17 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Branch/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Branch/ParallaxBackground.tscn" type="PackedScene" id=2]
 [ext_resource path="res://tileset/industrial.tres" type="TileSet" id=3]
 [ext_resource path="res://Script/World.gd" type="Script" id=4]
 [ext_resource path="res://Cenas/Passagem.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Cenas/timer.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Branch/Monstro.tscn" type="PackedScene" id=9]
 
 [node name="World" type="Node2D"]
 script = ExtResource( 4 )
+
+[node name="timer" parent="." instance=ExtResource( 6 )]
 
 [node name="ParallaxBackground" parent="." instance=ExtResource( 2 )]
 
