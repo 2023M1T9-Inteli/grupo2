@@ -6,5 +6,6 @@ func _ready():
 	fase.level = "fase 3"
 
 
-func _process(delta):
-	$Player.morte_queda()
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
