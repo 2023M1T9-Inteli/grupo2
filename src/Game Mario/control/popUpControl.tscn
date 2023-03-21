@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://control/quadro.png" type="Texture" id=1]
 [ext_resource path="res://Script/popUpControl.gd" type="Script" id=2]
 [ext_resource path="res://control/x escuro.png" type="Texture" id=3]
 [ext_resource path="res://control/x.png" type="Texture" id=4]
-[ext_resource path="res://control/A.png" type="Texture" id=5]
 
 [node name="popUpControl" type="Node2D"]
 script = ExtResource( 2 )
@@ -27,39 +26,36 @@ anchor_left = -0.168
 anchor_top = -0.034
 anchor_right = -0.168
 anchor_bottom = -0.034
-margin_left = -5.37918
-margin_top = -296.823
-margin_right = 197.621
-margin_bottom = -282.823
+margin_left = -132.069
+margin_top = -173.78
+margin_right = 70.9313
+margin_bottom = -159.78
 rect_scale = Vector2( 2.20918, 2.20918 )
-text = "Use as setas ou W, A e D para se locomover"
-autowrap = true
+text = "Use as setas para se locomover"
 
 [node name="Label2" type="Label" parent="quadro"]
 anchor_left = -0.168
 anchor_top = -0.04
 anchor_right = -0.168
 anchor_bottom = -0.04
-margin_left = 32.4076
-margin_top = 125.131
-margin_right = 275.408
-margin_bottom = 139.131
+margin_left = -167.966
+margin_top = 131.035
+margin_right = 35.0339
+margin_bottom = 145.035
 rect_scale = Vector2( 2.81376, 2.81376 )
-text = "Use o botão Z ou o botão F para utilizar os poderes"
-autowrap = true
+text = "Use o botão Z para utilizar os poderes"
 
 [node name="Label3" type="Label" parent="quadro"]
 anchor_left = -0.168
 anchor_top = -0.04
 anchor_right = -0.168
 anchor_bottom = -0.04
-margin_left = 38.0756
-margin_top = 255.495
-margin_right = 280.076
-margin_bottom = 269.495
+margin_left = -171.745
+margin_top = 287.85
+margin_right = 70.2552
+margin_bottom = 301.85
 rect_scale = Vector2( 2.81376, 2.81376 )
-text = "Use o botão X ou o botão E para \"voltar no tempo\""
-autowrap = true
+text = "Use o botão X para \"voltar no tempo\""
 
 [node name="TextureButton" type="TextureButton" parent="quadro"]
 margin_left = -604.692
@@ -68,10 +64,5 @@ margin_right = -553.692
 margin_bottom = -341.746
 texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 3 )
-
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 666.25, 215.75 )
-scale = Vector2( 0.5625, 0.522152 )
-texture = ExtResource( 5 )
 
 [connection signal="pressed" from="quadro/TextureButton" to="." method="_on_TextureButton_pressed"]
