@@ -6,7 +6,9 @@ var tomate = preload("res://Cenas/Tomate.tscn")
 #variável que referencia e instancia a cena do player
 var jogador = preload("res://Branch/Player.tscn").instance()
 
-var popup = preload("res://Cenas/popUpPomodoro1.tscn").instance()
+var popup = preload("res://Cenas/popUpPomodoro.tscn").instance()
+
+onready var movimento = get_node("/root/GlobalTeste")
 
 #variável booleana que indica se o jogador já pode atirar
 var pode_atirar = false
@@ -58,4 +60,6 @@ func _on_Area2D_body_entered(body):
 	#muda a variável 'podeAtirar' para true, permitindo a função atirar_tomate retornar algo
 	pode_atirar = true
 	add_child(popup)
+	movimento.movimento_player = false
+
 	

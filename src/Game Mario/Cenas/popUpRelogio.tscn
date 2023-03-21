@@ -70,31 +70,14 @@ font_data = ExtResource( 4 )
 [node name="popUpRelogio" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -1134.0
-margin_top = -595.0
-margin_right = 1189.0
-margin_bottom = 768.0
-rect_clip_content = true
-color = Color( 0, 0, 0, 0.533333 )
-__meta__ = {
-"_edit_group_": true
-}
-
 [node name="Popup" type="WindowDialog" parent="."]
 visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -365.0
-margin_top = -202.0
-margin_right = 773.0
-margin_bottom = 438.0
+margin_right = 1138.0
+margin_bottom = 640.0
 rect_scale = Vector2( 0.640001, 0.640001 )
 custom_colors/title_color = Color( 0, 0, 0, 1 )
 custom_constants/close_h_ofs = 80
@@ -112,7 +95,7 @@ position = Vector2( 549, 371 )
 scale = Vector2( 1.66771, 1.66771 )
 frames = SubResource( 1 )
 animation = "New Anim"
-frame = 34
+frame = 11
 playing = true
 
 [node name="Label" type="Label" parent="Popup"]

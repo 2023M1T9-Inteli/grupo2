@@ -1,7 +1,7 @@
 extends Control
 
 
-
+var movimento_player = true
 #chama a função de tocar musica, para assim tocar a musica principal logo na tela de início
 func _ready():
 	ControleMusica.play_musica()

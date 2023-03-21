@@ -1,14 +1,34 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://pomodoro/quizz.png" type="Texture" id=1]
+[ext_resource path="res://pop ups/pomodoro/X.png" type="Texture" id=1]
 [ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://pomodoro/metodo-pomodoro-estudo-ciclo.jpg.png" type="Texture" id=3]
+[ext_resource path="res://Script/popUpPomodoro1.gd" type="Script" id=3]
 [ext_resource path="res://pomodoro/pomodoro1.png" type="Texture" id=4]
-[ext_resource path="res://pomodoro/X.png" type="Texture" id=5]
-[ext_resource path="res://Script/popUpPomodoro.gd" type="Script" id=7]
+[ext_resource path="res://pomodoro/grafico_pomodoro.png" type="Texture" id=5]
+[ext_resource path="res://pop ups/relógio/quizz.png" type="Texture" id=6]
+[ext_resource path="res://pop ups/relógio/x escuro.png" type="Texture" id=7]
 [ext_resource path="res://pomodoro/pixil-frame-0 (3).png" type="Texture" id=8]
 [ext_resource path="res://pomodoro/pixil-frame-0 (2).png" type="Texture" id=9]
 
+[sub_resource type="StyleBoxTexture" id=8]
+
+[sub_resource type="Theme" id=4]
+
+[sub_resource type="DynamicFont" id=5]
+size = 30
+use_filter = true
+extra_spacing_top = 3
+extra_spacing_bottom = 2
+font_data = ExtResource( 2 )
+
+[sub_resource type="Theme" id=6]
+
+[sub_resource type="DynamicFont" id=7]
+size = 30
+use_filter = true
+extra_spacing_top = 3
+extra_spacing_bottom = 2
+font_data = ExtResource( 2 )
 
 [sub_resource type="Theme" id=1]
 
@@ -19,20 +39,143 @@ extra_spacing_top = 3
 extra_spacing_bottom = 2
 font_data = ExtResource( 2 )
 
-[node name="Node2D" type="Node2D"]
-script = ExtResource( 7 )
+[node name="Pagina1" type="Node2D"]
+script = ExtResource( 3 )
 
-[node name="Quizz" type="Sprite" parent="."]
-position = Vector2( 514, 368 )
-scale = Vector2( 0.367426, 0.367426 )
-texture = ExtResource( 1 )
+[node name="WindowDialog" type="WindowDialog" parent="."]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -800.0
+margin_top = 300.0
+margin_right = -116.0
+margin_bottom = 753.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+custom_constants/close_h_ofs = 70
+custom_constants/close_v_ofs = -20
+custom_icons/close_highlight = ExtResource( 1 )
+custom_icons/close = ExtResource( 7 )
+custom_styles/panel = SubResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="Label" type="Label" parent="Quizz"]
-margin_left = -1189.36
-margin_top = -253.112
-margin_right = -26.3552
-margin_bottom = -11.1122
-rect_scale = Vector2( 1.99793, 2.39752 )
+[node name="Sprite3" type="Sprite" parent="WindowDialog"]
+show_behind_parent = true
+position = Vector2( 622.631, 421.091 )
+scale = Vector2( 0.255775, 0.244565 )
+texture = ExtResource( 6 )
+offset = Vector2( -1095.23, -786.997 )
+
+[node name="Label3" type="Label" parent="WindowDialog/Sprite3"]
+margin_left = -2172.76
+margin_top = -1290.47
+margin_right = -792.759
+margin_bottom = -1141.47
+rect_scale = Vector2( 1.59766, 2.36107 )
+theme = SubResource( 4 )
+custom_colors/font_color = Color( 1, 0.27451, 0.219608, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+text = "Agora que você conhece o método Pomodoro, 
+use os tomates para destruir os inimigos que 
+aparecerem em sua frente (e os ciclos do
+pomodoro para livrar suas tarefas pendentes! )"
+align = 1
+valign = 1
+
+[node name="Label4" type="Label" parent="WindowDialog/Sprite3"]
+margin_left = -1695.91
+margin_top = -568.321
+margin_right = -495.906
+margin_bottom = -457.321
+rect_scale = Vector2( 1.4038, 2.07458 )
+focus_mode = 1
+theme = SubResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "Utilize o botão Z para atirar os tomates"
+align = 1
+valign = 1
+
+[node name="Pomodoro2" type="Sprite" parent="WindowDialog/Sprite3"]
+position = Vector2( -1951.74, -464.899 )
+scale = Vector2( 0.550808, 0.550808 )
+texture = ExtResource( 4 )
+
+[node name="voltar2" type="TextureButton" parent="WindowDialog/Sprite3"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -3569.76
+margin_top = -1281.44
+margin_right = -3518.76
+margin_bottom = -1230.44
+rect_scale = Vector2( 4.53505, 4.53505 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+flip_h = true
+
+[node name="Sprite2" type="Sprite" parent="WindowDialog"]
+show_behind_parent = true
+position = Vector2( 342.499, 228.618 )
+scale = Vector2( 0.255775, 0.244565 )
+texture = ExtResource( 6 )
+
+[node name="GraficoPomodoro" type="Sprite" parent="WindowDialog/Sprite2"]
+position = Vector2( -38.0925, -93.1859 )
+scale = Vector2( 2.92367, 3.05768 )
+texture = ExtResource( 5 )
+
+[node name="avancar2" type="TextureButton" parent="WindowDialog/Sprite2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -389.952
+margin_top = -493.582
+margin_right = -338.952
+margin_bottom = -442.582
+rect_scale = Vector2( 4.53505, 4.53505 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+
+[node name="voltar1" type="TextureButton" parent="WindowDialog/Sprite2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -2474.53
+margin_top = -494.445
+margin_right = -2423.53
+margin_bottom = -443.445
+rect_scale = Vector2( 4.53505, 4.53505 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+flip_h = true
+
+[node name="Sprite" type="Sprite" parent="WindowDialog"]
+modulate = Color( 1, 1, 1, 0.988235 )
+show_behind_parent = true
+position = Vector2( 341.641, 225.188 )
+scale = Vector2( 0.255135, 0.247016 )
+texture = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="WindowDialog/Sprite"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -2474.0
+margin_top = -932.0
+margin_right = -1394.0
+margin_bottom = -707.0
+rect_scale = Vector2( 2.10588, 2.10588 )
 theme = SubResource( 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
@@ -46,121 +189,26 @@ o foco entre blocos."
 align = 1
 valign = 1
 
-[node name="Label3" type="Label" parent="Quizz"]
-margin_left = -1200.24
-margin_top = -498.059
-margin_right = 749.758
-margin_bottom = -387.059
-rect_scale = Vector2( 1.218, 1.8 )
-theme = SubResource( 1 )
-custom_colors/font_color = Color( 1, 0.27451, 0.219608, 1 )
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 2 )
-text = "Agora que você conhece o método Pomodoro, use os tomates para 
-destruir os inimigos que aparecerem em sua frente (e os ciclos do
- pomodoro para livrar suas tarefas pendentes! )"
-align = 1
-valign = 1
-
-[node name="Label4" type="Label" parent="Quizz"]
-margin_left = -538.884
-margin_top = -117.03
-margin_right = 661.116
-margin_bottom = -6.03033
-rect_scale = Vector2( 1.4038, 2.07458 )
-focus_mode = 1
-theme = SubResource( 1 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 2 )
-text = "Utilize o botão Z para atirar os tomates"
-align = 1
-valign = 1
-
-[node name="tabela" type="Sprite" parent="Quizz"]
-position = Vector2( -19.0515, -198.679 )
-scale = Vector2( 2.4971, 2.4971 )
-texture = ExtResource( 3 )
-
-[node name="Pomodoro1" type="Sprite" parent="Quizz"]
-position = Vector2( -27.2163, -489.895 )
-scale = Vector2( 0.550808, 0.550808 )
+[node name="Pomodoro1" type="Sprite" parent="WindowDialog/Sprite"]
+position = Vector2( -36.0529, -377.632 )
+scale = Vector2( 0.948532, 0.948532 )
 texture = ExtResource( 4 )
 
-[node name="Pomodoro2" type="Sprite" parent="Quizz"]
-position = Vector2( -794.718, -13.6082 )
-scale = Vector2( 0.550808, 0.550808 )
-texture = ExtResource( 4 )
-
-[node name="X" type="TextureButton" parent="Quizz"]
-anchor_left = -0.022
-anchor_top = 0.023
-anchor_right = -0.022
-anchor_bottom = 0.023
-margin_left = -1163.04
-margin_top = -856.3
-margin_right = -1112.04
-margin_bottom = -805.3
-rect_scale = Vector2( 2, 2 )
-texture_normal = ExtResource( 5 )
-texture_pressed = ExtResource( 8 )
-
-[node name="X2" type="TextureButton" parent="Quizz"]
-anchor_left = -0.022
-anchor_top = 0.023
-anchor_right = -0.022
-anchor_bottom = 0.023
-margin_left = 1134.01
-margin_top = 193.926
-margin_right = 1185.01
-margin_bottom = 244.926
-rect_scale = Vector2( 2, 2 )
+[node name="avancar" type="TextureButton" parent="WindowDialog/Sprite"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -384.208
+margin_top = -485.214
+margin_right = -333.208
+margin_bottom = -434.214
+rect_scale = Vector2( 4.53505, 4.53505 )
 texture_normal = ExtResource( 9 )
 texture_pressed = ExtResource( 8 )
 
-[node name="X3" type="TextureButton" parent="Quizz"]
-anchor_left = -0.022
-anchor_top = 0.023
-anchor_right = -0.022
-anchor_bottom = 0.023
-margin_left = 1134.01
-margin_top = 193.926
-margin_right = 1185.01
-margin_bottom = 244.926
-rect_scale = Vector2( 2, 2 )
-texture_normal = ExtResource( 9 )
-texture_pressed = ExtResource( 8 )
-
-[node name="voltar" type="TextureButton" parent="Quizz"]
-anchor_left = -0.022
-anchor_top = 0.023
-anchor_right = -0.022
-anchor_bottom = 0.023
-margin_left = -1138.56
-margin_top = 204.812
-margin_right = -1087.56
-margin_bottom = 255.812
-rect_scale = Vector2( 2, 2 )
-texture_normal = ExtResource( 9 )
-texture_pressed = ExtResource( 8 )
-flip_h = true
-
-[node name="voltar2" type="TextureButton" parent="Quizz"]
-anchor_left = -0.022
-anchor_top = 0.023
-anchor_right = -0.022
-anchor_bottom = 0.023
-margin_left = -1138.56
-margin_top = 204.812
-margin_right = -1087.56
-margin_bottom = 255.812
-rect_scale = Vector2( 2, 2 )
-texture_normal = ExtResource( 9 )
-texture_pressed = ExtResource( 8 )
-flip_h = true
-
-[connection signal="pressed" from="Quizz/X" to="." method="_on_X_pressed"]
-[connection signal="pressed" from="Quizz/X2" to="." method="_on_X2_pressed"]
-[connection signal="pressed" from="Quizz/X3" to="." method="_on_X3_pressed"]
-[connection signal="pressed" from="Quizz/voltar" to="." method="_on_voltar_pressed"]
-[connection signal="pressed" from="Quizz/voltar2" to="." method="_on_voltar2_pressed"]
+[connection signal="popup_hide" from="WindowDialog" to="." method="_on_WindowDialog_popup_hide"]
+[connection signal="pressed" from="WindowDialog/Sprite3/voltar2" to="." method="_on_voltar2_pressed"]
+[connection signal="pressed" from="WindowDialog/Sprite2/avancar2" to="." method="_on_avancar2_pressed"]
+[connection signal="pressed" from="WindowDialog/Sprite2/voltar1" to="." method="_on_voltar1_pressed"]
+[connection signal="pressed" from="WindowDialog/Sprite/avancar" to="." method="_on_avancar_pressed"]

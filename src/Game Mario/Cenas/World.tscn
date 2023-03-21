@@ -10,6 +10,10 @@
 
 [node name="World" type="Node2D"]
 script = ExtResource( 4 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 203.0 ],
+"_edit_vertical_guides_": [ 1049.0 ]
+}
 
 [node name="timer" parent="." instance=ExtResource( 6 )]
 

@@ -3,8 +3,6 @@ export (int) var minutes = 0
 export (int) var seconds = 120
 var ms = 0
 
-
-
 func _ready():
 	$Timer.stop()
 

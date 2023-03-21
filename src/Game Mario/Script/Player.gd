@@ -14,12 +14,21 @@ var is_rewinding = false #bool para indicar se função de rebobinar está ativa
 var rewind_length = (60 * 3) #3 segundos
 var rewind_ghost = load("res://Cenas/rewindGhost.tscn")  #direcionar ao sprite que está rebobinando para mostrar seu rastro na tela
 
+onready var andando = get_node("/root/GlobalTeste")
 #aciona os processos físico do personagem, ou seja, a movimentação de andar para os lados e pular. Além de conter a gravdidade para queda da personagem
 func _physics_process(_delta):
 	#funcão de rebobinar
 	handle_rewind_function()
 	motion.y += GRAVIDADE
 	player_movement()
+	
+	if andando.movimento_player == false:
+		velocidade = 0
+	else:
+		velocidade = 250
+	
+#	print(velocidade)
+#	print(andando.movimento_player)
 	
 	if is_on_floor(): 
 		if Input.is_action_pressed("ui_up"):
