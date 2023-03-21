@@ -9,3 +9,4 @@ func _ready():
 
 func _on_TextureButton_pressed():
 	$quadro.hide()
+	$Sprite.hide()
