@@ -26,7 +26,7 @@ func _ready():
 func _process(_delta):
 	#chama continuamente a função 'atirar_tomate'
 	atirar_tomate()
-	
+	$Player.morte_queda()
 	
 	
 #função 'atirar_tomate' responsável pela mecânica de atirar tomates

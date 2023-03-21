@@ -22,6 +22,7 @@ func _process(_delta):
 			mov.movimento_player = false
 			get_tree().current_scene.add_child(relogio)
 			video = false
+	$Player.morte_queda()
 #	if ($Player.position.x >= 1050):
 #		get_tree().current_scene.add_child(quiz1)
 #		mov.movimento_player = false

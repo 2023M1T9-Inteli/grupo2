@@ -103,7 +103,6 @@ func player_movement():
 
 #player mata inimigo
 func _on_pes_body_entered(body):
-#	if body == true:
 	body.dano()
 	motion.y = jump_height
 	
@@ -115,5 +114,15 @@ func _on_dano_body_entered(body):
 	if vida == 0:
 		$".".queue_free()
 		get_tree().change_scene("res://Cenas/GameOver.tscn")
+		
+
+func morte_queda():
+	if position.y > 8000:
+		vida -= 1
+		
+	if vida == 0:
+		queue_free()
+		get_tree().change_scene("res://Cenas/GameOver.tscn")
+			
 
 

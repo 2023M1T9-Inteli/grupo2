@@ -34,6 +34,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
+seconds = 120
 
 [node name="Label2" type="Label" parent="CanvasLayer/Control"]
 visible = false

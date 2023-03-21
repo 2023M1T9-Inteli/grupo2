@@ -81,6 +81,7 @@ func handle_rewind_function():
 		
 #inimigo fica vermelho
 func dano():
+	
 	get_node("anim").play("die")
 	
 #faz o inimigo desaparecer da tela
