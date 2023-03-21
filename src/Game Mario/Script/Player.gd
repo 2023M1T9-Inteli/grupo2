@@ -15,6 +15,8 @@ var rewind_length = (60 * 3) #3 segundos
 var rewind_ghost = load("res://Cenas/rewindGhost.tscn")  #direcionar ao sprite que está rebobinando para mostrar seu rastro na tela
 
 onready var andando = get_node("/root/GlobalTeste")
+
+
 #aciona os processos físico do personagem, ou seja, a movimentação de andar para os lados e pular. Além de conter a gravdidade para queda da personagem
 func _physics_process(_delta):
 	#funcão de rebobinar
@@ -107,6 +109,7 @@ func _on_pes_body_entered(body):
 
 #player toma dano
 func _on_dano_body_entered(body):
+	
 	vida -= 1 
 	if vida == 0:
 		$".".queue_free()

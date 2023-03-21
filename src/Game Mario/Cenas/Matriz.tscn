@@ -183,6 +183,16 @@ margin_bottom = 531.0
 rect_pivot_offset = Vector2( -705, -559 )
 text = "Jogar!"
 
+[node name="Label2" type="Label" parent="."]
+margin_left = 223.0
+margin_top = 34.0
+margin_right = 484.0
+margin_bottom = 50.0
+custom_colors/font_color = Color( 0.27451, 0.262745, 0.262745, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Tempo total: "
+autowrap = true
+
 [connection signal="pressed" from="Analise" to="." method="_on_Analise_pressed"]
 [connection signal="pressed" from="IU_menos" to="." method="_on_IU_menos_pressed"]
 [connection signal="pressed" from="IU_mais" to="." method="_on_IU_mais_pressed"]

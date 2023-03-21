@@ -6,6 +6,8 @@ var imp_urg = 0 # variável importante e urgente
 var imp_n_urg = 0 # variável importante e não urgente
 var n_imp_urg = 0 # variavel não importante e urgente
 var n_imp_n_urg = 0 # não importante e não urgente
+var index
+onready var categoria = get_node("/root/CategoriaGlobal")
 
 func _ready():
 	$Jogar.hide()
@@ -14,6 +16,9 @@ func _ready():
 func fazer_Soma_Total():
 	return imp_urg + imp_n_urg + n_imp_n_urg + n_imp_urg
 
+func alteraLabel(temp):
+	$Label2.text = "Tempo total: "+ str(temp) + "h"
+	
 #Função para diminuir uma hora de uma categoria qualquer
 func diminuir_Valor(categoria,Label,ProgressBar):
 #	Verifica se a categoria não ficará negativa
@@ -21,6 +26,7 @@ func diminuir_Valor(categoria,Label,ProgressBar):
 		#Altera tanto o label quanto a progress bar para a nova quantidade de horas
 		Label.text = "Tempo: " + str(categoria-1) + "h"
 		ProgressBar.value = categoria - 1
+		alteraLabel(categoria-1)
 		#Retorna verdadeiro para permitir que seja diminuido 1 da variável global
 		return true
 	#Retorna falso para impedir que seja diminuído 1 da variável global
@@ -33,6 +39,7 @@ func aumentar_Valor(categoria,Label,ProgressBar):
 		#Altera tanto o label quanto a progress bar para a nova quantidade de horas
 		Label.text = "Tempo: " + str(categoria+1) + "h"
 		ProgressBar.value = int(categoria) + 1
+		alteraLabel(categoria+1)
 		#Retorna verdadeiro para permitir que seja aumentado 1 da variável global
 		return true
 	#Retorna falso para impedir que seja aumentado 1 da variável global
@@ -99,7 +106,6 @@ func _on_Analise_pressed():
 	#Lista com os percentuais
 	var lista = [perc_iu,perc_i_nu,perc_ni_u,perc_ni_nu]
 	#Variaveis para guardar index do valor máximo da lista	
-	var index
 	#variável auxiliar para indicar em qual índice da lista ele está	
 	var counter = 0
 	
@@ -142,4 +148,5 @@ func _on_Analise_pressed():
 
 
 func _on_Jogar_pressed():
+	categoria.categoria = index
 	get_tree().change_scene("res://Cenas/World.tscn")

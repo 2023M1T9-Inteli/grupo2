@@ -1,6 +1,6 @@
 extends Control
 export (int) var minutes = 0
-export (int) var seconds = 120
+export (int) var seconds = 100
 var ms = 0
 
 func _ready():
@@ -44,5 +44,9 @@ func _on_Timer_timeout():
 func _alterSeconds(i):
 	seconds -= i
 
-func start_timer():
+func start_timer(sec):
+	seconds = sec
 	$Timer.start()
+	
+func perder_tempo():
+	seconds -= 10
