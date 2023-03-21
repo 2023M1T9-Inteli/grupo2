@@ -2,7 +2,7 @@ extends Node
 
 #varíavel que referencia a cena do tomate arremessável
 var tomate = preload("res://Cenas/Tomate.tscn")
-
+onready var fase = get_node("/root/CategoriaGlobal")
 #variável que referencia e instancia a cena do player
 var jogador = preload("res://Branch/Player.tscn").instance()
 
@@ -18,6 +18,7 @@ var pode_atirar = false
 func _ready():
 	#adiciona a cena do player, que foi instanciada, na cena atual 
 	add_child(jogador)
+	fase.level = "fase 2"
 	
 	#animação padrão para o bloco
 	$Bloco_Tomate/AnimatedSprite.play("default")
