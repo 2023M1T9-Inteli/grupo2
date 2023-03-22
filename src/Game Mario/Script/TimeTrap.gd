@@ -84,14 +84,12 @@ func dano():
 	cont = cont + 1
 	if cont == 2:
 		get_node("anim").play("die")
-		cont = 0
+		die()
 	
 #faz o inimigo desaparecer da tela
 func die():
-	cont = cont + 1
-	if cont == 2:
-		$".".queue_free()
-		cont = 0
+	queue_free()
+	cont = 0
 
 #vai fazer o inimigo morrer/desaparecer da tela quando a animação acabar
 func _on_anim_animation_finished(anim_name):

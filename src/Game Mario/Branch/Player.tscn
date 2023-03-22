@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://Script/Player.gd" type="Script" id=1]
 [ext_resource path="res://personagem principal/run_menor3.png" type="Texture" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://personagem principal/dash_rewind5.png" type="Texture" id=23]
 [ext_resource path="res://personagem principal/dash_rewind.6png.png" type="Texture" id=24]
 [ext_resource path="res://efeito sonoros/DLMKRJN-ninja-jump (mp3cut.net).mp3" type="AudioStream" id=25]
+[ext_resource path="res://Cenas/timer.tscn" type="PackedScene" id=26]
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 3 )
@@ -88,12 +89,14 @@ extents = Vector2( 26.5, 38 )
 position = Vector2( -930, 327 )
 script = ExtResource( 1 )
 
+[node name="timer" parent="." instance=ExtResource( 26 )]
+
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( -30, -40 )
 scale = Vector2( 1.1236, 0.977045 )
 frames = SubResource( 2 )
 animation = "Idle"
-frame = 3
+frame = 1
 playing = true
 centered = false
 

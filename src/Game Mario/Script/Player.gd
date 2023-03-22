@@ -109,12 +109,14 @@ func _on_pes_body_entered(body):
 
 #player toma dano
 func _on_dano_body_entered(body):
-	
-	vida -= 1 
-	if vida == 0:
-		$".".queue_free()
-		get_tree().change_scene("res://Cenas/GameOver.tscn")
-		
+	$timer/CanvasLayer/Control.perder_tempo()
+
+#
+#	vida -= 1 
+#	if vida == 0:
+#		$".".queue_free()
+#		get_tree().change_scene("res://Cenas/GameOver.tscn")
+#
 
 func morte_queda():
 	if position.y > 8000:

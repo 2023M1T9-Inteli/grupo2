@@ -9,16 +9,23 @@ var jogador = preload("res://Branch/Player.tscn").instance()
 var popup = preload("res://Cenas/popUpPomodoro.tscn").instance()
 
 onready var movimento = get_node("/root/GlobalTeste")
+onready var categoria = get_node("/root/CategoriaGlobal")
 
 #variável booleana que indica se o jogador já pode atirar
 var pode_atirar = false
-
+var tempo
 
 
 func _ready():
 	#adiciona a cena do player, que foi instanciada, na cena atual 
 	add_child(jogador)
 	fase.level = "fase 2"
+	if(categoria.categoria == 0): tempo = 150
+	elif categoria.categoria == 1: tempo = 225
+	elif categoria.categoria == 2: tempo = 180
+	elif categoria.categoria == 3: tempo = 120
+	else: tempo = 225
+	$Player/timer/CanvasLayer/Control.start_timer(tempo)
 	
 	#animação padrão para o bloco
 	$Bloco_Tomate/AnimatedSprite.play("default")

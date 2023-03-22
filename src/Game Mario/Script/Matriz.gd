@@ -26,7 +26,7 @@ func diminuir_Valor(categoria,Label,ProgressBar):
 		#Altera tanto o label quanto a progress bar para a nova quantidade de horas
 		Label.text = "Tempo: " + str(categoria-1) + "h"
 		ProgressBar.value = categoria - 1
-		alteraLabel(categoria-1)
+		alteraLabel(fazer_Soma_Total()-1)
 		#Retorna verdadeiro para permitir que seja diminuido 1 da variável global
 		return true
 	#Retorna falso para impedir que seja diminuído 1 da variável global
@@ -37,9 +37,9 @@ func aumentar_Valor(categoria,Label,ProgressBar):
 	#Verifica se o aumento não ultrapassará as 24 horas	
 	if(fazer_Soma_Total()+1 <= 24):
 		#Altera tanto o label quanto a progress bar para a nova quantidade de horas
-		Label.text = "Tempo: " + str(categoria+1) + "h"
+		Label.text = "Tempo: " + str(categoria + 1) + "h"
 		ProgressBar.value = int(categoria) + 1
-		alteraLabel(categoria+1)
+		alteraLabel(fazer_Soma_Total()+1)
 		#Retorna verdadeiro para permitir que seja aumentado 1 da variável global
 		return true
 	#Retorna falso para impedir que seja aumentado 1 da variável global
@@ -98,10 +98,10 @@ func _on_Analise_pressed():
 	$NINU_mais.disabled = true
 	$NINU_menos.disabled = true
 	#Percentuais de discrepância entre o ideal e o apresentado pelo player 	
-	var perc_iu = imp_urg/5.0
-	var perc_i_nu = imp_n_urg/14.0
-	var perc_ni_u = n_imp_urg/4.0
-	var perc_ni_nu = n_imp_n_urg/1.5
+	var perc_iu = abs(imp_urg-5.0)
+	var perc_i_nu = abs(imp_n_urg-14.0)
+	var perc_ni_u = abs(n_imp_urg-4.0)
+	var perc_ni_nu = abs(n_imp_n_urg-2.0)
 	
 	#Lista com os percentuais
 	var lista = [perc_iu,perc_i_nu,perc_ni_u,perc_ni_nu]

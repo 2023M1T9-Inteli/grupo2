@@ -81,12 +81,12 @@ func handle_rewind_function():
 		
 #inimigo fica vermelho
 func dano():
-	
 	get_node("anim").play("die")
+	die()
 	
 #faz o inimigo desaparecer da tela
 func die():
-	$".".queue_free()
+	queue_free()
 	
 
 #vai fazer o inimigo morrer/desaparecer da tela quando a animação acabar

@@ -13,8 +13,8 @@ func _ready():
 	elif categoria.categoria == 2: tempo = 180
 	elif categoria.categoria == 3: tempo = 120
 	else: tempo = 225
-	$timer/CanvasLayer/Control.start_timer(tempo)
-	pass
+	$Player/timer/CanvasLayer/Control.start_timer(tempo)
+	
 func _process(_delta):
 	if video:
 		if($Player.position.x >= 475 and $Player.position.x <=500):
