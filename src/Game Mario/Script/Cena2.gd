@@ -69,5 +69,6 @@ func _on_Area2D_body_entered(body):
 	pode_atirar = true
 	add_child(popup)
 	movimento.movimento_player = false
+	$Bloco_Tomate.queue_free()
 
 	

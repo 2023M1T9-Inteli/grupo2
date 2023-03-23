@@ -2,6 +2,5 @@
 
 [ext_resource path="res://Script/rewindGhost.gd" type="Script" id=1]
 
-
 [node name="Sprite" type="Sprite"]
 script = ExtResource( 1 )
