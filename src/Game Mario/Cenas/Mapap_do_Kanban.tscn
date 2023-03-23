@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://tileset/industrial.tres" type="TileSet" id=1]
 [ext_resource path="res://Branch/ParallaxBackground.tscn" type="PackedScene" id=2]
@@ -9,21 +9,6 @@
 [ext_resource path="res://Cenas/PassagemGantt2.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Script/Mapap_do_Kanban.gd" type="Script" id=8]
 [ext_resource path="res://Cenas/popUpKanban.tscn" type="PackedScene" id=9]
-[ext_resource path="res://imagens/kanban.png" type="Texture" id=10]
-
-[sub_resource type="SpriteFrames" id=1]
-animations = [ {
-"frames": [ ExtResource( 10 ) ],
-"loop": true,
-"name": "default",
-"speed": 5.0
-} ]
-
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 39, 38 )
-
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 32.5, 0.625 )
 
 [node name="mapa_kanban" type="Node2D"]
 script = ExtResource( 8 )
@@ -79,20 +64,3 @@ position = Vector2( 1614, 62 )
 
 [node name="kanban" parent="." instance=ExtResource( 9 )]
 position = Vector2( -1231, -400 )
-
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
-position = Vector2( -520, 313 )
-scale = Vector2( 0.04, 0.04 )
-frames = SubResource( 1 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
-position = Vector2( -520, 312 )
-shape = SubResource( 2 )
-
-[node name="Area2D" type="Area2D" parent="KinematicBody2D"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D/Area2D"]
-position = Vector2( -520, 351 )
-shape = SubResource( 3 )
