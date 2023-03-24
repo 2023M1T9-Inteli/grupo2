@@ -9,6 +9,7 @@
 [ext_resource path="res://imagens/pomodoro-bloco_resample02.png" type="Texture" id=7]
 [ext_resource path="res://tileset/industrial.tres" type="TileSet" id=8]
 [ext_resource path="res://Branch/Monstro.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Cenas/popUpPomodoro.tscn" type="PackedScene" id=10]
 [ext_resource path="res://efeito sonoros/Game Button Sounds Pack - Free Sounds [TubeRipper (mp3cut.net) (1).mp3" type="AudioStream" id=11]
 [ext_resource path="res://Cenas/PassagemKanban.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Script/Cena2.gd" type="Script" id=15]
@@ -104,5 +105,7 @@ volume_db = 0.619
 
 [node name="Area2D" parent="." instance=ExtResource( 12 )]
 position = Vector2( 2072, 410 )
+
+[node name="pomodoro" parent="." instance=ExtResource( 10 )]
 
 [connection signal="body_entered" from="Bloco_Tomate/Area2D" to="." method="_on_Area2D_body_entered"]

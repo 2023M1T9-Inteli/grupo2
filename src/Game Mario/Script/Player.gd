@@ -33,11 +33,12 @@ func _physics_process(_delta):
 		pass
 	
 	if is_on_floor(): 
-		if Input.is_action_pressed("ui_up"):
-			motion.y = jump_height	
-			$Sprite.play("jump")
-			$JumpFx.play()
-			
+		if movimentacao:
+			if Input.is_action_pressed("ui_up"):
+				motion.y = jump_height	
+				$Sprite.play("jump")
+				$JumpFx.play()
+				
 	motion = move_and_slide(motion, CIMA)
 	
 	if !is_on_floor():
@@ -52,6 +53,8 @@ func handle_rewind_function():
 	#se a tecla "espaço for apertada, a ação do personagem é rebobinada
 	if(Input.is_action_pressed("ui_space")): 
 		is_rewinding = true
+		$AnimatedSprite.visible = true
+		$AnimatedSprite.play("default")
 		if(recorded_data.size() > 0):
 			var current_frame = recorded_data[0]
 			
@@ -73,10 +76,14 @@ func handle_rewind_function():
 			recorded_data.pop_front()
 		else:
 			$Sprite.show()	
+			
 	#salvar os dados da posição do personagem		
 	else: 
 		$Sprite.show()
 		is_rewinding = false
+		$AnimatedSprite.set_frame(0)
+		$AnimatedSprite.stop()
+		$AnimatedSprite.visible = false
 		
 		if(ani.flip_h):
 			_dir_number = 1
@@ -102,6 +109,9 @@ func player_movement():
 		else:
 			motion.x = 0
 			$Sprite.play("Idle")
+	else:
+		motion.x = 0
+		$Sprite.play("Idle")
 #player mata inimigo
 func _on_pes_body_entered(body):
 	body.dano()

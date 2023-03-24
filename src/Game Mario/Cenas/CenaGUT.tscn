@@ -40,19 +40,17 @@ extra_spacing_bottom = 2
 font_data = ExtResource( 2 )
 
 [node name="Pagina1" type="CanvasLayer"]
-pause_mode = 2
 script = ExtResource( 3 )
 
 [node name="WindowDialog" type="WindowDialog" parent="."]
-visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -800.0
-margin_top = 300.0
-margin_right = -116.0
-margin_bottom = 753.0
+margin_left = -337.0
+margin_top = -163.0
+margin_right = 347.0
+margin_bottom = 290.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 custom_constants/close_h_ofs = 70
@@ -84,7 +82,7 @@ custom_fonts/font = SubResource( 5 )
 text = "Agora que você conhece o método Pomodoro, 
 use os tomates para destruir os inimigos que 
 aparecerem em sua frente (e os ciclos do
-pomodoro para livrar suas tarefas pendentes!)"
+pomodoro para livrar suas tarefas pendentes! )"
 align = 1
 valign = 1
 
@@ -181,12 +179,7 @@ theme = SubResource( 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 2 )
-text = "O método Pomodoro, cujo nome 
-vem da palavra italiana para tomate,
- busca um melhor aproveitamento 
-do seu tempo, dividindo o fluxo de 
-trabalho em intervalos e aumentando 
-o foco entre blocos."
+text = "gjsdlgjsdgljdsg"
 align = 1
 valign = 1
 
