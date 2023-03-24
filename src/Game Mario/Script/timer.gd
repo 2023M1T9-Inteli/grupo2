@@ -50,6 +50,5 @@ func pause_timer():
 
 func perder_tempo():
 	seconds -= 10
-	print("tempo")
 
 

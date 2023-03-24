@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/kanban.png-107fa487d7336454e6904696b30911f5.stex"
+path="res://.import/asdfasdf.png-8e700aeabda7410e5c46763b3f2bda4e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagens/kanban.png"
-dest_files=[ "res://.import/kanban.png-107fa487d7336454e6904696b30911f5.stex" ]
+source_file="res://kanban/asdfasdf.png"
+dest_files=[ "res://.import/asdfasdf.png-8e700aeabda7410e5c46763b3f2bda4e.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

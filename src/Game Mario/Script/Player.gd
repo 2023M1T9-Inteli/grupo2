@@ -6,6 +6,7 @@ var velocidade = 250
 var jump_height = -800 
 var vida = 1
 var motion = Vector2()
+var movimentacao = true
 
 onready var ani = $Sprite
 
@@ -19,18 +20,17 @@ onready var andando = get_node("/root/GlobalTeste")
 
 #aciona os processos físico do personagem, ou seja, a movimentação de andar para os lados e pular. Além de conter a gravdidade para queda da personagem
 func _physics_process(_delta):
+	#if CategoriaGlobal.andar == true:
+		#movimentacao = true
+		#CategoriaGlobal.andar = false
+	
 	#funcão de rebobinar
 	handle_rewind_function()
 	motion.y += GRAVIDADE
 	player_movement()
 	
-	if andando.movimento_player == false:
-		velocidade = 0
-	else:
-		velocidade = 250
-	
-#	print(velocidade)
-#	print(andando.movimento_player)
+	if andando.movimento_player == true:
+		pass
 	
 	if is_on_floor(): 
 		if Input.is_action_pressed("ui_up"):
@@ -89,18 +89,19 @@ func handle_rewind_function():
 
 #movimentos da personagem principal(Player), como andar para os lados e pular
 func player_movement():
-	if Input.is_action_pressed("ui_right"):
-		motion.x = velocidade
-		$Sprite.play("Run")
-		$Sprite.flip_h = false
-	elif Input.is_action_pressed("ui_left"):
-		motion.x = -velocidade
-		$Sprite.play("Run")
-		$Sprite.flip_h = true
-	else:
-		motion.x = 0
-		$Sprite.play("Idle")
+	if movimentacao:
+		if Input.is_action_pressed("ui_right"):
+			motion.x = velocidade
+			$Sprite.play("Run")
+			$Sprite.flip_h = false
 
+		elif Input.is_action_pressed("ui_left"):
+			motion.x = -velocidade
+			$Sprite.play("Run")
+			$Sprite.flip_h = true
+		else:
+			motion.x = 0
+			$Sprite.play("Idle")
 #player mata inimigo
 func _on_pes_body_entered(body):
 	body.dano()
@@ -125,6 +126,3 @@ func morte_queda():
 	if vida == 0:
 		queue_free()
 		get_tree().change_scene("res://Cenas/GameOver.tscn")
-			
-
-

@@ -3,8 +3,8 @@
 [ext_resource path="res://kanban/kanban.png" type="Texture" id=1]
 [ext_resource path="res://pop ups/pomodoro/X.png" type="Texture" id=2]
 [ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Script/popUpPomodoro1.gd" type="Script" id=4]
-[ext_resource path="res://pomodoro/pomodoro1.png" type="Texture" id=5]
+[ext_resource path="res://Script/popUpKanban.gd" type="Script" id=4]
+[ext_resource path="res://kanban/pixil-frame-0 (15).png" type="Texture" id=5]
 [ext_resource path="res://pop ups/relógio/quizz.png" type="Texture" id=6]
 [ext_resource path="res://pop ups/relógio/x escuro.png" type="Texture" id=7]
 [ext_resource path="res://pomodoro/pixil-frame-0 (3).png" type="Texture" id=8]
@@ -39,23 +39,24 @@ extra_spacing_top = 3
 extra_spacing_bottom = 2
 font_data = ExtResource( 3 )
 
-[node name="kanban" type="Node2D"]
-position = Vector2( 459, 281 )
+[node name="kanban" type="CanvasLayer"]
 script = ExtResource( 4 )
-__meta__ = {
-"_edit_group_": true
-}
 
-[node name="WindowDialog" type="WindowDialog" parent="."]
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="WindowDialog" type="WindowDialog" parent="Control"]
 visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -324.0
-margin_top = -206.0
-margin_right = 360.0
-margin_bottom = 247.0
+margin_left = -913.0
+margin_top = -41.0
+margin_right = -229.0
+margin_bottom = 412.0
+input_pass_on_modal_close_click = false
 size_flags_horizontal = 4
 size_flags_vertical = 4
 custom_constants/close_h_ofs = 70
@@ -67,18 +68,20 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite3" type="Sprite" parent="WindowDialog"]
+[node name="Sprite3" type="Sprite" parent="Control/WindowDialog"]
 show_behind_parent = true
 position = Vector2( 622.631, 421.091 )
 scale = Vector2( 0.255775, 0.244565 )
 texture = ExtResource( 6 )
 offset = Vector2( -1095.23, -786.997 )
 
-[node name="Label3" type="Label" parent="WindowDialog/Sprite3"]
-margin_left = -2172.76
-margin_top = -1290.47
-margin_right = -792.759
-margin_bottom = -1141.47
+[node name="Label3" type="Label" parent="Control/WindowDialog/Sprite3"]
+anchor_top = 0.061
+anchor_bottom = 0.061
+margin_left = -2173.0
+margin_top = -1418.1
+margin_right = -795.0
+margin_bottom = -1269.1
 rect_scale = Vector2( 1.59766, 2.36107 )
 theme = SubResource( 4 )
 custom_colors/font_color = Color( 1, 0.27451, 0.219608, 1 )
@@ -90,7 +93,7 @@ aparecerem em sua frente"
 align = 1
 valign = 1
 
-[node name="Label4" type="Label" parent="WindowDialog/Sprite3"]
+[node name="Label4" type="Label" parent="Control/WindowDialog/Sprite3"]
 margin_left = -1695.91
 margin_top = -568.321
 margin_right = -495.906
@@ -105,12 +108,12 @@ text = "Utilize o botão Z para atirar os tomates"
 align = 1
 valign = 1
 
-[node name="Pomodoro2" type="Sprite" parent="WindowDialog/Sprite3"]
-position = Vector2( -1951.74, -464.899 )
-scale = Vector2( 0.550808, 0.550808 )
+[node name="Pomodoro2" type="Sprite" parent="Control/WindowDialog/Sprite3"]
+position = Vector2( -2000, -600 )
+scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 5 )
 
-[node name="voltar2" type="TextureButton" parent="WindowDialog/Sprite3"]
+[node name="voltar2" type="TextureButton" parent="Control/WindowDialog/Sprite3"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -124,18 +127,18 @@ texture_normal = ExtResource( 9 )
 texture_pressed = ExtResource( 8 )
 flip_h = true
 
-[node name="Sprite2" type="Sprite" parent="WindowDialog"]
+[node name="Sprite2" type="Sprite" parent="Control/WindowDialog"]
 show_behind_parent = true
 position = Vector2( 342.499, 228.618 )
 scale = Vector2( 0.255775, 0.244565 )
 texture = ExtResource( 6 )
 
-[node name="GraficoPomodoro" type="Sprite" parent="WindowDialog/Sprite2"]
+[node name="GraficoPomodoro" type="Sprite" parent="Control/WindowDialog/Sprite2"]
 position = Vector2( 5.86852, 15.8731 )
 scale = Vector2( 2.34428, 2.73303 )
 texture = ExtResource( 1 )
 
-[node name="avancar2" type="TextureButton" parent="WindowDialog/Sprite2"]
+[node name="avancar2" type="TextureButton" parent="Control/WindowDialog/Sprite2"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -148,7 +151,7 @@ rect_scale = Vector2( 4.53505, 4.53505 )
 texture_normal = ExtResource( 9 )
 texture_pressed = ExtResource( 8 )
 
-[node name="voltar1" type="TextureButton" parent="WindowDialog/Sprite2"]
+[node name="voltar1" type="TextureButton" parent="Control/WindowDialog/Sprite2"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -162,22 +165,22 @@ texture_normal = ExtResource( 9 )
 texture_pressed = ExtResource( 8 )
 flip_h = true
 
-[node name="Sprite" type="Sprite" parent="WindowDialog"]
+[node name="Sprite" type="Sprite" parent="Control/WindowDialog"]
 modulate = Color( 1, 1, 1, 0.988235 )
 show_behind_parent = true
 position = Vector2( 341.641, 225.188 )
 scale = Vector2( 0.255135, 0.247016 )
 texture = ExtResource( 6 )
 
-[node name="Label" type="Label" parent="WindowDialog/Sprite"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -2540.0
-margin_top = -1160.0
-margin_right = -1431.0
-margin_bottom = -783.0
+[node name="Label" type="Label" parent="Control/WindowDialog/Sprite"]
+anchor_left = -0.137
+anchor_top = -0.048
+anchor_right = -0.137
+anchor_bottom = -0.048
+margin_left = -832.84
+margin_top = -9.2
+margin_right = 276.16
+margin_bottom = 367.8
 rect_scale = Vector2( 2.10588, 2.10588 )
 theme = SubResource( 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
@@ -188,12 +191,12 @@ align = 1
 valign = 1
 autowrap = true
 
-[node name="Pomodoro1" type="Sprite" parent="WindowDialog/Sprite"]
-position = Vector2( -36.0529, -377.632 )
-scale = Vector2( 0.948532, 0.948532 )
+[node name="Pomodoro1" type="Sprite" parent="Control/WindowDialog/Sprite"]
+position = Vector2( -6.43188, -403.569 )
+scale = Vector2( 0.318999, 0.321859 )
 texture = ExtResource( 5 )
 
-[node name="avancar" type="TextureButton" parent="WindowDialog/Sprite"]
+[node name="avancar" type="TextureButton" parent="Control/WindowDialog/Sprite"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -206,8 +209,8 @@ rect_scale = Vector2( 4.53505, 4.53505 )
 texture_normal = ExtResource( 9 )
 texture_pressed = ExtResource( 8 )
 
-[connection signal="popup_hide" from="WindowDialog" to="." method="_on_WindowDialog_popup_hide"]
-[connection signal="pressed" from="WindowDialog/Sprite3/voltar2" to="." method="_on_voltar2_pressed"]
-[connection signal="pressed" from="WindowDialog/Sprite2/avancar2" to="." method="_on_avancar2_pressed"]
-[connection signal="pressed" from="WindowDialog/Sprite2/voltar1" to="." method="_on_voltar1_pressed"]
-[connection signal="pressed" from="WindowDialog/Sprite/avancar" to="." method="_on_avancar_pressed"]
+[connection signal="popup_hide" from="Control/WindowDialog" to="." method="_on_WindowDialog_popup_hide"]
+[connection signal="pressed" from="Control/WindowDialog/Sprite3/voltar2" to="." method="_on_voltar2_pressed"]
+[connection signal="pressed" from="Control/WindowDialog/Sprite2/avancar2" to="." method="_on_avancar2_pressed"]
+[connection signal="pressed" from="Control/WindowDialog/Sprite2/voltar1" to="." method="_on_voltar1_pressed"]
+[connection signal="pressed" from="Control/WindowDialog/Sprite/avancar" to="." method="_on_avancar_pressed"]

@@ -32,12 +32,8 @@ extents = Vector2( 26, 0.5 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 41, 37 )
 
-[node name="Cena2" type="Node"]
+[node name="Cena2" type="Node2D"]
 script = ExtResource( 15 )
-__meta__ = {
-"_edit_horizontal_guides_": [ 347.0 ],
-"_edit_vertical_guides_": [ -536.0 ]
-}
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
