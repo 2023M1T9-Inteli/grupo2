@@ -1,18 +1,19 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://kanban/kanban.png" type="Texture" id=1]
 [ext_resource path="res://pop ups/pomodoro/X.png" type="Texture" id=2]
 [ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Script/popUpKanban.gd" type="Script" id=4]
-<<<<<<< Updated upstream
-[ext_resource path="res://kanban/pixil-frame-0 (15).png" type="Texture" id=5]
-=======
+
 [ext_resource path="res://kanban/pixil-frame-0 (16).png" type="Texture" id=5]
->>>>>>> Stashed changes
+
+[ext_resource path="res://kanban/asdfasdf.png" type="Texture" id=5]
+
 [ext_resource path="res://pop ups/relógio/quizz.png" type="Texture" id=6]
 [ext_resource path="res://pop ups/relógio/x escuro.png" type="Texture" id=7]
 [ext_resource path="res://pomodoro/pixil-frame-0 (3).png" type="Texture" id=8]
 [ext_resource path="res://pomodoro/pixil-frame-0 (2).png" type="Texture" id=9]
+[ext_resource path="res://kanban/pixil-frame-0 (15).png" type="Texture" id=10]
 
 [sub_resource type="StyleBoxTexture" id=8]
 
@@ -56,10 +57,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -913.0
-margin_top = -41.0
-margin_right = -229.0
-margin_bottom = 412.0
+margin_left = -342.0
+margin_top = -226.5
+margin_right = 342.0
+margin_bottom = 226.5
 input_pass_on_modal_close_click = false
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -198,7 +199,7 @@ autowrap = true
 [node name="Pomodoro1" type="Sprite" parent="Control/WindowDialog/Sprite"]
 position = Vector2( -6.43188, -403.569 )
 scale = Vector2( 0.318999, 0.321859 )
-texture = ExtResource( 5 )
+texture = ExtResource( 10 )
 
 [node name="avancar" type="TextureButton" parent="Control/WindowDialog/Sprite"]
 anchor_left = 0.5
