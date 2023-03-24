@@ -128,7 +128,7 @@ frames = SubResource( 10 )
 [node name="pag2" type="Sprite" parent="popup"]
 modulate = Color( 1, 1, 1, 0.988235 )
 show_behind_parent = true
-position = Vector2( 1117, 223.5 )
+position = Vector2( 343, 223.5 )
 scale = Vector2( 0.255135, 0.247016 )
 texture = ExtResource( 6 )
 
@@ -179,7 +179,7 @@ texture = ExtResource( 5 )
 [node name="pag1" type="Sprite" parent="popup"]
 modulate = Color( 1, 1, 1, 0.988235 )
 show_behind_parent = true
-position = Vector2( -397, 233.5 )
+position = Vector2( 342, 223.5 )
 scale = Vector2( 0.255135, 0.247016 )
 texture = ExtResource( 6 )
 
