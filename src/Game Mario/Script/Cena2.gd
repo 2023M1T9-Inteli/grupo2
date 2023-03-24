@@ -74,6 +74,7 @@ func _on_Area2D_body_entered(body):
 	$blocoFx.play()
 	#muda a variável 'podeAtirar' para true, permitindo a função atirar_tomate retornar algo
 	pode_atirar = true
+  
 	$pomodoro.visible = true
 	$pomodoro/WindowDialog.popup_centered()
 	jogador.movimentacao = false

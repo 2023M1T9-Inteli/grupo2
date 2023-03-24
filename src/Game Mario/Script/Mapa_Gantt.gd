@@ -2,18 +2,19 @@ extends Node2D
 
 
 var jogador = preload("res://Branch/Player.tscn").instance()
+var kanban = preload("res://Cenas/popUpKanban.tscn").instance()
 var pode_atirar = false
 var tempo
 
 onready var fase = get_node("/root/CategoriaGlobal")
 onready var categoria = get_node("/root/CategoriaGlobal")
-
+onready var movimento = get_node("/root/GlobalTeste")
 
 func _ready():
 	fase.level = "fase 3"
 	jogador.position = Vector2(-1844, 526)
 	add_child(jogador)
-	$KinematicBody2D/AnimatedSprite.play("default")
+#	$KinematicBody2D/AnimatedSprite.play("default")
 	if(categoria.categoria == 0): tempo = 150
 	elif categoria.categoria == 1: tempo = 225
 	elif categoria.categoria == 2: tempo = 180
@@ -51,4 +52,8 @@ func atirar_flecha():
 
 func _on_Area2D_body_entered(body):
 	pode_atirar = true
+	add_child(kanban)
+	movimento.movimento_player = false
+	
+
 	$KinematicBody2D/AnimatedSprite.play("new")

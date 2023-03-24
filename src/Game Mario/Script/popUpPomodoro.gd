@@ -4,6 +4,7 @@ extends Node2D
 # função que mostra o pop up do pomodoro. Versão mais antiga sobre pop ups que futuramente será substituida por pop up
 # nessa tela, os elementos da "1° página" sobre o método omodoro é mostrada, junto com as setas para avançar e o botão de fechar
 func _ready():
+	
 	$Quizz/X3.hide()
 	$Quizz/tabela.hide()
 	$Quizz/Label3.hide()

@@ -35,6 +35,8 @@ func _on_Area2D_body_entered(body):
 	if body.is_in_group("monster"):
 		body.dano()
 		desaparecer_flecha = true
+	if body.is_in_group("tilemap"):
+		desaparecer_flecha = true
 	
 	#se a variável desaparecer_flecha for verdadeira, a flecha desaparece
 	if desaparecer_flecha:

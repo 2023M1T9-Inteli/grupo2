@@ -4,7 +4,7 @@ export (int) var seconds = 100
 var ms = 0
 
 func _ready():
-	$Timer.stop()
+	pause_timer()
 
 
 func _process(delta):
@@ -44,8 +44,11 @@ func start_timer(sec):
 	seconds = sec
 	$Timer.start()
 	
+func pause_timer():
+	$Timer.stop()
+	
+
 func perder_tempo():
 	seconds -= 10
-	print("tempo")
 
 
