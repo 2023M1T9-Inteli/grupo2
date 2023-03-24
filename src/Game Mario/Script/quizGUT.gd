@@ -1,32 +1,39 @@
-extends CanvasLayer
+extends Node2D
+var cont = 0
 
-		
-#função de avançar para a próxima página do pop up. Elementos da 1° página são escondidos e o da 2° pagina são mostrados
-func _on_avancar_pressed():
-	$popup/pag1.hide()
-	$popup/pag2.show()
+func _ready():
+	$perguntas.show()
+	$erro.hide()
+	$acerto.hide()
 	
-func _on_WindowDialog_popup_hide():
-	self.visible = false
+	
+func _process(delta):
+	if cont ==3:
+		get_tree().change_scene("res://Cenas/GameOver.tscn")
+		
+func _on_avancar_pressed():
+	get_tree().change_scene("res://Cenas/primeiraTela.tscn")
 
+func _on_Button4_pressed():
+	$perguntas.hide()
+	$acerto.show()
 
-func _on_voltar1_pressed():
-	$popup/pag1.show()
-	$popup/pag2.hide()
+func _on_Button3_pressed():
+	$perguntas.hide()
+	$erro.show()
+	cont+=1
 
+func _on_Button2_pressed():
+	$perguntas.hide()
+	$erro.show()
+	cont+=1
+	
 
+func _on_Button_pressed():
+	$perguntas.hide()
+	$erro.show()
+	cont+=1
 
-func _on_avancar2_pressed():
-	$popup/pag2.hide()
-	$popup/pag3.show()
-
-
-
-func _on_voltar2_pressed():
-	$popup/pag2.show()
-	$popup/pag3.hide()
-
-
-func _on_voltar_pressed():
-	$popup/pag1.show()
-	$popup/pag2.hide()
+func _on_TextureButton_pressed():
+	$erro.hide()
+	$perguntas.show()

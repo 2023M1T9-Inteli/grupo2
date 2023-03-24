@@ -2,7 +2,6 @@ extends Node2D
 
 
 var jogador = preload("res://Branch/Player.tscn").instance()
-var gut = preload("res://Cenas/quizGUT.tscn").instance()
 var pode_atirar = false
 var tempo
 

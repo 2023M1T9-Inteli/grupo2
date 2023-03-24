@@ -9,7 +9,7 @@
 [ext_resource path="res://Branch/TimeTrap.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Script/CenaGUT.gd" type="Script" id=8]
 [ext_resource path="res://imagens/bloco-gantt02.png" type="Texture" id=9]
-[ext_resource path="res://Cenas/quizGUT.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Cenas/popUpGUT.tscn" type="PackedScene" id=10]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
