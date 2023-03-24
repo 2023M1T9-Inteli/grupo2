@@ -12,11 +12,12 @@ func _process(delta):
 		get_tree().change_scene("res://Cenas/GameOver.tscn")
 		
 func _on_avancar_pressed():
-	get_tree().change_scene("res://Cenas/primeiraTela.tscn")
+	get_tree().change_scene("res://Cenas/Mapap_do_Kanban.tscn")
 
 func _on_Button4_pressed():
 	$perguntas.hide()
-	$acerto.show()
+	$erro.show()
+	cont+=1
 
 func _on_Button3_pressed():
 	$perguntas.hide()
@@ -25,9 +26,7 @@ func _on_Button3_pressed():
 
 func _on_Button2_pressed():
 	$perguntas.hide()
-	$erro.show()
-	cont+=1
-	
+	$acerto.show()
 
 func _on_Button_pressed():
 	$perguntas.hide()

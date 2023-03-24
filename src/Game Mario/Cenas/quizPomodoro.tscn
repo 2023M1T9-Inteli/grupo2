@@ -4,7 +4,7 @@
 [ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://pop ups/pomodoro/pixil-frame-0 (3).png" type="Texture" id=3]
 [ext_resource path="res://pop ups/pomodoro/pixil-frame-0 (2).png" type="Texture" id=4]
-[ext_resource path="res://Script/quizGUT.gd" type="Script" id=5]
+[ext_resource path="res://Script/quizPomodoro.gd" type="Script" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
@@ -111,7 +111,7 @@ bg_color = Color( 0.0392157, 0.0745098, 0.25098, 1 )
 script = ExtResource( 5 )
 
 [node name="erro" type="Sprite" parent="."]
-position = Vector2( 596.11, 326 )
+position = Vector2( 596.11, 315 )
 scale = Vector2( 0.325455, 0.291429 )
 texture = ExtResource( 1 )
 
@@ -137,7 +137,7 @@ Tente de novo"
 align = 1
 
 [node name="acerto" type="Sprite" parent="."]
-position = Vector2( 596.11, 326 )
+position = Vector2( 596.11, 315 )
 scale = Vector2( 0.325455, 0.291429 )
 texture = ExtResource( 1 )
 
@@ -162,18 +162,20 @@ para a próxima fase"
 align = 1
 
 [node name="perguntas" type="Sprite" parent="."]
-position = Vector2( 596.11, 326 )
+position = Vector2( 596.11, 315 )
 scale = Vector2( 0.325455, 0.291429 )
 texture = ExtResource( 1 )
 
 [node name="Label" type="Label" parent="perguntas"]
-margin_left = -1100.34
-margin_top = -713.724
-margin_right = 199.665
-margin_bottom = -521.724
+margin_left = -1090.78
+margin_top = -737.745
+margin_right = 209.221
+margin_bottom = -545.745
 rect_scale = Vector2( 1.68627, 1.68627 )
 custom_fonts/font = SubResource( 1 )
-text = "pergunta metodo GUT"
+text = "Qual a situação mais
+adequada para se utilizar 
+o método pomodoro?"
 align = 1
 
 [node name="Button4" type="Button" parent="perguntas"]
@@ -186,14 +188,15 @@ custom_styles/focus = SubResource( 3 )
 custom_styles/normal = SubResource( 4 )
 
 [node name="Label2" type="Label" parent="perguntas/Button4"]
-margin_left = 54.9693
-margin_top = 65.1965
-margin_right = 1943.97
-margin_bottom = 158.197
+margin_left = 125.977
+margin_top = 37.7453
+margin_right = 1911.98
+margin_bottom = 199.745
 custom_fonts/font = SubResource( 5 )
-text = "repossta A"
+text = "É recomendado para saber priorizar qual 
+tipo de atividade realizar e sua ordem de 
+execução"
 align = 1
-autowrap = true
 
 [node name="Button3" type="Button" parent="perguntas"]
 margin_left = -1010.89
@@ -210,18 +213,18 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -967.0
-margin_top = -87.9998
-margin_right = 966.0
-margin_bottom = 89.0002
+margin_left = -926.258
+margin_top = -90.9802
+margin_right = 949.742
+margin_bottom = 86.0198
 theme = SubResource( 8 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 9 )
-text = "resposta B"
+text = "Quando há um trabalho grande a ser feito 
+e é preciso delegar a cada membro uma função"
 align = 1
 valign = 1
-autowrap = true
 
 [node name="Button2" type="Button" parent="perguntas"]
 margin_left = -1013.96
@@ -240,9 +243,10 @@ margin_top = 30.8826
 margin_right = 1907.63
 margin_bottom = 192.883
 custom_fonts/font = SubResource( 5 )
-text = "resposta C"
+text = "Quando é preciso realizar uma tarefa que 
+exija foco e que possa ser concluida
+ em etapas"
 align = 1
-autowrap = true
 
 [node name="Button" type="Button" parent="perguntas"]
 margin_left = -1007.82
@@ -254,14 +258,15 @@ custom_styles/focus = SubResource( 14 )
 custom_styles/normal = SubResource( 15 )
 
 [node name="Label2" type="Label" parent="perguntas/Button"]
-margin_left = 33.0
-margin_top = 75.8821
-margin_right = 1987.0
-margin_bottom = 202.882
+margin_left = -107.543
+margin_top = 30.8833
+margin_right = 2147.46
+margin_bottom = 192.883
 custom_fonts/font = SubResource( 5 )
-text = "Resposta D"
+text = "É recomendado para planejamento de tarefas ao
+ longo da semana e acompanhar o andamento de
+ cada uma"
 align = 1
-autowrap = true
 
 [connection signal="pressed" from="erro/TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="acerto/avancar" to="." method="_on_avancar_pressed"]

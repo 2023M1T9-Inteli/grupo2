@@ -12,7 +12,7 @@ func _process(delta):
 		get_tree().change_scene("res://Cenas/GameOver.tscn")
 		
 func _on_avancar_pressed():
-	get_tree().change_scene("res://Cenas/primeiraTela.tscn")
+	get_tree().change_scene("res://Cenas/Mapa_Gantt.tscn")
 
 func _on_Button4_pressed():
 	$perguntas.hide()

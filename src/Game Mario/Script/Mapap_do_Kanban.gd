@@ -2,7 +2,6 @@ extends Node2D
 
 
 var jogador = preload("res://Branch/Player.tscn").instance()
-var kanban = preload("res://Cenas/popUpKanban.tscn").instance()
 var pode_atirar = false
 var tempo
 

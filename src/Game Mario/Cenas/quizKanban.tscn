@@ -4,7 +4,7 @@
 [ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://pop ups/pomodoro/pixil-frame-0 (3).png" type="Texture" id=3]
 [ext_resource path="res://pop ups/pomodoro/pixil-frame-0 (2).png" type="Texture" id=4]
-[ext_resource path="res://Script/quizGUT.gd" type="Script" id=5]
+[ext_resource path="res://Script/quizKanban.gd" type="Script" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
@@ -173,7 +173,8 @@ margin_right = 199.665
 margin_bottom = -521.724
 rect_scale = Vector2( 1.68627, 1.68627 )
 custom_fonts/font = SubResource( 1 )
-text = "pergunta metodo GUT"
+text = "Quais os benefícios de 
+utilizar o método Kanban?"
 align = 1
 
 [node name="Button4" type="Button" parent="perguntas"]
@@ -191,7 +192,7 @@ margin_top = 65.1965
 margin_right = 1943.97
 margin_bottom = 158.197
 custom_fonts/font = SubResource( 5 )
-text = "repossta A"
+text = "Ter uma melhor visão sobre o andamento de um projeto e quais tarefas precisam ser feitas"
 align = 1
 autowrap = true
 
@@ -218,7 +219,7 @@ theme = SubResource( 8 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 9 )
-text = "resposta B"
+text = "Agilizar a execução com base na classificação das tarefas pelo seu tempo demandado"
 align = 1
 valign = 1
 autowrap = true
@@ -240,7 +241,7 @@ margin_top = 30.8826
 margin_right = 1907.63
 margin_bottom = 192.883
 custom_fonts/font = SubResource( 5 )
-text = "resposta C"
+text = "Evita distrações ao promover atividades em fluxos de tempos com foco, além de manter controle sobre os prazos das tarefas"
 align = 1
 autowrap = true
 
@@ -254,12 +255,12 @@ custom_styles/focus = SubResource( 14 )
 custom_styles/normal = SubResource( 15 )
 
 [node name="Label2" type="Label" parent="perguntas/Button"]
-margin_left = 33.0
-margin_top = 75.8821
-margin_right = 1987.0
-margin_bottom = 202.882
+margin_left = 33.4611
+margin_top = 44.6077
+margin_right = 1984.46
+margin_bottom = 206.608
 custom_fonts/font = SubResource( 5 )
-text = "Resposta D"
+text = "Controlar o tempo de execução de cada tarefa e  definir su método de resolução"
 align = 1
 autowrap = true
 
