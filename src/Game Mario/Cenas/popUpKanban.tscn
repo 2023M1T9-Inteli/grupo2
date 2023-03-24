@@ -4,11 +4,7 @@
 [ext_resource path="res://pop ups/pomodoro/X.png" type="Texture" id=2]
 [ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Script/popUpKanban.gd" type="Script" id=4]
-<<<<<<< Updated upstream
-[ext_resource path="res://kanban/pixil-frame-0 (15).png" type="Texture" id=5]
-=======
 [ext_resource path="res://kanban/pixil-frame-0 (16).png" type="Texture" id=5]
->>>>>>> Stashed changes
 [ext_resource path="res://pop ups/relógio/quizz.png" type="Texture" id=6]
 [ext_resource path="res://pop ups/relógio/x escuro.png" type="Texture" id=7]
 [ext_resource path="res://pomodoro/pixil-frame-0 (3).png" type="Texture" id=8]
