@@ -1,12 +1,10 @@
-extends Node
+extends Node2D
 
 #varíavel que referencia a cena do tomate arremessável
 var tomate = preload("res://Cenas/Tomate.tscn")
 onready var fase = get_node("/root/CategoriaGlobal")
 #variável que referencia e instancia a cena do player
 var jogador = preload("res://Branch/Player.tscn").instance()
-
-var popup = preload("res://Cenas/popUpPomodoro.tscn").instance()
 
 onready var movimento = get_node("/root/GlobalTeste")
 onready var categoria = get_node("/root/CategoriaGlobal")
@@ -30,10 +28,19 @@ func _ready():
 	#animação padrão para o bloco
 	$Bloco_Tomate/AnimatedSprite.play("default")
 
+
 func _process(_delta):
 	#chama continuamente a função 'atirar_tomate'
 	atirar_tomate()
 	$Player.morte_queda()
+	self.pause_mode = true
+	
+	if !$pomodoro.visible:
+		jogador.movimentacao = true
+		print(jogador.movimentacao)
+		self.pause_mode = false
+	
+	
 	
 	
 #função 'atirar_tomate' responsável pela mecânica de atirar tomates
@@ -67,7 +74,9 @@ func _on_Area2D_body_entered(body):
 	$blocoFx.play()
 	#muda a variável 'podeAtirar' para true, permitindo a função atirar_tomate retornar algo
 	pode_atirar = true
-	add_child(popup)
-	movimento.movimento_player = false
-
-	
+	$pomodoro.visible = true
+	$pomodoro/WindowDialog.popup_centered()
+	jogador.movimentacao = false
+	$Player/Sprite.play("Idle")
+	self.pause_mode = true
+		

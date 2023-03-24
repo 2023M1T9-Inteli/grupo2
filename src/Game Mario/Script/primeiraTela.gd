@@ -13,8 +13,8 @@ func _on_startBtn_pressed():
 
 #aparecer menu de controle e voltar para tela de início se for requerido
 func _on_controlBtn_pressed():
-	var controlScreen = load("res://control/popUpControl.tscn").instance()
-	get_tree().current_scene.add_child(controlScreen) 
+	var control_screen = load("res://control/popUpControl.tscn").instance()
+	get_tree().current_scene.add_child(control_screen) 
 
 #fecha a tela do programa
 func _on_quitBtn_pressed():
@@ -28,6 +28,6 @@ func die():
 
 #botao de objetivo do jogo
 func _on_objetivoBtn_pressed():
-	var objetivoScreen = load("res://Cenas/PopUpObjetivo.tscn").instance()
-	get_tree().current_scene.add_child(objetivoScreen)
+	var objetivo_screen = load("res://Cenas/PopUpObjetivo.tscn").instance()
+	get_tree().current_scene.add_child(objetivo_screen)
 	print("body")
