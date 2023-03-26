@@ -3,6 +3,7 @@ extends Node2D
 
 var jogador = preload("res://Branch/Player.tscn").instance()
 var pode_atirar = false
+#Variável de controle para saber quanto tempo será disponibilizado para realizar a fase
 var tempo
 
 onready var fase = get_node("/root/CategoriaGlobal")
@@ -13,12 +14,17 @@ func _ready():
 	add_child(jogador)
 
 	jogador.position = Vector2(-1687, 161)
+	#	Atribui o valor a variável global level, para que caso ocorra GameOver, saiba-se em que nível está. 
 	fase.level = "fase 4"
+	
+#	Define a quantidade de tempo que o jogador terá para completar a fase com base no desempenho da matriz
 	if(categoria.categoria == 0): tempo = 150
 	elif categoria.categoria == 1: tempo = 225
 	elif categoria.categoria == 2: tempo = 180
 	elif categoria.categoria == 3: tempo = 120
 	else: tempo = 225
+	
+#	Inicia o timer
 	$Player/timer/CanvasLayer/Control.start_timer(tempo)
 	$KinematicBody2D/AnimatedSprite.play("default")
 

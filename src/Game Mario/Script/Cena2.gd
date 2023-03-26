@@ -17,7 +17,10 @@ var tempo
 func _ready():
 	#adiciona a cena do player, que foi instanciada, na cena atual 
 	add_child(jogador)
+	#Altera a variável global fase, que indica qual nível o jogador está, 
+#	para que assim o game over reinicie na fase certa	
 	fase.level = "fase 2"
+#	Atribui um valor para o tempo que o jogador tem, baseado no desempenho da matriz
 	if(categoria.categoria == 0): tempo = 150
 	elif categoria.categoria == 1: tempo = 225
 	elif categoria.categoria == 2: tempo = 180

@@ -1,4 +1,5 @@
 extends Node2D
+#Variavel global de controle para saber em que fase do jogo está
 onready var controle = get_node("/root/CategoriaGlobal")
 
 func _ready():
@@ -6,7 +7,7 @@ func _ready():
 	$startBtn.grab_focus()
 
 func _on_startBtn_pressed():
-	#Abre a primeira cena para que o usuário reinicie o jogo	
+	#Abre a cena em que o usuário estava do início.	
 	if controle.level == "fase 1":
 		get_tree().change_scene("res://Cenas/World.tscn")
 	elif controle.level == "fase 2":
