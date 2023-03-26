@@ -30,7 +30,9 @@ func _ready():
 
 
 func _process(delta):
+	#player morre de queda
 	$Player.morte_queda()
+	#atirar poder se for true
 	atirar_flecha()
 	
 	if !$kanban.visible:

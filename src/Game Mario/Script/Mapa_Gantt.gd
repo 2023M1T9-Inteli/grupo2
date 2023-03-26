@@ -27,7 +27,7 @@ func _ready():
 #	Inicia o timer
 	$Player/timer/CanvasLayer/Control.start_timer(tempo)
 
-
+#funca para fazer player morrer se cair fora do mapa e atirar poder se for true
 func _process(delta):
 	$Player.morte_queda()
 	atirar_flecha()
