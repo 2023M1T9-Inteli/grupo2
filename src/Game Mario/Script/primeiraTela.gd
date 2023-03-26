@@ -20,12 +20,6 @@ func _on_controlBtn_pressed():
 func _on_quitBtn_pressed():
 	get_tree().quit() 
 
-#função para quando inimigo morrer sumir
-func die():
-	$".".queue_free()
-
-
-
 #botao de objetivo do jogo
 func _on_objetivoBtn_pressed():
 	var objetivo_screen = load("res://Cenas/PopUpObjetivo.tscn").instance()

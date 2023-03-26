@@ -119,20 +119,25 @@ func _on_pes_body_entered(body):
 	
 
 #player toma dano
-func _on_dano_body_entered(body):
+func _on_dano_body_entered(_body):
+#	Chama a função do timer para que ele perca tempo do seu cronometro
 	$timer/CanvasLayer/Control.perder_tempo()
 
-#
+#Código anterior, que fazia com que desse GameOver, comentado caso queira ser reutilizado
 #	vida -= 1 
 #	if vida == 0:
 #		$".".queue_free()
 #		get_tree().change_scene("res://Cenas/GameOver.tscn")
 #
 
+#Função para verificar se o jogador caiu e não utilizou o rewind
 func morte_queda():
+#	Se passar dessa posição, significa que ele caiu mais de 3 segundos
 	if position.y > 8000:
+#		Mata o jogador
 		vida -= 1
-		
+	
+#	Se ele tiver caído, será chamado a cena de gameOver.
 	if vida == 0:
 		queue_free()
 		get_tree().change_scene("res://Cenas/GameOver.tscn")

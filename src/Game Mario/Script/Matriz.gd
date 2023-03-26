@@ -6,7 +6,9 @@ var imp_urg = 0 # variável importante e urgente
 var imp_n_urg = 0 # variável importante e não urgente
 var n_imp_urg = 0 # variavel não importante e urgente
 var n_imp_n_urg = 0 # não importante e não urgente
+#Variável para controlar quais da categorias tem a maior discrepância entre o ideal
 var index
+#Variável global, a qual armazena a categoria
 onready var categoria = get_node("/root/CategoriaGlobal")
 
 func _ready():
@@ -88,7 +90,9 @@ func _on_NINU_mais_pressed():
 #Envia as variáveis para a análise da matriz, dando um feedback para o usuário sobre a 
 #organização de suas tarefas
 func _on_Analise_pressed():
+#	Mostra o botão de jogar
 	$Jogar.show()	
+#	Desabilita os botões de subtrair e adicionar horas para evitar que o jogador altere suas horas após pedir análise
 	$IU_mais.disabled = true
 	$IU_menos.disabled = true
 	$INU_mais.disabled = true
@@ -97,7 +101,7 @@ func _on_Analise_pressed():
 	$NIU_menos.disabled = true
 	$NINU_mais.disabled = true
 	$NINU_menos.disabled = true
-	#Percentuais de discrepância entre o ideal e o apresentado pelo player 	
+	#Diferença entre as horas ideais e o apresentado pelo player 	
 	var perc_iu = abs(imp_urg-5.0)
 	var perc_i_nu = abs(imp_n_urg-14.0)
 	var perc_ni_u = abs(n_imp_urg-4.0)
@@ -105,16 +109,13 @@ func _on_Analise_pressed():
 	
 	#Lista com os percentuais
 	var lista = [perc_iu,perc_i_nu,perc_ni_u,perc_ni_nu]
-	#Variaveis para guardar index do valor máximo da lista	
-	#variável auxiliar para indicar em qual índice da lista ele está	
+	#variável auxiliar para indicar em qual índice da lista ele está
 	var counter = 0
-	
+	#For para percorrer a lista e achar a posição com o maior valor
 	for i in lista:
 		if i == lista.max():
 			index = counter
 		counter += 1 
-		
-	print(index)
 	
 	#Análise da categoria Importante e Urgente, dando seu feedback dependendo da quantidade de horas	
 	if imp_urg > 6:
@@ -148,5 +149,6 @@ func _on_Analise_pressed():
 
 
 func _on_Jogar_pressed():
+#	Atribui o tipo da matriz que teve mais discrepância a global Categoria, para que se possa definir a quantidade de horas para cada fase.
 	categoria.categoria = index
 	get_tree().change_scene("res://Cenas/World.tscn")
