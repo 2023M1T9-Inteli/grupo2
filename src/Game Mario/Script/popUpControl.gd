@@ -1,12 +1,6 @@
 extends Node2D
 
-
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
+#função que fecha o popup assim que o botão é pressionado
 func _on_TextureButton_pressed():
 	$quadro.hide()
 	$Sprite.hide()

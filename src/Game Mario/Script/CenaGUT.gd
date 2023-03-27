@@ -10,22 +10,30 @@ onready var categoria = get_node("/root/CategoriaGlobal")
 
 
 func _ready():
+#	Atribui o valor a variável global level, para que caso ocorra GameOver, saiba-se em que nível está. 
 	fase.level = "fase 3"
 	jogador.position = Vector2(-1844, 526)
+#adiciona a cena do jogador na cena atual
 	add_child(jogador)
 	$KinematicBody2D/AnimatedSprite.play("default")
+#	Define a quantidade de tempo que o jogador terá para completar a fase com base no desempenho da matriz
 	if(categoria.categoria == 0): tempo = 150
 	elif categoria.categoria == 1: tempo = 225
 	elif categoria.categoria == 2: tempo = 180
 	elif categoria.categoria == 3: tempo = 120
 	else: tempo = 225
+
+	#	Inicia o timer
 	$Player/timer/CanvasLayer/Control.start_timer(tempo)
 
 
 func _process(delta):
+	#player morre de queda
 	$Player.morte_queda()
+	#atirar poder se for true
 	atirar_flecha()
 	
+	#torna o popup invisível enquanto o bloco não é acionado
 	if !$gut.visible:
 		jogador.movimentacao = true
 		print(jogador.movimentacao)
@@ -53,13 +61,15 @@ func atirar_flecha():
 		#adiciona a cena Flecha, que foi instanciada, na cena atual
 		get_tree().current_scene.add_child(cena_flecha)
 		
-
+# função que aciona o poder assim que o player encosta no bloco e abre o pop up explicando o poder
 func _on_Area2D_body_entered(body):
 	pode_atirar = true
 	$KinematicBody2D/AnimatedSprite.play("new")
 	
+	
 	$gut.visible = true
 	$gut/popup.popup_centered()
+# pausa a movimentação do jogador e a cena enquanto o popup está aberto
 	jogador.movimentacao = false
 	$Player/Sprite.play("Idle")
 	self.pause_mode = true

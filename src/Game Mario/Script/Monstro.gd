@@ -73,7 +73,7 @@ func handle_rewind_function():
 			_dir_number = 1
 		else:
 			_dir_number = 0
-		
+		# salva a posição, animação e flip do personagem no recorded_data como primeiro item
 		recorded_data.push_front([ani.animation,global_position,ani.flip_h])
 		if(recorded_data.size() > rewind_length): #eliminar dados com mais de 3 segundos
 			recorded_data.pop_back()

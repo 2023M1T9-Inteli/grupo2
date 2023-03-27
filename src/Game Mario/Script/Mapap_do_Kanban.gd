@@ -1,6 +1,6 @@
 extends Node2D
 
-
+#variavel que instancia o jogador na cena
 var jogador = preload("res://Branch/Player.tscn").instance()
 var pode_atirar = false
 #Variável de controle para saber quanto tempo será disponibilizado para realizar a fase
@@ -35,6 +35,7 @@ func _process(delta):
 	#atirar poder se for true
 	atirar_flecha()
 	
+	#torna o popup invisível enquanto o bloco não é acionado
 	if !$kanban.visible:
 		jogador.movimentacao = true
 		self.pause_mode = false
@@ -61,17 +62,15 @@ func atirar_flecha():
 		#adiciona a cena Flecha, que foi instanciada, na cena atual
 		get_tree().current_scene.add_child(cena_flecha)
 		
-
+# função que aciona o poder assim que o player encosta no bloco e abre o pop up explicando o poder
 func _on_Area2D_body_entered(body):
 	pode_atirar = true
-#	movimento.movimento_player = false
-#	jogador.movimentacao = false
-#	kanban.visible = true
-	
 	get_node("KinematicBody2D").get_node("AnimatedSprite").play("new")
 	$KinematicBody2D/AnimatedSprite.play("new")
+	
 	$kanban.visible = true
 	$kanban/Control/WindowDialog.popup_centered()
+	# pausa a movimentação do jogador e a cena enquanto o popup está aberto
 	jogador.movimentacao = false
 	$Player/Sprite.play("Idle")
 	self.pause_mode = true

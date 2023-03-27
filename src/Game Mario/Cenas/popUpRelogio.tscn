@@ -95,7 +95,7 @@ position = Vector2( 549, 371 )
 scale = Vector2( 1.66771, 1.66771 )
 frames = SubResource( 1 )
 animation = "New Anim"
-frame = 11
+frame = 21
 playing = true
 
 [node name="Label" type="Label" parent="Popup"]

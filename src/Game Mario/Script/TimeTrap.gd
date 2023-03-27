@@ -12,15 +12,13 @@ var is_rewinding = false #bool para indicar se função de rebobinar está ativa
 var rewind_length = (60 * 3) #3 segundos
 var rewind_ghost = load("res://Cenas/rewindGhost.tscn")  #direcionar ao sprite que está rebobinando para mostrar seu rastro na tela
 
-
-
-# a primeira do relógio(TicTac), pega seu inicio, fim e deixa na primeira posição da imagem 
+#Inicia a animação walk do personagem TimeTrap (celular) , além de definir sua posição máxima e mínima de caminhada
 func _ready():
 	$Sprite.play("walk")
 	posicao_inicial = $".".position.x
 	posicao_final = posicao_inicial +  100
 
-#está fazendo com que o a personagem relógio(TicTac) seja processada várias vezes para sua locomoção e mudança de imagem dela
+#está fazendo com que o personagem celular(TimeTrap) seja processada várias vezes para sua locomoção e mudança de imagem dela
 func _process(_delta):
 	
 	handle_rewind_function()

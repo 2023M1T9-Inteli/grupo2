@@ -7,7 +7,6 @@ func _on_avancar_pressed():
 	$Control/WindowDialog/Sprite2.show()
 	
 
-
 #função para volar para página anterior (primeira página)
 func _on_voltar1_pressed():
 	$Control/WindowDialog/Sprite.show()
@@ -25,6 +24,6 @@ func _on_voltar2_pressed():
 	$Control/WindowDialog/Sprite3.hide()
 	$Control/WindowDialog/Sprite2.show()
 
-
+#função que fecha o popup e torna o canvas layer não visível
 func _on_WindowDialog_popup_hide():
 	self.visible = false

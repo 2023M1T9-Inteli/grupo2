@@ -6,7 +6,9 @@ onready var fase = get_node("/root/CategoriaGlobal")
 #variável que referencia e instancia a cena do player
 var jogador = preload("res://Branch/Player.tscn").instance()
 
+# variável que referencia cena global acerca do movimento do jogador
 onready var movimento = get_node("/root/GlobalTeste")
+#variável que referencia cena global acerca do timer
 onready var categoria = get_node("/root/CategoriaGlobal")
 
 #variável booleana que indica se o jogador já pode atirar
@@ -36,14 +38,12 @@ func _process(_delta):
 	#chama continuamente a função 'atirar_tomate'
 	atirar_tomate()
 	$Player.morte_queda()
-	self.pause_mode = true
 	
+	#torna o popup invisível enquanto o bloco não é acionado
 	if !$pomodoro.visible:
 		jogador.movimentacao = true
 		print(jogador.movimentacao)
 		self.pause_mode = false
-	
-	
 	
 	
 #função 'atirar_tomate' responsável pela mecânica de atirar tomates
@@ -78,9 +78,13 @@ func _on_Area2D_body_entered(body):
 	#muda a variável 'podeAtirar' para true, permitindo a função atirar_tomate retornar algo
 	pode_atirar = true
   
+# função que torna o canvas layer do popup visível
 	$pomodoro.visible = true
+# função que ativa o popup centralizado na tela
 	$pomodoro/WindowDialog.popup_centered()
+# função que impede o jogador de se movmentar enquanto o popup está aberto
 	jogador.movimentacao = false
 	$Player/Sprite.play("Idle")
+#função que pausa a cena enquanto o popup está aberto
 	self.pause_mode = true
 		
