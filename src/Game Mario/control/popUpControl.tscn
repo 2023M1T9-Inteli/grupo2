@@ -45,7 +45,7 @@ margin_top = 125.131
 margin_right = 275.408
 margin_bottom = 139.131
 rect_scale = Vector2( 2.81376, 2.81376 )
-text = "Use o botão Z ou o botão K para utilizar os poderes"
+text = "Use o botão Z ou o botão F para utilizar os poderes"
 autowrap = true
 
 [node name="Label3" type="Label" parent="quadro"]
@@ -58,7 +58,7 @@ margin_top = 255.495
 margin_right = 280.076
 margin_bottom = 269.495
 rect_scale = Vector2( 2.81376, 2.81376 )
-text = "Use o botão X ou o botão J para \"voltar no tempo\""
+text = "Use o botão X ou o botão E para \"voltar no tempo\""
 autowrap = true
 
 [node name="TextureButton" type="TextureButton" parent="quadro"]
