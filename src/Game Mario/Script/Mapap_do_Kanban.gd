@@ -2,6 +2,7 @@ extends Node2D
 
 #variavel que instancia o jogador na cena
 var jogador = preload("res://Branch/Player.tscn").instance()
+#variável que indica se o jogador pode atirar ou não
 var pode_atirar = false
 #Variável de controle para saber quanto tempo será disponibilizado para realizar a fase
 var tempo
@@ -11,8 +12,10 @@ onready var categoria = get_node("/root/CategoriaGlobal")
 #onready var movimento = get_node("/root/GlobalTeste")
 
 func _ready():
+	#adiciona a cena do jogador, que foi instanciada, na cena atual
 	add_child(jogador)
-
+	
+	#determina as coordenadas em que aparece o jogador
 	jogador.position = Vector2(-1687, 161)
 	#	Atribui o valor a variável global level, para que caso ocorra GameOver, saiba-se em que nível está. 
 	fase.level = "fase 4"

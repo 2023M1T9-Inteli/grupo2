@@ -19,7 +19,7 @@ func _ready():
 
 
 func _process(delta):
-	#acrese delta na variável tempo a cada frame
+	#acresce delta na variável tempo a cada frame
 	tempo += delta
 	#quando a variável tempo for maior do que 2, faz desaparecer o tomate
 	if tempo > 2:
