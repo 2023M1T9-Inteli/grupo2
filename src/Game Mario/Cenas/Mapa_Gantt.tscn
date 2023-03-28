@@ -30,7 +30,7 @@ extents = Vector2( 41, 39.5 )
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 36, 0.8125 )
 
-[node name="cenaGUT" type="Node2D"]
+[node name="cenaGUT" type="Node2D" groups=["tilemap"]]
 script = ExtResource( 8 )
 __meta__ = {
 "_edit_horizontal_guides_": [ 318.0 ],
@@ -78,21 +78,21 @@ position = Vector2( 1057, 322 )
 [node name="Monstro7" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1256, 322 )
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+[node name="KinematicBody2D" type="KinematicBody2D" parent="." groups=["tilemap"]]
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D" groups=["tilemap"]]
 position = Vector2( -1838, 316 )
 scale = Vector2( 0.08, 0.08 )
 frames = SubResource( 1 )
 animation = "new"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D" groups=["tilemap"]]
 position = Vector2( -1838, 314.5 )
 shape = SubResource( 2 )
 
-[node name="Area2D" type="Area2D" parent="KinematicBody2D"]
+[node name="Area2D" type="Area2D" parent="KinematicBody2D" groups=["tilemap"]]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D/Area2D" groups=["tilemap"]]
 position = Vector2( -1837, 356 )
 shape = SubResource( 3 )
 
