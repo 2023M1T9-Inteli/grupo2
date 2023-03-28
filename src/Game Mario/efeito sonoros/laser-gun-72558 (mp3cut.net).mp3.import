@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/laser-gun-72558 (mp3cut.net).mp3-e3f23bd6a88b68afcd2d43a76976ef3e.mp3str"
+
+[deps]
+
+source_file="res://efeito sonoros/laser-gun-72558 (mp3cut.net).mp3"
+dest_files=[ "res://.import/laser-gun-72558 (mp3cut.net).mp3-e3f23bd6a88b68afcd2d43a76976ef3e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

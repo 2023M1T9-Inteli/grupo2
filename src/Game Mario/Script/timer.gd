@@ -74,3 +74,9 @@ func perder_tempo():
 	seconds -= 10
 
 
+func _on_Button_pressed():
+	pause_timer()
+
+
+func _on_Button2_pressed():
+	start_timer(seconds)

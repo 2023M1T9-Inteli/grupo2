@@ -237,7 +237,7 @@ text = "Agora faça a sua própria Matriz de Eisenhower.
 
 Escreva suas atividades em cada campo indicado.
 
-Após escrito, forneça a quantidade de horas que você passa em cada bloco utilizando os botões sinalizados com sinal de + e -.
+Após escrito, forneça a quantidade de horas que você passa em cada quadrante utilizando os botões sinalizados com sinal de + e -.
 
 Por fim, aperte o botão para que sua matriz seja analisada."
 autowrap = true
