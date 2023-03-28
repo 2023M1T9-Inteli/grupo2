@@ -167,16 +167,14 @@ scale = Vector2( 0.325455, 0.291429 )
 texture = ExtResource( 1 )
 
 [node name="Label" type="Label" parent="perguntas"]
-margin_left = -750.057
-margin_top = -792.646
-margin_right = 549.948
-margin_bottom = -535.646
+margin_left = -1100.34
+margin_top = -713.724
+margin_right = 199.665
+margin_bottom = -521.724
 rect_scale = Vector2( 1.68627, 1.68627 )
-rect_pivot_offset = Vector2( 539.356, -0.000244141 )
 custom_fonts/font = SubResource( 1 )
-text = "Como você pode atribuir pesos aos diferentes critérios de avaliação no método GUT?"
+text = "pergunta metodo GUT"
 align = 1
-autowrap = true
 
 [node name="Button4" type="Button" parent="perguntas"]
 margin_left = -1007.82
@@ -193,7 +191,7 @@ margin_top = 65.1965
 margin_right = 1943.97
 margin_bottom = 158.197
 custom_fonts/font = SubResource( 5 )
-text = "Com base na importância de cada critério para a decisão"
+text = "repossta A"
 align = 1
 autowrap = true
 
@@ -220,7 +218,7 @@ theme = SubResource( 8 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 9 )
-text = "Com base na ordem de prioridade dos critérios"
+text = "resposta B"
 align = 1
 valign = 1
 autowrap = true
@@ -242,7 +240,7 @@ margin_top = 30.8826
 margin_right = 1907.63
 margin_bottom = 192.883
 custom_fonts/font = SubResource( 5 )
-text = "Com base no custo de cada critério para a decisão"
+text = "resposta C"
 align = 1
 autowrap = true
 
@@ -261,7 +259,7 @@ margin_top = 75.8821
 margin_right = 1987.0
 margin_bottom = 202.882
 custom_fonts/font = SubResource( 5 )
-text = "Com base na disponibilidade de informações sobre cada critério"
+text = "Resposta D"
 align = 1
 autowrap = true
 
