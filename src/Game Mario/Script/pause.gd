@@ -2,7 +2,7 @@ extends CanvasLayer
 
 
 func _process(delta):
-	if $popUpControl.fechou == true:
+	if $popUpControl.fechou:
 		$popUpControl.visible = false
 
 

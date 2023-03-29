@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://imagens/BackgroundTelaInicial.jpeg" type="Texture" id=2]
 [ext_resource path="res://Script/primeiraTela.gd" type="Script" id=3]
+[ext_resource path="res://Cenas/popUpControl.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Cenas/PopUpObjetivo.tscn" type="PackedScene" id=5]
 
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
@@ -116,6 +118,10 @@ custom_colors/font_color_pressed = Color( 0.905882, 0.494118, 0.0431373, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Sair"
 expand_icon = true
+
+[node name="popUpControl" parent="." instance=ExtResource( 4 )]
+
+[node name="objetivo" parent="." instance=ExtResource( 5 )]
 
 [connection signal="pressed" from="controls/startBtn" to="." method="_on_startBtn_pressed"]
 [connection signal="pressed" from="controls/objetivoBtn" to="." method="_on_objetivoBtn_pressed"]

@@ -5,6 +5,8 @@ var movimento_player = true
 #chama a função de tocar musica, para assim tocar a musica principal logo na tela de início
 func _ready():
 	ControleMusica.play_musica()
+	$popUpControl.visible = false
+	$objetivo.visible = false
 
 
 #vai para a proxima tela
@@ -13,8 +15,7 @@ func _on_startBtn_pressed():
 
 #aparecer menu de controle e voltar para tela de início se for requerido
 func _on_controlBtn_pressed():
-	var control_screen = load("res://control/popUpControl.tscn").instance()
-	get_tree().current_scene.add_child(control_screen) 
+	$popUpControl.visible = true
 
 #fecha a tela do programa
 func _on_quitBtn_pressed():
@@ -22,6 +23,4 @@ func _on_quitBtn_pressed():
 
 #botao de objetivo do jogo
 func _on_objetivoBtn_pressed():
-	var objetivo_screen = load("res://Cenas/PopUpObjetivo.tscn").instance()
-	get_tree().current_scene.add_child(objetivo_screen)
-	print("body")
+	$objetivo.visible = true
