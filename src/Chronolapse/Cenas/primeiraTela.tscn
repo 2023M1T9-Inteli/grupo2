@@ -120,8 +120,10 @@ text = "Sair"
 expand_icon = true
 
 [node name="popUpControl" parent="." instance=ExtResource( 4 )]
+visible = false
 
 [node name="objetivo" parent="." instance=ExtResource( 5 )]
+visible = false
 
 [connection signal="pressed" from="controls/startBtn" to="." method="_on_startBtn_pressed"]
 [connection signal="pressed" from="controls/objetivoBtn" to="." method="_on_objetivoBtn_pressed"]

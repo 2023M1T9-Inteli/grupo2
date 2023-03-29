@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/exclamacao.png-82503af2eeb5e93903ca6c534fdc97d6.stex"
+path="res://.import/atencao.png-1fc8719113884c83230605f5752c871f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagens/exclamacao.png"
-dest_files=[ "res://.import/exclamacao.png-82503af2eeb5e93903ca6c534fdc97d6.stex" ]
+source_file="res://imagens/atencao.png"
+dest_files=[ "res://.import/atencao.png-1fc8719113884c83230605f5752c871f.stex" ]
 
 [params]
 

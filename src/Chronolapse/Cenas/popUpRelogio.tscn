@@ -67,7 +67,7 @@ animations = [ {
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 4 )
 
-[node name="popUpRelogio" type="Node2D"]
+[node name="popUpRelogio" type="CanvasLayer"]
 script = ExtResource( 3 )
 
 [node name="Popup" type="WindowDialog" parent="."]
@@ -76,8 +76,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_right = 1138.0
-margin_bottom = 640.0
+margin_left = -374.0
+margin_top = -217.0
+margin_right = 764.0
+margin_bottom = 423.0
 rect_scale = Vector2( 0.640001, 0.640001 )
 custom_colors/title_color = Color( 0, 0, 0, 1 )
 custom_constants/close_h_ofs = 80
@@ -95,7 +97,7 @@ position = Vector2( 549, 371 )
 scale = Vector2( 1.66771, 1.66771 )
 frames = SubResource( 1 )
 animation = "New Anim"
-frame = 21
+frame = 20
 playing = true
 
 [node name="Label" type="Label" parent="Popup"]
