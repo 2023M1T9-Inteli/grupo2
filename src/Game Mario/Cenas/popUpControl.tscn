@@ -65,4 +65,4 @@ margin_bottom = -341.746
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 3 )
 
-[connection signal="pressed" from="quadro/TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="quadro/TextureButton" to="quadro/ColorRect" method="_on_TextureButton_pressed"]

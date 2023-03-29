@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=52 format=2]
 
 [ext_resource path="res://Script/Player.gd" type="Script" id=1]
 [ext_resource path="res://personagem principal/run_menor3.png" type="Texture" id=2]
@@ -27,6 +27,9 @@
 [ext_resource path="res://efeito sonoros/DLMKRJN-ninja-jump (mp3cut.net).mp3" type="AudioStream" id=25]
 [ext_resource path="res://Cenas/timer.tscn" type="PackedScene" id=26]
 [ext_resource path="res://imagens/relogio_rewind/sprite_sheet_relogio.png" type="Texture" id=27]
+[ext_resource path="res://imagens/botao_pause.png" type="Texture" id=28]
+[ext_resource path="res://imagens/pause_escuro.png" type="Texture" id=29]
+[ext_resource path="res://Cenas/pause.tscn" type="PackedScene" id=30]
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 27 )
@@ -130,6 +133,19 @@ extents = Vector2( 18, 0.5 )
 [sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 26.5, 38 )
 
+[sub_resource type="StyleBoxTexture" id=21]
+texture = ExtResource( 28 )
+region_rect = Rect2( 0, 0, 33, 33 )
+
+[sub_resource type="StyleBoxTexture" id=19]
+texture = ExtResource( 29 )
+region_rect = Rect2( 0, 0, 33, 33 )
+
+[sub_resource type="StyleBoxTexture" id=20]
+texture = ExtResource( 28 )
+region_rect = Rect2( 0, 0, 33, 33 )
+
+
 [node name="Player" type="KinematicBody2D"]
 pause_mode = 1
 position = Vector2( -930, 327 )
@@ -149,7 +165,7 @@ position = Vector2( -30, -40 )
 scale = Vector2( 1.1236, 0.977045 )
 frames = SubResource( 2 )
 animation = "Idle"
-frame = 2
+frames = 3 
 playing = true
 centered = false
 
@@ -191,5 +207,19 @@ shape = SubResource( 8 )
 [node name="JumpFx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 25 )
 
+[node name="hud" type="CanvasLayer" parent="."]
+
+[node name="pausar" type="Button" parent="hud"]
+margin_left = 921.0
+margin_top = 31.0
+margin_right = 972.0
+margin_bottom = 80.0
+custom_styles/hover = SubResource( 21 )
+custom_styles/pressed = SubResource( 19 )
+custom_styles/normal = SubResource( 20 )
+
+[node name="pause" parent="." instance=ExtResource( 30 )]
+
 [connection signal="body_entered" from="pes" to="." method="_on_pes_body_entered"]
 [connection signal="body_entered" from="dano" to="." method="_on_dano_body_entered"]
+[connection signal="pressed" from="hud/pausar" to="." method="_on_pausar_pressed"]

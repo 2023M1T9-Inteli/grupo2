@@ -57,6 +57,7 @@ text = ":"
 
 [node name="Timer" type="Timer" parent="CanvasLayer/Control"]
 process_mode = 0
+pause_mode = 2
 wait_time = 0.1
 autostart = true
 
