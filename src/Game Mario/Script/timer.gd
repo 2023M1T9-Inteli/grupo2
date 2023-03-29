@@ -60,6 +60,9 @@ func _on_Timer_timeout():
 func _alterSeconds(i):
 	seconds -= i
 
+func retomarTimer():
+	$Timer.start()
+
 #Função para iniciar o timer com uma determinada quantia de tempo.
 func start_timer(sec):
 	seconds = sec

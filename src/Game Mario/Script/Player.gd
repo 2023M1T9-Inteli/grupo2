@@ -7,6 +7,7 @@ var jump_height = -800
 var vida = 1
 var motion = Vector2()
 var movimentacao = true
+var pausar = false
 
 onready var ani = $Sprite
 
@@ -15,6 +16,10 @@ var is_rewinding = false #bool para indicar se função de rebobinar está ativa
 var rewind_length = (60 * 3) #3 segundos
 var rewind_ghost = load("res://Cenas/rewindGhost.tscn")  #direcionar ao sprite que está rebobinando para mostrar seu rastro na tela
 
+
+
+func _ready():
+	$pause.visible = false
 
 #aciona os processos físico do personagem, ou seja, a movimentação de andar para os lados e pular. Além de conter a gravdidade para queda da personagem
 func _physics_process(_delta):
@@ -35,7 +40,10 @@ func _physics_process(_delta):
 	
 	if !is_on_floor():
 		$Sprite.play("jump")
-	
+	if !$pause.visible && pausar:
+		pausar = false
+		movimentacao = true
+		$timer/CanvasLayer/Control.retomarTimer()
 
 #função para fazer o personagem voltar no tempo (rebobinar)
 func handle_rewind_function():
@@ -134,3 +142,9 @@ func morte_queda():
 	if vida == 0:
 		queue_free()
 		get_tree().change_scene("res://Cenas/GameOver.tscn")
+
+func _on_pausar_pressed():
+	$pause.visible = true
+	$timer/CanvasLayer/Control.pause_timer()
+	movimentacao = false
+	pausar = true
