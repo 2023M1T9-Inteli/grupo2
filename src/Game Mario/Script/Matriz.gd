@@ -14,7 +14,6 @@ onready var categoria = get_node("/root/CategoriaGlobal")
 func _ready():
 	$Jogar.hide()
 	
-	
 #Função de controle para o total de horas não passar de 24hrs
 func fazer_Soma_Total():
 	return imp_urg + imp_n_urg + n_imp_n_urg + n_imp_urg
@@ -93,13 +92,6 @@ func _on_NINU_mais_pressed():
 func _on_Analise_pressed():
 #	Mostra o botão de jogar
 	$Jogar.show()	
-	
-#	esconde os textedits
-	$TextEdit.hide()
-	$TextEdit2.hide()
-	$TextEdit3.hide()
-	$TextEdit4.hide()
-	
 #	Desabilita os botões de subtrair e adicionar horas para evitar que o jogador altere suas horas após pedir análise
 	$IU_mais.disabled = true
 	$IU_menos.disabled = true

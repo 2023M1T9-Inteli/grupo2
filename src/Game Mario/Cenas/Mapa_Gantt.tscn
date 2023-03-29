@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Branch/ParallaxBackground.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Branch/Monstro.tscn" type="PackedScene" id=2]
@@ -10,7 +10,6 @@
 [ext_resource path="res://Script/CenaGUT.gd" type="Script" id=8]
 [ext_resource path="res://imagens/bloco-gantt02.png" type="Texture" id=9]
 [ext_resource path="res://Cenas/popUpGUT.tscn" type="PackedScene" id=10]
-[ext_resource path="res://efeito sonoros/laser-gun-72558 (mp3cut.net).mp3" type="AudioStream" id=11]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -98,8 +97,5 @@ position = Vector2( -1837, 356 )
 shape = SubResource( 3 )
 
 [node name="gut" parent="." instance=ExtResource( 10 )]
-
-[node name="LaserFx" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 11 )
 
 [connection signal="body_entered" from="KinematicBody2D/Area2D" to="." method="_on_Area2D_body_entered"]

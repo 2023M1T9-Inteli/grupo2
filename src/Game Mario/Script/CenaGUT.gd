@@ -44,8 +44,6 @@ func _process(delta):
 func atirar_flecha():
 	#a função só retorna algo se o botão ui_atirar for pressionado e se a variável pode_atirar for verdadeira
 	if Input.is_action_just_pressed("ui_atirar") and pode_atirar:
-		
-		$LaserFx.play()
 
 		#intancia a cena Flecha e joga dentro da variável cena_flecha
 		var cena_flecha = preload("res://Cenas/Flecha.tscn").instance()
