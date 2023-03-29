@@ -13,9 +13,6 @@ script = ExtResource( 2 )
 position = Vector2( 518, 290 )
 scale = Vector2( 0.529286, 0.529286 )
 texture = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="ColorRect" type="ColorRect" parent="quadro"]
 margin_left = -0.103882
@@ -65,17 +62,16 @@ text = "Use o botão X ou o botão J para \"voltar no tempo\""
 autowrap = true
 
 [node name="TextureButton" type="TextureButton" parent="quadro"]
-margin_left = 549.797
-margin_top = -468.556
-margin_right = 600.797
-margin_bottom = -417.556
-rect_scale = Vector2( 1.30229, 1.30229 )
+margin_left = -604.692
+margin_top = -392.746
+margin_right = -553.692
+margin_bottom = -341.746
 texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 3 )
 
-[node name="Sprite" type="Sprite" parent="quadro"]
-position = Vector2( 280.094, -140.283 )
-scale = Vector2( 1.06275, 0.986521 )
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 666.25, 215.75 )
+scale = Vector2( 0.5625, 0.522152 )
 texture = ExtResource( 5 )
 
 [connection signal="pressed" from="quadro/TextureButton" to="." method="_on_TextureButton_pressed"]

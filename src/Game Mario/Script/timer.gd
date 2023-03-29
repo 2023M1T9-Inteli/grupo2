@@ -72,9 +72,11 @@ func pause_timer():
 #Função para o inimigo tirar tempo do player
 func perder_tempo():
 	seconds -= 10
-	
-func retomarTimer():
-	$Timer.start()
 
 
+func _on_Button_pressed():
+	pause_timer()
 
+
+func _on_Button2_pressed():
+	start_timer(seconds)

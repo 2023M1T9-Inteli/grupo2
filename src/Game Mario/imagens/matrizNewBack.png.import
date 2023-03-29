@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pause_escuro.png-47413f6a9a7751d5663cb98eac69b4bb.stex"
+path="res://.import/matrizNewBack.png-d4b354a6e57542debb942153cb714e91.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagens/pause_escuro.png"
-dest_files=[ "res://.import/pause_escuro.png-47413f6a9a7751d5663cb98eac69b4bb.stex" ]
+source_file="res://imagens/matrizNewBack.png"
+dest_files=[ "res://.import/matrizNewBack.png-d4b354a6e57542debb942153cb714e91.stex" ]
 
 [params]
 

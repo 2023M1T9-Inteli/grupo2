@@ -56,7 +56,6 @@ custom_fonts/font = SubResource( 1 )
 text = ":"
 
 [node name="Timer" type="Timer" parent="CanvasLayer/Control"]
-pause_mode = 2
 process_mode = 0
 wait_time = 0.1
 autostart = true
