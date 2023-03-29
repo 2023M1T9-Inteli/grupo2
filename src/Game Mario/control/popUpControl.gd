@@ -1,7 +1,6 @@
-extends ColorRect
+extends Node2D
 
 
 #função que fecha o popup
 func _on_TextureButton_pressed():
-	$quadro.visible = false
-	
+	$quadro.hide()
