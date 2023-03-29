@@ -40,9 +40,8 @@ func _process(_delta):
 	$Player.morte_queda()
 	
 	#torna o popup invisível enquanto o bloco não é acionado
-	if !$pomodoro.visible:
+	if !$pomodoro.visible and !jogador.pausar:
 		jogador.movimentacao = true
-		print(jogador.movimentacao)
 		self.pause_mode = false
 	
 	
