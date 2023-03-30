@@ -31,9 +31,6 @@ margin_top = -37.0
 margin_right = 307.0
 margin_bottom = 84.0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 seconds = 120
 
 [node name="Label2" type="Label" parent="CanvasLayer/Control"]
@@ -56,8 +53,8 @@ custom_fonts/font = SubResource( 1 )
 text = ":"
 
 [node name="Timer" type="Timer" parent="CanvasLayer/Control"]
-process_mode = 0
 pause_mode = 2
+process_mode = 0
 wait_time = 0.1
 autostart = true
 

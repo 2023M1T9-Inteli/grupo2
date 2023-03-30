@@ -111,8 +111,9 @@ bg_color = Color( 0.0392157, 0.0745098, 0.25098, 1 )
 script = ExtResource( 5 )
 
 [node name="erro" type="Sprite" parent="."]
-position = Vector2( 596.11, 326 )
-scale = Vector2( 0.325455, 0.291429 )
+visible = false
+position = Vector2( 511.5, 297 )
+scale = Vector2( 0.381716, 0.326667 )
 texture = ExtResource( 1 )
 
 [node name="TextureButton" type="TextureButton" parent="erro"]
@@ -137,8 +138,9 @@ Tente de novo"
 align = 1
 
 [node name="acerto" type="Sprite" parent="."]
-position = Vector2( 596.11, 326 )
-scale = Vector2( 0.325455, 0.291429 )
+visible = false
+position = Vector2( 512, 297.5 )
+scale = Vector2( 0.381343, 0.325238 )
 texture = ExtResource( 1 )
 
 [node name="avancar" type="TextureButton" parent="acerto"]
@@ -162,8 +164,9 @@ para a próxima fase"
 align = 1
 
 [node name="perguntas" type="Sprite" parent="."]
-position = Vector2( 596.11, 326 )
-scale = Vector2( 0.325455, 0.291429 )
+visible = false
+position = Vector2( 511.25, 298 )
+scale = Vector2( 0.382276, 0.326667 )
 texture = ExtResource( 1 )
 
 [node name="Label" type="Label" parent="perguntas"]

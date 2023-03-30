@@ -47,6 +47,7 @@ extra_spacing_space = 2
 font_data = ExtResource( 2 )
 
 [node name="gut" type="CanvasLayer"]
+pause_mode = 2
 script = ExtResource( 3 )
 
 [node name="popup" type="WindowDialog" parent="."]

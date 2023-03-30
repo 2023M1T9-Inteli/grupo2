@@ -8,6 +8,7 @@ func _process(delta):
 
 func _on_retornar_pressed():
 	$".".visible = false
+	get_tree().paused = false
 
 
 func _on_controlBtn_pressed():
@@ -16,4 +17,5 @@ func _on_controlBtn_pressed():
 
 
 func _on_quitBtn_pressed():
+	get_tree().paused = true
 	get_tree().change_scene("res://Cenas/primeiraTela.tscn")

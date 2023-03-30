@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://Script/Player.gd" type="Script" id=1]
 [ext_resource path="res://personagem principal/run_menor3.png" type="Texture" id=2]
@@ -124,6 +124,36 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="Animation" id=22]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=23]
+resource_name = "danoPersonagem"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.823529, 0.32549, 0.32549, 1 ), Color( 0.898039, 0.0666667, 0.0666667, 1 ), Color( 0.823529, 0.32549, 0.32549, 1 ), Color( 1, 1, 1, 1 ), Color( 0.823529, 0.32549, 0.32549, 1 ), Color( 0.898039, 0.0666667, 0.0666667, 1 ), Color( 0.823529, 0.32549, 0.32549, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 24.6938, 38.25 )
 
@@ -145,7 +175,6 @@ region_rect = Rect2( 0, 0, 33, 33 )
 texture = ExtResource( 28 )
 region_rect = Rect2( 0, 0, 33, 33 )
 
-
 [node name="Player" type="KinematicBody2D"]
 pause_mode = 1
 position = Vector2( -930, 327 )
@@ -161,13 +190,18 @@ centered = false
 [node name="timer" parent="." instance=ExtResource( 26 )]
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
-position = Vector2( -30, -40 )
+light_mask = 3
+position = Vector2( -29, -40 )
 scale = Vector2( 1.1236, 0.977045 )
 frames = SubResource( 2 )
 animation = "Idle"
-frames = 3 
+frame = 3
 playing = true
 centered = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+anims/RESET = SubResource( 22 )
+anims/danoPersonagem = SubResource( 23 )
 
 [node name="shape" type="CollisionShape2D" parent="."]
 position = Vector2( 3.30615, 0.25 )
@@ -197,6 +231,7 @@ position = Vector2( 5, 0.5 )
 shape = SubResource( 3 )
 
 [node name="dano" type="Area2D" parent="."]
+visible = false
 collision_layer = 4
 collision_mask = 4
 

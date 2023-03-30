@@ -123,6 +123,7 @@ func _on_pes_body_entered(body):
 func _on_dano_body_entered(_body):
 #	Chama a função do timer para que ele perca tempo do seu cronometro
 	$timer/CanvasLayer/Control.perder_tempo()
+	$Sprite/AnimationPlayer.play("danoPersonagem")
 
 #Código anterior, que fazia com que desse GameOver, comentado caso queira ser reutilizado
 #	vida -= 1 
@@ -148,3 +149,4 @@ func _on_pausar_pressed():
 	$timer/CanvasLayer/Control.pause_timer()
 	movimentacao = false
 	pausar = true
+	get_tree().paused = true

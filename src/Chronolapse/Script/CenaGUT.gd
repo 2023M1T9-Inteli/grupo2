@@ -35,9 +35,7 @@ func _process(delta):
 	
 	#torna o popup invisível enquanto o bloco não é acionado
 	if !$gut.visible:
-		jogador.movimentacao = true
-		print(jogador.movimentacao)
-		self.pause_mode = false
+		get_tree().paused = false
 
 
 
@@ -68,10 +66,8 @@ func _on_Area2D_body_entered(body):
 	pode_atirar = true
 	$KinematicBody2D/AnimatedSprite.play("new")
 	
-	
 	$gut.visible = true
 	$gut/popup.popup_centered()
 # pausa a movimentação do jogador e a cena enquanto o popup está aberto
-	jogador.movimentacao = false
 	$Player/Sprite.play("Idle")
-	self.pause_mode = true
+	get_tree().paused = true

@@ -26,4 +26,6 @@ func _on_voltar2_pressed():
 
 #função que fecha o popup e torna o canvas layer não visível
 func _on_WindowDialog_popup_hide():
-	self.visible = false
+	$".".visible = false
+	get_tree().paused = false	
+

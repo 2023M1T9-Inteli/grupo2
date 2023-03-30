@@ -28,12 +28,12 @@ func _process(_delta):
 	#se o player cair fora do mapa, troca para cena gameover
 	$Player.morte_queda()
 	if !$popUpRelogio.visible and !$Player.pausar:
-		self.pause_mode = false
-		$Player.movimentacao = true
+		get_tree().paused = false
+#		$Player.movimentacao = true
 	
 func _on_Area2D_body_entered(body):
 	$popUpRelogio.visible = true
 	$popUpRelogio/Popup.popup_centered()
 	$AnimatedSprite.visible = false
-	self.pause_mode = true
-	$Player.movimentacao = false
+	get_tree().paused = true
+#	$Player.movimentacao = false

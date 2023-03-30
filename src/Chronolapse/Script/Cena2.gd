@@ -42,7 +42,7 @@ func _process(_delta):
 	#torna o popup invisível enquanto o bloco não é acionado
 	if !$pomodoro.visible and !jogador.pausar:
 		jogador.movimentacao = true
-		self.pause_mode = false
+		get_tree().paused = false
 	
 	
 #função 'atirar_tomate' responsável pela mecânica de atirar tomates
@@ -85,5 +85,5 @@ func _on_Area2D_body_entered(body):
 	jogador.movimentacao = false
 	$Player/Sprite.play("Idle")
 #função que pausa a cena enquanto o popup está aberto
-	self.pause_mode = true
+	get_tree().paused = true
 		

@@ -9,6 +9,8 @@ func _on_avancar_pressed():
 #função que fecha o popup e torna o canvas layer não visível	
 func _on_WindowDialog_popup_hide():
 	self.visible = false
+	get_tree().paused = false	
+
 
 #função de voltar para a página anterior do pop up. Elementos da 2° página são escondidos e o da 1° pagina são mostrados
 func _on_voltar1_pressed():

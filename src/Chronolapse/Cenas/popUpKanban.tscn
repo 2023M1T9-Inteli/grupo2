@@ -40,6 +40,7 @@ extra_spacing_bottom = 2
 font_data = ExtResource( 3 )
 
 [node name="kanban" type="CanvasLayer"]
+pause_mode = 2
 script = ExtResource( 4 )
 
 [node name="Control" type="Control" parent="."]

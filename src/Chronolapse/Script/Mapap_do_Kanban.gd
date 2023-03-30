@@ -39,8 +39,7 @@ func _process(delta):
 	
 	#torna o popup invisível enquanto o bloco não é acionado
 	if !$kanban.visible:
-		jogador.movimentacao = true
-		self.pause_mode = false
+		get_tree().paused = false
 
 
 #função para usar o poder do kanban. É chamada apenas pelo _process
@@ -71,6 +70,5 @@ func _on_Area2D_body_entered(body):
 	$kanban.visible = true
 	$kanban/Control/WindowDialog.popup_centered()
 	# pausa a movimentação do jogador e a cena enquanto o popup está aberto
-	jogador.movimentacao = false
 	$Player/Sprite.play("Idle")
-	self.pause_mode = true
+	get_tree().paused = true
