@@ -10,5 +10,25 @@ func play_musica():
 	$musica.stream = musica_tematica
 	$musica.play() 
 
+#funcao para tocar efeito sonoro do botao de start
 func botao_start():
 	$BotaoStartFx.play()
+
+#funcao para tocar efeito sonoro do poder do kanban
+func kanbanFx():
+	$PoderKanbanFx.play()
+	
+#funcao para tocar efeito sonoro do personagem tomando dano
+func danoPersonagem():
+	$DanoPersonagemFx.play()
+	
+#funcao para tocar efeito sonoro da tela de gameover
+func gameover():
+	$gameoverFx.play()
+
+	
+#funcao para tocar efeito sonoro do poder do pomodoro
+func pomodoroFx():
+	$pomodoroFx.play()
+
+	
