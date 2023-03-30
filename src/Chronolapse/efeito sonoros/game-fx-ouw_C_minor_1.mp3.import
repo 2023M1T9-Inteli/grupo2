@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/game-fx-ouw_C_minor_1.mp3-19f2c8c1b4de2da20ba0584e3824f799.mp3str"
+
+[deps]
+
+source_file="res://efeito sonoros/game-fx-ouw_C_minor_1.mp3"
+dest_files=[ "res://.import/game-fx-ouw_C_minor_1.mp3-19f2c8c1b4de2da20ba0584e3824f799.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

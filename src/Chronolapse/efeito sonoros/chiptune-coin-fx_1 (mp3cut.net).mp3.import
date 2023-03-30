@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/chiptune-coin-fx_1 (mp3cut.net).mp3-10835884143af5a78585d2cc6e215c45.mp3str"
+
+[deps]
+
+source_file="res://efeito sonoros/chiptune-coin-fx_1 (mp3cut.net).mp3"
+dest_files=[ "res://.import/chiptune-coin-fx_1 (mp3cut.net).mp3-10835884143af5a78585d2cc6e215c45.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
