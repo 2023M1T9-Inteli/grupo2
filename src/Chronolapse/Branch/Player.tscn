@@ -195,7 +195,7 @@ position = Vector2( -29, -40 )
 scale = Vector2( 1.1236, 0.977045 )
 frames = SubResource( 2 )
 animation = "Idle"
-frame = 3
+frame = 1
 playing = true
 centered = false
 
@@ -254,6 +254,7 @@ custom_styles/pressed = SubResource( 19 )
 custom_styles/normal = SubResource( 20 )
 
 [node name="pause" parent="." instance=ExtResource( 30 )]
+visible = false
 
 [connection signal="body_entered" from="pes" to="." method="_on_pes_body_entered"]
 [connection signal="body_entered" from="dano" to="." method="_on_dano_body_entered"]

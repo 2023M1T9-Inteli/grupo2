@@ -26,7 +26,6 @@ func _ready():
 	#	Inicia o timer
 	$Player/timer/CanvasLayer/Control.start_timer(tempo)
 
-
 func _process(delta):
 	#player morre de queda
 	$Player.morte_queda()
@@ -36,7 +35,7 @@ func _process(delta):
 	#torna o popup invisível enquanto o bloco não é acionado
 	if !$gut.visible:
 		get_tree().paused = false
-
+	
 
 
 func atirar_flecha():
@@ -71,3 +70,8 @@ func _on_Area2D_body_entered(body):
 # pausa a movimentação do jogador e a cena enquanto o popup está aberto
 	$Player/Sprite.play("Idle")
 	get_tree().paused = true
+
+
+func _on_Area2DPortal_body_entered(body):
+	get_tree().change_scene("res://Cenas/mapa_fase5.tscn")
+	pode_atirar = false
