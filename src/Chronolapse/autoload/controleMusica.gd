@@ -26,9 +26,21 @@ func danoPersonagem():
 func gameover():
 	$gameoverFx.play()
 
-	
 #funcao para tocar efeito sonoro do poder do pomodoro
 func pomodoroFx():
 	$pomodoroFx.play()
 
+#funcao para tocar efeito sonoro do inimigo morrendo
+func inimigoDie():
+	$InimigoDieFx.play()
 	
+#funcao para tocar efeito sonoro do bloco de poderes
+func blocoFx():
+	$blocoFx.play()
+
+#funcao para tocar efeito sonoro da resposta certa do quiz
+func respostaCerta():
+	$respostaFx.play()
+
+func click():
+	$clickFx.play()

@@ -33,6 +33,10 @@ func _on_Button3_pressed():
 
 #Caso o botão com a resposta certa seja pressionado, aparecerá a tela de acerto e sumirá a tela de perguntas
 func _on_Button2_pressed():
+	
+	#efeito sonoro
+	ControleMusica.respostaCerta()
+	
 	$perguntas.hide()
 	$acerto.show()
 

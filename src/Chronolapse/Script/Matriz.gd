@@ -49,41 +49,57 @@ func aumentar_Valor(categoria,Label,ProgressBar):
 	return false
 
 func _on_IU_menos_pressed():
+	#efeito sonoro
+	ControleMusica.click()
 	#Chama a função para a verificar se é possível diminuir a variável imp_urg
 	if diminuir_Valor(imp_urg,$LblImportanteUrgente,$ProgressBarImpUrg):
 		imp_urg -= 1
 
 func _on_IU_mais_pressed():
+	#efeito sonoro
+	ControleMusica.click()
 	#Chama a função para a verificar se é possível aumentar a variável imp_urg
 	if aumentar_Valor(imp_urg,$LblImportanteUrgente,$ProgressBarImpUrg):
 		imp_urg +=1
 
 func _on_INU_menos_pressed():
+	#efeito sonoro
+	ControleMusica.click()	
 	#Chama a função para a verificar se é possível diminuir a variável ImpNurg
 	if diminuir_Valor(imp_n_urg,$LblImportanteNUrgente,$ProgressBarImpNUrg):
 		imp_n_urg -= 1
 
 func _on_INU_mais_pressed():
+	#efeito sonoro
+	ControleMusica.click()	
 	#Chama a função para a verificar se é possível aumentar a variável ImpNurg
 	if aumentar_Valor(imp_n_urg,$LblImportanteNUrgente,$ProgressBarImpNUrg):
 		imp_n_urg +=1
 
 func _on_NIU_menos_pressed():
+	#efeito sonoro
+	ControleMusica.click()	
 	#Chama a função para a verificar se é possível diminuir a variável Nimp_urg
 	if diminuir_Valor(n_imp_urg,$LblNImportanteUrgente,$ProgressBarNImpUrg):
 		n_imp_urg -= 1
 
 func _on_NIU_mais_pressed():
+	#efeito sonoro
+	ControleMusica.click()	
 	#Chama a função para a verificar se é possível aumentar a variável Nimp_urg
 	if aumentar_Valor(n_imp_urg,$LblNImportanteUrgente,$ProgressBarNImpUrg):
 		n_imp_urg +=1
 		
 func _on_NINU_menos_pressed():
+	#efeito sonoro
+	ControleMusica.click()	
 	#Chama a função para a verificar se é possível diminuir a variável NImpNUrg
 	if diminuir_Valor(n_imp_n_urg,$LblNImportanteNUrgente,$ProgressBarNImpNUrg):
 		n_imp_n_urg -= 1
 
 func _on_NINU_mais_pressed():
+	#efeito sonoro
+	ControleMusica.click()	
 	#Chama a função para a verificar se é possível aumentar a variável NImpNUrg
 	if aumentar_Valor(n_imp_n_urg,$LblNImportanteNUrgente,$ProgressBarNImpNUrg):
 		n_imp_n_urg +=1
@@ -91,6 +107,10 @@ func _on_NINU_mais_pressed():
 #Envia as variáveis para a análise da matriz, dando um feedback para o usuário sobre a 
 #organização de suas tarefas
 func _on_Analise_pressed():
+
+	#efeito sonoro
+	ControleMusica.blocoFx()
+	
 #	Mostra o botão de jogar
 	$Jogar.show()	
 	
@@ -157,6 +177,9 @@ func _on_Analise_pressed():
 
 
 func _on_Jogar_pressed():
+	
+	#efeito sonoro
+	ControleMusica.botao_start()
 #	Atribui o tipo da matriz que teve mais discrepância a global Categoria, para que se possa definir a quantidade de horas para cada fase.
 	categoria.categoria = index
 	get_tree().change_scene("res://Cenas/Cena1.tscn")

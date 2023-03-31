@@ -81,6 +81,7 @@ func handle_rewind_function():
 func dano():
 	cont = cont + 1
 	if cont == 2:
+		ControleMusica.inimigoDie()
 		get_node("anim").play("die")
 		die()
 	

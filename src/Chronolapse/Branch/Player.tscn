@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://Script/Player.gd" type="Script" id=1]
 [ext_resource path="res://personagem principal/run_menor3.png" type="Texture" id=2]
@@ -30,6 +30,7 @@
 [ext_resource path="res://imagens/botao_pause.png" type="Texture" id=28]
 [ext_resource path="res://imagens/pause_escuro.png" type="Texture" id=29]
 [ext_resource path="res://Cenas/pause.tscn" type="PackedScene" id=30]
+[ext_resource path="res://efeito sonoros/rewind.wav" type="AudioStream" id=31]
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 27 )
@@ -254,7 +255,9 @@ custom_styles/pressed = SubResource( 19 )
 custom_styles/normal = SubResource( 20 )
 
 [node name="pause" parent="." instance=ExtResource( 30 )]
-visible = false
+
+[node name="rewindFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 31 )
 
 [connection signal="body_entered" from="pes" to="." method="_on_pes_body_entered"]
 [connection signal="body_entered" from="dano" to="." method="_on_dano_body_entered"]

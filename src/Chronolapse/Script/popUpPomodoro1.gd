@@ -1,4 +1,5 @@
 extends CanvasLayer
+
 		
 #função de avançar para a próxima página do pop up. Elementos da 1° página são escondidos e os da 2° pagina são mostrados
 func _on_avancar_pressed():

@@ -81,6 +81,7 @@ func handle_rewind_function():
 		
 #inimigo fica vermelho
 func dano():
+	ControleMusica.inimigoDie()
 	get_node("anim").play("die")
 	die()
 	

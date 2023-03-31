@@ -50,7 +50,8 @@ func _process(_delta):
 func atirar_tomate():
 	#a função só retorna algo se o botão ui_atirar for pressionado e se a variável 'podeAtirar' for verdadeira
 	if Input.is_action_just_pressed("ui_atirar") and pode_atirar:
-
+	
+		ControleMusica.pomodoroFx()
 		#intancia a cena tomate e joga dentro da variável cena_tomate
 		var cena_tomate = tomate.instance()
 		
@@ -69,11 +70,17 @@ func atirar_tomate():
 
 
 
-#função chamada assim que o player interage com o Bloco_Tomate
+
+#funcao para tocar o efeito sonoro quando player encosta no bloco
 func _on_Area2D_body_entered(body):
+	$blocoFx.play()
+
+
+#função chamada assim que o player interage com o Bloco_Tomate
+func _on_blocoFx_finished():
 	#muda a animação do Bloco
 	get_node("Bloco_Tomate").get_node("AnimatedSprite").play("new_default")
-	$blocoFx.play()
+
 	#muda a variável 'podeAtirar' para true, permitindo a função atirar_tomate retornar algo
 	pode_atirar = true
   

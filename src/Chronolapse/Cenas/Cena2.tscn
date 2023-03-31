@@ -14,7 +14,6 @@
 [ext_resource path="res://Cenas/PassagemKanban.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Script/Cena2.gd" type="Script" id=15]
 
-
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
 "frames": [ ExtResource( 1 ) ],
@@ -110,3 +109,5 @@ position = Vector2( 2072, 410 )
 [node name="pomodoro" parent="." instance=ExtResource( 10 )]
 
 [connection signal="body_entered" from="Bloco_Tomate/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="finished" from="blocoFx" to="." method="_on_blocoFx_finished"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
