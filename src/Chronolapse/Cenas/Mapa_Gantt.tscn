@@ -11,6 +11,7 @@
 [ext_resource path="res://imagens/bloco-gantt02.png" type="Texture" id=9]
 [ext_resource path="res://Cenas/popUpGUT.tscn" type="PackedScene" id=10]
 [ext_resource path="res://efeito sonoros/laser-gun-72558 (mp3cut.net).mp3" type="AudioStream" id=11]
+[ext_resource path="res://imagens/newPortal cópia.png" type="Texture" id=12]
 [ext_resource path="res://efeito sonoros/Game Button Sounds Pack - Free Sounds [TubeRipper (mp3cut.net) (1).mp3" type="AudioStream" id=12]
 
 [sub_resource type="SpriteFrames" id=1]
@@ -31,6 +32,10 @@ extents = Vector2( 41, 39.5 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 36, 0.8125 )
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 68.0
+height = 54.0
 
 [node name="cenaGUT" type="Node2D" groups=["tilemap"]]
 script = ExtResource( 8 )
@@ -103,8 +108,17 @@ shape = SubResource( 3 )
 [node name="LaserFx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
 
+[node name="NewPortalCópia" type="Sprite" parent="."]
+position = Vector2( 1659, 254 )
+texture = ExtResource( 12 )
+
+[node name="Area2D" type="Area2D" parent="NewPortalCópia"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NewPortalCópia/Area2D"]
+shape = SubResource( 4 )
 [node name="blocoFx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
 
 [connection signal="body_entered" from="KinematicBody2D/Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="finished" from="blocoFx" to="." method="_on_blocoFx_finished"]
+[connection signal="body_entered" from="NewPortalCópia/Area2D" to="." method="_on_Area2DPortal_body_entered"]
