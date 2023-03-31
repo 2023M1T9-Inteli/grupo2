@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://tileset/industrial.tres" type="TileSet" id=1]
 [ext_resource path="res://Branch/ParallaxBackground.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Script/Mapap_do_Kanban.gd" type="Script" id=8]
 [ext_resource path="res://Cenas/popUpKanban.tscn" type="PackedScene" id=9]
 [ext_resource path="res://kanban/asdfasdf.png" type="Texture" id=10]
+[ext_resource path="res://efeito sonoros/Game Button Sounds Pack - Free Sounds [TubeRipper (mp3cut.net) (1).mp3" type="AudioStream" id=11]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -106,4 +107,9 @@ shape = SubResource( 3 )
 
 [node name="kanban" parent="." instance=ExtResource( 9 )]
 
+[node name="blocoFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = 0.619
+
 [connection signal="body_entered" from="KinematicBody2D/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="finished" from="blocoFx" to="." method="_on_blocoFx_finished"]

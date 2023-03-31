@@ -46,6 +46,10 @@ func _process(delta):
 func usar_poder():
 	#a função só retorna algo se o botão ui_atirar for pressionado e se a variável pode_usar for verdadeira
 	if Input.is_action_just_pressed("ui_atirar") and pode_usar:
+		
+		
+		#efeito sonoro
+		ControleMusica.kanbanFx()
 
 		#intancia a cena Card e joga dentro da variável cena_card
 		var cena_card = preload("res://Cenas/Card.tscn").instance()
@@ -61,8 +65,13 @@ func usar_poder():
 		#adiciona a cena Card, que foi instanciada, na cena atual
 		get_tree().current_scene.add_child(cena_card)
 		
-# função que aciona o poder assim que o player encosta no bloco e abre o pop up explicando o poder
+#funcao para tocar o efeito sonoro quando player encosta no bloco
 func _on_Area2D_body_entered(body):
+	#efeito sonoro
+	$blocoFx.play()
+
+#função que aciona o poder assim que o player encosta no bloco e abre o pop up explicando o poder
+func _on_blocoFx_finished():
 	pode_usar = true
 	get_node("KinematicBody2D").get_node("AnimatedSprite").play("new")
 	$KinematicBody2D/AnimatedSprite.play("new")
@@ -72,3 +81,5 @@ func _on_Area2D_body_entered(body):
 	# pausa a movimentação do jogador e a cena enquanto o popup está aberto
 	$Player/Sprite.play("Idle")
 	get_tree().paused = true
+
+

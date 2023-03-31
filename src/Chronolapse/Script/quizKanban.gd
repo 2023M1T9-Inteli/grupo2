@@ -19,6 +19,10 @@ func _on_avancar_pressed():
 
 #Caso o botão com a resposta certa seja pressionado, aparecerá a tela de acerto e sumirá a tela de perguntas
 func _on_Button4_pressed():
+	
+	#efeito sonoro
+	ControleMusica.respostaCerta()
+	
 	$perguntas.hide()
 	$acerto.show()
 

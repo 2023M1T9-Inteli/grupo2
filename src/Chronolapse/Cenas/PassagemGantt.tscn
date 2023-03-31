@@ -3,7 +3,6 @@
 [ext_resource path="res://Script/PassagemGantt.gd" type="Script" id=1]
 [ext_resource path="res://Cenas/PassagemGantt2.tscn" type="PackedScene" id=2]
 
-
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
 

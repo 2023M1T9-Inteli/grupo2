@@ -9,7 +9,6 @@
 [ext_resource path="res://Script/World.gd" type="Script" id=7]
 [ext_resource path="res://imagens/atencao.png" type="Texture" id=8]
 
-
 [sub_resource type="AtlasTexture" id=3]
 flags = 4
 atlas = ExtResource( 8 )

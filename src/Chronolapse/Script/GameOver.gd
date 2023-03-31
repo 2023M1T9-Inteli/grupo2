@@ -3,6 +3,10 @@ extends Node2D
 onready var controle = get_node("/root/CategoriaGlobal")
 
 func _ready():
+	
+	#efeito sonoro
+	ControleMusica.gameover()
+	
 	#Para permitir que o usuário possa já apertar o botão de restart	
 	$startBtn.grab_focus()
 

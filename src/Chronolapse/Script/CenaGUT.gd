@@ -26,6 +26,7 @@ func _ready():
 	#	Inicia o timer
 	$Player/timer/CanvasLayer/Control.start_timer(tempo)
 
+
 func _process(delta):
 	#player morre de queda
 	$Player.morte_queda()
@@ -35,7 +36,7 @@ func _process(delta):
 	#torna o popup invisível enquanto o bloco não é acionado
 	if !$gut.visible:
 		get_tree().paused = false
-	
+
 
 
 func atirar_flecha():
@@ -60,11 +61,18 @@ func atirar_flecha():
 		#adiciona a cena Flecha, que foi instanciada, na cena atual
 		get_tree().current_scene.add_child(cena_flecha)
 		
-# função que aciona o poder assim que o player encosta no bloco e abre o pop up explicando o poder
+
+
+#funcao para tocar o efeito sonoro quando player encosta no bloco
 func _on_Area2D_body_entered(body):
+	#efeito sonoro
+	$blocoFx.play()
+		
+#função chamada assim que o player interage com o Bloco_Tomate
+func _on_blocoFx_finished():
 	pode_atirar = true
 	$KinematicBody2D/AnimatedSprite.play("new")
-	
+		
 	$gut.visible = true
 	$gut/popup.popup_centered()
 # pausa a movimentação do jogador e a cena enquanto o popup está aberto
@@ -72,6 +80,3 @@ func _on_Area2D_body_entered(body):
 	get_tree().paused = true
 
 
-func _on_Area2DPortal_body_entered(body):
-	get_tree().change_scene("res://Cenas/mapa_fase5.tscn")
-	pode_atirar = false
