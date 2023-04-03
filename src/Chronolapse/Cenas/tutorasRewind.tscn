@@ -1,0 +1,116 @@
+[gd_scene load_steps=46 format=2]
+
+[ext_resource path="res://pop ups/relógio/x escuro.png" type="Texture" id=1]
+[ext_resource path="res://pop ups/relógio/quizz.png" type="Texture" id=2]
+[ext_resource path="res://pop ups/relógio/x.png" type="Texture" id=3]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-015.jpg" type="Texture" id=4]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-019.jpg" type="Texture" id=5]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-003.jpg" type="Texture" id=6]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-002.jpg" type="Texture" id=7]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-023.jpg" type="Texture" id=8]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-020.jpg" type="Texture" id=9]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-028.jpg" type="Texture" id=10]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-006.jpg" type="Texture" id=11]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-024.jpg" type="Texture" id=12]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-012.jpg" type="Texture" id=13]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-017.jpg" type="Texture" id=14]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-021.jpg" type="Texture" id=15]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-022.jpg" type="Texture" id=16]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-025.jpg" type="Texture" id=17]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-007.jpg" type="Texture" id=18]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-027.jpg" type="Texture" id=19]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-030.jpg" type="Texture" id=20]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-031.jpg" type="Texture" id=21]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-032.jpg" type="Texture" id=22]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-033.jpg" type="Texture" id=23]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-011.jpg" type="Texture" id=24]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-009.jpg" type="Texture" id=25]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-013.jpg" type="Texture" id=26]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-016.jpg" type="Texture" id=27]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-004.jpg" type="Texture" id=28]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-014.jpg" type="Texture" id=29]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-018.jpg" type="Texture" id=30]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-026.jpg" type="Texture" id=31]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-008.jpg" type="Texture" id=32]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-029.jpg" type="Texture" id=33]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-001.jpg" type="Texture" id=34]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-005.jpg" type="Texture" id=35]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-010.jpg" type="Texture" id=36]
+[ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=37]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-035.jpg" type="Texture" id=38]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-036.jpg" type="Texture" id=39]
+[ext_resource path="res://imagens/tutorasRewind/turorasRewind-034.jpg" type="Texture" id=40]
+[ext_resource path="res://Script/tutorasRewind.gd" type="Script" id=41]
+
+[sub_resource type="DynamicFont" id=1]
+
+[sub_resource type="StyleBoxTexture" id=2]
+content_margin_left = 2.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 130.438, 2680, 1859.63 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 34 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 28 ), ExtResource( 35 ), ExtResource( 11 ), ExtResource( 18 ), ExtResource( 32 ), ExtResource( 25 ), ExtResource( 36 ), ExtResource( 24 ), ExtResource( 13 ), ExtResource( 26 ), ExtResource( 29 ), ExtResource( 4 ), ExtResource( 27 ), ExtResource( 14 ), ExtResource( 30 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 8 ), ExtResource( 12 ), ExtResource( 17 ), ExtResource( 31 ), ExtResource( 19 ), ExtResource( 10 ), ExtResource( 33 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 40 ), ExtResource( 38 ), ExtResource( 39 ) ],
+"loop": true,
+"name": "New Anim",
+"speed": 20.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=4]
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 37 )
+
+[node name="tutorasRewind" type="CanvasLayer"]
+script = ExtResource( 41 )
+
+[node name="Popup" type="WindowDialog" parent="."]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -374.0
+margin_top = -217.0
+margin_right = 764.0
+margin_bottom = 423.0
+rect_scale = Vector2( 0.640001, 0.640001 )
+custom_colors/title_color = Color( 0, 0, 0, 1 )
+custom_constants/close_h_ofs = 80
+custom_constants/close_v_ofs = -30
+custom_fonts/title_font = SubResource( 1 )
+custom_icons/close_highlight = ExtResource( 1 )
+custom_icons/close = ExtResource( 3 )
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Popup"]
+position = Vector2( 565, 369.373 )
+scale = Vector2( 1.29163, 1.29435 )
+frames = SubResource( 3 )
+animation = "New Anim"
+frame = 17
+playing = true
+
+[node name="Label" type="Label" parent="Popup"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -474.0
+margin_top = -216.0
+margin_right = 294.0
+margin_bottom = -200.0
+rect_scale = Vector2( 1.23927, 1.65567 )
+custom_fonts/font = SubResource( 4 )
+text = "Pressione a tecla X para voltar no tempo!"
+align = 1
+
+[connection signal="popup_hide" from="Popup" to="." method="_on_Popup_popup_hide"]

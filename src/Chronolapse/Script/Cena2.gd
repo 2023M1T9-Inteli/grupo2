@@ -79,7 +79,6 @@ func _on_Area2D_body_entered(body):
 
 #função chamada assim que o player interage com o Bloco_Tomate
 func _on_blocoFx_finished():
-func _on_Area2D_body_entered(body):
 	#muda a animação do Bloco
 	get_node("Bloco_Tomate").get_node("AnimatedSprite").play("new_default")
 

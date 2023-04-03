@@ -17,6 +17,7 @@ func _ready():
 	$Player/timer/CanvasLayer/Control.start_timer(tempo)
 	$popUpRelogio.visible = false
 	self.pause_mode = false
+	$tutorasRewind.visible = false
 	
 func _process(_delta):
 #	if video:
@@ -30,6 +31,10 @@ func _process(_delta):
 	if !$popUpRelogio.visible and !$Player.pausar:
 		get_tree().paused = false
 #		$Player.movimentacao = true
+
+	if !$tutorasRewind.visible and $Player/timer/CanvasLayer/Control/Timer.paused:
+		$Player/timer/CanvasLayer/Control/Timer.paused = false
+		$Player.movimentacao = true
 	
 func _on_Area2D_body_entered(body):
 	$popUpRelogio.visible = true
@@ -37,3 +42,11 @@ func _on_Area2D_body_entered(body):
 	$AnimatedSprite.visible = false
 	get_tree().paused = true
 #	$Player.movimentacao = false
+
+
+func _on_area2d_body_entered(body):
+	$tutorasRewind.visible = true
+	$tutorasRewind/Popup.popup_centered()
+	$animatedsprite.queue_free()
+	$Player/timer/CanvasLayer/Control/Timer.paused = true
+	$Player.movimentacao = false
