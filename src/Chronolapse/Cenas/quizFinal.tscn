@@ -155,14 +155,14 @@ texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 3 )
 
 [node name="Label2" type="Label" parent="acerto"]
-margin_left = -1096.92
-margin_top = -178.431
-margin_right = 203.076
-margin_bottom = 13.5687
+margin_left = -1093.61
+margin_top = -128.812
+margin_right = 206.382
+margin_bottom = 63.188
 rect_scale = Vector2( 1.68627, 2.55064 )
 custom_fonts/font = SubResource( 1 )
-text = "Parabéns! Avance
-para a próxima fase"
+text = "Parabéns! 
+Você concluiu a jornada do tempo!"
 align = 1
 
 [node name="perguntas" type="Sprite" parent="."]
