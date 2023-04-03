@@ -1,5 +1,8 @@
 extends Node2D
 
+#Variáveis para contar a passagem do tempo no cronometro
+var tempo
+onready var categoria = get_node("/root/CategoriaGlobal")
 #Define as variáveis de poder usar o poder ou não.
 var pode_atirar1 = false
 var pode_atirar2 = false
@@ -8,6 +11,16 @@ var pode_atirar3 = false
 var jogador = preload("res://Branch/Player.tscn").instance()
 
 func _ready():
+#	Atribui um valor para o tempo que o jogador tem, baseado no desempenho da matriz
+	if(categoria.categoria == 0): tempo = 150
+	elif categoria.categoria == 1: tempo = 225
+	elif categoria.categoria == 2: tempo = 180
+	elif categoria.categoria == 3: tempo = 120
+	else: tempo = 225
+#	Invoca o timer e passa quanto tempo ele deve ter
+	$Player/timer/CanvasLayer/Control.start_timer(tempo)
+	self.pause_mode = false
+	
 #Define os poderes como desativados
 	pode_atirar1 = false
 	pode_atirar2 = false
@@ -119,4 +132,26 @@ func _on_Area2D2_body_entered(body):
 		pode_atirar3 = true
 
 func _on_Area2DPortal_body_entered(body):
+#Mudar de cena quando o player entrar no portal
 	get_tree().quit()
+
+
+
+func _on_Area2DBait_body_exited(body):
+#Mostrar o sprite quando o personagem sair da área secreta
+	$IndustrialBait.show()
+
+
+func _on_Area2DBait_body_entered(body):
+#Esconder o sprite quando o personagem entrar na área secreta
+	$IndustrialBait.hide()
+
+
+func _on_Area2DBaitado_body_entered(body):
+#Esconde a segunda parede quando colidir
+	$BaitFraco.hide()
+
+
+func _on_Area2DBaitado_body_exited(body):
+#Mostra novamente a parede quando o player sair da área.
+	$BaitFraco.show()
