@@ -16,7 +16,10 @@ var is_rewinding = false #bool para indicar se função de rebobinar está ativa
 var rewind_length = (60 * 3) #3 segundos
 var rewind_ghost = load("res://Cenas/rewindGhost.tscn")  #direcionar ao sprite que está rebobinando para mostrar seu rastro na tela
 
-
+#variaveis para controle de efeito sonoro
+var first_time = true
+var is_playing = false
+var sound = false
 
 func _ready():
 	$pause.visible = false
@@ -24,6 +27,12 @@ func _ready():
 #aciona os processos físico do personagem, ou seja, a movimentação de andar para os lados e pular. Além de conter a gravdidade para queda da personagem
 func _physics_process(_delta):
 	
+	if is_rewinding and !sound:
+		$rewindFx.play()
+		sound = true
+	elif !is_rewinding and sound:
+		sound = false
+		$rewindFx.stop()
 	#funcão de rebobinar
 	handle_rewind_function()
 	motion.y += GRAVIDADE
@@ -121,6 +130,7 @@ func _on_pes_body_entered(body):
 
 #player toma dano
 func _on_dano_body_entered(_body):
+	ControleMusica.danoPersonagem()
 #	Chama a função do timer para que ele perca tempo do seu cronometro
 	$timer/CanvasLayer/Control.perder_tempo()
 	$Sprite/AnimationPlayer.play("danoPersonagem")
