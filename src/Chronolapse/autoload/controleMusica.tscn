@@ -1,0 +1,49 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://autoload/controleMusica.gd" type="Script" id=1]
+[ext_resource path="res://efeito sonoros/chiptune-coin-fx_1 (mp3cut.net).mp3" type="AudioStream" id=2]
+[ext_resource path="res://efeito sonoros/game-fx-ouw_C_minor_1.mp3" type="AudioStream" id=3]
+[ext_resource path="res://efeito sonoros/Minecraft Hit - Sound Effect (HD) (mp3cut.net).mp3" type="AudioStream" id=4]
+[ext_resource path="res://efeito sonoros/videogame-death-sound-43894.mp3" type="AudioStream" id=5]
+[ext_resource path="res://efeito sonoros/game-fx-float_C_minor.mp3" type="AudioStream" id=6]
+[ext_resource path="res://efeito sonoros/game-fx-laser_C_minor_1.mp3" type="AudioStream" id=7]
+[ext_resource path="res://efeito sonoros/Game Button Sounds Pack - Free Sounds [TubeRipper (mp3cut.net) (1).mp3" type="AudioStream" id=8]
+[ext_resource path="res://efeito sonoros/respotaCerta.mp3" type="AudioStream" id=9]
+[ext_resource path="res://efeito sonoros/click.mp3" type="AudioStream" id=10]
+
+[node name="controle_musica" type="Node"]
+script = ExtResource( 1 )
+
+[node name="musica" type="AudioStreamPlayer" parent="."]
+
+[node name="InimigoDieFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="PoderKanbanFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="DanoPersonagemFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="gameoverFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="BotaoStartFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="pomodoroFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="kanbanFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="respostaFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[node name="blocoFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = 0.619
+
+[node name="clickFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+volume_db = 0.619

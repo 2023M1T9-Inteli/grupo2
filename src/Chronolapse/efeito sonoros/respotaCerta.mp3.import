@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/respotaCerta.mp3-7d822820ec4b443b013aef4d19aa925d.mp3str"
+
+[deps]
+
+source_file="res://efeito sonoros/respotaCerta.mp3"
+dest_files=[ "res://.import/respotaCerta.mp3-7d822820ec4b443b013aef4d19aa925d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

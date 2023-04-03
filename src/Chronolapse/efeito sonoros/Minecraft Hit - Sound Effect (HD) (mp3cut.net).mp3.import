@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Minecraft Hit - Sound Effect (HD) (mp3cut.net).mp3-041e233660ccd9ea08581a2e3ba0cf6c.mp3str"
+
+[deps]
+
+source_file="res://efeito sonoros/Minecraft Hit - Sound Effect (HD) (mp3cut.net).mp3"
+dest_files=[ "res://.import/Minecraft Hit - Sound Effect (HD) (mp3cut.net).mp3-041e233660ccd9ea08581a2e3ba0cf6c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

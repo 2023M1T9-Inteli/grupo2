@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/videogame-death-sound-43894.mp3-8884552fc9e17129032759313de951c9.mp3str"
+
+[deps]
+
+source_file="res://efeito sonoros/videogame-death-sound-43894.mp3"
+dest_files=[ "res://.import/videogame-death-sound-43894.mp3-8884552fc9e17129032759313de951c9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

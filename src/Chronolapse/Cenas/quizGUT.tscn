@@ -1,0 +1,275 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://pop ups/relógio/quizz.png" type="Texture" id=1]
+[ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://pop ups/pomodoro/pixil-frame-0 (3).png" type="Texture" id=3]
+[ext_resource path="res://pop ups/pomodoro/pixil-frame-0 (2).png" type="Texture" id=4]
+[ext_resource path="res://Script/quizGUT.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+extra_spacing_top = 6
+extra_spacing_bottom = 6
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0.123482, 0.183956, 0.486328, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.123482, 0.183956, 0.486328, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.0411225, 0.0749174, 0.250651, 1 )
+border_color = Color( 1, 1, 1, 1 )
+border_blend = true
+
+[sub_resource type="DynamicFont" id=5]
+size = 45
+extra_spacing_space = -13
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.123482, 0.183956, 0.486328, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.123482, 0.183956, 0.486328, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.0411225, 0.0749174, 0.250651, 1 )
+
+[sub_resource type="ButtonGroup" id=2]
+
+[sub_resource type="Theme" id=8]
+
+[sub_resource type="DynamicFont" id=9]
+size = 45
+use_filter = true
+extra_spacing_top = 3
+extra_spacing_bottom = 2
+extra_spacing_space = -13
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFontData" id=10]
+font_path = "res://Script/letras/PressStart2P.ttf"
+
+[sub_resource type="DynamicFont" id=11]
+size = 37
+extra_spacing_space = -9
+font_data = SubResource( 10 )
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.123482, 0.183956, 0.486328, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.123482, 0.183956, 0.486328, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.0411225, 0.0749174, 0.250651, 1 )
+
+[sub_resource type="StyleBoxFlat" id=19]
+bg_color = Color( 0.123482, 0.183956, 0.486328, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.123482, 0.183956, 0.486328, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.0392157, 0.0745098, 0.25098, 1 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="erro" type="Sprite" parent="."]
+visible = false
+position = Vector2( 512, 297.5 )
+scale = Vector2( 0.38209, 0.325238 )
+texture = ExtResource( 1 )
+
+[node name="TextureButton" type="TextureButton" parent="erro"]
+margin_left = -1177.0
+margin_top = 532.0
+margin_right = -1126.0
+margin_bottom = 583.0
+rect_scale = Vector2( 4.15686, 4.40612 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 3 )
+flip_h = true
+
+[node name="Label2" type="Label" parent="erro"]
+margin_left = -952.511
+margin_top = -205.883
+margin_right = 149.489
+margin_bottom = -13.8825
+rect_scale = Vector2( 1.68627, 2.43404 )
+custom_fonts/font = SubResource( 1 )
+text = "Não foi dessa vez:(
+Tente de novo"
+align = 1
+
+[node name="acerto" type="Sprite" parent="."]
+visible = false
+position = Vector2( 513.5, 296 )
+scale = Vector2( 0.383209, 0.324762 )
+texture = ExtResource( 1 )
+
+[node name="avancar" type="TextureButton" parent="acerto"]
+margin_left = 977.092
+margin_top = 545.588
+margin_right = 1028.09
+margin_bottom = 596.588
+rect_scale = Vector2( 4.15686, 4.15686 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Label2" type="Label" parent="acerto"]
+margin_left = -1096.92
+margin_top = -178.431
+margin_right = 203.076
+margin_bottom = 13.5687
+rect_scale = Vector2( 1.68627, 2.18479 )
+custom_fonts/font = SubResource( 1 )
+text = "Parabéns! Avance
+para a próxima fase"
+align = 1
+
+[node name="perguntas" type="Sprite" parent="."]
+position = Vector2( 512.5, 297.5 )
+scale = Vector2( 0.382463, 0.326191 )
+texture = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="perguntas"]
+margin_left = -750.057
+margin_top = -792.646
+margin_right = 549.948
+margin_bottom = -535.646
+rect_scale = Vector2( 1.68627, 1.68627 )
+rect_pivot_offset = Vector2( 539.356, -0.000244141 )
+custom_fonts/font = SubResource( 1 )
+text = "Como você pode atribuir pesos aos diferentes critérios de avaliação no método GUT?"
+align = 1
+autowrap = true
+
+[node name="Button4" type="Button" parent="perguntas"]
+margin_left = -1007.82
+margin_top = -350.0
+margin_right = 992.182
+margin_bottom = -120.0
+custom_styles/hover = SubResource( 16 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+
+[node name="Label2" type="Label" parent="perguntas/Button4"]
+margin_left = 54.9693
+margin_top = 65.1965
+margin_right = 1943.97
+margin_bottom = 158.197
+custom_fonts/font = SubResource( 5 )
+text = "Com base na importância de cada critério para a decisão"
+align = 1
+autowrap = true
+
+[node name="Button3" type="Button" parent="perguntas"]
+margin_left = -1010.89
+margin_top = -51.4706
+margin_right = 989.109
+margin_bottom = 178.529
+custom_styles/hover = SubResource( 17 )
+custom_styles/focus = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+group = SubResource( 2 )
+
+[node name="Label" type="Label" parent="perguntas/Button3"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -967.0
+margin_top = -87.9998
+margin_right = 966.0
+margin_bottom = 89.0002
+theme = SubResource( 8 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+text = "Com base na ordem de prioridade dos critérios"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Button2" type="Button" parent="perguntas"]
+margin_left = -1013.96
+margin_top = 247.059
+margin_right = 986.037
+margin_bottom = 477.059
+custom_fonts/font = SubResource( 11 )
+custom_styles/hover = SubResource( 18 )
+custom_styles/focus = SubResource( 12 )
+custom_styles/normal = SubResource( 13 )
+clip_text = true
+
+[node name="Label" type="Label" parent="perguntas/Button2"]
+margin_left = 153.631
+margin_top = 30.8826
+margin_right = 1907.63
+margin_bottom = 192.883
+custom_fonts/font = SubResource( 5 )
+text = "Com base no custo de cada critério para a decisão"
+align = 1
+autowrap = true
+
+[node name="Button" type="Button" parent="perguntas"]
+margin_left = -1007.82
+margin_top = 559.313
+margin_right = 992.183
+margin_bottom = 789.313
+custom_styles/hover = SubResource( 19 )
+custom_styles/focus = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+
+[node name="Label2" type="Label" parent="perguntas/Button"]
+margin_left = 33.0
+margin_top = 75.8821
+margin_right = 1987.0
+margin_bottom = 202.882
+custom_fonts/font = SubResource( 5 )
+text = "Com base na disponibilidade de informações sobre cada critério"
+align = 1
+autowrap = true
+
+[connection signal="pressed" from="erro/TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="acerto/avancar" to="." method="_on_avancar_pressed"]
+[connection signal="pressed" from="perguntas/Button4" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="perguntas/Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="perguntas/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="perguntas/Button" to="." method="_on_Button_pressed"]

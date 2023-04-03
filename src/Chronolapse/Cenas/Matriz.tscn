@@ -1,0 +1,309 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://imagens/matrizNewBack.png" type="Texture" id=1]
+[ext_resource path="res://Script/Matriz.gd" type="Script" id=2]
+[ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=6]
+size = 10
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 10
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 10
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 10
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 10
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 9
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 9
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 9
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 1, 1, 1, 1 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Eisenhower360" type="Sprite" parent="."]
+position = Vector2( 673.256, 113.941 )
+scale = Vector2( 1.00195, 0.883823 )
+texture = ExtResource( 1 )
+offset = Vector2( -159.944, 211.082 )
+
+[node name="Analise" type="Button" parent="."]
+margin_left = 196.0
+margin_top = 542.0
+margin_right = 379.0
+margin_bottom = 577.0
+rect_pivot_offset = Vector2( -705, -559 )
+text = "Enviar matriz para análise"
+
+[node name="IU_menos" type="Button" parent="."]
+margin_left = 114.0
+margin_top = 126.0
+margin_right = 134.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 175, 22 )
+text = "-"
+
+[node name="IU_mais" type="Button" parent="."]
+margin_left = 226.0
+margin_top = 126.0
+margin_right = 246.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 51, 22 )
+text = "+"
+
+[node name="INU_menos" type="Button" parent="."]
+margin_left = 328.0
+margin_top = 126.0
+margin_right = 348.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( -127, 20 )
+text = "-"
+
+[node name="INU_mais" type="Button" parent="."]
+margin_left = 445.0
+margin_top = 126.0
+margin_right = 465.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( -251, 20 )
+text = "+"
+
+[node name="NIU_menos" type="Button" parent="."]
+margin_left = 114.0
+margin_top = 322.0
+margin_right = 134.0
+margin_bottom = 342.0
+rect_pivot_offset = Vector2( 197, -41 )
+text = "-"
+
+[node name="NIU_mais" type="Button" parent="."]
+margin_left = 226.0
+margin_top = 322.0
+margin_right = 246.0
+margin_bottom = 342.0
+rect_pivot_offset = Vector2( 73, -41 )
+text = "+"
+
+[node name="NINU_menos" type="Button" parent="."]
+margin_left = 328.0
+margin_top = 326.0
+margin_right = 348.0
+margin_bottom = 346.0
+text = "-"
+
+[node name="NINU_mais" type="Button" parent="."]
+margin_left = 445.0
+margin_top = 326.0
+margin_right = 465.0
+margin_bottom = 346.0
+text = "+"
+
+[node name="LblImportanteUrgente" type="Label" parent="."]
+margin_left = 84.0
+margin_top = 155.0
+margin_right = 276.0
+margin_bottom = 306.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Tempo: 0h"
+align = 1
+autowrap = true
+
+[node name="LblImportanteNUrgente" type="Label" parent="."]
+margin_left = 293.0
+margin_top = 155.0
+margin_right = 509.0
+margin_bottom = 307.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "Tempo: 0h"
+align = 1
+autowrap = true
+
+[node name="LblNImportanteUrgente" type="Label" parent="."]
+margin_left = 84.0
+margin_top = 352.0
+margin_right = 276.0
+margin_bottom = 471.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Tempo: 0h"
+align = 1
+autowrap = true
+
+[node name="LblNImportanteNUrgente" type="Label" parent="."]
+margin_left = 288.0
+margin_top = 352.0
+margin_right = 504.0
+margin_bottom = 464.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 9 )
+text = "Tempo: 0h"
+align = 1
+autowrap = true
+
+[node name="ProgressBarImpUrg" type="ProgressBar" parent="."]
+margin_left = 137.0
+margin_top = 126.0
+margin_right = 223.0
+margin_bottom = 147.0
+max_value = 24.0
+
+[node name="ProgressBarImpNUrg" type="ProgressBar" parent="."]
+margin_left = 354.0
+margin_top = 126.0
+margin_right = 440.0
+margin_bottom = 147.0
+max_value = 24.0
+
+[node name="ProgressBarNImpUrg" type="ProgressBar" parent="."]
+margin_left = 137.0
+margin_top = 322.0
+margin_right = 223.0
+margin_bottom = 343.0
+rect_pivot_offset = Vector2( 91, -118 )
+max_value = 24.0
+
+[node name="ProgressBarNImpNUrg" type="ProgressBar" parent="."]
+margin_left = 354.0
+margin_top = 326.0
+margin_right = 440.0
+margin_bottom = 347.0
+max_value = 24.0
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_left = 672.0
+margin_top = 3.0
+margin_right = 1026.0
+margin_bottom = 467.0
+custom_fonts/font = SubResource( 1 )
+text = "Distribua as 24 horas do seu dia na matriz!
+
+Segue exemplos de cada item da matriz:
+-> Importante e Urgente: Responder a email de clientes, problemas urgentes.
+
+-> Importante e não urgente: Dormir, treinamentos, atividades essencias.
+
+-> Não importante e urgente: Ligações, correspondências, interrupções.
+
+-> Não importante e não Urgente: Assistir vídeos no tiktok, responder grupo de mensagem!
+
+"
+autowrap = true
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 641.0
+margin_top = 92.0
+margin_right = 995.0
+margin_bottom = 508.0
+custom_colors/font_color = Color( 1, 0.968627, 0.996078, 1 )
+custom_colors/font_color_shadow = Color( 0.0862745, 0.00784314, 0.00784314, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Agora faça a sua própria Matriz de Eisenhower.
+
+Escreva suas atividades em cada campo indicado.
+
+Após escrito, forneça a quantidade de horas que você passa em cada quadrante utilizando os botões sinalizados com sinal de + e -.
+
+Por fim, aperte o botão para que sua matriz seja analisada."
+autowrap = true
+
+[node name="Jogar" type="Button" parent="."]
+margin_left = 196.0
+margin_top = 542.0
+margin_right = 379.0
+margin_bottom = 577.0
+rect_pivot_offset = Vector2( -705, -559 )
+text = "Jogar!"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 223.0
+margin_top = 34.0
+margin_right = 484.0
+margin_bottom = 50.0
+custom_colors/font_color = Color( 0.517647, 1, 0.419608, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Tempo total: "
+autowrap = true
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = 95.0
+margin_top = 178.0
+margin_right = 267.0
+margin_bottom = 295.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="TextEdit2" type="TextEdit" parent="."]
+margin_left = 311.0
+margin_top = 376.0
+margin_right = 482.0
+margin_bottom = 493.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+custom_styles/normal = SubResource( 11 )
+
+[node name="TextEdit3" type="TextEdit" parent="."]
+margin_left = 95.0
+margin_top = 376.0
+margin_right = 266.0
+margin_bottom = 493.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_styles/normal = SubResource( 12 )
+
+[node name="TextEdit4" type="TextEdit" parent="."]
+margin_left = 311.0
+margin_top = 178.0
+margin_right = 483.0
+margin_bottom = 295.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/normal = SubResource( 13 )
+
+[connection signal="pressed" from="Analise" to="." method="_on_Analise_pressed"]
+[connection signal="pressed" from="IU_menos" to="." method="_on_IU_menos_pressed"]
+[connection signal="pressed" from="IU_mais" to="." method="_on_IU_mais_pressed"]
+[connection signal="pressed" from="INU_menos" to="." method="_on_INU_menos_pressed"]
+[connection signal="pressed" from="INU_mais" to="." method="_on_INU_mais_pressed"]
+[connection signal="pressed" from="NIU_menos" to="." method="_on_NIU_menos_pressed"]
+[connection signal="pressed" from="NIU_mais" to="." method="_on_NIU_mais_pressed"]
+[connection signal="pressed" from="NINU_menos" to="." method="_on_NINU_menos_pressed"]
+[connection signal="pressed" from="NINU_mais" to="." method="_on_NINU_mais_pressed"]
+[connection signal="pressed" from="Jogar" to="." method="_on_Jogar_pressed"]
+[connection signal="info_clicked" from="TextEdit" to="." method="_on_TextEdit_info_clicked"]
