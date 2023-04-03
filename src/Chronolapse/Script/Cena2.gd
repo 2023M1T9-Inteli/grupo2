@@ -52,6 +52,7 @@ func atirar_tomate():
 	if Input.is_action_just_pressed("ui_atirar") and pode_atirar:
 	
 		ControleMusica.pomodoroFx()
+
 		#intancia a cena tomate e joga dentro da variável cena_tomate
 		var cena_tomate = tomate.instance()
 		
@@ -78,9 +79,11 @@ func _on_Area2D_body_entered(body):
 
 #função chamada assim que o player interage com o Bloco_Tomate
 func _on_blocoFx_finished():
+func _on_Area2D_body_entered(body):
 	#muda a animação do Bloco
 	get_node("Bloco_Tomate").get_node("AnimatedSprite").play("new_default")
 
+	$blocoFx.play()
 	#muda a variável 'podeAtirar' para true, permitindo a função atirar_tomate retornar algo
 	pode_atirar = true
   
@@ -93,4 +96,3 @@ func _on_blocoFx_finished():
 	$Player/Sprite.play("Idle")
 #função que pausa a cena enquanto o popup está aberto
 	get_tree().paused = true
-		
