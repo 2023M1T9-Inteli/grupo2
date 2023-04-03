@@ -12,7 +12,7 @@ func _ready():
 #vai para a proxima tela
 func _on_startBtn_pressed():
 	ControleMusica.botao_start()	
-	get_tree().change_scene("res://Cenas/Narrativa_inicial.tscn")
+	get_tree().change_scene("res://Cenas/Carregar.tscn")
 
 
 #aparecer menu de controle e voltar para tela de início se for requerido
