@@ -10,12 +10,12 @@ func _ready():
 	
 #Caso o jogador errar mais de três vezes, a fase é reiniciada
 func _process(delta):
-	if cont ==3:
+	if cont ==2:
 		get_tree().change_scene("res://Cenas/GameOver.tscn")
 
 #Caso o botão com a resposta certa seja pressionado, aparecerá a tela de acerto e sumirá a tela de perguntas
 func _on_avancar_pressed():
-	get_tree().change_scene("res://Cenas/Mapap_do_Kanban.tscn")
+	get_tree().change_scene("res://Cenas/narrativa_final.tscn")
 
 #Caso o botão com a resposta errada seja pressionado, aparecerá a tela de erro e sumirá a tela de perguntas
 #Além disso, será adicionado um a variável de contagem de erros.

@@ -82,7 +82,7 @@ func _on_blocoFx_finished():
 	#muda a animação do Bloco
 	get_node("Bloco_Tomate").get_node("AnimatedSprite").play("new_default")
 
-	$blocoFx.play()
+
 	#muda a variável 'podeAtirar' para true, permitindo a função atirar_tomate retornar algo
 	pode_atirar = true
   

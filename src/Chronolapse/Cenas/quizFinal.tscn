@@ -7,7 +7,7 @@
 [ext_resource path="res://Script/quizPomodoro.gd" type="Script" id=5]
 
 [sub_resource type="DynamicFont" id=1]
-size = 50
+size = 30
 extra_spacing_top = 6
 extra_spacing_bottom = 6
 font_data = ExtResource( 2 )
@@ -179,10 +179,9 @@ margin_right = 209.221
 margin_bottom = -545.745
 rect_scale = Vector2( 1.68627, 1.68627 )
 custom_fonts/font = SubResource( 1 )
-text = "Qual a situação mais
-adequada para se utilizar 
-o método pomodoro?"
+text = " Tenho dificuldades em me concentrar por longos períodos durante a execução das minhas atividades. Um método de gestão do tempo que pode me ajudar muito é:"
 align = 1
+autowrap = true
 
 [node name="Button4" type="Button" parent="perguntas"]
 margin_left = -1007.82
@@ -194,15 +193,13 @@ custom_styles/focus = SubResource( 3 )
 custom_styles/normal = SubResource( 4 )
 
 [node name="Label2" type="Label" parent="perguntas/Button4"]
-margin_left = 126.0
-margin_top = 38.0
-margin_right = 1912.0
-margin_bottom = 188.0
+margin_left = 135.846
+margin_top = 81.3597
+margin_right = 1921.85
+margin_bottom = 231.36
 rect_scale = Vector2( 1, 1.37242 )
 custom_fonts/font = SubResource( 5 )
-text = "É recomendado para saber priorizar qual 
-tipo de atividade realizar e sua ordem de 
-execução"
+text = "Matriz de Eisenhower"
 align = 1
 
 [node name="Button3" type="Button" parent="perguntas"]
@@ -229,8 +226,7 @@ theme = SubResource( 8 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 9 )
-text = "Quando há um trabalho grande a ser feito 
-e é preciso delegar a cada membro uma função"
+text = "Matriz GUT"
 align = 1
 valign = 1
 
@@ -246,36 +242,32 @@ custom_styles/normal = SubResource( 13 )
 clip_text = true
 
 [node name="Label" type="Label" parent="perguntas/Button2"]
-margin_left = 158.91
-margin_top = 24.6756
-margin_right = 1912.91
-margin_bottom = 186.676
+margin_left = 144.62
+margin_top = 92.6611
+margin_right = 1898.62
+margin_bottom = 254.661
 rect_scale = Vector2( 1, 1.24828 )
 custom_fonts/font = SubResource( 5 )
-text = "Quando é preciso realizar uma tarefa que 
-exija foco e que possa ser concluida
- em etapas"
+text = "Método Kanban"
 align = 1
 
 [node name="Button" type="Button" parent="perguntas"]
-margin_left = -1007.82
-margin_top = 559.313
-margin_right = 992.183
-margin_bottom = 789.313
+margin_left = -1008.95
+margin_top = 570.16
+margin_right = 991.052
+margin_bottom = 800.16
 custom_styles/hover = SubResource( 19 )
 custom_styles/focus = SubResource( 14 )
 custom_styles/normal = SubResource( 15 )
 
 [node name="Label2" type="Label" parent="perguntas/Button"]
-margin_left = -107.543
-margin_top = 27.7798
-margin_right = 2147.46
-margin_bottom = 189.779
+margin_left = -105.367
+margin_top = 101.393
+margin_right = 2149.63
+margin_bottom = 241.393
 rect_scale = Vector2( 1, 1.29336 )
 custom_fonts/font = SubResource( 5 )
-text = "É recomendado para planejamento de tarefas ao
- longo da semana e acompanhar o andamento de
- cada uma"
+text = "Método Pomodoro"
 align = 1
 
 [connection signal="pressed" from="erro/TextureButton" to="." method="_on_TextureButton_pressed"]

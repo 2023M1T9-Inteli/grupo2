@@ -1,4 +1,4 @@
-[gd_scene load_steps=486 format=2]
+[gd_scene load_steps=481 format=2]
 
 [ext_resource path="res://Script/narrativa_final.gd" type="Script" id=1]
 [ext_resource path="res://imagens/narrativa final/narrativa_final_certa_086.jpg" type="Texture" id=2]
@@ -181,7 +181,6 @@
 [ext_resource path="res://imagens/narrativa final/narrativa_final_certa_043.jpg" type="Texture" id=179]
 [ext_resource path="res://imagens/narrativa final/narrativa_final_certa_030.jpg" type="Texture" id=180]
 [ext_resource path="res://imagens/narrativa final/narrativa_final_certa_026.jpg" type="Texture" id=181]
-[ext_resource path="res://pop ups/pomodoro/quizz.png" type="Texture" id=182]
 [ext_resource path="res://imagens/narrativa final/narrativa_final2_067.jpg" type="Texture" id=183]
 [ext_resource path="res://imagens/narrativa final/narrativa_final_certa_001.jpg" type="Texture" id=184]
 [ext_resource path="res://imagens/narrativa final/narrativa_final_certa_002.jpg" type="Texture" id=185]
@@ -499,24 +498,6 @@ animations = [ {
 "speed": 10.0
 } ]
 
-[sub_resource type="DynamicFontData" id=2]
-font_path = "res://Script/letras/PressStart2P.ttf"
-
-[sub_resource type="DynamicFont" id=4]
-size = 14
-extra_spacing_top = 2
-extra_spacing_space = -6
-font_data = SubResource( 2 )
-
-[sub_resource type="StyleBoxTexture" id=5]
-texture = ExtResource( 182 )
-region_rect = Rect2( 0, 133.623, 2680, 1425.2 )
-margin_top = 3.9945
-
-[sub_resource type="StyleBoxTexture" id=6]
-texture = ExtResource( 182 )
-region_rect = Rect2( 0, 127.452, 2680, 1421.07 )
-
 [node name="narrativa_final" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -530,7 +511,7 @@ position = Vector2( 510.5, 301.5 )
 scale = Vector2( 0.552778, 0.552778 )
 frames = SubResource( 3 )
 animation = "anim1"
-frame = 88
+frame = 147
 playing = true
 
 [node name="Timer1" type="Timer" parent="."]
@@ -544,17 +525,6 @@ one_shot = true
 [node name="Timer3" type="Timer" parent="."]
 wait_time = 16.0
 
-[node name="Button" type="Button" parent="."]
-margin_left = 737.0
-margin_top = 539.0
-margin_right = 1006.0
-margin_bottom = 579.0
-custom_fonts/font = SubResource( 4 )
-custom_styles/hover = SubResource( 5 )
-custom_styles/normal = SubResource( 6 )
-text = " pular narrativa >> "
-
 [connection signal="timeout" from="Timer1" to="." method="_on_Timer1_timeout"]
 [connection signal="timeout" from="Timer2" to="." method="_on_Timer2_timeout"]
 [connection signal="timeout" from="Timer3" to="." method="_on_Timer3_timeout"]
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

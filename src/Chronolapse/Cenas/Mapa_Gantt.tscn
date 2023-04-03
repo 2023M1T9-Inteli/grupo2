@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Branch/ParallaxBackground.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Branch/Monstro.tscn" type="PackedScene" id=2]
@@ -11,8 +11,8 @@
 [ext_resource path="res://imagens/bloco-gantt02.png" type="Texture" id=9]
 [ext_resource path="res://Cenas/popUpGUT.tscn" type="PackedScene" id=10]
 [ext_resource path="res://efeito sonoros/laser-gun-72558 (mp3cut.net).mp3" type="AudioStream" id=11]
-[ext_resource path="res://imagens/newPortal cópia.png" type="Texture" id=12]
 [ext_resource path="res://efeito sonoros/Game Button Sounds Pack - Free Sounds [TubeRipper (mp3cut.net) (1).mp3" type="AudioStream" id=12]
+[ext_resource path="res://Cenas/passagemGUT.gd" type="Script" id=13]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -110,15 +110,16 @@ stream = ExtResource( 11 )
 
 [node name="NewPortalCópia" type="Sprite" parent="."]
 position = Vector2( 1659, 254 )
-texture = ExtResource( 12 )
 
 [node name="Area2D" type="Area2D" parent="NewPortalCópia"]
+script = ExtResource( 13 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NewPortalCópia/Area2D"]
 shape = SubResource( 4 )
+
 [node name="blocoFx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
 
 [connection signal="body_entered" from="KinematicBody2D/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="NewPortalCópia/Area2D" to="NewPortalCópia/Area2D" method="_on_Area2D_body_entered"]
 [connection signal="finished" from="blocoFx" to="." method="_on_blocoFx_finished"]
-[connection signal="body_entered" from="NewPortalCópia/Area2D" to="." method="_on_Area2DPortal_body_entered"]
