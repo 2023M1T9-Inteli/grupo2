@@ -71,7 +71,10 @@ custom_fonts/font = SubResource( 8 )
 text = "Retornar"
 expand_icon = true
 
+
+
 [node name="som" type="Button" parent="controls"]
+[node name="controlBtn" type="Button" parent="controls"]
 margin_top = 37.0
 margin_right = 528.0
 margin_bottom = 70.0
@@ -100,8 +103,10 @@ expand_icon = true
 
 [node name="quitBtn" type="Button" parent="controls"]
 margin_top = 111.0
+margin_top = 74.0
 margin_right = 528.0
 margin_bottom = 144.0
+margin_bottom = 107.0
 focus_neighbour_bottom = NodePath("../retornar")
 theme = SubResource( 7 )
 custom_colors/font_color_focus = Color( 0.827451, 0.231373, 0.203922, 1 )
@@ -122,6 +127,8 @@ text = "jogo pausado"
 
 [node name="popUpControl" parent="." instance=ExtResource( 3 )]
 visible = false
+
+
 
 [connection signal="pressed" from="controls/retornar" to="." method="_on_retornar_pressed"]
 [connection signal="pressed" from="controls/controlBtn" to="." method="_on_controlBtn_pressed"]

@@ -9,17 +9,14 @@ var motion = Vector2()
 var movimentacao = true
 var pausar = false
 
+onready var ani = $Sprite
+
 var recorded_data = []  #array que atualiza quando personagem se move
 var is_rewinding = false #bool para indicar se função de rebobinar está ativa ou inativa
 var rewind_length = (60 * 3) #3 segundos
 var rewind_ghost = load("res://Cenas/rewindGhost.tscn")  #direcionar ao sprite que está rebobinando para mostrar seu rastro na tela
 
-#variaveis para controle de efeito sonoro
-var first_time = true
-var is_playing = false
-var sound = false
 
-onready var ani = $Sprite
 
 func _ready():
 	$pause.visible = false
@@ -27,12 +24,6 @@ func _ready():
 #aciona os processos físico do personagem, ou seja, a movimentação de andar para os lados e pular. Além de conter a gravdidade para queda da personagem
 func _physics_process(_delta):
 	
-	if is_rewinding and !sound:
-		$rewindFx.play()
-		sound = true
-	elif !is_rewinding and sound:
-		sound = false
-		$rewindFx.stop()
 	#funcão de rebobinar
 	handle_rewind_function()
 	motion.y += GRAVIDADE
@@ -61,7 +52,6 @@ func handle_rewind_function():
 
 	#se a tecla "espaço for apertada, a ação do personagem é rebobinada
 	if(Input.is_action_pressed("ui_space")): 
-
 		is_rewinding = true
 		$AnimatedSprite.visible = true
 		$AnimatedSprite.play("default")
@@ -131,13 +121,16 @@ func _on_pes_body_entered(body):
 
 #player toma dano
 func _on_dano_body_entered(_body):
-	
-	ControleMusica.danoPersonagem()
 #	Chama a função do timer para que ele perca tempo do seu cronometro
 	$timer/CanvasLayer/Control.perder_tempo()
 	$Sprite/AnimationPlayer.play("danoPersonagem")
 
-
+#Código anterior, que fazia com que desse GameOver, comentado caso queira ser reutilizado
+#	vida -= 1 
+#	if vida == 0:
+#		$".".queue_free()
+#		get_tree().change_scene("res://Cenas/GameOver.tscn")
+#
 
 #Função para verificar se o jogador caiu e não utilizou o rewind
 func morte_queda():
@@ -157,3 +150,10 @@ func _on_pausar_pressed():
 	movimentacao = false
 	pausar = true
 	get_tree().paused = true
+
+
+func _on_som_toggled(button_pressed):
+	if $hud/som.pressed:
+		ControleMusica.mute()
+	else:
+		ControleMusica.som()
