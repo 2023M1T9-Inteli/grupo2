@@ -45,7 +45,6 @@ func respostaCerta():
 #funcao para tocar efeito sonoro do laser
 func laserFx():
 	$laserFx.play()
-	
 
 #funcao para tirar o audio
 func mute():

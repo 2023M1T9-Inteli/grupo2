@@ -33,4 +33,5 @@ func _on_objetivoBtn_pressed():
 	
 	
 func _on_credBtn_pressed():
+	ControleMusica.blocoFx()
 	$creditos.visible = true
