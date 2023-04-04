@@ -135,12 +135,7 @@ func _on_dano_body_entered(_body):
 	$timer/CanvasLayer/Control.perder_tempo()
 	$Sprite/AnimationPlayer.play("danoPersonagem")
 
-#Código anterior, que fazia com que desse GameOver, comentado caso queira ser reutilizado
-#	vida -= 1 
-#	if vida == 0:
-#		$".".queue_free()
-#		get_tree().change_scene("res://Cenas/GameOver.tscn")
-#
+
 
 #Função para verificar se o jogador caiu e não utilizou o rewind
 func morte_queda():

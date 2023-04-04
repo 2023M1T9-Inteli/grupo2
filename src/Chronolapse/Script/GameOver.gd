@@ -13,7 +13,7 @@ func _ready():
 func _on_startBtn_pressed():
 	#Abre a cena em que o usuário estava do início.	
 	if controle.level == "fase 1":
-		get_tree().change_scene("res://Cenas/World.tscn")
+		get_tree().change_scene("res://Cenas/Cena1.tscn")
 	elif controle.level == "fase 2":
 		get_tree().change_scene("res://Cenas/Cena2.tscn")
 	elif controle.level == "fase 3":

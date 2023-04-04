@@ -19,7 +19,6 @@ config/icon="res://icon.png"
 ControleMusica="*res://autoload/controleMusica.tscn"
 GlobalTeste="*res://global_teste.tscn"
 CategoriaGlobal="*res://CategoriaGlobal.gd"
-LoadingScene="*res://Script/LoadingScene.gd"
 
 [display]
 

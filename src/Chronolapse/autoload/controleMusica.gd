@@ -42,11 +42,19 @@ func blocoFx():
 func respostaCerta():
 	$respostaFx.play()
 
+#funcao para tocar efeito sonoro do laser
+func laserFx():
+	$laserFx.play()
+	
+
+#funcao para tirar o audio
 func mute():
 	AudioServer.set_bus_mute(master_bus,true)
 
+#funcao de efeito sonoro para click
 func click():
 	$clickFx.play()
 
+#funcao para voltara a tocar som
 func som():
 	AudioServer.set_bus_mute(master_bus,false)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://autoload/controleMusica.gd" type="Script" id=1]
 [ext_resource path="res://efeito sonoros/chiptune-coin-fx_1 (mp3cut.net).mp3" type="AudioStream" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://efeito sonoros/Game Button Sounds Pack - Free Sounds [TubeRipper (mp3cut.net) (1).mp3" type="AudioStream" id=8]
 [ext_resource path="res://efeito sonoros/respotaCerta.mp3" type="AudioStream" id=9]
 [ext_resource path="res://efeito sonoros/click.mp3" type="AudioStream" id=10]
+[ext_resource path="res://efeito sonoros/laser-gun-72558 (mp3cut.net).mp3" type="AudioStream" id=11]
 
 [node name="controle_musica" type="Node"]
 script = ExtResource( 1 )
@@ -46,4 +47,8 @@ volume_db = 0.619
 
 [node name="clickFx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
+volume_db = 0.619
+
+[node name="laserFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
 volume_db = 0.619

@@ -4,10 +4,10 @@
 [ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://pop ups/pomodoro/pixil-frame-0 (3).png" type="Texture" id=3]
 [ext_resource path="res://pop ups/pomodoro/pixil-frame-0 (2).png" type="Texture" id=4]
-[ext_resource path="res://Cenas/quizMatriz.gd" type="Script" id=5]
+[ext_resource path="res://Script/quizFase5.gd" type="Script" id=5]
 
 [sub_resource type="DynamicFont" id=1]
-size = 40
+size = 35
 extra_spacing_top = 6
 extra_spacing_bottom = 6
 font_data = ExtResource( 2 )
@@ -138,7 +138,6 @@ Tente de novo"
 align = 1
 
 [node name="acerto" type="Sprite" parent="."]
-visible = false
 position = Vector2( 513.5, 296 )
 scale = Vector2( 0.383209, 0.324762 )
 texture = ExtResource( 1 )
@@ -153,17 +152,18 @@ texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 3 )
 
 [node name="Label2" type="Label" parent="acerto"]
-margin_left = -1096.92
-margin_top = -178.431
-margin_right = 203.076
-margin_bottom = 13.5687
+margin_left = -1097.31
+margin_top = -126.246
+margin_right = 202.684
+margin_bottom = 65.7534
 rect_scale = Vector2( 1.68627, 2.18479 )
 custom_fonts/font = SubResource( 1 )
-text = "Parabéns! Avance
-para a próxima fase"
+text = "Parabéns! 
+Você chegou ao fim..."
 align = 1
 
 [node name="perguntas" type="Sprite" parent="."]
+visible = false
 position = Vector2( 512.5, 297.5 )
 scale = Vector2( 0.382463, 0.326191 )
 texture = ExtResource( 1 )
@@ -176,8 +176,7 @@ margin_bottom = -535.646
 rect_scale = Vector2( 1.68627, 1.68627 )
 rect_pivot_offset = Vector2( 539.356, -0.000244141 )
 custom_fonts/font = SubResource( 1 )
-text = "1. Se eu tenho muitas tarefas no quadrante Urgente e Importante da Matriz de Eisenhower, significa que:
-"
+text = " Tenho dificuldades em me concentrar por longos períodos durante a execução das minhas atividades. Um método de gestão do tempo que pode me ajudar muito é:"
 align = 1
 autowrap = true
 
@@ -191,13 +190,12 @@ custom_styles/focus = SubResource( 3 )
 custom_styles/normal = SubResource( 4 )
 
 [node name="Label2" type="Label" parent="perguntas/Button4"]
-margin_left = 54.9693
-margin_top = 65.1965
-margin_right = 1943.97
-margin_bottom = 158.197
+margin_left = 55.0
+margin_top = 94.0
+margin_right = 1944.0
+margin_bottom = 158.0
 custom_fonts/font = SubResource( 5 )
-text = "Estou fazendo um bom planejamento da minha rotina
-"
+text = "Método Kanban"
 align = 1
 autowrap = true
 
@@ -224,8 +222,7 @@ theme = SubResource( 8 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 9 )
-text = "Provavelmente falhei na organização das tarefas e do tempo que elas levariam para serem executadas e agora tudo é crítico
-"
+text = "Método Pomodoro"
 align = 1
 valign = 1
 autowrap = true
@@ -242,21 +239,20 @@ custom_styles/normal = SubResource( 13 )
 clip_text = true
 
 [node name="Label" type="Label" parent="perguntas/Button2"]
-margin_left = 153.631
-margin_top = 30.8826
-margin_right = 1907.63
-margin_bottom = 192.883
+margin_left = 154.0
+margin_top = 101.0
+margin_right = 1908.0
+margin_bottom = 193.0
 custom_fonts/font = SubResource( 5 )
-text = "Estou fazendo uma boa gestão da organização das minhas tarefas, mas acabo recebendo muitas tarefas urgentes de outras pessoas, o que atrapalha a execução
-"
+text = "Matriz GUT"
 align = 1
 autowrap = true
 
 [node name="Button" type="Button" parent="perguntas"]
-margin_left = -1007.82
-margin_top = 559.313
-margin_right = 992.183
-margin_bottom = 789.313
+margin_left = -1008.0
+margin_top = 590.0
+margin_right = 992.0
+margin_bottom = 789.0
 custom_styles/hover = SubResource( 19 )
 custom_styles/focus = SubResource( 14 )
 custom_styles/normal = SubResource( 15 )
@@ -267,8 +263,7 @@ margin_top = 75.8821
 margin_right = 1987.0
 margin_bottom = 202.882
 custom_fonts/font = SubResource( 5 )
-text = "Estou fazendo tudo que é importante para atingir meus objetivos e metas 
-"
+text = "Matriz de Eisenhower"
 align = 1
 autowrap = true
 

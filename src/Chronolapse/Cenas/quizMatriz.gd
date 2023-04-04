@@ -15,7 +15,7 @@ func _process(delta):
 
 #Caso o botão com a resposta certa seja pressionado, aparecerá a tela de acerto e sumirá a tela de perguntas
 func _on_avancar_pressed():
-	get_tree().change_scene("res://Cenas/Mapap_do_Kanban.tscn")
+	get_tree().change_scene("res://Cenas/Cena2.tscn")
 
 #Caso o botão com a resposta errada seja pressionado, aparecerá a tela de erro e sumirá a tela de perguntas
 #Além disso, será adicionado um a variável de contagem de erros.
@@ -27,18 +27,18 @@ func _on_Button4_pressed():
 #Além disso, será adicionado um a variável de contagem de erros.
 
 func _on_Button3_pressed():
+	
+	#efeito sonoro
+	ControleMusica.respostaCerta()
 	$perguntas.hide()
-	$erro.show()
+	$acerto.show()
 	cont+=1
 
 #Caso o botão com a resposta certa seja pressionado, aparecerá a tela de acerto e sumirá a tela de perguntas
 func _on_Button2_pressed():
 	
-	#efeito sonoro
-	ControleMusica.respostaCerta()
-	
 	$perguntas.hide()
-	$acerto.show()
+	$erro.show()
 
 #Caso o botão com a resposta errada seja pressionado, aparecerá a tela de erro e sumirá a tela de perguntas
 #Além disso, será adicionado um a variável de contagem de erros.
