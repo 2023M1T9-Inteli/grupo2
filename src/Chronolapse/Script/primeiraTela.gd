@@ -7,7 +7,7 @@ func _ready():
 	ControleMusica.play_musica()
 	$popUpControl.visible = false
 	$objetivo.visible = false
-
+	
 
 #vai para a proxima tela
 func _on_startBtn_pressed():
@@ -30,3 +30,7 @@ func _on_objetivoBtn_pressed():
 	ControleMusica.blocoFx()
 	
 	$objetivo.visible = true
+	
+	
+func _on_credBtn_pressed():
+	$creditos.visible = true

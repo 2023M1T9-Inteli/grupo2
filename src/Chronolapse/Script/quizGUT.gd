@@ -29,7 +29,7 @@ func _on_Button4_pressed():
 #Além disso, será adicionado um a variável de contagem de erros.
 func _on_Button3_pressed():
 	$perguntas.hide()
-	$acerto.show()
+	$erro.show()
 	cont+=1
 #Caso o botão com a resposta errada seja pressionado, aparecerá a tela de erro e sumirá a tela de perguntas
 #Além disso, será adicionado um a variável de contagem de erros.

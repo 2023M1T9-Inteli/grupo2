@@ -16,7 +16,8 @@ func _ready():
 #	Invoca o timer e passa quanto tempo ele deve ter
 	$Player/timer/CanvasLayer/Control.start_timer(tempo)
 	$popUpRelogio.visible = false
-	self.pause_mode = false
+	$tutorasRewind.visible = false
+
 	
 func _process(_delta):
 
@@ -24,11 +25,23 @@ func _process(_delta):
 	$Player.morte_queda()
 	if !$popUpRelogio.visible and !$Player.pausar:
 		get_tree().paused = false
+	
+	if !$tutorasRewind.visible and !$Player.pausar:
+		get_tree().paused = false
 
 	
 func _on_Area2D_body_entered(body):
 	$popUpRelogio.visible = true
 	$popUpRelogio/Popup.popup_centered()
-	$AnimatedSprite.visible = false
+	$AnimatedSprite.queue_free()
 	get_tree().paused = true
 
+
+
+func _on_Area2Drewind_body_entered(body):
+	$tutorasRewind.visible = true
+	$tutorasRewind/Popup.popup_centered()
+	$AnimatedSprite2.queue_free()
+	get_tree().paused = true
+	
+	

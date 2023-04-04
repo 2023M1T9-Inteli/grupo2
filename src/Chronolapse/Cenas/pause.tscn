@@ -110,4 +110,5 @@ text = "jogo pausado"
 visible = false
 
 [connection signal="pressed" from="controls/retornar" to="." method="_on_retornar_pressed"]
+[connection signal="pressed" from="controls/controlBtn" to="." method="_on_controlBtn_pressed"]
 [connection signal="pressed" from="controls/quitBtn" to="." method="_on_quitBtn_pressed"]

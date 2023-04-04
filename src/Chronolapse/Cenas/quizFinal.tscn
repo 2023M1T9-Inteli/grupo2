@@ -313,10 +313,10 @@ custom_styles/focus = SubResource( 14 )
 custom_styles/normal = SubResource( 15 )
 
 [node name="Label2" type="Label" parent="perguntas/Button"]
-margin_left = -105.367
-margin_top = 101.393
-margin_right = 2149.63
-margin_bottom = 241.393
+margin_left = -105.0
+margin_top = 98.0
+margin_right = 2150.0
+margin_bottom = 240.0
 rect_scale = Vector2( 1, 1.29336 )
 custom_fonts/font = SubResource( 5 )
 text = "Método Pomodoro"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://tileset/industrial.tres" type="TileSet" id=1]
 [ext_resource path="res://Cenas/popUpRelogio.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Branch/ParallaxBackground.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Script/World.gd" type="Script" id=7]
 [ext_resource path="res://imagens/atencao.png" type="Texture" id=8]
+[ext_resource path="res://Cenas/tutorasRewind.tscn" type="PackedScene" id=9]
 
 [sub_resource type="AtlasTexture" id=3]
 flags = 4
@@ -89,8 +90,29 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite/Area2D"]
 shape = SubResource( 2 )
 
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
+modulate = Color( 1, 0, 0, 1 )
+position = Vector2( 1116, 284 )
+scale = Vector2( 4.96285, 4.96285 )
+frames = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Area2Drewind" type="Area2D" parent="AnimatedSprite2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2/Area2Drewind"]
+shape = SubResource( 2 )
+
+[node name="tutorasRewind" parent="." instance=ExtResource( 9 )]
+visible = false
+offset = Vector2( 150, 100 )
+transform = Transform2D( 1, 0, 0, 1, 150, 100 )
+
 [node name="popUpRelogio" parent="." instance=ExtResource( 2 )]
+visible = false
 offset = Vector2( 150, 100 )
 transform = Transform2D( 1, 0, 0, 1, 150, 100 )
 
 [connection signal="body_entered" from="AnimatedSprite/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="AnimatedSprite2/Area2Drewind" to="." method="_on_Area2Drewind_body_entered"]

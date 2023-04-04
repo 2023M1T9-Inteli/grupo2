@@ -67,6 +67,7 @@ outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 37 )
 
 [node name="tutorasRewind" type="CanvasLayer"]
+pause_mode = 2
 script = ExtResource( 41 )
 
 [node name="Popup" type="WindowDialog" parent="."]
@@ -96,7 +97,7 @@ position = Vector2( 565, 369.373 )
 scale = Vector2( 1.29163, 1.29435 )
 frames = SubResource( 3 )
 animation = "New Anim"
-frame = 20
+frame = 31
 playing = true
 
 [node name="Label" type="Label" parent="Popup"]
