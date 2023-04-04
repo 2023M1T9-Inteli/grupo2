@@ -33,7 +33,7 @@ font_data = ExtResource( 3 )
 [sub_resource type="Theme" id=1]
 
 [sub_resource type="DynamicFont" id=2]
-size = 30
+size = 32
 use_filter = true
 extra_spacing_top = 3
 extra_spacing_bottom = 2
@@ -89,7 +89,7 @@ custom_colors/font_color = Color( 1, 0.27451, 0.219608, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 5 )
 text = "Agora que você conhece o método do Kanban, 
-use os tomates para destruir os inimigos que 
+use os cards para paralizar  os inimigos que 
 aparecerem em sua frente"
 align = 1
 valign = 1
@@ -105,7 +105,7 @@ theme = SubResource( 6 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 7 )
-text = "Utilize o botão Z para atirar os tomates"
+text = "Utilize o botão Z para atirar os cards"
 align = 1
 valign = 1
 
@@ -187,7 +187,7 @@ theme = SubResource( 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 2 )
-text = "O método Kanban é uma técnica de gerenciamento de projetos, que consiste em agrupar tarefas em um quadro, separando e classificando por listas. Na qual, o principal objetivo é facilitar a visualização do status das tarefas que precisam ser feitas."
+text = "O método Kanban é uma técnica de gerenciamento de projetos, que consiste em agrupar tarefas em um quadro, separando por colunas dividas em \"a fazer\", \"fazendo\" e \"feito\"."
 align = 1
 valign = 1
 autowrap = true
