@@ -55,7 +55,7 @@ func ChamaroPoder():
 	if Input.is_action_just_pressed("ui_atirar") and pode_atirar1:
 		#intancia a cena Flecha e joga dentro da variável cena_flecha
 		var cena_flecha = preload("res://Cenas/Flecha.tscn").instance()
-		ControleMusica.laserFx()
+		
 		#se o sprite da personagem estiver voltado para a esquerda, a flecha vai para a esquerda
 		if $Player/Sprite.flip_h == true:
 			cena_flecha.position = Vector2($Player.position.x - 55, $Player.position.y)
@@ -74,7 +74,7 @@ func ChamaroPoder2():
 
 		#intancia a cena Tomate e joga dentro da variável cena_flecha
 		var cena_tomate = preload("res://Cenas/Tomate.tscn").instance()
-		ControleMusica.pomodoroFx()
+		
 		#se o sprite da personagem estiver voltado para a esquerda, a flecha vai para a esquerda
 		if $Player/Sprite.flip_h == true:
 			cena_tomate.position = Vector2($Player.position.x - 55, $Player.position.y)
@@ -96,7 +96,6 @@ func ChamaroPoder3():
 		#intancia a cena Card e joga dentro da variável cena_card
 		var cena_card = preload("res://Cenas/Card.tscn").instance()
 		
-		ControleMusica.kanbanFx()
 		#se o sprite da personagem estiver voltado para a esquerda, o card aparece na esquerda
 		if $Player/Sprite.flip_h == true:
 			cena_card.position = Vector2($Player.position.x - 55, $Player.position.y)
@@ -136,7 +135,7 @@ func _on_Area2D2_body_entered(body):
 
 func _on_Area2DPortal_body_entered(body):
 #Mudar de cena quando o player entrar no portal
-	get_tree().change_scene("res://Cenas/quizFase5.tscn")
+	get_tree().change_scene("res://Cenas/quizFinal.tscn")
 
 
 

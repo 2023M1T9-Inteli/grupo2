@@ -163,7 +163,6 @@ bg_color = Color( 0.0392157, 0.0745098, 0.25098, 1 )
 script = SubResource( 20 )
 
 [node name="erro" type="Sprite" parent="."]
-visible = false
 position = Vector2( 512.07, 297.5 )
 scale = Vector2( 0.382888, 0.325238 )
 texture = ExtResource( 1 )
@@ -322,6 +321,7 @@ custom_fonts/font = SubResource( 5 )
 text = "Método Pomodoro"
 align = 1
 
+[connection signal="pressed" from="erro/TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="acerto/avancar" to="." method="_on_avancar_pressed"]
 [connection signal="pressed" from="perguntas/Button4" to="." method="_on_Button4_pressed"]
 [connection signal="pressed" from="perguntas/Button3" to="." method="_on_Button3_pressed"]
