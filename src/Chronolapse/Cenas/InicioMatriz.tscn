@@ -4,10 +4,8 @@
 [ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Script/InicioMatriz.gd" type="Script" id=3]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=5]
 size = 9
-extra_spacing_top = 2
-extra_spacing_space = -3
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=4]
@@ -40,20 +38,25 @@ margin_right = 275.0
 margin_bottom = 330.0
 color = Color( 0.94902, 0.952941, 0.968627, 1 )
 
-[node name="LblIU" type="Label" parent="Sprite"]
-margin_left = 97.0
-margin_top = 139.548
-margin_right = 273.0
-margin_bottom = 293.548
+[node name="LblIU" type="RichTextLabel" parent="Sprite"]
+margin_left = 98.0
+margin_top = 150.1
+margin_right = 279.0
+margin_bottom = 287.1
 rect_scale = Vector2( 1, 1.18194 )
-custom_colors/font_color = Color( 0.0745098, 0.0117647, 0.0117647, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-custom_fonts/font = SubResource( 1 )
-text = "Tais ações incluem :
-- crises, 
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+bbcode_text = "Tais ações incluem:
+
+- crises 
 - situações que requerem ação imediata, 
-- coisas que eram importantes mas não foram realizadas no momento correto e agora se tornaram urgentes. "
-autowrap = true
+- coisas que eram urgentes importantes mas não foram realizadas no momento correto e agora se tornaram[color=red] urgentes[/color]. "
+text = "Tais ações incluem:
+
+- crises 
+- situações que requerem ação imediata, 
+- coisas que eram urgentes importantes mas não foram realizadas no momento correto e agora se tornaram urgentes. "
 
 [node name="RetINU" type="ColorRect" parent="Sprite"]
 margin_left = 307.7
@@ -62,21 +65,27 @@ margin_right = 492.7
 margin_bottom = 330.067
 color = Color( 0.94902, 0.952941, 0.968627, 1 )
 
-[node name="LblINU" type="Label" parent="Sprite"]
-margin_left = 312.0
-margin_top = 138.0
-margin_right = 498.0
-margin_bottom = 291.0
-rect_scale = Vector2( 0.980726, 1.21691 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-custom_fonts/font = SubResource( 1 )
+[node name="LblIU2" type="RichTextLabel" parent="Sprite"]
+margin_left = 319.0
+margin_top = 146.689
+margin_right = 497.0
+margin_bottom = 291.689
+rect_scale = Vector2( 1, 1.18194 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+bbcode_text = "Alguns exemplos são:
+
+-  estudar 
+- preparar relatórios antecipadamente
+- organizar as tarefas da semana. 
+Ou seja,  tudo que pode ser [color=red]planejado[/color] e que te levará em direção ao seu objetivo ou meta."
 text = "Alguns exemplos são:
+
 -  estudar 
 - preparar relatórios antecipadamente
 - organizar as tarefas da semana. 
 Ou seja,  tudo que pode ser planejado e que te levará em direção ao seu objetivo ou meta."
-autowrap = true
 
 [node name="RetNIU" type="ColorRect" parent="Sprite"]
 margin_left = 91.7313
@@ -85,21 +94,27 @@ margin_right = 276.731
 margin_bottom = 563.194
 color = Color( 0.94902, 0.952941, 0.968627, 1 )
 
-[node name="LblNIU" type="Label" parent="Sprite"]
-margin_left = 97.0
-margin_top = 359.0
-margin_right = 278.0
-margin_bottom = 538.0
-rect_scale = Vector2( 1, 1.13645 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-custom_fonts/font = SubResource( 1 )
-text = "É tudo que for urgente para outros, mas que não te levam ao seu objetivo ou meta.
+[node name="LblIU3" type="RichTextLabel" parent="Sprite"]
+margin_left = 99.0
+margin_top = 367.0
+margin_right = 286.0
+margin_bottom = 529.0
+rect_scale = Vector2( 1, 1.18194 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+bbcode_text = "É tudo que for urgente para outros, mas que [color=red]não te levam ao seu objetivo ou meta[/color]:
+
 -  Preparar relatórios de última hora para terceiros,
 -  atender ligações, 
 - responder emails, 
 - sofrer interrupções das suas tarefas."
-autowrap = true
+text = "É tudo que for urgente para outros, mas que não te levam ao seu objetivo ou meta:
+
+-  Preparar relatórios de última hora para terceiros,
+-  atender ligações, 
+- responder emails, 
+- sofrer interrupções das suas tarefas."
 
 [node name="RetNINU" type="ColorRect" parent="Sprite"]
 margin_left = 306.103
@@ -108,22 +123,29 @@ margin_right = 491.103
 margin_bottom = 563.194
 color = Color( 0.94902, 0.952941, 0.968627, 1 )
 
-[node name="LblNINU" type="Label" parent="Sprite"]
-margin_left = 322.0
-margin_top = 366.0
-margin_right = 480.0
-margin_bottom = 533.0
-rect_scale = Vector2( 1, 1.13645 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-custom_fonts/font = SubResource( 1 )
+[node name="LblIU4" type="RichTextLabel" parent="Sprite"]
+margin_left = 321.0
+margin_top = 374.114
+margin_right = 478.0
+margin_bottom = 520.114
+rect_scale = Vector2( 1, 1.18194 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+bbcode_text = "Pode-se definir a categoria como:
+
+- [color=red]perder tempo[/color] com redes sociais, 
+- pausas desnecessárias, 
+- excesso de perfeccionismo, 
+- se apegar a detalhes desnecessários, 
+- distrações."
 text = "Pode-se definir a categoria como:
+
 - perder tempo com redes sociais, 
 - pausas desnecessárias, 
 - excesso de perfeccionismo, 
 - se apegar a detalhes desnecessários, 
 - distrações."
-autowrap = true
 
 [node name="Button" type="Button" parent="."]
 margin_left = 713.0

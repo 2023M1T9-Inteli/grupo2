@@ -1,19 +1,26 @@
 extends Node2D
+var controle = 1
+var animacao 
 
 func _ready():
-	$AnimatedSprite.play("anim1")
+	$AnimatedSprite.play("anima1")
 	$Timer.start()
 	
 func _on_Timer_timeout():
-	$Timer2.start()
-	$AnimatedSprite.play("anim2")
-	
-func _on_Timer2_timeout():
-	$Timer3.start()
-	$AnimatedSprite.play("anim3")
+	controlar()
+	mudarAnimacao()
+	$Timer.start()
 
 func _on_Button_pressed():
 	get_tree().change_scene("res://Cenas/InicioMatriz.tscn")
+	
+func controlar():
+	if controle != 32:
+		controle += 1
+	elif controle == 32:
+		get_tree().change_scene("res://Cenas/InicioMatriz.tscn")
 
-func _on_Timer3_timeout():
-	get_tree().change_scene("res://Cenas/InicioMatriz.tscn")
+func mudarAnimacao():
+	animacao = "anima" + str(controle)
+	print(animacao)
+	$AnimatedSprite.play(animacao)
