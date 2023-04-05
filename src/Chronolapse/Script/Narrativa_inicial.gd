@@ -13,7 +13,7 @@ func _on_Timer2_timeout():
 	$AnimatedSprite.play("anim3")
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://Cenas/Matriz.tscn")
+	get_tree().change_scene("res://Cenas/InicioMatriz.tscn")
 
 func _on_Timer3_timeout():
-	get_tree().change_scene("res://Cenas/Matriz.tscn")
+	get_tree().change_scene("res://Cenas/InicioMatriz.tscn")

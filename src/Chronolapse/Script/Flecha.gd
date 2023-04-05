@@ -22,7 +22,7 @@ func _process(delta):
 	#quando a variável tempo for maior do que 0.6, faz mudar a animação da flecha
 	if tempo > 0.6:
 		$AnimatedSprite.play("new")
-		if global.direcao_do_jogador == true:
+		if CategoriaGlobal.direcao_do_jogador == true:
 			linear_velocity = Vector2(0, 0)
 		else:
 			linear_velocity = Vector2(0, 0)

@@ -183,3 +183,7 @@ func _on_Jogar_pressed():
 #	Atribui o tipo da matriz que teve mais discrepância a global Categoria, para que se possa definir a quantidade de horas para cada fase.
 	categoria.categoria = index
 	get_tree().change_scene("res://Cenas/Cena1.tscn")
+
+
+func _on_Exemplo_pressed():
+	get_tree().change_scene("res://Cenas/InicioMatriz.tscn")
