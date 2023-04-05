@@ -104,7 +104,8 @@ stream = ExtResource( 11 )
 volume_db = 0.619
 
 [node name="Area2D" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2072, 410 )
+position = Vector2( 2095, 432 )
+z_index = 1
 
 [node name="pomodoro" parent="." instance=ExtResource( 10 )]
 

@@ -69,6 +69,8 @@ position = Vector2( 2379, 544 )
 position = Vector2( 3583, 542 )
 
 [node name="Passagem" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2949, 118 )
+z_index = 1
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )

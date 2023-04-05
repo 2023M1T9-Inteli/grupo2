@@ -83,6 +83,7 @@ position = Vector2( 1398, 98 )
 
 [node name="Area2D" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1614, 62 )
+z_index = 1
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 position = Vector2( 1331, 28 )
