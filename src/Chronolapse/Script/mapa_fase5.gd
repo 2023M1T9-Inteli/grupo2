@@ -53,6 +53,8 @@ func _process(delta):
 func ChamaroPoder():
 #a função só retorna algo se o botão ui_atirar for pressionado e se a variável pode_atirar for verdadeira
 	if Input.is_action_just_pressed("ui_atirar") and pode_atirar1:
+		
+		ControleMusica.laserFx()
 		#intancia a cena Flecha e joga dentro da variável cena_flecha
 		var cena_flecha = preload("res://Cenas/Flecha.tscn").instance()
 		
@@ -71,6 +73,8 @@ func ChamaroPoder():
 #função para usar o poder do Pomodoro. É chamada apenas pelo _process
 func ChamaroPoder2():
 	if Input.is_action_just_pressed("ui_atirar") and pode_atirar2:
+		
+		ControleMusica.pomodoroFx()
 
 		#intancia a cena Tomate e joga dentro da variável cena_flecha
 		var cena_tomate = preload("res://Cenas/Tomate.tscn").instance()
@@ -92,7 +96,8 @@ func ChamaroPoder2():
 func ChamaroPoder3():
 	#a função só retorna algo se o botão ui_atirar for pressionado e se a variável pode_usar for verdadeira
 	if Input.is_action_just_pressed("ui_atirar") and pode_atirar3:
-
+		
+		ControleMusica.kanbanFx()
 		#intancia a cena Card e joga dentro da variável cena_card
 		var cena_card = preload("res://Cenas/Card.tscn").instance()
 		
@@ -135,7 +140,7 @@ func _on_Area2D2_body_entered(body):
 
 func _on_Area2DPortal_body_entered(body):
 #Mudar de cena quando o player entrar no portal
-	get_tree().change_scene("res://Cenas/quizFinal.tscn")
+	get_tree().change_scene("res://Cenas/quizFase5.tscn")
 
 
 
