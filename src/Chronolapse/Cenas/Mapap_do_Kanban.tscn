@@ -61,10 +61,10 @@ horizontal = true
 position = Vector2( -1228, 321 )
 
 [node name="Monstro2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 367, 481 )
+position = Vector2( 284, 482 )
 
 [node name="Monstro3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 239, 482 )
+position = Vector2( 166, 481 )
 
 [node name="Monstro4" parent="." instance=ExtResource( 6 )]
 position = Vector2( 770, 482 )

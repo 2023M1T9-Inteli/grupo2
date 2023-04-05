@@ -99,11 +99,13 @@ func ChamaroPoder3():
 		ControleMusica.kanbanFx()
 		#se o sprite da personagem estiver voltado para a esquerda, o card aparece na esquerda
 		if $Player/Sprite.flip_h == true:
-			cena_card.position = Vector2($Player.position.x - 55, $Player.position.y + 53.5777777)
+			cena_card.position = Vector2($Player.position.x - 55, $Player.position.y)
+			cena_card.linear_velocity = (Vector2(-550, 40))
 		
 		#senão, o card aparece na direita
 		else:
-			cena_card.position = Vector2($Player.position.x + 55, $Player.position.y + 53.5777777)
+			cena_card.position = Vector2($Player.position.x + 55, $Player.position.y)
+			cena_card.linear_velocity = (Vector2(550, 40))
 		
 		#adiciona a cena Card, que foi instanciada, na cena atual
 		get_tree().current_scene.add_child(cena_card)

@@ -9,6 +9,11 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "congelado",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "walk",
@@ -80,7 +85,7 @@ __meta__ = {
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
-animation = "walk"
+animation = "congelado"
 
 [node name="Shape" type="CollisionShape2D" parent="."]
 position = Vector2( -3, -7 )

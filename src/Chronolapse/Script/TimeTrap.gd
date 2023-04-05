@@ -6,6 +6,7 @@ var posicao_final
 var velocidade = 0.5
 var cont = 0
 onready var ani = $Sprite
+var congelado = false
 
 var recorded_data = []  #array que atualiza quando personagem se move
 var is_rewinding = false #bool para indicar se função de rebobinar está ativa ou inativa
@@ -40,7 +41,7 @@ func handle_rewind_function():
 	var _dir_number = 0
 
 	#se a tecla "espaço for apertada, a ação do personagem é rebobinada
-	if(Input.is_action_pressed("ui_space")): 
+	if(Input.is_action_pressed("ui_space") and !congelado): 
 		is_rewinding = true
 		if(recorded_data.size() > 0):
 			var current_frame = recorded_data[0]
@@ -84,7 +85,14 @@ func dano():
 		ControleMusica.inimigoDie()
 		get_node("anim").play("die")
 		die()
-	
+
+func congelar():
+	velocidade = 0
+	congelado = true
+
+func mudar_animacao():
+	$"Sprite".play("congelado")
+
 #faz o inimigo desaparecer da tela
 func die():
 	queue_free()

@@ -60,7 +60,7 @@ position = Vector2( 1872, 543 )
 position = Vector2( 606, 447 )
 
 [node name="Monstro3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1569, 321 )
+position = Vector2( 1181, 321 )
 
 [node name="Monstro4" parent="." instance=ExtResource( 5 )]
 position = Vector2( 2379, 544 )
@@ -92,7 +92,7 @@ shape = SubResource( 2 )
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
 modulate = Color( 1, 0, 0, 1 )
-position = Vector2( 1116, 284 )
+position = Vector2( 1673, 284 )
 scale = Vector2( 4.96285, 4.96285 )
 frames = SubResource( 1 )
 __meta__ = {
