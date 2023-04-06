@@ -147,20 +147,19 @@ func _on_Analise_pressed():
 	
 	#Análise da categoria Importante e Urgente, dando seu feedback dependendo da quantidade de horas	
 	if imp_urg > 6:
-		$LblImportanteUrgente.text ="Você tem muitas tarefas urgentes e importantes! Atividades importantes têm a ver com o resultado, contribui para nossa missão, nossos valores e metas prioritárias.  As tarefas que estão nesse quadrante atendem a isso?"
+		$LblImportanteUrgente.text ="Você tem muitas tarefas urgentes e importantes! Todas essas tarefas realmente são urgentes?  É importante negociar escopos e prazos com outras pessoas para que você possa se organizar de uma forma melhor."
 	elif imp_urg < 4:
-		$LblImportanteUrgente.text = "Você não tem muitas tarefas urgentes e importantes em sua lista! Considere adicionar tarefas que possam melhorar sua produtividade no futuro."
+		$LblImportanteUrgente.text = "Você não tem muitas tarefas urgentes e importantes em sua lista! Continue assim, pois tarefas realizadas de forma urgente tendem a apresentar pior qualidade do que as que são feitas com mais tempo"
 	else:
 		$LblImportanteUrgente.text = "Você tem um bom equilíbrio de tarefas urgentes e importantes! Continue a priorizar essas tarefas e mantenha o bom trabalho."
 	
 	#Análise da categoria Importante e Não Urgente, dando seu feedback dependendo da quantidade de horas
 	if imp_n_urg > 15:
-		$LblImportanteNUrgente.text = "Você tem muitas tarefas importantes que não são urgentes! Isso dificulta a sua organização, o que pode tornar essas tarefas urgentes no futuro."
+		$LblImportanteNUrgente.text = "Você tem muitas tarefas importantes que não são urgentes!Isso significa que você está fazendo um bom gerenciamento de suas tarefas, organizando e executando atividades que estão alinhadas com seus objetivos e metas! Continue assim!" 
 	elif imp_n_urg < 13:
 		$LblImportanteNUrgente.text = "Você não tem muitas tarefas importantes que não são urgentes! Considere adicionar tarefas que você considera importante, mas que não tem a necessidade de serem completadas imediatamente."
-	else:
+	else: 
 		$LblImportanteNUrgente.text = "Você tem um bom número de tarefas importantes que não são urgentes! Certifique-se de continuar a trabalhar nessas tarefas e mantenha o bom trabalho."
-	
 	#Análise da categoria Não Importante e Urgente, dando seu feedback dependendo da quantidade de horas
 	if n_imp_urg > 5:
 		$LblNImportanteUrgente.text = "Você tem muitas tarefas não importantes que são urgentes! Tente delegar ou eliminar essas tarefas da sua lista para ter um melhor aproveitamento do seu tempo."
@@ -171,7 +170,7 @@ func _on_Analise_pressed():
 
 	#Análise da categoria Não Importante e Não Urgente, dando seu feedback dependendo da quantidade de horas
 	if n_imp_n_urg > 2:
-		$LblNImportanteNUrgente.text = "Você tem muitas tarefas não importantes não urgentes! Tente rever suas prioridades e reavaliar a importância das suas tarefas."
+		$LblNImportanteNUrgente.text = "Avalie os motivos de você dedicar seu tempo para realizar tarefas que não estão te ajudando no atingimento de metas e objetivos."
 	else:
 		$LblNImportanteNUrgente.text = "Você tem um bom número de tarefas não importantes não urgentes! Continue a priorizar as tarefas certas e mantenha o bom trabalho."
 
