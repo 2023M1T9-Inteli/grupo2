@@ -8,7 +8,8 @@ func _ready():
 	$popUpControl.visible = false
 	$objetivo.visible = false
 	
-
+func _process(delta):
+	CategoriaGlobal.trocaFase()
 #vai para a proxima tela
 func _on_startBtn_pressed():
 	ControleMusica.botao_start()	
