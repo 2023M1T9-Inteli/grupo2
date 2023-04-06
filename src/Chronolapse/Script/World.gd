@@ -30,6 +30,7 @@ func _process(_delta):
 		get_tree().paused = false
 
 	
+#funcao para caso o player entre na Area2D, um popup do tutorial aparecerá na tela
 func _on_Area2D_body_entered(body):
 	$popUpRelogio.visible = true
 	$popUpRelogio/Popup.popup_centered()
@@ -37,7 +38,7 @@ func _on_Area2D_body_entered(body):
 	get_tree().paused = true
 
 
-
+#funcao para caso o player entre na Area2D, um popup do tutorial aparecerá na tela
 func _on_Area2Drewind_body_entered(body):
 	$tutorasRewind.visible = true
 	$tutorasRewind/Popup.popup_centered()

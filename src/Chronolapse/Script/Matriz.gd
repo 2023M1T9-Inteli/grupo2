@@ -183,6 +183,6 @@ func _on_Jogar_pressed():
 	categoria.categoria = index
 	get_tree().change_scene("res://Cenas/Cena1.tscn")
 
-
+#funcao para quando botao for apertado, mudar de cena
 func _on_Exemplo_pressed():
 	get_tree().change_scene("res://Cenas/InicioMatriz.tscn")

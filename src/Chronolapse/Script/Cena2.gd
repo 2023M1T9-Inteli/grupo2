@@ -51,6 +51,7 @@ func atirar_tomate():
 	#a função só retorna algo se o botão ui_atirar for pressionado e se a variável 'podeAtirar' for verdadeira
 	if Input.is_action_just_pressed("ui_atirar") and pode_atirar:
 	
+		#efeito sonoro
 		ControleMusica.pomodoroFx()
 
 		#intancia a cena tomate e joga dentro da variável cena_tomate

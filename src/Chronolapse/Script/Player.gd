@@ -149,6 +149,7 @@ func morte_queda():
 		queue_free()
 		get_tree().change_scene("res://Cenas/GameOver.tscn")
 
+
 func _on_pausar_pressed():
 	$pause.visible = true
 	$timer/CanvasLayer/Control.pause_timer()
