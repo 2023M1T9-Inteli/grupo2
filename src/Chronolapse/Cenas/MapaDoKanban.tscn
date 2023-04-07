@@ -9,8 +9,8 @@
 [ext_resource path="res://Branch/TimeTrap.tscn" type="PackedScene" id=7]
 [ext_resource path="res://efeito sonoros/Game Button Sounds Pack - Free Sounds [TubeRipper (mp3cut.net) (1).mp3" type="AudioStream" id=8]
 [ext_resource path="res://Script/plataforma_movel2.gd" type="Script" id=9]
-[ext_resource path="res://kanban/pixil-frame-0 (16).png" type="Texture" id=10]
-[ext_resource path="res://kanban/asdfasdf.png" type="Texture" id=11]
+[ext_resource path="res://imagens/kanban/pixil-frame-0 (16).png" type="Texture" id=10]
+[ext_resource path="res://imagens/kanban/asdfasdf.png" type="Texture" id=11]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
