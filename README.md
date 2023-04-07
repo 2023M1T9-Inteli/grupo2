@@ -34,11 +34,11 @@ Desenvolvido focando em uma maior imersão do usuário no treinamento, o jogo fo
 ├───docs<br>
 ├───documentos<br>
 │   └───antigos<br>
-│       ├───FirstClass<br>
-│       ├───pitch<br>
-│       │   ├───exec<br>
-│       │   ├───fontes<br>
-│       │   │   └───press_start_2p<br>
+│       ├───FirstClass<br><br>
+│       ├───pitch<br><br>
+│       │   ├───exec<br><br>
+│       │   ├───fontes<br><br>
+│       │   │   └───press_start_2p<br><br>
 │       │   ├───images<br>
 │       │   └───Script<br>
 │       └───primeira tela<br>
