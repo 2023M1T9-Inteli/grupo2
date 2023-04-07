@@ -31,13 +31,13 @@ Desenvolvido focando em uma maior imersão do usuário no treinamento, o jogo fo
 <br><br>
 
 ## 🛠 Estrutura de pastas
-├───docs
-├───documentos
-│   └───antigos
-│       ├───FirstClass
-│       ├───pitch
-│       │   ├───exec
-│       │   ├───fontes
+├───docs<br>
+├───documentos<br>
+│   └───antigos<br>
+│       ├───FirstClass<br>
+│       ├───pitch<br>
+│       │   ├───exec<br>
+│       │   ├───fontes<br>
 │       │   │   └───press_start_2p
 │       │   ├───images
 │       │   └───Script
