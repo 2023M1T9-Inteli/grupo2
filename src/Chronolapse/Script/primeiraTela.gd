@@ -8,7 +8,7 @@ func _ready():
 	$popUpControl.visible = false
 	$objetivo.visible = false
 	
-func _process(delta):
+func _process(_delta):
 	CategoriaGlobal.trocaFase()
 #vai para a proxima tela
 func _on_startBtn_pressed():

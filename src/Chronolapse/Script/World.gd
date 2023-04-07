@@ -3,7 +3,6 @@ extends Node2D
 var video = true
 var tempo
 #var quiz1 = preload("res://Cenas/quiz1.tscn").instance()
-onready var mov = get_node("/root/GlobalTeste")
 onready var categoria = get_node("/root/CategoriaGlobal")
 
 func _ready():
@@ -31,7 +30,7 @@ func _process(_delta):
 
 	
 #funcao para caso o player entre na Area2D, um popup do tutorial aparecerá na tela
-func _on_Area2D_body_entered(body):
+func _on_Area2D_body_entered(_body):
 	$popUpRelogio.visible = true
 	$popUpRelogio/Popup.popup_centered()
 	$AnimatedSprite.queue_free()
@@ -39,7 +38,7 @@ func _on_Area2D_body_entered(body):
 
 
 #funcao para caso o player entre na Area2D, um popup do tutorial aparecerá na tela
-func _on_Area2Drewind_body_entered(body):
+func _on_Area2Drewind_body_entered(_body):
 	$tutorasRewind.visible = true
 	$tutorasRewind/Popup.popup_centered()
 	$AnimatedSprite2.queue_free()

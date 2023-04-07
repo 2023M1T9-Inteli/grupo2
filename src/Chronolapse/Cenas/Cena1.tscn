@@ -8,7 +8,7 @@
 [ext_resource path="res://Branch/ParallaxBackground.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Script/World.gd" type="Script" id=7]
 [ext_resource path="res://imagens/atencao.png" type="Texture" id=8]
-[ext_resource path="res://Cenas/tutorasRewind.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Cenas/TutorasRewind.tscn" type="PackedScene" id=9]
 
 [sub_resource type="AtlasTexture" id=3]
 flags = 4

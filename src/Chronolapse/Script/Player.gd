@@ -158,7 +158,7 @@ func _on_pausar_pressed():
 	get_tree().paused = true
 
 
-func _on_som_toggled(button_pressed):
+func _on_som_toggled(_button_pressed):
 	if $hud/som.pressed:
 		ControleMusica.mute()
 	else:

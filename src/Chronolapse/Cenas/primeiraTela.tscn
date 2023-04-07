@@ -4,8 +4,8 @@
 [ext_resource path="res://imagens/BackgroundTelaInicial.jpeg" type="Texture" id=2]
 [ext_resource path="res://Script/primeiraTela.gd" type="Script" id=3]
 [ext_resource path="res://Cenas/popUpControl.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Cenas/PopUpObjetivo.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Cenas/PopUpCreditos.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Cenas/PopUpCreditos.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Cenas/PopUpObjetivo.tscn" type="PackedScene" id=6]
 
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
@@ -137,10 +137,10 @@ expand_icon = true
 [node name="popUpControl" parent="." instance=ExtResource( 4 )]
 visible = false
 
-[node name="objetivo" parent="." instance=ExtResource( 5 )]
+[node name="objetivo" parent="." instance=ExtResource( 6 )]
 visible = false
 
-[node name="creditos" parent="." instance=ExtResource( 6 )]
+[node name="creditos" parent="." instance=ExtResource( 5 )]
 visible = false
 
 [connection signal="pressed" from="controls/startBtn" to="." method="_on_startBtn_pressed"]

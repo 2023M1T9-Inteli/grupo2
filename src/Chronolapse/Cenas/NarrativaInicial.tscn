@@ -1,6 +1,6 @@
-[gd_scene load_steps=263 format=2]
+[gd_scene load_steps=248 format=2]
 
-[ext_resource path="res://Script/Narrativa_inicial.gd" type="Script" id=1]
+[ext_resource path="res://Script/NarrativaInicial.gd" type="Script" id=1]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_106.jpg" type="Texture" id=2]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_095.jpg" type="Texture" id=3]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_078.jpg" type="Texture" id=4]
@@ -82,7 +82,6 @@
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_235.jpg" type="Texture" id=80]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_195.jpg" type="Texture" id=81]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_142.jpg" type="Texture" id=82]
-[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_249.jpg" type="Texture" id=83]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_193.jpg" type="Texture" id=84]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_206.jpg" type="Texture" id=85]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_210.jpg" type="Texture" id=86]
@@ -97,7 +96,6 @@
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_119.jpg" type="Texture" id=95]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_167.jpg" type="Texture" id=96]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_152.jpg" type="Texture" id=97]
-[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_247.jpg" type="Texture" id=98]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_199.jpg" type="Texture" id=99]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_209.jpg" type="Texture" id=100]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_129.jpg" type="Texture" id=101]
@@ -143,48 +141,35 @@
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_207.jpg" type="Texture" id=141]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_204.jpg" type="Texture" id=142]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_205.jpg" type="Texture" id=146]
-[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_254.jpg" type="Texture" id=148]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_196.jpg" type="Texture" id=154]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_223.jpg" type="Texture" id=155]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_197.jpg" type="Texture" id=157]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_234.jpg" type="Texture" id=158]
-[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_245.jpg" type="Texture" id=159]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_230.jpg" type="Texture" id=162]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_218.jpg" type="Texture" id=163]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_231.jpg" type="Texture" id=164]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_188.jpg" type="Texture" id=165]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_191.jpg" type="Texture" id=166]
-[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_241.jpg" type="Texture" id=167]
-[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_252.jpg" type="Texture" id=168]
-[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_240.jpg" type="Texture" id=169]
-[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_244.jpg" type="Texture" id=172]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_201.jpg" type="Texture" id=173]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_190.jpg" type="Texture" id=174]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_228.jpg" type="Texture" id=175]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_213.jpg" type="Texture" id=176]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_215.jpg" type="Texture" id=177]
-[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_242.jpg" type="Texture" id=178]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_198.jpg" type="Texture" id=179]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_203.jpg" type="Texture" id=180]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_224.jpg" type="Texture" id=181]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_219.jpg" type="Texture" id=182]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_233.jpg" type="Texture" id=183]
-[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_243.jpg" type="Texture" id=184]
-[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_250.jpg" type="Texture" id=185]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_226.jpg" type="Texture" id=186]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_189.jpg" type="Texture" id=191]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_212.jpg" type="Texture" id=192]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_232.jpg" type="Texture" id=193]
-[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_246.jpg" type="Texture" id=194]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_237.jpg" type="Texture" id=195]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_227.jpg" type="Texture" id=196]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_229.jpg" type="Texture" id=197]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_216.jpg" type="Texture" id=198]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_239.jpg" type="Texture" id=199]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_202.jpg" type="Texture" id=200]
-[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_248.jpg" type="Texture" id=201]
-[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_251.jpg" type="Texture" id=202]
-[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_253.jpg" type="Texture" id=203]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_225.jpg" type="Texture" id=204]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_200.jpg" type="Texture" id=205]
 [ext_resource path="res://pop ups/pomodoro/quizz.png" type="Texture" id=270]
@@ -273,37 +258,32 @@ animations = [ {
 "frames": [ ExtResource( 58 ), ExtResource( 41 ), ExtResource( 97 ), ExtResource( 12 ), ExtResource( 62 ), ExtResource( 6 ), ExtResource( 73 ), ExtResource( 68 ), ExtResource( 39 ), ExtResource( 102 ), ExtResource( 129 ), ExtResource( 15 ), ExtResource( 70 ), ExtResource( 135 ), ExtResource( 16 ) ],
 "loop": true,
 "name": "anima11",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 75 ), ExtResource( 132 ), ExtResource( 96 ), ExtResource( 91 ), ExtResource( 123 ), ExtResource( 118 ), ExtResource( 44 ), ExtResource( 115 ), ExtResource( 47 ), ExtResource( 128 ), ExtResource( 89 ), ExtResource( 125 ), ExtResource( 71 ), ExtResource( 112 ), ExtResource( 126 ) ],
 "loop": true,
 "name": "anima12",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 121 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 90 ), ExtResource( 133 ), ExtResource( 110 ), ExtResource( 77 ), ExtResource( 88 ), ExtResource( 165 ), ExtResource( 191 ), ExtResource( 174 ), ExtResource( 166 ), ExtResource( 76 ), ExtResource( 84 ), ExtResource( 79 ) ],
 "loop": true,
 "name": "anima13",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 81 ), ExtResource( 154 ), ExtResource( 157 ), ExtResource( 179 ), ExtResource( 99 ), ExtResource( 205 ), ExtResource( 173 ), ExtResource( 200 ), ExtResource( 180 ), ExtResource( 142 ), ExtResource( 146 ), ExtResource( 85 ), ExtResource( 141 ), ExtResource( 92 ), ExtResource( 100 ) ],
 "loop": true,
 "name": "anima14",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 86 ), ExtResource( 139 ), ExtResource( 192 ), ExtResource( 176 ), ExtResource( 136 ), ExtResource( 177 ), ExtResource( 198 ), ExtResource( 137 ), ExtResource( 163 ), ExtResource( 182 ), ExtResource( 78 ), ExtResource( 138 ), ExtResource( 140 ), ExtResource( 155 ), ExtResource( 181 ) ],
 "loop": true,
 "name": "anima15",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 204 ), ExtResource( 186 ), ExtResource( 196 ), ExtResource( 175 ), ExtResource( 197 ), ExtResource( 162 ), ExtResource( 164 ), ExtResource( 193 ), ExtResource( 183 ), ExtResource( 158 ), ExtResource( 80 ), ExtResource( 122 ), ExtResource( 195 ), ExtResource( 127 ), ExtResource( 199 ) ],
 "loop": true,
 "name": "anima16",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 169 ), ExtResource( 167 ), ExtResource( 178 ), ExtResource( 184 ), ExtResource( 172 ), ExtResource( 159 ), ExtResource( 194 ), ExtResource( 98 ), ExtResource( 201 ), ExtResource( 83 ), ExtResource( 185 ), ExtResource( 202 ), ExtResource( 168 ), ExtResource( 203 ), ExtResource( 148 ) ],
-"loop": true,
-"name": "anima17",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 465 ), ExtResource( 464 ), ExtResource( 440 ), ExtResource( 461 ), ExtResource( 455 ), ExtResource( 442 ), ExtResource( 435 ), ExtResource( 419 ), ExtResource( 434 ), ExtResource( 424 ), ExtResource( 448 ), ExtResource( 443 ), ExtResource( 457 ), ExtResource( 452 ), ExtResource( 468 ) ],
 "loop": true,
@@ -338,12 +318,12 @@ animations = [ {
 "frames": [ ExtResource( 54 ), ExtResource( 2 ), ExtResource( 59 ), ExtResource( 11 ), ExtResource( 21 ), ExtResource( 28 ), ExtResource( 57 ), ExtResource( 37 ), ExtResource( 32 ), ExtResource( 5 ), ExtResource( 27 ), ExtResource( 74 ), ExtResource( 36 ), ExtResource( 105 ), ExtResource( 95 ) ],
 "loop": true,
 "name": "anima8",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 94 ), ExtResource( 130 ), ExtResource( 69 ), ExtResource( 124 ), ExtResource( 114 ), ExtResource( 34 ), ExtResource( 120 ), ExtResource( 111 ), ExtResource( 134 ), ExtResource( 101 ), ExtResource( 106 ), ExtResource( 66 ), ExtResource( 116 ), ExtResource( 72 ), ExtResource( 38 ) ],
 "loop": true,
 "name": "anima9",
-"speed": 5.0
+"speed": 10.0
 } ]
 
 [sub_resource type="DynamicFontData" id=6]

@@ -1,6 +1,21 @@
-[gd_scene load_steps=233 format=2]
+[gd_scene load_steps=248 format=2]
 
 [ext_resource path="res://Script/NarrativaInicial2.gd" type="Script" id=1]
+[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_247.jpg" type="Texture" id=188]
+[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_249.jpg" type="Texture" id=195]
+[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_240.jpg" type="Texture" id=235]
+[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_241.jpg" type="Texture" id=236]
+[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_242.jpg" type="Texture" id=237]
+[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_244.jpg" type="Texture" id=238]
+[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_245.jpg" type="Texture" id=239]
+[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_243.jpg" type="Texture" id=241]
+[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_246.jpg" type="Texture" id=243]
+[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_248.jpg" type="Texture" id=247]
+[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_251.jpg" type="Texture" id=251]
+[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_250.jpg" type="Texture" id=252]
+[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_252.jpg" type="Texture" id=253]
+[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_253.jpg" type="Texture" id=254]
+[ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_254.jpg" type="Texture" id=255]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_255.jpg" type="Texture" id=256]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_290.jpg" type="Texture" id=257]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_297.jpg" type="Texture" id=258]
@@ -230,20 +245,25 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 235 ), ExtResource( 236 ), ExtResource( 237 ), ExtResource( 241 ), ExtResource( 238 ), ExtResource( 239 ), ExtResource( 243 ), ExtResource( 188 ), ExtResource( 247 ), ExtResource( 195 ), ExtResource( 252 ), ExtResource( 251 ), ExtResource( 253 ), ExtResource( 254 ), ExtResource( 255 ) ],
+"loop": true,
+"name": "anima17",
+"speed": 10.0
+}, {
 "frames": [ ExtResource( 256 ), ExtResource( 287 ), ExtResource( 269 ), ExtResource( 280 ), ExtResource( 277 ), ExtResource( 260 ), ExtResource( 270 ), ExtResource( 297 ), ExtResource( 276 ), ExtResource( 288 ), ExtResource( 261 ), ExtResource( 293 ), ExtResource( 298 ), ExtResource( 289 ), ExtResource( 281 ) ],
 "loop": true,
 "name": "anima18",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 275 ), ExtResource( 267 ), ExtResource( 294 ), ExtResource( 278 ), ExtResource( 268 ), ExtResource( 265 ), ExtResource( 290 ), ExtResource( 291 ), ExtResource( 285 ), ExtResource( 271 ), ExtResource( 299 ), ExtResource( 262 ), ExtResource( 300 ), ExtResource( 279 ), ExtResource( 292 ) ],
 "loop": true,
 "name": "anima19",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 264 ), ExtResource( 273 ), ExtResource( 274 ), ExtResource( 272 ), ExtResource( 286 ), ExtResource( 257 ), ExtResource( 266 ), ExtResource( 263 ), ExtResource( 282 ), ExtResource( 296 ), ExtResource( 283 ), ExtResource( 284 ), ExtResource( 258 ), ExtResource( 295 ), ExtResource( 259 ) ],
 "loop": true,
 "name": "anima20",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 304 ), ExtResource( 305 ), ExtResource( 306 ), ExtResource( 307 ), ExtResource( 303 ), ExtResource( 308 ), ExtResource( 309 ), ExtResource( 310 ), ExtResource( 312 ), ExtResource( 311 ), ExtResource( 313 ), ExtResource( 455 ), ExtResource( 456 ), ExtResource( 457 ), ExtResource( 441 ) ],
 "loop": true,
@@ -336,7 +356,7 @@ color = Color( 0.0980392, 0.0980392, 0.0980392, 1 )
 position = Vector2( 510.5, 301.5 )
 scale = Vector2( 0.552778, 0.552778 )
 frames = SubResource( 1 )
-animation = "anima18"
+animation = "anima17"
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 1.5

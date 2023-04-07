@@ -19,4 +19,6 @@ func _on_startBtn_pressed():
 	elif controle.level == "fase 3":
 		get_tree().change_scene("res://Cenas/Mapa_Gantt.tscn")	
 	elif controle.level == "fase 4":
-		get_tree().change_scene("res://Cenas/Mapap_do_Kanban.tscn")
+		get_tree().change_scene("res://Cenas/MapaDoKanban.tscn")
+	elif controle.level == "fase5":
+		get_tree().change_scene("res://Cenas/MapaFase5.tscn")
