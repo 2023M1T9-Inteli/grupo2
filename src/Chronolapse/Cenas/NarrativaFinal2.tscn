@@ -300,27 +300,27 @@ animations = [ {
 "frames": [ ExtResource( 85 ), ExtResource( 105 ), ExtResource( 66 ), ExtResource( 96 ), ExtResource( 87 ), ExtResource( 55 ), ExtResource( 89 ), ExtResource( 64 ), ExtResource( 73 ), ExtResource( 46 ), ExtResource( 78 ), ExtResource( 84 ), ExtResource( 77 ), ExtResource( 103 ), ExtResource( 62 ) ],
 "loop": true,
 "name": "anima28",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 79 ), ExtResource( 49 ), ExtResource( 67 ), ExtResource( 100 ), ExtResource( 98 ), ExtResource( 68 ), ExtResource( 80 ), ExtResource( 56 ), ExtResource( 99 ), ExtResource( 81 ), ExtResource( 107 ), ExtResource( 75 ), ExtResource( 113 ), ExtResource( 93 ), ExtResource( 114 ) ],
 "loop": true,
 "name": "anima29",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 57 ), ExtResource( 58 ), ExtResource( 111 ), ExtResource( 110 ), ExtResource( 112 ), ExtResource( 115 ), ExtResource( 169 ), ExtResource( 162 ), ExtResource( 92 ), ExtResource( 106 ), ExtResource( 35 ), ExtResource( 38 ), ExtResource( 41 ), ExtResource( 33 ), ExtResource( 44 ) ],
 "loop": true,
 "name": "anima30",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 17 ), ExtResource( 2 ), ExtResource( 11 ), ExtResource( 22 ), ExtResource( 45 ), ExtResource( 28 ), ExtResource( 30 ), ExtResource( 16 ), ExtResource( 5 ), ExtResource( 10 ), ExtResource( 42 ), ExtResource( 8 ), ExtResource( 29 ), ExtResource( 7 ), ExtResource( 31 ) ],
 "loop": true,
 "name": "anima31",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 40 ), ExtResource( 37 ), ExtResource( 43 ), ExtResource( 15 ), ExtResource( 19 ), ExtResource( 39 ), ExtResource( 18 ), ExtResource( 32 ), ExtResource( 9 ), ExtResource( 20 ), ExtResource( 34 ), ExtResource( 36 ), ExtResource( 4 ), ExtResource( 34 ), ExtResource( 36 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "anima32",
-"speed": 5.0
+"speed": 10.0
 } ]
 
 [node name="NarrativaFinal" type="Node2D"]
@@ -336,7 +336,7 @@ position = Vector2( 510.5, 301.5 )
 scale = Vector2( 0.552778, 0.552778 )
 frames = SubResource( 3 )
 animation = "anima32"
-frame = 3
+frame = 5
 playing = true
 
 [node name="Timer" type="Timer" parent="."]
