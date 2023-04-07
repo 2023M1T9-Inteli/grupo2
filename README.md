@@ -18,8 +18,8 @@
 O projeto é uma gamificação para o treinamento de Gestão de Tempo da Cia de Talentos.
 <br><br>
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="ChronoLapse" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://github.com/2023M1T9-Inteli/grupo2">ChronoLapse</a> 
+<img src="https://raw.githubusercontent.com/2023M1T9-Inteli/grupo2/main/src/Chronolapse/imagens/imagem_readme.png" alt="ChronoLapse" border="0">
+  <a rel="license" href="https://github.com/2023M1T9-Inteli/grupo2">ChronoLapse</a> 
 </p>
 
 
@@ -144,4 +144,4 @@ Aqui estão as referências usadas no projeto.
 2. https://free-game-assets.itch.io/free-industrial-zone-tileset-pixel-art
 3. https://www.youtube.com/@clecioespindolagamedev
 4. https://www.youtube.com/@gNewlinux
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+5. Músicas por: <a href="https://rustedstudio.itch.io/cybertracks-volume-1">cybertracks</a> com Licença CC 0.
