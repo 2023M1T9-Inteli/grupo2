@@ -144,4 +144,4 @@ Aqui estão as referências usadas no projeto.
 2. https://free-game-assets.itch.io/free-industrial-zone-tileset-pixel-art
 3. https://www.youtube.com/@clecioespindolagamedev
 4. https://www.youtube.com/@gNewlinux
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+5. Músicas por: <a href="https://rustedstudio.itch.io/cybertracks-volume-1">cybertracks</a> com Licença CC 0.
