@@ -15,12 +15,11 @@ func _on_Button_pressed():
 	get_tree().change_scene("res://Cenas/InicioMatriz.tscn")
 	
 func controlar():
-	if controle != 32:
+	if controle != 18:
 		controle += 1
-	elif controle == 32:
-		get_tree().change_scene("res://Cenas/InicioMatriz.tscn")
+	elif controle == 18:
+		get_tree().change_scene("res://Cenas/NarrativaInicial2.tscn")
 
 func mudarAnimacao():
 	animacao = "anima" + str(controle)
-	print(animacao)
 	$AnimatedSprite.play(animacao)
