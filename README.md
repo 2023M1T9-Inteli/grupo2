@@ -38,40 +38,40 @@ Desenvolvido focando em uma maior imersão do usuário no treinamento, o jogo fo
 │       ├───pitch<br>
 │       │   ├───exec<br>
 │       │   ├───fontes<br>
-│       │   │   └───press_start_2p
-│       │   ├───images
-│       │   └───Script
-│       └───primeira tela
-├───executáveis
-│   ├───Android
-│   ├───HTML
-│   └───Windows
-└───src
-    └───Chronolapse
-        ├───.import
-        ├───autoload
-        ├───Branch
-        ├───Cenas
-        ├───control
-        ├───efeito sonoros
-        ├───imagens
-        │   ├───narrativa final
-        │   ├───narrativa inicial
-        │   ├───Portal
-        │   ├───relogio_rewind
-        │   └───tutorasRewind
-        ├───kanban
-        ├───male
-        ├───personagem principal
-        ├───pomodoro
-        ├───pop ups
-        │   ├───pomodoro
-        │   └───relógio
-        │       └───video_relogio
-        ├───Script
-        │   └───letras
-        └───tileset
-            └───industrial
+│       │   │   └───press_start_2p<br>
+│       │   ├───images<br>
+│       │   └───Script<br>
+│       └───primeira tela<br>
+├───executáveis<br>
+│   ├───Android<br>
+│   ├───HTML<br>
+│   └───Windows<br>
+└───src<br>
+    └───Chronolapse<br>
+        ├───.import<br>
+        ├───autoload<br>
+        ├───Branch<br>
+        ├───Cenas<br>
+        ├───control<br>
+        ├───efeito sonoros<br>
+        ├───imagens<br>
+        │   ├───narrativa final<br>
+        │   ├───narrativa inicial<br>
+        │   ├───Portal<br>
+        │   ├───relogio_rewind<br>
+        │   └───tutorasRewind<br>
+        ├───kanban<br>
+        ├───male<br>
+        ├───personagem principal<br>
+        ├───pomodoro<br>
+        ├───pop ups<br>
+        │   ├───pomodoro<br>
+        │   └───relógio<br>
+        │       └───video_relogio<br>
+        ├───Script<br>
+        │   └───letras<br>
+        └───tileset<br>
+            └───industrial<br>
 
 A pasta raiz contem dois arquivos que devem ser alterados:
 
@@ -140,8 +140,8 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 Aqui estão as referências usadas no projeto.
 
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
+1. https://free-game-assets.itch.io/free-3-cyberpunk-sprites-pixel-art
+2. https://free-game-assets.itch.io/free-industrial-zone-tileset-pixel-art
+3. https://www.youtube.com/@clecioespindolagamedev
+4. https://www.youtube.com/@gNewlinux
 5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
