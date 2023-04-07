@@ -16,7 +16,7 @@ func _process(delta):
 
 #muda de cena caso pressione o botão para voltar à tela inicial (como essa é provisioramente a ultima cena, colocamos para retornar ao início, mas há previsões para modificação)		
 func _on_avancar_pressed():
-	get_tree().change_scene("res://Cenas/narrativa_final.tscn")
+	get_tree().change_scene("res://Cenas/NarrativaFinal.tscn")
 
 #Caso o botão com a resposta certa seja pressionado, aparecerá a tela de acerto e sumirá a tela de perguntas
 func _on_Button4_pressed():

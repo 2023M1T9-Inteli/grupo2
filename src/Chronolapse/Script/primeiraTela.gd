@@ -8,12 +8,12 @@ func _ready():
 	$popUpControl.visible = false
 	$objetivo.visible = false
 	
-func _process(delta):
+func _process(_delta):
 	CategoriaGlobal.trocaFase()
 #vai para a proxima tela
 func _on_startBtn_pressed():
 	ControleMusica.botao_start()	
-	get_tree().change_scene("res://Cenas/Narrativa_inicial.tscn")
+	get_tree().change_scene("res://Cenas/NarrativaInicial.tscn")
 
 #aparecer menu de controle e voltar para tela de início se for requerido
 func _on_controlBtn_pressed():

@@ -1,6 +1,6 @@
 extends Node2D
 
-onready var platform = $moving_platform #define plataforma
+onready var platform = $MovingPlatform #define plataforma
 onready var tween = $Tween
 
 

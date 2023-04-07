@@ -2,7 +2,6 @@ extends Node2D
 
 #varíavel que referencia a cena do tomate arremessável
 var tomate = preload("res://Cenas/Tomate.tscn")
-onready var fase = get_node("/root/CategoriaGlobal")
 #variável que referencia e instancia a cena do player
 var jogador = preload("res://Branch/Player.tscn").instance()
 
@@ -21,7 +20,7 @@ func _ready():
 	add_child(jogador)
 	#Altera a variável global fase, que indica qual nível o jogador está, 
 #	para que assim o game over reinicie na fase certa	
-	fase.level = "fase 2"
+	CategoriaGlobal.level = "fase 2"
 #	Atribui um valor para o tempo que o jogador tem, baseado no desempenho da matriz
 	if(categoria.categoria == 0): tempo = 150
 	elif categoria.categoria == 1: tempo = 225
