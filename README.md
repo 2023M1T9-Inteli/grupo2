@@ -1,51 +1,77 @@
 # Inteli - Instituto de Tecnologia e Liderança 
-# Scrip de exemplo, modifique de acordo com seu grupo #
 
 
 <p align="center">
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Nome do Projeto
+# ChronoLapse
 
-## Nome do Grupo
+## ChronoLapse
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://www.linkedin.com/in/ana-luisa-goes-barbosa/">Ana Goes</a>, <a href="https://www.linkedin.com/in/eduardo-henrique-dos-santos-8b24451b8/">Eduardo Henrique</a>, <a href="https://www.linkedin.com/in/fernando-antonio-s-c-de-vasconcellos/">Fernando Vasconcellos</a>, <a href="https://www.linkedin.com/in/gustavo-machado-esteves-453b81248/">Gustavo Machado</a>, <a href="https://www.linkedin.com/in/Ivan-Ferreira/">Ivan Ferreira</a>, <a href="https://www.linkedin.com/in/luiza-rubim/">Luiza Rubim</a>
 
 ## Descrição
 
 📜 Descrição curta sobre o que seu projeto faz.
 <br><br>
-Meu projeto é um exemplo de como utilizar o github.
+O projeto é uma gamificação para o treinamento de Gestão de Tempo da Cia de Talentos.
 <br><br>
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="ChronoLapse" border="0">
+  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://github.com/2023M1T9-Inteli/grupo2">ChronoLapse</a> 
 </p>
 
 
 💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
 <br><br>
-Meu projeto ajuda estudantes inteli a configurarem seus githubs.
+O projeto ajuda como um complemento no treinamento de gestão de tempo distribuído pela Cia de talentos. Pegando como referência o jogo MarioBros, o filme O Preço do Amanhã e a estética CyberPunk, o jogo conta com diversos elementos que remetem ao usuário a todo o momento a gestão de tempo. Auxiliando o jogador a gerir melhor e a obter o aprendizado e contexualização de diversos métodos de gerenciamento de tempo, como o Pomodoro, GUT e Kanban enquanto segue a narrativa do Cyborg que é destinado a derrotar os ladrões de tempo e a consertar o fluxo temporal, os ladrões de tempo são inimigos criados a partir de objetos da vida real que tiram o foco e que muitas vezes não deixa que as pessoas conclua as tarefas do dia a dia. 
+Desenvolvido focando em uma maior imersão do usuário no treinamento, o jogo foi criado para que o usuário use e aprenda técnicas de gerenciamento de tempo ao mesmo momento em que joga e se diverte.
 <br><br>
-May the force be with you!
 <br><br>
 
 ## 🛠 Estrutura de pastas
-
--Raiz<br>
-|<br>
-|-->docs<br>
-|-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|GDD.docx ou Documentação.docx<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
-|-->imagens<br>
-|-->src<br>
-|readme.md<br>
+├───docs<br>
+├───documentos<br>
+│   └───antigos<br>
+│       ├───FirstClass<br>
+│       ├───pitch<br>
+│       │   ├───exec<br>
+│       │   ├───fontes<br>
+│       │   │   └───press_start_2p<br>
+│       │   ├───images<br>
+│       │   └───Script<br>
+│       └───primeira tela<br>
+├───executáveis<br>
+│   ├───Android<br>
+│   ├───HTML<br>
+│   └───Windows<br>
+└───src<br>
+    └───Chronolapse<br>
+        ├───.import<br>
+        ├───autoload<br>
+        ├───Branch<br>
+        ├───Cenas<br>
+        ├───control<br>
+        ├───efeito sonoros<br>
+        ├───imagens<br>
+        │   ├───narrativa final<br>
+        │   ├───narrativa inicial<br>
+        │   ├───Portal<br>
+        │   ├───relogio_rewind<br>
+        │   └───tutorasRewind<br>
+        ├───kanban<br>
+        ├───male<br>
+        ├───personagem principal<br>
+        ├───pomodoro<br>
+        ├───pop ups<br>
+        │   ├───pomodoro<br>
+        │   └───relógio<br>
+        │       └───video_relogio<br>
+        ├───Script<br>
+        │   └───letras<br>
+        └───tileset<br>
+            └───industrial<br>
 
 A pasta raiz contem dois arquivos que devem ser alterados:
 
@@ -93,18 +119,18 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 0.2.1 - 25/01/2022
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0 - 15/01/2022
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1 - 11/01/2022
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0 - 10/01/2022
+* 0.2.1 - 10/02/2023
+    * Primeiro lançamento do protótipo do MVP
+* 0.2.0 - 25/02/2023
+    * mudanças significativas na estética do jogo 
+    * ADD: personagem e inimigos
+* 0.1.1 - 15/03/2023
+    * Melhoramento de versão do jogo e atualização da narrativa
+* 0.1.0 - 20/03/2023
     * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1 - 01/01/2022
-    * Trabalho em andamento
+    * Alterações nas pastas e alinhamento do código 
+* 0.0.1 - 07/04/2023
+    * última atualização da documentação e Readme
 
 ## 📋 Licença/License
 
@@ -114,8 +140,8 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 Aqui estão as referências usadas no projeto.
 
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
+1. https://free-game-assets.itch.io/free-3-cyberpunk-sprites-pixel-art
+2. https://free-game-assets.itch.io/free-industrial-zone-tileset-pixel-art
+3. https://www.youtube.com/@clecioespindolagamedev
+4. https://www.youtube.com/@gNewlinux
 5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
