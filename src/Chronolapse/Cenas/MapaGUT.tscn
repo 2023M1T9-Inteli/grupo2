@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://tileset/industrial.tres" type="TileSet" id=1]
 [ext_resource path="res://Branch/ParallaxBackground.tscn" type="PackedScene" id=2]
@@ -9,7 +9,6 @@
 [ext_resource path="res://efeito sonoros/laser-gun-72558 (mp3cut.net).mp3" type="AudioStream" id=7]
 [ext_resource path="res://Script/CenaGUT.gd" type="Script" id=8]
 [ext_resource path="res://imagens/Portal/pixil-frame-1.png" type="Texture" id=9]
-[ext_resource path="res://imagens/newPortal cópia.png" type="Texture" id=10]
 [ext_resource path="res://imagens/Portal/pixil-frame-2.png" type="Texture" id=11]
 [ext_resource path="res://imagens/Portal/pixil-frame-3.png" type="Texture" id=12]
 [ext_resource path="res://Script/plataforma_movel2.gd" type="Script" id=13]
@@ -131,17 +130,10 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="NewPortalCópia/Area2D"]
-visible = false
-position = Vector2( -7, 2.00003 )
-scale = Vector2( 0.96, 0.9775 )
-texture = ExtResource( 10 )
-
 [node name="AnimatedSprite" type="AnimatedSprite" parent="NewPortalCópia/Area2D"]
 position = Vector2( 5, 8 )
 scale = Vector2( 3.275, 3.275 )
 frames = SubResource( 5 )
-frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NewPortalCópia/Area2D"]

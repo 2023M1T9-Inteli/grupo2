@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Branch/ParallaxBackground.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Branch/Player.tscn" type="PackedScene" id=2]
@@ -6,20 +6,18 @@
 [ext_resource path="res://Branch/Monstro.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Cenas/PlataformaMovelHorizontal.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Branch/TimeTrap.tscn" type="PackedScene" id=6]
-[ext_resource path="res://imagens/newPortal cópia.png" type="Texture" id=7]
 [ext_resource path="res://imagens/Bait Fraco.png" type="Texture" id=8]
 [ext_resource path="res://Script/MapaFase5.gd" type="Script" id=9]
 [ext_resource path="res://imagens/bloco-gantt.png" type="Texture" id=10]
 [ext_resource path="res://imagens/bloco-gantt02.png" type="Texture" id=11]
-[ext_resource path="res://kanban/pixil-frame-0 (16).png" type="Texture" id=12]
-[ext_resource path="res://kanban/asdfasdf.png" type="Texture" id=13]
+[ext_resource path="res://imagens/kanban/pixil-frame-0 (16).png" type="Texture" id=12]
+[ext_resource path="res://imagens/kanban/asdfasdf.png" type="Texture" id=13]
 [ext_resource path="res://imagens/pomodoro-bloco_resample02.png" type="Texture" id=14]
 [ext_resource path="res://imagens/pomodoro-bloco_resample.png" type="Texture" id=15]
 [ext_resource path="res://imagens/Ponte Bait.png" type="Texture" id=16]
 [ext_resource path="res://imagens/Portal/pixil-frame-2.png" type="Texture" id=17]
 [ext_resource path="res://imagens/Portal/pixil-frame-3.png" type="Texture" id=18]
 [ext_resource path="res://imagens/Portal/pixil-frame-1.png" type="Texture" id=19]
-
 
 [sub_resource type="SpriteFrames" id=13]
 animations = [ {
@@ -128,16 +126,10 @@ position = Vector2( 4425, 550 )
 position = Vector2( 5, 8 )
 scale = Vector2( 3.275, 3.275 )
 frames = SubResource( 13 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Area2DPortal"]
 shape = SubResource( 1 )
-
-[node name="NewPortalCópia" type="Sprite" parent="TileMap"]
-visible = false
-position = Vector2( 4425, 550 )
-texture = ExtResource( 7 )
 
 [node name="Monstro" parent="." instance=ExtResource( 4 )]
 position = Vector2( 457, 607 )

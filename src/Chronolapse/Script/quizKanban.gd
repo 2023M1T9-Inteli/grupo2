@@ -15,7 +15,7 @@ func _process(delta):
 
 #muda de cena caso pressione o botão de avançar para a próxima fase		
 func _on_avancar_pressed():
-	get_tree().change_scene("res://Cenas/Mapa_Gantt.tscn")
+	get_tree().change_scene("res://Cenas/MapaGUT.tscn")
 
 #Caso o botão com a resposta certa seja pressionado, aparecerá a tela de acerto e sumirá a tela de perguntas
 func _on_Button4_pressed():
