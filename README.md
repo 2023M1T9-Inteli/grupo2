@@ -25,26 +25,53 @@ O projeto é uma gamificação para o treinamento de Gestão de Tempo da Cia de 
 
 💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
 <br><br>
-Meu projeto ajuda estudantes inteli a configurarem seus githubs.
+O projeto ajuda como um complemento no treinamento de gestão de tempo distribuído pela Cia de talentos. Pegando como referência o jogo MarioBros, o filme O Preço do Amanhã e a estética CyberPunk, o jogo conta com diversos elementos que remetem ao usuário a todo o momento a gestão de tempo. Auxiliando o jogador a gerir melhor e a obter o aprendizado e contexualização de diversos métodos de gerenciamento de tempo, como o Pomodoro, GUT e Kanban enquanto segue a narrativa do Cyborg que é destinado a derrotar os ladrões de tempo e a consertar o fluxo temporal, os ladrões de tempo são inimigos criados a partir de objetos da vida real que tiram o foco e que muitas vezes não deixa que as pessoas conclua as tarefas do dia a dia. 
+Desenvolvido focando em uma maior imersão do usuário no treinamento, o jogo foi criado para que o usuário use e aprenda técnicas de gerenciamento de tempo ao mesmo momento em qu joga e se diverte.
 <br><br>
-May the force be with you!
 <br><br>
 
 ## 🛠 Estrutura de pastas
-
--Raiz<br>
-|<br>
-|-->docs<br>
-|-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|GDD.docx ou Documentação.docx<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
-|-->imagens<br>
-|-->src<br>
-|readme.md<br>
+├───docs
+├───documentos
+│   └───antigos
+│       ├───FirstClass
+│       ├───pitch
+│       │   ├───exec
+│       │   ├───fontes
+│       │   │   └───press_start_2p
+│       │   ├───images
+│       │   └───Script
+│       └───primeira tela
+├───executáveis
+│   ├───Android
+│   ├───HTML
+│   └───Windows
+└───src
+    └───Chronolapse
+        ├───.import
+        ├───autoload
+        ├───Branch
+        ├───Cenas
+        ├───control
+        ├───efeito sonoros
+        ├───imagens
+        │   ├───narrativa final
+        │   ├───narrativa inicial
+        │   ├───Portal
+        │   ├───relogio_rewind
+        │   └───tutorasRewind
+        ├───kanban
+        ├───male
+        ├───personagem principal
+        ├───pomodoro
+        ├───pop ups
+        │   ├───pomodoro
+        │   └───relógio
+        │       └───video_relogio
+        ├───Script
+        │   └───letras
+        └───tileset
+            └───industrial
 
 A pasta raiz contem dois arquivos que devem ser alterados:
 
@@ -92,18 +119,18 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 0.2.1 - 25/01/2022
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0 - 15/01/2022
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1 - 11/01/2022
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0 - 10/01/2022
+* 0.2.1 - 10/02/2023
+    * Primeiro lançamento do protótipo do MVP
+* 0.2.0 - 25/02/2023
+    * mudanças significativas na estética do jogo 
+    * ADD: personagem e inimigos
+* 0.1.1 - 15/03/2023
+    * Melhoramento de versão do jogo e atualização da narrativa
+* 0.1.0 - 20/03/2023
     * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1 - 01/01/2022
-    * Trabalho em andamento
+    * Alterações nas pastas e alinhamento do código 
+* 0.0.1 - 07/04/2023
+    * última atualização da documentação e Readme
 
 ## 📋 Licença/License
 
