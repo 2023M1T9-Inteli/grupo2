@@ -19,7 +19,7 @@ O projeto é uma gamificação para o treinamento de Gestão de Tempo da Cia de 
 <br><br>
 <p align="center">
 <img src="https://raw.githubusercontent.com/2023M1T9-Inteli/grupo2/main/src/Chronolapse/imagens/imagem_readme.png" alt="ChronoLapse" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://github.com/2023M1T9-Inteli/grupo2">ChronoLapse</a> 
+  <a rel="license" href="https://github.com/2023M1T9-Inteli/grupo2">ChronoLapse</a> 
 </p>
 
 
