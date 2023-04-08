@@ -659,7 +659,7 @@ position = Vector2( 510.5, 301.5 )
 scale = Vector2( 0.552778, 0.552778 )
 frames = SubResource( 3 )
 animation = "anima1"
-frame = 7
+frame = 2
 playing = true
 
 [node name="Timer" type="Timer" parent="."]
@@ -667,11 +667,12 @@ wait_time = 1.5
 one_shot = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
+visible = false
 position = Vector2( 510.5, 301.5 )
 scale = Vector2( 0.552778, 0.552778 )
 frames = SubResource( 4 )
 animation = "anima32"
-frame = 4
+frame = 7
 playing = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

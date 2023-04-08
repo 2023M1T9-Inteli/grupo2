@@ -10,6 +10,9 @@ var pode_atirar3 = false
 var jogador = preload("res://Cenas/Personagens/Player.tscn").instance()
 
 func _ready():
+	#Altera a variável global fase, que indica qual nível o jogador está, 
+#	para que assim o game over reinicie na fase certa	
+	CategoriaGlobal.level = "fase5"
 #	Atribui um valor para o tempo que o jogador tem, baseado no desempenho da matriz
 	if(CategoriaGlobal.categoria == 0): tempo = 150
 	elif CategoriaGlobal.categoria == 1: tempo = 225
