@@ -1,14 +1,12 @@
 extends Node2D
 
 #variavel que instancia o jogador na cena
-var jogador = preload("res://Branch/Player.tscn").instance()
+var jogador = preload("res://Cenas/Personagens/Player.tscn").instance()
 #variável que indica se o jogador pode usar o poder ou não
 var pode_usar = false
 #Variável de controle para saber quanto tempo será disponibilizado para realizar a fase
 var tempo
 
-onready var fase = get_node("/root/CategoriaGlobal")
-onready var categoria = get_node("/root/CategoriaGlobal")
 #onready var movimento = get_node("/root/GlobalTeste")
 
 func _ready():
@@ -18,13 +16,13 @@ func _ready():
 	#determina as coordenadas em que aparece o jogador
 	jogador.position = Vector2(-1687, 161)
 	#	Atribui o valor a variável global level, para que caso ocorra GameOver, saiba-se em que nível está. 
-	fase.level = "fase 4"
+	CategoriaGlobal.level = "fase 4"
 	
 #	Define a quantidade de tempo que o jogador terá para completar a fase com base no desempenho da matriz
-	if(categoria.categoria == 0): tempo = 150
-	elif categoria.categoria == 1: tempo = 225
-	elif categoria.categoria == 2: tempo = 180
-	elif categoria.categoria == 3: tempo = 120
+	if(CategoriaGlobal.categoria == 0): tempo = 150
+	elif CategoriaGlobal.categoria == 1: tempo = 225
+	elif CategoriaGlobal.categoria == 2: tempo = 180
+	elif CategoriaGlobal.categoria == 3: tempo = 120
 	else: tempo = 225
 	
 #	Inicia o timer
@@ -52,7 +50,7 @@ func usar_poder():
 		ControleMusica.kanbanFx()
 
 		#intancia a cena Card e joga dentro da variável cena_card
-		var cena_card = preload("res://Cenas/Card.tscn").instance()
+		var cena_card = preload("res://Cenas/Poderes/Card.tscn").instance()
 		
 		#se o sprite da personagem estiver voltado para a esquerda, o card aparece na esquerda
 		if $Player/Sprite.flip_h == true:

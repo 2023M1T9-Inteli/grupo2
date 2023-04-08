@@ -13,12 +13,12 @@ func _ready():
 func _on_startBtn_pressed():
 	#Abre a cena em que o usuário estava do início.	
 	if controle.level == "fase 1":
-		get_tree().change_scene("res://Cenas/Cena1.tscn")
+		get_tree().change_scene("res://Cenas/Fases/Cena1.tscn")
 	elif controle.level == "fase 2":
-		get_tree().change_scene("res://Cenas/Cena2.tscn")
+		get_tree().change_scene("res://Cenas/Fases/Cena2.tscn")
 	elif controle.level == "fase 3":
-		get_tree().change_scene("res://Cenas/Mapa_Gantt.tscn")	
+		get_tree().change_scene("res://Cenas/Fases/Mapa_Gantt.tscn")	
 	elif controle.level == "fase 4":
-		get_tree().change_scene("res://Cenas/MapaDoKanban.tscn")
+		get_tree().change_scene("res://Cenas/Fases/MapaDoKanban.tscn")
 	elif controle.level == "fase5":
-		get_tree().change_scene("res://Cenas/MapaFase5.tscn")
+		get_tree().change_scene("res://Cenas/Fases/MapaFase5.tscn")

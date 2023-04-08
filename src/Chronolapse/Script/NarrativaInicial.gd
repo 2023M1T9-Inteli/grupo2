@@ -17,7 +17,7 @@ func _on_Timer_timeout():
 
 #Função para pular a narrativa e ir direto a ao jogo
 func _on_Button_pressed():
-	get_tree().change_scene("res://Cenas/InicioMatriz.tscn")
+	get_tree().change_scene("res://Cenas/Matriz/InicioMatriz.tscn")
 	
 #Função para manter incrementar a variável de controles de animação, invocada quando acaba a animação
 func controlar():
@@ -25,7 +25,7 @@ func controlar():
 		controle += 1
 	#Caso esteja na 16ª animação, deve trocar de cena, pois já foi passada toda a narrativa dessa cena
 	elif controle == 16:
-		get_tree().change_scene("res://Cenas/NarrativaInicial2.tscn")
+		get_tree().change_scene("res://Cenas/Narrativa/NarrativaInicial2.tscn")
 
 #Função para alterar a animação para a próxima
 func mudarAnimacao():

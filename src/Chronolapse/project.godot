@@ -16,7 +16,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-ControleMusica="*res://autoload/controleMusica.tscn"
+ControleMusica="*res://Cenas/Autoload/ControleMusica.tscn"
 CategoriaGlobal="*res://Script/CategoriaGlobal.gd"
 
 [display]

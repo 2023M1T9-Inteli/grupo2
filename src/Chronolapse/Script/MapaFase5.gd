@@ -2,20 +2,19 @@ extends Node2D
 
 #Variáveis para contar a passagem do tempo no cronometro
 var tempo
-onready var categoria = get_node("/root/CategoriaGlobal")
 #Define as variáveis de poder usar o poder ou não.
 var pode_atirar1 = false
 var pode_atirar2 = false
 var pode_atirar3 = false
 #variavel que instancia o jogador na cena
-var jogador = preload("res://Branch/Player.tscn").instance()
+var jogador = preload("res://Cenas/Personagens/Player.tscn").instance()
 
 func _ready():
 #	Atribui um valor para o tempo que o jogador tem, baseado no desempenho da matriz
-	if(categoria.categoria == 0): tempo = 150
-	elif categoria.categoria == 1: tempo = 225
-	elif categoria.categoria == 2: tempo = 180
-	elif categoria.categoria == 3: tempo = 120
+	if(CategoriaGlobal.categoria == 0): tempo = 150
+	elif CategoriaGlobal.categoria == 1: tempo = 225
+	elif CategoriaGlobal.categoria == 2: tempo = 180
+	elif CategoriaGlobal.categoria == 3: tempo = 120
 	else: tempo = 225
 #	Invoca o timer e passa quanto tempo ele deve ter
 	$Player/timer/CanvasLayer/Control.start_timer(tempo)
@@ -56,7 +55,7 @@ func ChamaroPoder():
 		
 		ControleMusica.laserFx()
 		#intancia a cena Flecha e joga dentro da variável cena_flecha
-		var cena_flecha = preload("res://Cenas/Flecha.tscn").instance()
+		var cena_flecha = preload("res://Cenas/Poderes/Flecha.tscn").instance()
 		
 		#se o sprite da personagem estiver voltado para a esquerda, a flecha vai para a esquerda
 		if $Player/Sprite.flip_h == true:
@@ -77,7 +76,7 @@ func ChamaroPoder2():
 		ControleMusica.pomodoroFx()
 
 		#intancia a cena Tomate e joga dentro da variável cena_flecha
-		var cena_tomate = preload("res://Cenas/Tomate.tscn").instance()
+		var cena_tomate = preload("res://Cenas/Poderes/Tomate.tscn").instance()
 		
 		#se o sprite da personagem estiver voltado para a esquerda, a flecha vai para a esquerda
 		if $Player/Sprite.flip_h == true:
@@ -99,7 +98,7 @@ func ChamaroPoder3():
 		
 		ControleMusica.kanbanFx()
 		#intancia a cena Card e joga dentro da variável cena_card
-		var cena_card = preload("res://Cenas/Card.tscn").instance()
+		var cena_card = preload("res://Cenas/Poderes/Card.tscn").instance()
 		
 		#se o sprite da personagem estiver voltado para a esquerda, o card aparece na esquerda
 		if $Player/Sprite.flip_h == true:
@@ -138,9 +137,10 @@ func _on_Area2D2_body_entered(body):
 		pode_atirar2 = false
 		pode_atirar3 = true
 
-func _on_Area2DPortal_body_entered(_body):
+func _on_Area2DPortal_body_entered(body):
 #Mudar de cena quando o player entrar no portal
-	get_tree().change_scene("res://Cenas/QuizFase5.tscn")
+	if body.name == "Player":
+		get_tree().change_scene("res://Cenas/Quiz/QuizFase5.tscn")
 
 
 

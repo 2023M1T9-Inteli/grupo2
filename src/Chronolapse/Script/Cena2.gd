@@ -1,9 +1,9 @@
 extends Node2D
 
 #varíavel que referencia a cena do tomate arremessável
-var tomate = preload("res://Cenas/Tomate.tscn")
+var tomate = preload("res://Cenas/Poderes/Tomate.tscn")
 #variável que referencia e instancia a cena do player
-var jogador = preload("res://Branch/Player.tscn").instance()
+var jogador = preload("res://Cenas/Personagens/Player.tscn").instance()
 #
 ## variável que referencia cena global acerca do movimento do jogador
 #onready var movimento = get_node("/root/CategoriaGlobal")

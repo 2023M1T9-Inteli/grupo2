@@ -14,7 +14,7 @@ func _process(_delta):
 func _on_startBtn_pressed():
 	ControleMusica.mute()
 	ControleMusica.botao_start()
-	get_tree().change_scene("res://Cenas/NarrativaInicial.tscn")
+	get_tree().change_scene("res://Cenas/Narrativa/NarrativaInicial.tscn")
 
 #aparecer menu de controle e voltar para tela de início se for requerido
 func _on_controlBtn_pressed():

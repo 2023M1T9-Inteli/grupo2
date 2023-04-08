@@ -107,7 +107,7 @@ func _on_NINU_mais_pressed():
 #Envia as variáveis para a análise da matriz, dando um feedback para o usuário sobre a 
 #organização de suas tarefas
 func _on_Analise_pressed():
-	if fazer_Soma_Total()>24:
+	if fazer_Soma_Total()>=24:
 		#efeito sonoro
 		ControleMusica.blocoFx()
 		
@@ -182,8 +182,8 @@ func _on_Jogar_pressed():
 	ControleMusica.botao_start()
 #	Atribui o tipo da matriz que teve mais discrepância a global Categoria, para que se possa definir a quantidade de horas para cada fase.
 	categoria.categoria = index
-	get_tree().change_scene("res://Cenas/Cena1.tscn")
+	get_tree().change_scene("res://Cenas/Fases/Cena1.tscn")
 
 #funcao para quando botao for apertado, mudar de cena
 func _on_Exemplo_pressed():
-	get_tree().change_scene("res://Cenas/InicioMatriz.tscn")
+	get_tree().change_scene("res://Cenas/Matriz/InicioMatriz.tscn")
