@@ -12,6 +12,7 @@
 [ext_resource path="res://efeito sonoros/click.mp3" type="AudioStream" id=10]
 [ext_resource path="res://efeito sonoros/laser-gun-72558 (mp3cut.net).mp3" type="AudioStream" id=11]
 
+
 [node name="controle_musica" type="Node"]
 script = ExtResource( 1 )
 

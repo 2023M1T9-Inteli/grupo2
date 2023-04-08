@@ -1,6 +1,6 @@
 extends Node2D
 
-#Variavel de controle do jogador, para chamar a entidade jogador
+
 var jogador = preload("res://Cenas/Personagens/Player.tscn").instance()
 var pode_atirar = false
 var tempo

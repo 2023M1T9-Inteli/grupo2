@@ -182,7 +182,6 @@ func _on_Jogar_pressed():
 	ControleMusica.botao_start()
 #	Atribui o tipo da matriz que teve mais discrepância a global Categoria, para que se possa definir a quantidade de horas para cada fase.
 	categoria.categoria = index
-	print(categoria.categoria)
 	get_tree().change_scene("res://Cenas/Fases/Cena1.tscn")
 
 #funcao para quando botao for apertado, mudar de cena
