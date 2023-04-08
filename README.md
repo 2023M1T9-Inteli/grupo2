@@ -49,24 +49,32 @@ Desenvolvido focando em uma maior imersão do usuário no treinamento, o jogo fo
 └───src<br>
     └───Chronolapse<br>
         ├───.import<br>
-        ├───autoload<br>
-        ├───Branch<br>
         ├───Cenas<br>
-        ├───control<br>
+        │   ├───Autoload<br>
+        │   ├───Cenario<br>
+        │   ├───Fases<br>
+        │   ├───Hud<br>
+        │   ├───Matriz<br>
+        │   ├───Narrativa<br>
+        │   ├───Personagens<br>
+        │   ├───Poderes<br>
+        │   ├───PopUp<br>
+        │   └───Quiz<br>
         ├───efeito sonoros<br>
         ├───imagens<br>
+        │   ├───control<br>
+        │   ├───kanban<br>
+        │   ├───male<br>
         │   ├───narrativa final<br>
         │   ├───narrativa inicial<br>
+        │   ├───personagem principal<br>
         │   ├───Portal<br>
         │   ├───relogio_rewind<br>
         │   └───tutorasRewind<br>
-        ├───kanban<br>
-        ├───male<br>
-        ├───personagem principal<br>
         ├───pomodoro<br>
         ├───pop ups<br>
         │   ├───pomodoro<br>
-        │   └───relógio<br>
+        │   └───relogio<br>
         │       └───video_relogio<br>
         ├───Script<br>
         │   └───letras<br>
