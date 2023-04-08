@@ -1,74 +1,73 @@
 [gd_scene load_steps=60 format=2]
 
 [ext_resource path="res://Script/Player.gd" type="Script" id=1]
-[ext_resource path="res://imagens/personagem principal/run_menor3.png" type="Texture" id=2]
-[ext_resource path="res://imagens/personagem principal/idle.png" type="Texture" id=3]
-[ext_resource path="res://imagens/personagem principal/run_menor4.png" type="Texture" id=4]
-[ext_resource path="res://imagens/personagem principal/run_menor5.png" type="Texture" id=5]
-[ext_resource path="res://imagens/personagem principal/run_menor1.png" type="Texture" id=6]
-[ext_resource path="res://imagens/personagem principal/run_menor2.png" type="Texture" id=7]
-[ext_resource path="res://imagens/personagem principal/run_menor6.png" type="Texture" id=8]
-[ext_resource path="res://imagens/personagem principal/dash2.png" type="Texture" id=9]
-[ext_resource path="res://imagens/personagem principal/dash1.png" type="Texture" id=10]
-[ext_resource path="res://imagens/personagem principal/dash3.png" type="Texture" id=11]
-[ext_resource path="res://imagens/personagem principal/dash4.png" type="Texture" id=12]
-[ext_resource path="res://imagens/personagem principal/dash5.png" type="Texture" id=13]
-[ext_resource path="res://imagens/personagem principal/dash6.png" type="Texture" id=14]
-[ext_resource path="res://imagens/personagem principal/jump4.png" type="Texture" id=15]
-[ext_resource path="res://imagens/personagem principal/jump1.png" type="Texture" id=16]
-[ext_resource path="res://imagens/personagem principal/jump3.png" type="Texture" id=17]
-[ext_resource path="res://imagens/personagem principal/jump2.png" type="Texture" id=18]
-[ext_resource path="res://imagens/personagem principal/dash_rewind4.png" type="Texture" id=19]
-[ext_resource path="res://imagens/personagem principal/dash_rewind1.png" type="Texture" id=20]
-[ext_resource path="res://imagens/personagem principal/dash_rewind2.png" type="Texture" id=21]
-[ext_resource path="res://imagens/personagem principal/dash_rewind3.png" type="Texture" id=22]
-[ext_resource path="res://imagens/personagem principal/dash_rewind5.png" type="Texture" id=23]
-[ext_resource path="res://imagens/personagem principal/dash_rewind.6png.png" type="Texture" id=24]
-[ext_resource path="res://efeito sonoros/DLMKRJN-ninja-jump (mp3cut.net).mp3" type="AudioStream" id=25]
-[ext_resource path="res://Cenas/Timer.tscn" type="PackedScene" id=26]
-[ext_resource path="res://imagens/relogio_rewind/sprite_sheet_relogio.png" type="Texture" id=27]
-[ext_resource path="res://imagens/botao_pause.png" type="Texture" id=28]
-[ext_resource path="res://imagens/pause_escuro.png" type="Texture" id=29]
-[ext_resource path="res://Cenas/Pause.tscn" type="PackedScene" id=30]
-[ext_resource path="res://imagens/mutado.png" type="Texture" id=31]
-[ext_resource path="res://imagens/som.png" type="Texture" id=32]
-[ext_resource path="res://efeito sonoros/rewind.wav" type="AudioStream" id=33]
-
+[ext_resource path="res://imagens/personagem principal/dash_rewind1.png" type="Texture" id=2]
+[ext_resource path="res://imagens/personagem principal/dash_rewind2.png" type="Texture" id=3]
+[ext_resource path="res://imagens/personagem principal/jump4.png" type="Texture" id=4]
+[ext_resource path="res://imagens/personagem principal/jump3.png" type="Texture" id=5]
+[ext_resource path="res://imagens/personagem principal/dash_rewind.6png.png" type="Texture" id=6]
+[ext_resource path="res://efeito sonoros/DLMKRJN-ninja-jump (mp3cut.net).mp3" type="AudioStream" id=7]
+[ext_resource path="res://imagens/personagem principal/dash5.png" type="Texture" id=8]
+[ext_resource path="res://imagens/personagem principal/dash_rewind4.png" type="Texture" id=9]
+[ext_resource path="res://imagens/personagem principal/dash4.png" type="Texture" id=10]
+[ext_resource path="res://imagens/personagem principal/dash6.png" type="Texture" id=11]
+[ext_resource path="res://imagens/personagem principal/dash_rewind3.png" type="Texture" id=12]
+[ext_resource path="res://imagens/personagem principal/dash_rewind5.png" type="Texture" id=13]
+[ext_resource path="res://imagens/personagem principal/dash3.png" type="Texture" id=14]
+[ext_resource path="res://imagens/personagem principal/jump1.png" type="Texture" id=15]
+[ext_resource path="res://imagens/personagem principal/jump2.png" type="Texture" id=16]
+[ext_resource path="res://imagens/mutado.png" type="Texture" id=17]
+[ext_resource path="res://imagens/som.png" type="Texture" id=18]
+[ext_resource path="res://imagens/relogio_rewind/sprite_sheet_relogio.png" type="Texture" id=19]
+[ext_resource path="res://imagens/pause_escuro.png" type="Texture" id=20]
+[ext_resource path="res://imagens/botao_pause.png" type="Texture" id=21]
+[ext_resource path="res://efeito sonoros/rewind.wav" type="AudioStream" id=22]
+[ext_resource path="res://Cenas/Hud/Timer.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Cenas/Hud/Pause.tscn" type="PackedScene" id=24]
+[ext_resource path="res://imagens/personagem principal/run_menor4.png" type="Texture" id=25]
+[ext_resource path="res://imagens/personagem principal/idle.png" type="Texture" id=26]
+[ext_resource path="res://imagens/personagem principal/run_menor5.png" type="Texture" id=27]
+[ext_resource path="res://imagens/personagem principal/run_menor1.png" type="Texture" id=28]
+[ext_resource path="res://imagens/personagem principal/run_menor3.png" type="Texture" id=29]
+[ext_resource path="res://imagens/personagem principal/run_menor2.png" type="Texture" id=30]
+[ext_resource path="res://imagens/personagem principal/run_menor6.png" type="Texture" id=31]
+[ext_resource path="res://imagens/personagem principal/dash2.png" type="Texture" id=32]
+[ext_resource path="res://imagens/personagem principal/dash1.png" type="Texture" id=33]
 
 [sub_resource type="AtlasTexture" id=9]
-atlas = ExtResource( 27 )
+atlas = ExtResource( 19 )
 region = Rect2( 1, 1, 33, 33 )
 
 [sub_resource type="AtlasTexture" id=10]
-atlas = ExtResource( 27 )
+atlas = ExtResource( 19 )
 region = Rect2( 34, 1, 33, 33 )
 
 [sub_resource type="AtlasTexture" id=11]
-atlas = ExtResource( 27 )
+atlas = ExtResource( 19 )
 region = Rect2( 67, 1, 33, 33 )
 
 [sub_resource type="AtlasTexture" id=12]
-atlas = ExtResource( 27 )
+atlas = ExtResource( 19 )
 region = Rect2( 1, 34, 33, 33 )
 
 [sub_resource type="AtlasTexture" id=13]
-atlas = ExtResource( 27 )
+atlas = ExtResource( 19 )
 region = Rect2( 34, 34, 33, 33 )
 
 [sub_resource type="AtlasTexture" id=14]
-atlas = ExtResource( 27 )
+atlas = ExtResource( 19 )
 region = Rect2( 67, 34, 33, 33 )
 
 [sub_resource type="AtlasTexture" id=15]
-atlas = ExtResource( 27 )
+atlas = ExtResource( 19 )
 region = Rect2( 1, 67, 33, 33 )
 
 [sub_resource type="AtlasTexture" id=16]
-atlas = ExtResource( 27 )
+atlas = ExtResource( 19 )
 region = Rect2( 34, 67, 33, 33 )
 
 [sub_resource type="AtlasTexture" id=17]
-atlas = ExtResource( 27 )
+atlas = ExtResource( 19 )
 region = Rect2( 67, 67, 33, 33 )
 
 [sub_resource type="SpriteFrames" id=18]
@@ -80,24 +79,24 @@ animations = [ {
 } ]
 
 [sub_resource type="AtlasTexture" id=5]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 26 )
 region = Rect2( 106, 0, 53, 80 )
 
 [sub_resource type="AtlasTexture" id=4]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 26 )
 region = Rect2( 0, 0, 53, 80 )
 
 [sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 26 )
 region = Rect2( 212, 0, 53, 80 )
 
 [sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 26 )
 region = Rect2( 318, 0, 53, 80 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 10 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"frames": [ ExtResource( 33 ), ExtResource( 32 ), ExtResource( 14 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "Dash",
 "speed": 5.0
@@ -107,7 +106,7 @@ animations = [ {
 "name": "Idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 8 ) ],
+"frames": [ ExtResource( 28 ), ExtResource( 30 ), ExtResource( 29 ), ExtResource( 25 ), ExtResource( 27 ), ExtResource( 31 ) ],
 "loop": true,
 "name": "Run",
 "speed": 10.0
@@ -117,12 +116,12 @@ animations = [ {
 "name": "clock",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 16 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 15 ) ],
+"frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 5 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "jump",
 "speed": 3.0
 }, {
-"frames": [ ExtResource( 24 ), ExtResource( 23 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 21 ), ExtResource( 20 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 3 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "rewind",
 "speed": 5.0
@@ -168,27 +167,27 @@ extents = Vector2( 18, 0.5 )
 extents = Vector2( 26.5, 38 )
 
 [sub_resource type="StyleBoxTexture" id=21]
-texture = ExtResource( 28 )
+texture = ExtResource( 21 )
 region_rect = Rect2( 0, 0, 33, 33 )
 
 [sub_resource type="StyleBoxTexture" id=19]
-texture = ExtResource( 29 )
+texture = ExtResource( 20 )
 region_rect = Rect2( 0, 0, 33, 33 )
 
 [sub_resource type="StyleBoxTexture" id=20]
-texture = ExtResource( 28 )
+texture = ExtResource( 21 )
 region_rect = Rect2( 0, 0, 33, 33 )
 
 [sub_resource type="StyleBoxTexture" id=26]
-texture = ExtResource( 32 )
+texture = ExtResource( 18 )
 region_rect = Rect2( 0, 0, 33, 33 )
 
 [sub_resource type="StyleBoxTexture" id=24]
-texture = ExtResource( 31 )
+texture = ExtResource( 17 )
 region_rect = Rect2( 0, 0, 33, 33 )
 
 [sub_resource type="StyleBoxTexture" id=25]
-texture = ExtResource( 32 )
+texture = ExtResource( 18 )
 region_rect = Rect2( 0, 0, 33, 33 )
 
 [node name="Player" type="KinematicBody2D"]
@@ -203,7 +202,7 @@ scale = Vector2( 1.18182, 1.18182 )
 frames = SubResource( 18 )
 centered = false
 
-[node name="timer" parent="." instance=ExtResource( 26 )]
+[node name="timer" parent="." instance=ExtResource( 23 )]
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 light_mask = 3
@@ -256,7 +255,7 @@ position = Vector2( 3.5, -2 )
 shape = SubResource( 8 )
 
 [node name="JumpFx" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 25 )
+stream = ExtResource( 7 )
 
 [node name="hud" type="CanvasLayer" parent="."]
 
@@ -280,9 +279,9 @@ custom_styles/normal = SubResource( 25 )
 toggle_mode = true
 
 [node name="rewindFx" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 33 )
+stream = ExtResource( 22 )
 
-[node name="pause" parent="." instance=ExtResource( 30 )]
+[node name="pause" parent="." instance=ExtResource( 24 )]
 visible = false
 
 [connection signal="body_entered" from="pes" to="." method="_on_pes_body_entered"]

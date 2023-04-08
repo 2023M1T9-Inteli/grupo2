@@ -15,7 +15,7 @@ func _process(_delta):
 
 #Caso o botão com a resposta certa seja pressionado, aparecerá a tela de acerto e sumirá a tela de perguntas
 func _on_avancar_pressed():
-	get_tree().change_scene("res://Cenas/MapaDoKanban.tscn")
+	get_tree().change_scene("res://Cenas/Fases/MapaDoKanban.tscn")
 
 #Caso o botão com a resposta errada seja pressionado, aparecerá a tela de erro e sumirá a tela de perguntas
 #Além disso, será adicionado um a variável de contagem de erros.

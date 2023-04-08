@@ -23,7 +23,7 @@ func controlar():
 		controle += 1
 	#Caso esteja na 16ª animação, deve trocar de cena, pois já foi passada toda a narrativa dessa cena
 	elif controle == 16:
-		get_tree().change_scene("res://Cenas/NarrativaFinal2.tscn")
+		get_tree().change_scene("res://Cenas/Narrativa/NarrativaFinal2.tscn")
 
 #Função para alterar a animação para a próxima
 func mudarAnimacao():

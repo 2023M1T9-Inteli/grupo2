@@ -1,7 +1,7 @@
 extends Node2D
 
 
-var jogador = preload("res://Branch/Player.tscn").instance()
+var jogador = preload("res://Cenas/Personagens/Player.tscn").instance()
 var pode_atirar = false
 var tempo
 
@@ -46,7 +46,7 @@ func atirar_flecha():
 		$LaserFx.play()
 
 		#intancia a cena Flecha e joga dentro da variável cena_flecha
-		var cena_flecha = preload("res://Cenas/Flecha.tscn").instance()
+		var cena_flecha = preload("res://Cenas/Poderes/Flecha.tscn").instance()
 		
 		#se o sprite da personagem estiver voltado para a esquerda, a flecha vai para a esquerda
 		if $Player/Sprite.flip_h == true:

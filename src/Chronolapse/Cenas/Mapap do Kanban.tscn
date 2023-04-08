@@ -1,10 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://tileset/industrial.tres" type="TileSet" id=1]
 [ext_resource path="res://Branch/ParallaxBackground.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Branch/Player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Cenas/plataforma_movel.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Script/plataforma_movel2.gd" type="Script" id=5]
+[ext_resource path="res://Cenas/PlataformaMovelHorizontal.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Branch/Monstro.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Script/MapaDoKanban.gd" type="Script" id=7]
 
@@ -25,13 +24,9 @@ position = Vector2( -1622, 152 )
 
 [node name="plataforma_movel2" parent="." instance=ExtResource( 4 )]
 position = Vector2( -172, 504 )
-script = ExtResource( 5 )
-horizontal = true
 
 [node name="plataforma_movel3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 428, 509 )
-script = ExtResource( 5 )
-horizontal = true
 
 [node name="Monstro" parent="." instance=ExtResource( 6 )]
 position = Vector2( -1380, 256 )

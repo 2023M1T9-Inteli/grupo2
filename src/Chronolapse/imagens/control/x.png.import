@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/quadro.png-ab589fca125fa1f9af632f36aad79d04.stex"
+path="res://.import/x.png-97f7e336e78b1609f964cd2cc254fcd7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://control/quadro.png"
-dest_files=[ "res://.import/quadro.png-ab589fca125fa1f9af632f36aad79d04.stex" ]
+source_file="res://imagens/control/x.png"
+dest_files=[ "res://.import/x.png-97f7e336e78b1609f964cd2cc254fcd7.stex" ]
 
 [params]
 
