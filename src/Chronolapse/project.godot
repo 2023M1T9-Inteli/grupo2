@@ -10,14 +10,14 @@ config_version=4
 
 [application]
 
-config/name="Game Mario"
+config/name="ChronoLapse"
 run/main_scene="res://Cenas/PrimeiraTela.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-CategoriaGlobal="*res://Script/CategoriaGlobal.gd"
 ControleMusica="*res://Cenas/Autoload/ControleMusica.tscn"
+CategoriaGlobal="*res://Script/CategoriaGlobal.gd"
 
 [display]
 

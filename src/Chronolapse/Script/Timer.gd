@@ -76,10 +76,10 @@ func pause_timer():
 func perder_tempo():
 	seconds -= 10
 
-#Função para pausar timer
+
 func _on_Button_pressed():
 	pause_timer()
 
-#Função para iniciar contagem do timer
+
 func _on_Button2_pressed():
 	start_timer(seconds)

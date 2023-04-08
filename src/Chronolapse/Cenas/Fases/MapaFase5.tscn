@@ -126,7 +126,7 @@ playing = true
 shape = SubResource( 1 )
 
 [node name="Monstro10" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3164, 479 )
+position = Vector2( 3148, 481 )
 
 [node name="Monstro9" parent="." instance=ExtResource( 6 )]
 position = Vector2( 2981, 480 )
@@ -135,10 +135,10 @@ position = Vector2( 2981, 480 )
 position = Vector2( 457, 607 )
 
 [node name="Monstro2" parent="." instance=ExtResource( 9 )]
-position = Vector2( 3487, 609 )
+position = Vector2( 3484, 608 )
 
 [node name="Monstro4" parent="." instance=ExtResource( 9 )]
-position = Vector2( 3612, 608 )
+position = Vector2( 3606, 607 )
 
 [node name="GUT" type="KinematicBody2D" parent="."]
 position = Vector2( 25, 169 )

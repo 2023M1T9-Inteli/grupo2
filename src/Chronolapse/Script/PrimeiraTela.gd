@@ -8,10 +8,9 @@ func _ready():
 	$PopUpControl.visible = false
 	$Objetivo.visible = false
 	
-func _process(_delta):
-	CategoriaGlobal.trocaFase()
 #vai para a proxima tela
 func _on_startBtn_pressed():
+	#Toca som do botão 
 	ControleMusica.botao_start()
 	get_tree().change_scene("res://Cenas/Narrativa/NarrativaInicial.tscn")
 
@@ -32,7 +31,7 @@ func _on_objetivoBtn_pressed():
 	
 	$Objetivo.visible = true
 	
-#botao de créditos do jogo
+	
 func _on_credBtn_pressed():
 	ControleMusica.blocoFx()
 	$Creditos.visible = true

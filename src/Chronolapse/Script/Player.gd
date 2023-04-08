@@ -149,7 +149,7 @@ func morte_queda():
 		queue_free()
 		get_tree().change_scene("res://Cenas/GameOver.tscn")
 
-#função que aciona o estado pause, torna a tela de pause visível e pausa o cronometro
+
 func _on_pausar_pressed():
 	$pause.visible = true
 	$timer/CanvasLayer/Control.pause_timer()
@@ -157,7 +157,7 @@ func _on_pausar_pressed():
 	pausar = true
 	get_tree().paused = true
 
-#função que chama as funções mute e som do script global para regular o volume do som do jogo
+
 func _on_som_toggled(_button_pressed):
 	if $hud/som.pressed:
 		ControleMusica.mute()

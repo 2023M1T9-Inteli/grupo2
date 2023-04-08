@@ -8,8 +8,8 @@ onready var categoria = get_node("/root/CategoriaGlobal")
 func _ready():
 #	Atribui um valor para o tempo que o jogador tem, baseado no desempenho da matriz
 	if(categoria.categoria == 0): tempo = 150
-	elif categoria.categoria == 1: tempo = 170
-	elif categoria.categoria == 2: tempo = 160
+	elif categoria.categoria == 1: tempo = 225
+	elif categoria.categoria == 2: tempo = 180
 	elif categoria.categoria == 3: tempo = 120
 	else: tempo = 225
 #	Invoca o timer e passa quanto tempo ele deve ter

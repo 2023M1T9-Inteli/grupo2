@@ -28,24 +28,12 @@ texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 199.0
-margin_top = 183.0
-margin_right = 807.0
-margin_bottom = 408.0
+margin_left = 200.0
+margin_top = 168.0
+margin_right = 808.0
+margin_bottom = 393.0
 custom_fonts/font = SubResource( 2 )
 text = "Proporcionar ao usuário o aprendizado de gerenciamento de tempo por meio de quizzes e métodos de organização ao lado de Cyborg para derrotar o temido Chronos e os ladrões de tempo, concluindo sua jornada ao consertar o fluxo temporal."
-align = 1
-valign = 1
-autowrap = true
-
-[node name="Label2" type="Label" parent="."]
-margin_left = -97.0
-margin_top = -82.0
-margin_right = 511.0
-margin_bottom = 143.0
-rect_scale = Vector2( 2, 2 )
-custom_fonts/font = SubResource( 2 )
-text = "Objetivo"
 align = 1
 valign = 1
 autowrap = true
