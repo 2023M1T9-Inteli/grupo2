@@ -48,4 +48,4 @@ func mudarAnimacao():
 
 #Função para pular a narrativa e ir direto a ao jogo
 func _on_Button_pressed():
-	get_tree().change_scene("res://Cenas/InicioMatriz.tscn")
+	get_tree().change_scene("res://Cenas/Matriz/InicioMatriz.tscn")
