@@ -13,9 +13,10 @@
 [ext_resource path="res://imagens/Portal/pixil-frame-3.png" type="Texture" id=12]
 [ext_resource path="res://Script/plataforma_movel2.gd" type="Script" id=13]
 [ext_resource path="res://Script/passagemGUT.gd" type="Script" id=14]
-[ext_resource path="res://Cenas/popUpGUT.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Cenas/PopUpGUT.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Branch/TimeTrap.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Cenas/PlataformaMovelHorizontal.tscn" type="PackedScene" id=17]
+
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {

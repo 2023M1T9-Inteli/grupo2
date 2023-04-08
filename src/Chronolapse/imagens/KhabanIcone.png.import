@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Grey On (32x8).png-eea6116501420c6dc6d92bb1b69b0a16.stex"
+path="res://.import/KhabanIcone.png-b4f0f487ba6b01dbb6981241b941e34f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagens/Grey On (32x8).png"
-dest_files=[ "res://.import/Grey On (32x8).png-eea6116501420c6dc6d92bb1b69b0a16.stex" ]
+source_file="res://imagens/KhabanIcone.png"
+dest_files=[ "res://.import/KhabanIcone.png-b4f0f487ba6b01dbb6981241b941e34f.stex" ]
 
 [params]
 

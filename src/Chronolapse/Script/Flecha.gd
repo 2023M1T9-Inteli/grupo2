@@ -6,9 +6,6 @@ var tempo = 0
 #variável que auxilia no desaparecimento da flecha assim que ele entra em contato com a personagem inimiga
 var desaparecer_flecha = false
 
-#variável que referencia o script global
-onready var global = get_node("/root/GlobalTeste")
-
 func _ready():
 	#põe a animação "default" como animação inicial
 	$AnimatedSprite.play("default")

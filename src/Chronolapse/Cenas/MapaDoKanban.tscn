@@ -5,7 +5,7 @@
 [ext_resource path="res://Branch/ParallaxBackground.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Cenas/PlataformaMovelHorizontal.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Cenas/PassagemGantt2.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Cenas/popUpKanban.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Cenas/PopUpKanban.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Branch/TimeTrap.tscn" type="PackedScene" id=7]
 [ext_resource path="res://efeito sonoros/Game Button Sounds Pack - Free Sounds [TubeRipper (mp3cut.net) (1).mp3" type="AudioStream" id=8]
 [ext_resource path="res://Script/plataforma_movel2.gd" type="Script" id=9]

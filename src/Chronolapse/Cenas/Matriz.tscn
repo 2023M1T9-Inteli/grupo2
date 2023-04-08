@@ -318,6 +318,17 @@ custom_fonts/font = SubResource( 19 )
 custom_styles/normal = SubResource( 20 )
 text = "Voltar"
 
+[node name="MensagemDeErro" type="Label" parent="."]
+visible = false
+margin_left = 640.0
+margin_top = 450.0
+margin_right = 979.0
+margin_bottom = 504.0
+custom_colors/font_color = Color( 0.858824, 0.2, 0.2, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Preencha todas horas, antes de enviar para análise"
+autowrap = true
+
 [connection signal="pressed" from="Analise" to="." method="_on_Analise_pressed"]
 [connection signal="pressed" from="IU_menos" to="." method="_on_IU_menos_pressed"]
 [connection signal="pressed" from="IU_mais" to="." method="_on_IU_mais_pressed"]

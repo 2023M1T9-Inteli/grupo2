@@ -107,73 +107,74 @@ func _on_NINU_mais_pressed():
 #Envia as variáveis para a análise da matriz, dando um feedback para o usuário sobre a 
 #organização de suas tarefas
 func _on_Analise_pressed():
+	if fazer_Soma_Total()>24:
+		#efeito sonoro
+		ControleMusica.blocoFx()
+		
+	#	Mostra o botão de jogar
+		$Jogar.show()	
+		
+	#	esconde os textedits
+		$TextEdit.hide()
+		$TextEdit2.hide()
+		$TextEdit3.hide()
+		$TextEdit4.hide()
+		
+	#	Desabilita os botões de subtrair e adicionar horas para evitar que o jogador altere suas horas após pedir análise
+		$IU_mais.disabled = true
+		$IU_menos.disabled = true
+		$INU_mais.disabled = true
+		$INU_menos.disabled = true
+		$NIU_mais.disabled = true
+		$NIU_menos.disabled = true
+		$NINU_mais.disabled = true
+		$NINU_menos.disabled = true
+		#Diferença entre as horas ideais e o apresentado pelo player 	
+		var perc_iu = abs(imp_urg-5.0)
+		var perc_i_nu = abs(imp_n_urg-14.0)
+		var perc_ni_u = abs(n_imp_urg-4.0)
+		var perc_ni_nu = abs(n_imp_n_urg-2.0)
+		
+		#Lista com os percentuais
+		var lista = [perc_iu,perc_i_nu,perc_ni_u,perc_ni_nu]
+		#variável auxiliar para indicar em qual índice da lista ele está
+		var counter = 0
+		#For para percorrer a lista e achar a posição com o maior valor
+		for i in lista:
+			if i == lista.max():
+				index = counter
+			counter += 1 
+		
+		#Análise da categoria Importante e Urgente, dando seu feedback dependendo da quantidade de horas	
+		if imp_urg > 6:
+			$LblImportanteUrgente.text ="Você tem muitas tarefas urgentes e importantes! Todas essas tarefas realmente são urgentes?  É importante negociar escopos e prazos com outras pessoas para que você possa se organizar de uma forma melhor."
+		elif imp_urg < 4:
+			$LblImportanteUrgente.text = "Você não tem muitas tarefas urgentes e importantes em sua lista! Continue assim, pois tarefas realizadas de forma urgente tendem a apresentar pior qualidade do que as que são feitas com mais tempo"
+		else:
+			$LblImportanteUrgente.text = "Você tem um bom equilíbrio de tarefas urgentes e importantes! Continue a priorizar essas tarefas e mantenha o bom trabalho."
+		
+		#Análise da categoria Importante e Não Urgente, dando seu feedback dependendo da quantidade de horas
+		if imp_n_urg > 15:
+			$LblImportanteNUrgente.text = "Você tem muitas tarefas importantes que não são urgentes!Isso significa que você está fazendo um bom gerenciamento de suas tarefas, organizando e executando atividades que estão alinhadas com seus objetivos e metas! Continue assim!" 
+		elif imp_n_urg < 13:
+			$LblImportanteNUrgente.text = "Você não tem muitas tarefas importantes que não são urgentes! Considere adicionar tarefas que você considera importante, mas que não tem a necessidade de serem completadas imediatamente."
+		else: 
+			$LblImportanteNUrgente.text = "Você tem um bom número de tarefas importantes que não são urgentes! Certifique-se de continuar a trabalhar nessas tarefas e mantenha o bom trabalho."
+		#Análise da categoria Não Importante e Urgente, dando seu feedback dependendo da quantidade de horas
+		if n_imp_urg > 5:
+			$LblNImportanteUrgente.text = "Você tem muitas tarefas não importantes que são urgentes! Tente delegar ou eliminar essas tarefas da sua lista para ter um melhor aproveitamento do seu tempo."
+		elif n_imp_urg < 3:
+			$LblNImportanteUrgente.text = "Você não tem muitas tarefas não importantes que são urgentes! Certifique-se de priorizar as tarefas que são realmente importantes para você."
+		else:
+			$LblNImportanteUrgente.text = "Você tem um bom número de tarefas não importantes que são urgentes! Continue a se organizar dessa maneira e mantenha o bom trabalho."
 
-	#efeito sonoro
-	ControleMusica.blocoFx()
-	
-#	Mostra o botão de jogar
-	$Jogar.show()	
-	
-#	esconde os textedits
-	$TextEdit.hide()
-	$TextEdit2.hide()
-	$TextEdit3.hide()
-	$TextEdit4.hide()
-	
-#	Desabilita os botões de subtrair e adicionar horas para evitar que o jogador altere suas horas após pedir análise
-	$IU_mais.disabled = true
-	$IU_menos.disabled = true
-	$INU_mais.disabled = true
-	$INU_menos.disabled = true
-	$NIU_mais.disabled = true
-	$NIU_menos.disabled = true
-	$NINU_mais.disabled = true
-	$NINU_menos.disabled = true
-	#Diferença entre as horas ideais e o apresentado pelo player 	
-	var perc_iu = abs(imp_urg-5.0)
-	var perc_i_nu = abs(imp_n_urg-14.0)
-	var perc_ni_u = abs(n_imp_urg-4.0)
-	var perc_ni_nu = abs(n_imp_n_urg-2.0)
-	
-	#Lista com os percentuais
-	var lista = [perc_iu,perc_i_nu,perc_ni_u,perc_ni_nu]
-	#variável auxiliar para indicar em qual índice da lista ele está
-	var counter = 0
-	#For para percorrer a lista e achar a posição com o maior valor
-	for i in lista:
-		if i == lista.max():
-			index = counter
-		counter += 1 
-	
-	#Análise da categoria Importante e Urgente, dando seu feedback dependendo da quantidade de horas	
-	if imp_urg > 6:
-		$LblImportanteUrgente.text ="Você tem muitas tarefas urgentes e importantes! Todas essas tarefas realmente são urgentes?  É importante negociar escopos e prazos com outras pessoas para que você possa se organizar de uma forma melhor."
-	elif imp_urg < 4:
-		$LblImportanteUrgente.text = "Você não tem muitas tarefas urgentes e importantes em sua lista! Continue assim, pois tarefas realizadas de forma urgente tendem a apresentar pior qualidade do que as que são feitas com mais tempo"
+		#Análise da categoria Não Importante e Não Urgente, dando seu feedback dependendo da quantidade de horas
+		if n_imp_n_urg > 2:
+			$LblNImportanteNUrgente.text = "Avalie os motivos de você dedicar seu tempo para realizar tarefas que não estão te ajudando no atingimento de metas e objetivos."
+		else:
+			$LblNImportanteNUrgente.text = "Você tem um bom número de tarefas não importantes não urgentes! Continue a priorizar as tarefas certas e mantenha o bom trabalho."
 	else:
-		$LblImportanteUrgente.text = "Você tem um bom equilíbrio de tarefas urgentes e importantes! Continue a priorizar essas tarefas e mantenha o bom trabalho."
-	
-	#Análise da categoria Importante e Não Urgente, dando seu feedback dependendo da quantidade de horas
-	if imp_n_urg > 15:
-		$LblImportanteNUrgente.text = "Você tem muitas tarefas importantes que não são urgentes!Isso significa que você está fazendo um bom gerenciamento de suas tarefas, organizando e executando atividades que estão alinhadas com seus objetivos e metas! Continue assim!" 
-	elif imp_n_urg < 13:
-		$LblImportanteNUrgente.text = "Você não tem muitas tarefas importantes que não são urgentes! Considere adicionar tarefas que você considera importante, mas que não tem a necessidade de serem completadas imediatamente."
-	else: 
-		$LblImportanteNUrgente.text = "Você tem um bom número de tarefas importantes que não são urgentes! Certifique-se de continuar a trabalhar nessas tarefas e mantenha o bom trabalho."
-	#Análise da categoria Não Importante e Urgente, dando seu feedback dependendo da quantidade de horas
-	if n_imp_urg > 5:
-		$LblNImportanteUrgente.text = "Você tem muitas tarefas não importantes que são urgentes! Tente delegar ou eliminar essas tarefas da sua lista para ter um melhor aproveitamento do seu tempo."
-	elif n_imp_urg < 3:
-		$LblNImportanteUrgente.text = "Você não tem muitas tarefas não importantes que são urgentes! Certifique-se de priorizar as tarefas que são realmente importantes para você."
-	else:
-		$LblNImportanteUrgente.text = "Você tem um bom número de tarefas não importantes que são urgentes! Continue a se organizar dessa maneira e mantenha o bom trabalho."
-
-	#Análise da categoria Não Importante e Não Urgente, dando seu feedback dependendo da quantidade de horas
-	if n_imp_n_urg > 2:
-		$LblNImportanteNUrgente.text = "Avalie os motivos de você dedicar seu tempo para realizar tarefas que não estão te ajudando no atingimento de metas e objetivos."
-	else:
-		$LblNImportanteNUrgente.text = "Você tem um bom número de tarefas não importantes não urgentes! Continue a priorizar as tarefas certas e mantenha o bom trabalho."
-
+		$MensagemDeErro.show()
 
 func _on_Jogar_pressed():
 	

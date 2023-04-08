@@ -10,7 +10,7 @@ func _ready():
 	
 
 #Caso o jogador errar mais de três vezes, a fase é reiniciada.
-func _process(delta):
+func _process(_delta):
 	if cont ==2:
 		get_tree().change_scene("res://Cenas/GameOver.tscn")
 

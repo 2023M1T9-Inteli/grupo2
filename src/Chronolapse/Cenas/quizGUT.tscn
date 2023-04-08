@@ -1,16 +1,16 @@
 [gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://pop ups/relogio/quizz.png" type="Texture" id=1]
-[ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://pop ups/pomodoro/pixil-frame-0 (3).png" type="Texture" id=3]
-[ext_resource path="res://pop ups/pomodoro/pixil-frame-0 (2).png" type="Texture" id=4]
-[ext_resource path="res://Script/quizGUT.gd" type="Script" id=5]
+[ext_resource path="res://Script/QuizGUT.gd" type="Script" id=2]
+[ext_resource path="res://pop ups/pomodoro/pixil-frame-0 (2).png" type="Texture" id=3]
+[ext_resource path="res://pop ups/pomodoro/pixil-frame-0 (3).png" type="Texture" id=4]
+[ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
 extra_spacing_top = 6
 extra_spacing_bottom = 6
-font_data = ExtResource( 2 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="StyleBoxFlat" id=16]
 bg_color = Color( 0.123482, 0.183956, 0.486328, 1 )
@@ -34,7 +34,7 @@ border_blend = true
 [sub_resource type="DynamicFont" id=5]
 size = 45
 extra_spacing_space = -13
-font_data = ExtResource( 2 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="StyleBoxFlat" id=17]
 bg_color = Color( 0.123482, 0.183956, 0.486328, 1 )
@@ -63,7 +63,7 @@ use_filter = true
 extra_spacing_top = 3
 extra_spacing_bottom = 2
 extra_spacing_space = -13
-font_data = ExtResource( 2 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFontData" id=10]
 font_path = "res://Script/letras/PressStart2P.ttf"
@@ -108,7 +108,7 @@ border_width_bottom = 2
 bg_color = Color( 0.0392157, 0.0745098, 0.25098, 1 )
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="erro" type="Sprite" parent="."]
 visible = false
@@ -122,8 +122,8 @@ margin_top = 532.0
 margin_right = -1126.0
 margin_bottom = 583.0
 rect_scale = Vector2( 4.15686, 4.40612 )
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 3 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
 flip_h = true
 
 [node name="Label2" type="Label" parent="erro"]
@@ -149,8 +149,8 @@ margin_top = 545.588
 margin_right = 1028.09
 margin_bottom = 596.588
 rect_scale = Vector2( 4.15686, 4.15686 )
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 3 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
 
 [node name="Label2" type="Label" parent="acerto"]
 margin_left = -1096.92
@@ -239,10 +239,10 @@ custom_styles/normal = SubResource( 13 )
 clip_text = true
 
 [node name="Label" type="Label" parent="perguntas/Button2"]
-margin_left = 153.631
-margin_top = 30.8826
-margin_right = 1907.63
-margin_bottom = 192.883
+margin_left = 152.439
+margin_top = 57.9768
+margin_right = 1906.44
+margin_bottom = 219.977
 custom_fonts/font = SubResource( 5 )
 text = "Com base no custo de cada critério para a decisão"
 align = 1

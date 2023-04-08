@@ -14,7 +14,7 @@ onready var ani = $Sprite
 var recorded_data = []  #array que atualiza quando personagem se move
 var is_rewinding = false #bool para indicar se função de rebobinar está ativa ou inativa
 var rewind_length = (60 * 3) #3 segundos
-var rewind_ghost = load("res://Cenas/rewindGhost.tscn")  #direcionar ao sprite que está rebobinando para mostrar seu rastro na tela
+var rewind_ghost = load("res://Cenas/RewindGhost.tscn")  #direcionar ao sprite que está rebobinando para mostrar seu rastro na tela
 
 #variaveis para controle de efeito sonoro
 var first_time = true
