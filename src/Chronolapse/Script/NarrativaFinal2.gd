@@ -2,13 +2,13 @@
 #Duplicado devido ao fato de que a troca de cenas após finalizar as animaçoes são diferentes das demais trocas.s 
 extends Node2D
 #Variável de controle para contar em que animação está
-var controle = 1
+var controle = 17
 #Variável que armazena o nome da animação
 var animacao 
 
 func _ready():
 #	Começa a tocar a primeira animação e inicia o timer de troca de sprites
-	$AnimatedSprite.play("anima1")
+	$AnimatedSprite.play("anima17")
 	$Timer.start()
 	
 func _on_Timer_timeout():

@@ -26,7 +26,7 @@ func _ready():
 	pode_atirar2 = false
 	pode_atirar3 = false
 
-func _process(delta):
+func _process(_delta):
 #Player morre de queda
 	$Player.morte_queda()
 
@@ -38,7 +38,7 @@ func _process(delta):
 	if not pode_atirar2:
 		$Bloco_Tomate/AnimatedSprite.play("default")
 	else:
-		$Bloco_Tomate/AnimatedSprite.play("new_default")
+		$Bloco_Tomate/AnimatedSprite.play("new")
 	if not pode_atirar3:
 		$Kanban/AnimatedSprite.play("default")
 	else:
@@ -125,7 +125,7 @@ func _on_Area2D_body_entered(body):
 #define o poder como o do método Kanban
 func _on_Area2D3_body_entered(body):
 	if body.is_in_group("player"):
-		$Kanban/AnimatedSprite.play("new_default")
+		$Kanban/AnimatedSprite.play("new")
 		pode_atirar1 = false
 		pode_atirar2 = true
 		pode_atirar3 = false
@@ -138,27 +138,27 @@ func _on_Area2D2_body_entered(body):
 		pode_atirar2 = false
 		pode_atirar3 = true
 
-func _on_Area2DPortal_body_entered(body):
+func _on_Area2DPortal_body_entered(_body):
 #Mudar de cena quando o player entrar no portal
-	get_tree().change_scene("res://Cenas/quizFase5.tscn")
+	get_tree().change_scene("res://Cenas/QuizFase5.tscn")
 
 
 
-func _on_Area2DBait_body_exited(body):
+func _on_Area2DBait_body_exited(_body):
 #Mostrar o sprite quando o personagem sair da área secreta
 	$IndustrialBait.show()
 
 
-func _on_Area2DBait_body_entered(body):
+func _on_Area2DBait_body_entered(_body):
 #Esconder o sprite quando o personagem entrar na área secreta
 	$IndustrialBait.hide()
 
 
-func _on_Area2DBaitado_body_entered(body):
+func _on_Area2DBaitado_body_entered(_body):
 #Esconde a segunda parede quando colidir
 	$BaitFraco.hide()
 
 
-func _on_Area2DBaitado_body_exited(body):
+func _on_Area2DBaitado_body_exited(_body):
 #Mostra novamente a parede quando o player sair da área.
 	$BaitFraco.show()

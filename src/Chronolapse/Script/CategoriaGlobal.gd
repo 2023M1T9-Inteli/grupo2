@@ -18,7 +18,7 @@ func trocaFase():
 	if Input.is_action_pressed("ui_fase2"):
 		get_tree().change_scene("res://Cenas/Cena2.tscn")
 	if Input.is_action_pressed("ui_fase3"):
-		get_tree().change_scene("res://Cenas/Mapa_Gantt.tscn")
+		get_tree().change_scene("res://Cenas/MapaGut.tscn")
 	if Input.is_action_pressed("ui_fase4"):
 		get_tree().change_scene("res://Cenas/MapaDoKanban.tscn")
 	if Input.is_action_pressed("ui_fase5"):

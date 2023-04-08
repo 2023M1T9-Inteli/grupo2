@@ -1,17 +1,18 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://imagens/pomodoro-bloco_resample.png" type="Texture" id=1]
 [ext_resource path="res://tileset/chao.tres" type="TileSet" id=2]
 [ext_resource path="res://Branch/ParallaxBackground.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Cenas/PlataformaMovelVertical.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Script/plataformaMovel2.gd" type="Script" id=5]
+[ext_resource path="res://Cenas/PlataformaMovelHorizontal.tscn" type="PackedScene" id=5]
 [ext_resource path="res://tileset/floor.tres" type="TileSet" id=6]
 [ext_resource path="res://imagens/pomodoro-bloco_resample02.png" type="Texture" id=7]
 [ext_resource path="res://tileset/industrial.tres" type="TileSet" id=8]
 [ext_resource path="res://Branch/Monstro.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Cenas/popUpPomodoro.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Cenas/PopUpPomodoro.tscn" type="PackedScene" id=10]
 [ext_resource path="res://efeito sonoros/Game Button Sounds Pack - Free Sounds [TubeRipper (mp3cut.net) (1).mp3" type="AudioStream" id=11]
 [ext_resource path="res://Cenas/PassagemKanban.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Script/plataforma_movel2.gd" type="Script" id=13]
 [ext_resource path="res://Script/Cena2.gd" type="Script" id=15]
 
 [sub_resource type="SpriteFrames" id=2]
@@ -47,9 +48,9 @@ tile_data = PoolIntArray( 983023, 0, 0, 1114098, 0, 0, 1114107, 0, 0, 1048604, 0
 [node name="plataforma_movel" parent="." instance=ExtResource( 4 )]
 position = Vector2( -744, 562 )
 
-[node name="plataforma_movel2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1097, 517 )
-script = ExtResource( 5 )
+[node name="PlataformaHorizontal" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1095, 515 )
+script = ExtResource( 13 )
 horizontal = true
 
 [node name="TileMap2" type="TileMap" parent="."]

@@ -27,7 +27,7 @@ func _ready():
 	$Player/timer/CanvasLayer/Control.start_timer(tempo)
 
 
-func _process(delta):
+func _process(_delta):
 	#player morre de queda
 	$Player.morte_queda()
 	#atirar poder se for true
@@ -64,7 +64,7 @@ func atirar_flecha():
 
 
 #funcao para tocar o efeito sonoro quando player encosta no bloco
-func _on_Area2D_body_entered(body):
+func _on_Area2D_body_entered(_body):
 	#efeito sonoro
 	$blocoFx.play()
 		

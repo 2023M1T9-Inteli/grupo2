@@ -82,6 +82,7 @@
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_235.jpg" type="Texture" id=80]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_195.jpg" type="Texture" id=81]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_142.jpg" type="Texture" id=82]
+[ext_resource path="res://pop ups/relogio/quizz.png" type="Texture" id=83]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_193.jpg" type="Texture" id=84]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_206.jpg" type="Texture" id=85]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_210.jpg" type="Texture" id=86]
@@ -172,7 +173,6 @@
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_202.jpg" type="Texture" id=200]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_225.jpg" type="Texture" id=204]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_200.jpg" type="Texture" id=205]
-[ext_resource path="res://pop ups/pomodoro/quizz.png" type="Texture" id=270]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_099.jpg" type="Texture" id=414]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_043.jpg" type="Texture" id=415]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_005.jpg" type="Texture" id=416]
@@ -336,13 +336,13 @@ extra_spacing_space = -6
 font_data = SubResource( 6 )
 
 [sub_resource type="StyleBoxTexture" id=5]
-texture = ExtResource( 270 )
-region_rect = Rect2( 0, 133.623, 2680, 1425.2 )
+texture = ExtResource( 83 )
+region_rect = Rect2( 0, 0, 2680, 2100 )
 margin_top = 3.9945
 
 [sub_resource type="StyleBoxTexture" id=4]
-texture = ExtResource( 270 )
-region_rect = Rect2( 0, 127.452, 2680, 1421.07 )
+texture = ExtResource( 83 )
+region_rect = Rect2( 0, 0, 2680, 2100 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )

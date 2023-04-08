@@ -2,8 +2,8 @@
 
 [ext_resource path="res://Script/letras/PressStart2P.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://imagens/BackgroundTelaInicial.jpeg" type="Texture" id=2]
-[ext_resource path="res://Script/primeiraTela.gd" type="Script" id=3]
-[ext_resource path="res://Cenas/popUpControl.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Script/PrimeiraTela.gd" type="Script" id=3]
+[ext_resource path="res://Cenas/PopUpControl.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Cenas/PopUpCreditos.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Cenas/PopUpObjetivo.tscn" type="PackedScene" id=6]
 

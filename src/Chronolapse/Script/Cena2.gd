@@ -4,11 +4,11 @@ extends Node2D
 var tomate = preload("res://Cenas/Tomate.tscn")
 #variável que referencia e instancia a cena do player
 var jogador = preload("res://Branch/Player.tscn").instance()
-
-# variável que referencia cena global acerca do movimento do jogador
-onready var movimento = get_node("/root/GlobalTeste")
+#
+## variável que referencia cena global acerca do movimento do jogador
+#onready var movimento = get_node("/root/CategoriaGlobal")
 #variável que referencia cena global acerca do timer
-onready var categoria = get_node("/root/CategoriaGlobal")
+onready var categoria = CategoriaGlobal.categoria
 
 #variável booleana que indica se o jogador já pode atirar
 var pode_atirar = false
@@ -22,10 +22,10 @@ func _ready():
 #	para que assim o game over reinicie na fase certa	
 	CategoriaGlobal.level = "fase 2"
 #	Atribui um valor para o tempo que o jogador tem, baseado no desempenho da matriz
-	if(categoria.categoria == 0): tempo = 150
-	elif categoria.categoria == 1: tempo = 225
-	elif categoria.categoria == 2: tempo = 180
-	elif categoria.categoria == 3: tempo = 120
+	if(categoria == 0): tempo = 150
+	elif categoria == 1: tempo = 225
+	elif categoria == 2: tempo = 180
+	elif categoria == 3: tempo = 120
 	else: tempo = 225
 	$Player/timer/CanvasLayer/Control.start_timer(tempo)
 	
@@ -73,7 +73,7 @@ func atirar_tomate():
 
 
 #funcao para tocar o efeito sonoro quando player encosta no bloco
-func _on_Area2D_body_entered(body):
+func _on_Area2D_body_entered(_body):
 	$blocoFx.play()
 
 

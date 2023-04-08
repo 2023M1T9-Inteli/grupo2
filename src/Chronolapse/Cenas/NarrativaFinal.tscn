@@ -338,7 +338,7 @@ position = Vector2( 510.5, 301.5 )
 scale = Vector2( 0.552778, 0.552778 )
 frames = SubResource( 3 )
 animation = "anima1"
-frame = 8
+frame = 2
 playing = true
 
 [node name="Timer" type="Timer" parent="."]

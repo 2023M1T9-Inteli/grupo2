@@ -1,6 +1,7 @@
 [gd_scene load_steps=248 format=2]
 
 [ext_resource path="res://Script/NarrativaInicial2.gd" type="Script" id=1]
+[ext_resource path="res://pop ups/relogio/quizz.png" type="Texture" id=2]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_247.jpg" type="Texture" id=188]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_249.jpg" type="Texture" id=195]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_240.jpg" type="Texture" id=235]
@@ -61,7 +62,6 @@
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_267.jpg" type="Texture" id=298]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_280.jpg" type="Texture" id=299]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial_certa_282.jpg" type="Texture" id=300]
-[ext_resource path="res://pop ups/pomodoro/quizz.png" type="Texture" id=302]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial2_004.jpg" type="Texture" id=303]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial2_000.jpg" type="Texture" id=304]
 [ext_resource path="res://imagens/narrativa inicial/narrativa_inicial2_001.jpg" type="Texture" id=305]
@@ -336,13 +336,13 @@ extra_spacing_space = -6
 font_data = SubResource( 6 )
 
 [sub_resource type="StyleBoxTexture" id=5]
-texture = ExtResource( 302 )
-region_rect = Rect2( 0, 133.623, 2680, 1425.2 )
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 2680, 2100 )
 margin_top = 3.9945
 
 [sub_resource type="StyleBoxTexture" id=4]
-texture = ExtResource( 302 )
-region_rect = Rect2( 0, 127.452, 2680, 1421.07 )
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 2680, 2100 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )

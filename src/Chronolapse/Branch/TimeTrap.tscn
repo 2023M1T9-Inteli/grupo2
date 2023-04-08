@@ -7,7 +7,6 @@
 [ext_resource path="res://imagens/male/ismartefony_walkingR_04.png" type="Texture" id=5]
 [ext_resource path="res://Script/TimeTrap.gd" type="Script" id=6]
 
-
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 3 ) ],
@@ -22,7 +21,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 20, 24 )
+extents = Vector2( 20, 31 )
 
 [sub_resource type="Animation" id=3]
 length = 0.001
@@ -89,7 +88,7 @@ frames = SubResource( 1 )
 animation = "congelado"
 
 [node name="Shape" type="CollisionShape2D" parent="."]
-position = Vector2( -3, -7 )
+position = Vector2( -3, 0 )
 shape = SubResource( 5 )
 
 [node name="anim" type="AnimationPlayer" parent="."]

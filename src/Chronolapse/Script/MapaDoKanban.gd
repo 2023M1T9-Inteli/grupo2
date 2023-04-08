@@ -32,7 +32,7 @@ func _ready():
 	$KinematicBody2D/AnimatedSprite.play("default")
 
 
-func _process(delta):
+func _process(_delta):
 	#player morre de queda
 	$Player.morte_queda()
 	usar_poder()
@@ -68,7 +68,7 @@ func usar_poder():
 		get_tree().current_scene.add_child(cena_card)
 		
 #funcao para tocar o efeito sonoro quando player encosta no bloco
-func _on_Area2D_body_entered(body):
+func _on_Area2D_body_entered(_body):
 	#efeito sonoro
 	$blocoFx.play()
 
