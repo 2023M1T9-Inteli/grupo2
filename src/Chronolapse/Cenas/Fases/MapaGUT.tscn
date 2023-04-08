@@ -132,7 +132,6 @@ __meta__ = {
 position = Vector2( 5, 8 )
 scale = Vector2( 3.275, 3.275 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal/Area2D"]

@@ -23,8 +23,8 @@ func _ready():
 	CategoriaGlobal.level = "fase 2"
 #	Atribui um valor para o tempo que o jogador tem, baseado no desempenho da matriz
 	if(categoria == 0): tempo = 150
-	elif categoria == 1: tempo = 225
-	elif categoria == 2: tempo = 180
+	elif categoria == 1: tempo = 170
+	elif categoria == 2: tempo = 150
 	elif categoria == 3: tempo = 120
 	else: tempo = 225
 	$Player/timer/CanvasLayer/Control.start_timer(tempo)
