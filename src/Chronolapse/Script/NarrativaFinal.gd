@@ -32,10 +32,10 @@ func controlar():
 		$AnimatedSprite.visible = false
 		$AnimatedSprite2.visible = true
 	elif controle == 32:
-		get_tree().change_scene("res://Cenas/Matriz/InicioMatriz.tscn")
+		get_tree().change_scene("res://Cenas/PrimeiraTela.tscn")
 
 #Função para alterar a animação para a próxima
-func mudarAnimacao():	
+func mudarAnimacao():
 	#Atribui o nome da animação à variável 
 	animacao = "anima" + str(controle)
 	#Verifica se está no primeiro ou segundo animatedSprite
