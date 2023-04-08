@@ -659,7 +659,7 @@ position = Vector2( 510.5, 301.5 )
 scale = Vector2( 0.552778, 0.552778 )
 frames = SubResource( 3 )
 animation = "anima1"
-frame = 2
+frame = 14
 playing = true
 
 [node name="Timer" type="Timer" parent="."]
@@ -671,8 +671,8 @@ visible = false
 position = Vector2( 510.5, 301.5 )
 scale = Vector2( 0.552778, 0.552778 )
 frames = SubResource( 4 )
-animation = "anima32"
-frame = 7
+animation = "anima17"
+frame = 6
 playing = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

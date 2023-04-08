@@ -44,3 +44,8 @@ func mudarAnimacao():
 	#Verifica se está no primeiro ou segundo animatedSprite
 	if !anima2: $AnimatedSprite.play(animacao)
 	elif anima2: $AnimatedSprite2.play(animacao)
+
+
+#Função para pular a narrativa e ir direto a ao jogo
+func _on_Button_pressed():
+	get_tree().change_scene("res://Cenas/Matriz/InicioMatriz.tscn")
