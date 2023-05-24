@@ -12,8 +12,6 @@
 ## Integrantes: <a href="https://www.linkedin.com/in/ana-luisa-goes-barbosa/">Ana Goes</a>, <a href="https://www.linkedin.com/in/eduardo-henrique-dos-santos-8b24451b8/">Eduardo Henrique</a>, <a href="https://www.linkedin.com/in/fernando-antonio-s-c-de-vasconcellos/">Fernando Vasconcellos</a>, <a href="https://www.linkedin.com/in/gustavo-machado-esteves-453b81248/">Gustavo Machado</a>, <a href="https://www.linkedin.com/in/Ivan-Ferreira/">Ivan Ferreira</a>, <a href="https://www.linkedin.com/in/luiza-rubim/">Luiza Rubim</a>
 
 ## Descrição
-
-📜 Descrição curta sobre o que seu projeto faz.
 <br><br>
 O projeto é uma gamificação para o treinamento de Gestão de Tempo da Cia de Talentos.
 <br><br>
@@ -22,8 +20,6 @@ O projeto é uma gamificação para o treinamento de Gestão de Tempo da Cia de 
   <a rel="license" href="https://github.com/2023M1T9-Inteli/grupo2">ChronoLapse</a> 
 </p>
 
-
-💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
 <br><br>
 O projeto ajuda como um complemento no treinamento de gestão de tempo distribuído pela Cia de talentos. Pegando como referência o jogo MarioBros, o filme O Preço do Amanhã e a estética CyberPunk, o jogo conta com diversos elementos que remetem ao usuário a todo o momento a gestão de tempo. Auxiliando o jogador a gerir melhor e a obter o aprendizado e contexualização de diversos métodos de gerenciamento de tempo, como o Pomodoro, GUT e Kanban enquanto segue a narrativa do Cyborg que é destinado a derrotar os ladrões de tempo e a consertar o fluxo temporal, os ladrões de tempo são inimigos criados a partir de objetos da vida real que tiram o foco e que muitas vezes não deixa que as pessoas conclua as tarefas do dia a dia. 
 Desenvolvido focando em uma maior imersão do usuário no treinamento, o jogo foi criado para que o usuário use e aprenda técnicas de gerenciamento de tempo ao mesmo momento em que joga e se diverte.
