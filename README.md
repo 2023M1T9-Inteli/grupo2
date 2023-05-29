@@ -16,7 +16,6 @@
 O projeto ajuda como um complemento no treinamento de gestão de tempo distribuído pela Cia de talentos. Pegando como referência o jogo MarioBros, o filme O Preço do Amanhã e a estética CyberPunk, o jogo conta com diversos elementos que remetem ao usuário a todo o momento a gestão de tempo. Auxiliando o jogador a gerir melhor e a obter o aprendizado e contexualização de diversos métodos de gerenciamento de tempo, como o Pomodoro, GUT e Kanban enquanto segue a narrativa do Cyborg que é destinado a derrotar os ladrões de tempo e a consertar o fluxo temporal, os ladrões de tempo são inimigos criados a partir de objetos da vida real que tiram o foco e que muitas vezes não deixa que as pessoas conclua as tarefas do dia a dia. 
 Desenvolvido focando em uma maior imersão do usuário no treinamento, o jogo foi criado para que o usuário use e aprenda técnicas de gerenciamento de tempo ao mesmo momento em que joga e se diverte.
 <br><br>
-<br><br>
 
 ## 🛠 Estrutura de pastas
 ├───docs<br>
@@ -105,9 +104,9 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 ## 💻 Configuração para Desenvolvimento
 
-1 - Faça o download do GODOT e deste repositório.
-2 - Abra o GODOT, ao ser prontificado clique em IMPORTAR.
-3 - Selecione a pasta onde descompactou este repositório.
+1 - Faça o download do GODOT e deste repositório.<br>
+2 - Abra o GODOT, ao ser prontificado clique em IMPORTAR.<br>
+3 - Selecione a pasta onde descompactou este repositório.<br>
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
@@ -145,16 +144,16 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Spidus/Teste_Final_1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.yggbrasil.com.br/vr">INTELI, VICTOR BRUNO ALEXANDER ROSETTI DE QUIROZ</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
 
-Equipe ChronoLapse
+Equipe ChronoLapse<br>
 Link do deploy: <a href=https://2023m1t9-inteli.github.io/grupo2/>https://2023m1t9-inteli.github.io/grupo2/</a> </br>
 Integrantes:
-    <a href="https://www.linkedin.com/in/ana-luisa-goes-barbosa/">Ana Luisa Goes Barbosa</a>
-    <a href="https://www.linkedin.com/in/eduardo-henrique-dos-santos-8b24451b8/">Eduardo Henrique dos Santos</a>
-    <a href="https://www.linkedin.com/in/fernando-antonio-s-c-de-vasconcellos/">Fernando Vasconcellos </a>
-    <a href="https://www.linkedin.com/in/gustavo-machado-esteves-453b81248/">Gustavo Esteves Machado</a>
-    <a href="https://www.linkedin.com/in/Ivan-Ferreira/">Ivan Fellipy Gonçalves Ferreira</a>
-    <a href="https://www.linkedin.com/in/luiza-rubim/">Luiza Souza Rubim</a>
-    <a href="https://www.linkedin.com/in/tommygoto/"> Tommy Ken Ishimatsu Goto </a>
+    <a href="https://www.linkedin.com/in/ana-luisa-goes-barbosa/">Ana Luisa Goes Barbosa</a><br>
+    <a href="https://www.linkedin.com/in/eduardo-henrique-dos-santos-8b24451b8/">Eduardo Henrique dos Santos</a><br>
+    <a href="https://www.linkedin.com/in/fernando-antonio-s-c-de-vasconcellos/">Fernando Vasconcellos </a><br>
+    <a href="https://www.linkedin.com/in/gustavo-machado-esteves-453b81248/">Gustavo Esteves Machado</a><br>
+    <a href="https://www.linkedin.com/in/Ivan-Ferreira/">Ivan Fellipy Gonçalves Ferreira</a><br>
+    <a href="https://www.linkedin.com/in/luiza-rubim/">Luiza Souza Rubim</a><br>
+    <a href="https://www.linkedin.com/in/tommygoto/"> Tommy Ken Ishimatsu Goto </a><br>
 
 ## 🎓 Referências
 
