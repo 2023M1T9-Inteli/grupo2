@@ -9,17 +9,9 @@
 
 ## ChronoLapse
 
-## Integrantes: <a href="https://www.linkedin.com/in/ana-luisa-goes-barbosa/">Ana Goes</a>, <a href="https://www.linkedin.com/in/eduardo-henrique-dos-santos-8b24451b8/">Eduardo Henrique</a>, <a href="https://www.linkedin.com/in/fernando-antonio-s-c-de-vasconcellos/">Fernando Vasconcellos</a>, <a href="https://www.linkedin.com/in/gustavo-machado-esteves-453b81248/">Gustavo Machado</a>, <a href="https://www.linkedin.com/in/Ivan-Ferreira/">Ivan Ferreira</a>, <a href="https://www.linkedin.com/in/luiza-rubim/">Luiza Rubim</a>
+## Integrantes: <a href="https://www.linkedin.com/in/ana-luisa-goes-barbosa/">Ana Goes</a>, <a href="https://www.linkedin.com/in/eduardo-henrique-dos-santos-8b24451b8/">Eduardo Henrique</a>, <a href="https://www.linkedin.com/in/fernando-antonio-s-c-de-vasconcellos/">Fernando Vasconcellos </a>, <a href="https://www.linkedin.com/in/gustavo-machado-esteves-453b81248/">Gustavo Machado</a>, <a href="https://www.linkedin.com/in/Ivan-Ferreira/">Ivan Ferreira</a>, <a href="https://www.linkedin.com/in/luiza-rubim/">Luiza Rubim</a>, <a href="https://www.linkedin.com/in/tommygoto/"> Tommy Goto </a>
 
 ## Descrição
-<br><br>
-O projeto é uma gamificação para o treinamento de Gestão de Tempo da Cia de Talentos.
-<br><br>
-<p align="center">
-<img src="https://raw.githubusercontent.com/2023M1T9-Inteli/grupo2/main/src/Chronolapse/imagens/imagem_readme.png" alt="ChronoLapse" border="0">
-  <a rel="license" href="https://github.com/2023M1T9-Inteli/grupo2">ChronoLapse</a> 
-</p>
-
 <br><br>
 O projeto ajuda como um complemento no treinamento de gestão de tempo distribuído pela Cia de talentos. Pegando como referência o jogo MarioBros, o filme O Preço do Amanhã e a estética CyberPunk, o jogo conta com diversos elementos que remetem ao usuário a todo o momento a gestão de tempo. Auxiliando o jogador a gerir melhor e a obter o aprendizado e contexualização de diversos métodos de gerenciamento de tempo, como o Pomodoro, GUT e Kanban enquanto segue a narrativa do Cyborg que é destinado a derrotar os ladrões de tempo e a consertar o fluxo temporal, os ladrões de tempo são inimigos criados a partir de objetos da vida real que tiram o foco e que muitas vezes não deixa que as pessoas conclua as tarefas do dia a dia. 
 Desenvolvido focando em uma maior imersão do usuário no treinamento, o jogo foi criado para que o usuário use e aprenda técnicas de gerenciamento de tempo ao mesmo momento em que joga e se diverte.
@@ -42,6 +34,8 @@ Desenvolvido focando em uma maior imersão do usuário no treinamento, o jogo fo
 │   ├───Android<br>
 │   ├───HTML<br>
 │   └───Windows<br>
+|
+├───imagens<br>
 └───src<br>
     └───Chronolapse<br>
         ├───.import<br>
@@ -123,22 +117,44 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 0.2.1 - 10/02/2023
-    * Primeiro lançamento do protótipo do MVP
-* 0.2.0 - 25/02/2023
-    * mudanças significativas na estética do jogo 
-    * ADD: personagem e inimigos
-* 0.1.1 - 15/03/2023
-    * Melhoramento de versão do jogo e atualização da narrativa
-* 0.1.0 - 20/03/2023
+* 1.0.0 - 08/04/2023
+    * Lançamento Final do jogo
+    * Renomeação dos arquivos do jogo
+    * Alteração da localização das pastas
+    * Lançamento Final do jogo
+       
+* 0.3.0 - 10/02/2023
+    * Adicão da fase 5.
+    * Implementação de tutoriais, botões de mute, tela de objetivos e narrativas. 
+* 0.2.1 - 24/03/2023
+    * Adição do poder do khaban 
+    * Introdução de quizzes nas fases
+* 0.2.0 - 15/03/2023
+    * Adição da mecânica de timer
+    * Atualização da documentação
+    * Novo vilão (Timer trap)
+* 0.1.1 - 03/03/2023
     * O primeiro lançamento adequado
-    * Alterações nas pastas e alinhamento do código 
-* 0.0.1 - 07/04/2023
-    * última atualização da documentação e Readme
+    * Alterações na estética e funcionamento do jogo
+    * Mecânica rewind  
+* 0.1.0 - 15/02/2023
+    * Primeiro lançamento do jogo sem deploy
+    * Adição da primeira fase.
 
 ## 📋 Licença/License
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Spidus/Teste_Final_1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.yggbrasil.com.br/vr">INTELI, VICTOR BRUNO ALEXANDER ROSETTI DE QUIROZ</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+
+Equipe ChronoLapse
+Link do deploy: <a href=https://2023m1t9-inteli.github.io/grupo2/>https://2023m1t9-inteli.github.io/grupo2/</a> </br>
+Integrantes:
+    <a href="https://www.linkedin.com/in/ana-luisa-goes-barbosa/">Ana Luisa Goes Barbosa</a>
+    <a href="https://www.linkedin.com/in/eduardo-henrique-dos-santos-8b24451b8/">Eduardo Henrique dos Santos</a>
+    <a href="https://www.linkedin.com/in/fernando-antonio-s-c-de-vasconcellos/">Fernando Vasconcellos </a>
+    <a href="https://www.linkedin.com/in/gustavo-machado-esteves-453b81248/">Gustavo Esteves Machado</a>
+    <a href="https://www.linkedin.com/in/Ivan-Ferreira/">Ivan Fellipy Gonçalves Ferreira</a>
+    <a href="https://www.linkedin.com/in/luiza-rubim/">Luiza Souza Rubim</a>
+    <a href="https://www.linkedin.com/in/tommygoto/"> Tommy Ken Ishimatsu Goto </a>
 
 ## 🎓 Referências
 
