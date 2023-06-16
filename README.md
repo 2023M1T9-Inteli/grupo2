@@ -17,6 +17,10 @@ O projeto ajuda como um complemento no treinamento de gestão de tempo distribu�
 Desenvolvido focando em uma maior imersão do usuário no treinamento, o jogo foi criado para que o usuário use e aprenda técnicas de gerenciamento de tempo ao mesmo momento em que joga e se diverte.
 <br><br>
 
+## 🎮 Jogue agora
+
+Para acessar o jogo diretamente do seu navegador entre no seguinte link: [ChronoLapse](https://2023m1t9-inteli.github.io/grupo2/)
+
 ## 🛠 Estrutura de pastas
 ├───docs<br>
 ├───documentos<br>
